@@ -20,7 +20,7 @@ All material is under Non Disclosure Agreement and our general terms and conditi
 
 <section>
   
-  > [Release Notes](identitry-analytics/enduser-guide/01-introduction)  
+  > [Release Notes](downloads/01-downloads)  
   > This document provides information on the different releases of iGRCanalytics, including the supported environments and the release notes for each version.  
 
 </section>
