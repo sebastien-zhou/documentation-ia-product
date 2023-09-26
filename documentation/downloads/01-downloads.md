@@ -108,10 +108,7 @@ shasum -c iGRCAnalyticsSetup_win32_x64_Ader-R1_2019-12-10.sha1
 
 ## Drivers
 
-For legal reasons the `Oracle` and `Microsoft SQL server` drivers have been removed from the installation bundle. The same is true for the jar files included in the application Tigris that provide SVN to the studio.
-
-Please refer to the following pages for information on how to download and install the drivers :
+For legal reasons the `Oracle` and `Microsoft SQL server` drivers have been removed from the installation bundle. Please refer to the following pages for information on how to download and install the drivers :
 
 - [How-To install and use Microsoft SQL server official driver](../how-to/database/sqlserver/install-sql-server-driver)
 - [How-to install and use the official Oracle database driver](../how-to/database/oracle/install-orcl-database-driver)
-- [How to add the Tigris bundles to iGRC Analytics](../how-to/misc/studio-add-tigris-bundles)
