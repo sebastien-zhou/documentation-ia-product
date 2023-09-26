@@ -36,10 +36,10 @@ Please be aware that as of version `2016 R2 SP12` of the product the version of 
 
 See [here](how-to/workflow/upgrade-activiti) for more information.  
 
-> [!important] Before performing any maintenance operation on any of your databases schemas please perform a backup of your ledger and activiti schemas.  
+> [!warning] Before performing any maintenance operation on any of your databases schemas please perform a backup of your ledger and activiti schemas.  
 
 ## Notes
 
 See [here](downloads/01-downloads/#checking-the-integrity-of-the-download) for more information on how to check the integrity of your download.  
 
-> [!important] Identity Analytics is provided without any support on Linux. Linux deployment should be used only for data loading automation through the "Batch" mode and for deploying the web application. The configuration performed through Brainwave Analytics should be made under a Microsoft Windows environment.  
+> [!warning] Identity Analytics is provided without any support on Linux. Linux deployment should be used only for data loading automation through the "Batch" mode and for deploying the web application. The configuration performed through Brainwave Analytics should be made under a Microsoft Windows environment.  
