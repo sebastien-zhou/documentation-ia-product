@@ -21,8 +21,8 @@ For legal reasons the oracle and Microsoft SQL server drivers have been removed 
 
 Please refer to the following pages for information on how to download and install the drivers :
 
-- [How-To install and use Microsoft's SQL server driver](documentation/how-to/database/sqlserver/install-sqlserver-driver.md)  
-- [How-to install and use the Oracle database driver](documentation/how-to/database/oracle/install-orcl-driver.md)  
+- [How-To install and use Microsoft's SQL server driver](how-to/database/sqlserver/install-sqlserver-driver)  
+- [How-to install and use the Oracle database driver](how-to/database/oracle/install-orcl-driver)  
 
 ## SVN plugins
 

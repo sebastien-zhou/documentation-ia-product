@@ -41,11 +41,7 @@ Search for the "JDBC drivers for SQL Server". This should display an [MSDN page]
 
 - [Version 6.0](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=11774)  
 
----
-
-<span style="color:grey">**Note:**</span> Please be sure to download the latest version of the JDBC dirvers
-
----
+> [!Note] Please be sure to download the latest version of the JDBC dirvers
 
 Click "Download" and be sure to download the correct version for your operating system (either Windows, `.exe` file, or Linux, `.tar.gz` file).  
 
@@ -53,11 +49,7 @@ Please follow the installation instruction provided by Microsoft copied bellow :
 
 ### Installation instructions
 
----
-
-<span style="color:grey">**Note:**</span> By downloading the Microsoft JDBC Driver for SQL Server, you are accepting the terms and conditions of the End-User License Agreement (EULA) for this component. Please review the End-User License Agreement (EULA) located on this page and print a copy of the EULA for your records.
-
----
+> [!Note] By downloading the Microsoft JDBC Driver for SQL Server, you are accepting the terms and conditions of the End-User License Agreement (EULA) for this component. Please review the End-User License Agreement (EULA) located on this page and print a copy of the EULA for your records.
 
 #### Installation Instructions for the Microsoft Windows version of the JDBC Driver 
 
@@ -99,13 +91,8 @@ The valid versions of the drivers depend on the version of JAVA used to run the 
 
 - For the version 2017 R1 use the file **sqljdbc42.jar** or the file `mssql-jdbc-6.2.*.jre8.jar`
 
----
-
-<span style="color:red">**Important:**</span> It is necessary to rename the jar driver as the name of the driver is hard coded in the product.
-
-**Incorrectly** naming the driver will result in errors.
-
----
+> [!Important] It is necessary to rename the jar driver as the name of the driver is hard coded in the product.
+> **Incorrectly** naming the driver will result in errors.
 
 ## Launch the product
 
