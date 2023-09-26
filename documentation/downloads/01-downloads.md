@@ -110,5 +110,5 @@ shasum -c iGRCAnalyticsSetup_win32_x64_Ader-R1_2019-12-10.sha1
 
 For legal reasons the `Oracle` and `Microsoft SQL server` drivers have been removed from the installation bundle. Please refer to the following pages for information on how to download and install the drivers :
 
-- [How-To install and use Microsoft SQL server official driver](../how-to/database/sqlserver/install-sql-server-driver)
-- [How-to install and use the official Oracle database driver](../how-to/database/oracle/install-orcl-database-driver)
+- [How-To install and use Microsoft SQL server official driver](../how-to/database/sqlserver/install-sqlserver-driver)
+- [How-to install and use the official Oracle database driver](../how-to/database/oracle/install-orcl-driver)
