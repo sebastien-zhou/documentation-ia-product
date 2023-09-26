@@ -1,6 +1,6 @@
 ---
 title: How-to install and use the official Oracle database driver
-title: How-to install and use the official Oracle database driver
+description: How-to install and use the official Oracle database driver
 ---
 
 # How-to install and use the official Oracle database driver  
@@ -14,7 +14,7 @@ As such, it is now necessary for you to download from the vendor's site the late
 
 To download the driver navigate to the vendor site : [https://www.oracle.com/](https://www.oracle.com/)  
 
-You can find the latest version of the Oracle drivers by hovering the mouse over the **Downloads** menu and under the Database section click **See All**. This bring you to a page where you should find a Drivers section with a JDBC Drivers link. Click on this link.   
+You can find the latest version of the Oracle drivers by hovering the mouse over the **Downloads** menu and under the Database section click **See All**. This bring you to a page where you should find a Drivers section with a JDBC Drivers link. Click on this link.  
 
 The following link should direct you directly to the correct page : [https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)  
 
@@ -22,7 +22,7 @@ This will open a new page that lists all available versions of the driver. Selec
 
 This will open a new page with all available drivers for your database version.  
 
-Select and download the driver named **ojdbcX.jar**. 
+Select and download the driver named **ojdbcX.jar**.  
 
 > [!warning] Please download the correct version of the driver as a function of the version of JAVA used to run the application.  
 
