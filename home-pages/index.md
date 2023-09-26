@@ -1,6 +1,6 @@
 ---
-title: iGRCanalytics
-description: Technical documentation to help build, configure and use iGRCanalytics
+title: Identity Analytics
+description: Guides to help build, configure and use Identity Analytics
 ---
 
 <tabs>
@@ -39,16 +39,16 @@ IAP has been built with a set of general principles in mind, please find them be
 
 <section>
   
-  > [Identity Analytics Enduser Guide](identity-analytics/enduser-guide/01-introduction)  
+  > [Identity Analytics Enduser Guide](/ia/iap_2.0/identity-analytics/enduser-guide/01-introduction)  
   > This document describes the basic principles of IAP (Identity Analytics Platform) interfaces and dashboards.  
 
-  > [Identity Analytics Integration Guide](identity-analytics/integration-guide/01-introduction)
+  > [Identity Analytics Integration Guide](/ia/iap_2.0/identity-analytics/integration-guide/01-introduction)
   > This document describes the basic principles of IAP (Identity Analytics Platform) as well as the best practices to follow to fulfill the data & to configure the roles.  
 
-  > [Identity Analytics Access Review Guide](identity-analytics/uar-guide/01-introduction)
+  > [Identity Analytics Access Review Guide](/ia/iap_2.0/identity-analytics/uar-guide/01-introduction)
   > This document describes the basic principles of self-service, Compliance driven Access, Review in IAS (Identity Analytics Services) as well as the best practices to follow to configure a review and manage the remediations.  
 
-  > [Identity Analytics Release](identity-analytics/iap-release/01-iap-release-overview)
+  > [Identity Analytics Release](/ia/iap_2.0/identity-analytics/iap-release/01-iap-release-overview)
   > This document provides information on the different releases of IAP, including the compatibility matrix and the release notes for each version.  
 
 </section>
@@ -57,7 +57,7 @@ IAP has been built with a set of general principles in mind, please find them be
 
 <section>
   
-  > [Controls browser](controls-browser/controls-browser)  
+  > [Controls browser](/ia/iap_2.0/controls-browser/controls-browser)  
   > The Controls Browser is built to provide an overview of the current risks in your Information System. It provides administrators with an overview of the controls and associated defects (discrepancies) and when possible the means to remediate the risk.  
 
 </section>
