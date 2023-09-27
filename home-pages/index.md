@@ -69,14 +69,11 @@ IAP has been built with a set of general principles in mind, please find them be
 
 This web site will help you make the most of the iGRCanalytics product and methodology. Included you will find pages describing:  
 
-* The product documentation
-* Project configuration
-* Tips and tricks
+- The product documentation
+- Project configuration
+- Tips and tricks
 
 For customers under maintenance/subscription contract as well as official partners, you can reach our support website (24/7): [https://support.radiantlogic.com](https://support.radiantlogic.com/)
-
-This website and content is dedicated to Brainwave customers and partners.
-All material is under Non Disclosure Agreement and our general terms and conditions apply.
 
 ## IGRCanalytics
 
