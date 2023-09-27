@@ -30,26 +30,26 @@ This version includes as improvements a new metadata computation phase that occu
 
 - [**Release notes**](02-release-notes-descartes-r2)
 
-Please navigate to the following link to download the latest version of the product: Brainwave Identity GRC Descartes:  
+Please navigate to the following link to download the latest version of the product: Descartes:  
 
 - [**Download Descartes R2**](https://download.brainwavegrc.com/index.php/s/fsqosCEPHkBaoaP)
 
 See [below](#how-to-calculate-the-hash) for more information on how to check the integrity of your download.  
 
-> [!note] As a reminder Brainwave Analytics is provided without any support on Linux.  
-> Linux deployment should be used only for data loading automation through the "Batch" mode and for deploying the web application. The configuration performed through Brainwave Analytics should be made under a Microsoft Windows environment.  
+> [!note] As a reminder iGRCanalytics is provided without any support on Linux.  
+> Linux deployment should be used only for data loading automation through the "Batch" mode and for deploying the web application. The configuration performed through iGRCanalytics should be made under a Microsoft Windows environment.  
 
 Looking for an older version? have a look at the [archived versions repository](05-archived-version)  
 
 Please use the following link for the full list of the certified environments:  
 
-[Certified Operating Environment for Brainwave Identity GRC Version](https://documentation.brainwavegrc.com/Descartes/docs/igrc-platform/installation-and-deployment/brainwave-grc-certified-environments/)  
+[Certified Operating Environment for iGRCanalytics](https://documentation.brainwavegrc.com/Descartes/docs/igrc-platform/installation-and-deployment/brainwave-grc-certified-environments/)  
 
 Please see [**here**](04-product-lifecycle) for more information on the product versions lifecycle, including the end of support dates.
 
 ## License key
 
-Please log into your Brainwave Online support account and use "the request a license" form to request a license:
+Please log into your RadiantLogic support account and use "the request a license" form to request a license:
 
 [https://support.radiantlogic.com](https://support.radiantlogic.com)
 
