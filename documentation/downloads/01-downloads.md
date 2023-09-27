@@ -53,7 +53,7 @@ Please log into your RadiantLogic support account and use "the request a license
 
 [https://support.radiantlogic.com](https://support.radiantlogic.com)
 
-> Challenge: Copy and paste the challenge found in the product (field "License key" in the following screenshot). See [here](https://support.radiantlogic.com/hc/en-us/articles/17805187130516-Brainwave-licence-requests) for more information
+> Challenge: Copy and paste the challenge found in the product (field "License key" in the following screenshot). See [here](https://support.radiantlogic.com/hc/en-us/articles/17805187130516-iGRCanalytics-licence-requests) for more information
 
 ![Challenge](./images/challenge.png "Workstation fingerprint")
 
