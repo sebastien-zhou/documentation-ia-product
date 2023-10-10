@@ -7,10 +7,11 @@ description: Guides to help build, configure and use Identity Analytics
   <tablist>
     <tab>Guides</tab>
     <tab>Developer</tab>
+    <tab>Self-Managed</tab>
   </tablist>
 
-<tabpanels>
-  <tabpanel>
+  <tabpanels>
+    <tabpanel>
 
 # Welcome to Identity Analytics guides
 
@@ -85,5 +86,46 @@ For customers under maintenance/subscription contract as well as official partne
 </section>
 
 </tabpanel>
+<tabpanel>
+
+# Welcome to Identity Analytics self-managed Guide
+
+In order to simplify the installation of Identity Analytics in different environments a new self-managed version of the solution has been implemented and is available.
+
+The following pages will provide you with the necessary information to build and run the updated deliverable.  
+
+Please note that the "standard" installation method of installing the solution is still available for those that require it.  
+
+## Identity Analytics self-managed Guide
+
+<section>
+  
+  > [Pre-requisites](before-installation/preface)  
+  > The included page will provide you with all the necessary information and processes to implement before the installation of the self-managed solution of Identity Analytics.  
+
+  > [Configuration](configuration/config-ui)
+  > Learn how to configure the self-managed solution of Identity Analytics.  
+
+  > [Installation guide](installation/preface)
+  > Learn how to install the self-managed solution on the different supported environments.  
+
+  > [RadiantOne integration](integrations/radiantone)
+  > Learn how to integrate your Identity Data Management solution with Identity Analytics smoothly.  
+
+  > [Azure Connector configuration](connectors/azure-connector)
+  > Learn how to configure your connection to an Azure data source to ingest and audit your azure data.  
+
+  > [Controller user guide](containers/controller)
+  > The linked page is the user guide for the controller. This documentation provides all the necessary information on how to use the controller from email configuration to extraction testing.  
+
+  > [Run ops](run-ops/preface)
+  > Learn all the necessary commands to ensure a successful run and maintenance of the self-managed solution in time.  
+
+  > [Troubleshooting](troubleshooting/troubleshooting)
+  > Theses pages include the symptoms and the solutions of common errors encountered when running the solution.  
+
+</section>
+
+</tabpanel>
 </tabpanels>
-</tabs>
+</tabs>  
