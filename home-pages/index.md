@@ -79,7 +79,10 @@ For customers under maintenance/subscription contract as well as official partne
 ## IGRCanalytics
 
 <section>
-  
+
+  > [Add-ons](/ia/descartes/igrc-platform/add-ons/add-ons)  
+  > This document provides information on the creation, installation, usage and migration of project elements names Add-ons.  
+
   > [Release Notes](/ia/descartes/downloads/01-downloads)  
   > This document provides information on the different releases of iGRCanalytics, including the supported environments and the release notes for each version.  
 
