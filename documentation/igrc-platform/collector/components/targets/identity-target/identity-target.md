@@ -28,7 +28,7 @@ Not applicable
 
 When editing a collect, select _Identity target_ in the _Ledger targets_ (previously _Data set targets_).  
 
-![Identity target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/identity-target/images/2016-07-07_15_19_18-iGRC_Properties_-_demo_collectors_demo_040.Contractors.collector_-_iGRC_Analytic.png "Identity target")
+![Identity target](igrc-platform/collector/components/targets/identity-target/images/2016-07-07_15_19_18-iGRC_Properties_-_demo_collectors_demo_040.Contractors.collector_-_iGRC_Analytic.png "Identity target")
 
 # Properties
 
@@ -40,19 +40,19 @@ In this tab you can see/modify general parameters of the component. You will fin
 - _Display name_ for the _Identity target_
 - _Follow just one link_ option which sets the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation condition evaluated to true will be executed.
 
-![Target property]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/identity-target/images/02_target_property.png "Target property")
+![Target property](igrc-platform/collector/components/targets/identity-target/images/02_target_property.png "Target property")
 
 ## Description
 
 This property allows adding comment regarding actions done by this component.
 
-![Description property]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/identity-target/images/03_description_property.png "Description property")
+![Description property](igrc-platform/collector/components/targets/identity-target/images/03_description_property.png "Description property")
 
 ## Data source
 
 In this property, you select the attribute name that contains the repository key. This repository will hold added identities. Note that the mentioned repository must exist in database.
 
-![Data source]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/identity-target/images/04_data_source.png "Data source")
+![Data source](igrc-platform/collector/components/targets/identity-target/images/04_data_source.png "Data source")
 
 ## Identity
 
@@ -63,7 +63,7 @@ With this property, you will define product behaviour when importing identity su
 - _"Trigger an error if several identities match when no HR code is given"_ option to activate an event that will be generated when several identities are found in database. If no HR code is given, the product use identity parameters (described in below section) with a _key_ flag positionned to True to search an existing identity in order to keep the same _uid_ (unique and intemporal identifier) between timeslots.
 - _"Do not create identities who left the company if they exist in a previous timeslot"_ is the last option you should use if both conditions are achieved: the current and archived identities are always available in extracted files and archived identities are not filtered in Discovery.
 
-![Identity target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/identity-target/images/Identity_target3.png "Identity target")
+![Identity target](igrc-platform/collector/components/targets/identity-target/images/Identity_target3.png "Identity target")
 
 ## Parameters
 
@@ -97,7 +97,7 @@ Available fields are :
 - reference type 1 --\> 9
 - reference value 1 --\> 9
 
-![Parameters]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/identity-target/images/05_parameters.png "Parameters")
+![Parameters](igrc-platform/collector/components/targets/identity-target/images/05_parameters.png "Parameters")
 
 ## Manager
 
@@ -106,7 +106,7 @@ Here you can indicate wich attribute contains direct manager HR code. You can al
 - _Trigger an error if the identity is not found_ and indicate the event display name.
 - _Trigger an error if several identities match_ and indicate the event display name.
 
-![Manager]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/identity-target/images/06_manager.png "Manager")
+![Manager](igrc-platform/collector/components/targets/identity-target/images/06_manager.png "Manager")
 
 If manager HR code is not available (but you can access other manager attribute like mail, fullname,...) you can use the property below (_cf. Resolution section_)
 
@@ -114,7 +114,7 @@ If manager HR code is not available (but you can access other manager attribute 
 
 Here you can select attributes that will fetch direct manager for the import identity if HR code is not available.
 
-![Resolution]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/identity-target/images/07_resolution.png "Resolution")
+![Resolution](igrc-platform/collector/components/targets/identity-target/images/07_resolution.png "Resolution")
 
 # Example
 

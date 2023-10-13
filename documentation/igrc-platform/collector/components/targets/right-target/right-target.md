@@ -22,7 +22,7 @@ The Right target allows to collect right information into the ledger.
 
 From the collect editor select _Right target_ in _Data set targets._
 
-![Right target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/right-target/images/2016-07-07_17_08_35-iGRC_Properties_-_demo_collectors_demo_190.png "Right target")
+![Right target](igrc-platform/collector/components/targets/right-target/images/2016-07-07_17_08_35-iGRC_Properties_-_demo_collectors_demo_190.png "Right target")
 
 # The properties Tab
 
@@ -36,13 +36,13 @@ In this property tab of the _Right target_ you can view/edit general parameters 
   - If it is checked, only the first transition with an activation condition evaluated to true will be executed.  
   - If it is unchecked, all transitions with an activation evaluation evaluated to true will be executed.
 
-![Target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/right-target/images/right_prop_target.png "Target")
+![Target](igrc-platform/collector/components/targets/right-target/images/right_prop_target.png "Target")
 
 ## Description
 
 This property allows to add Comments regarding actions done by this component.
 
-![Description]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/right-target/images/right_prop_desc.png "Description")
+![Description](igrc-platform/collector/components/targets/right-target/images/right_prop_desc.png "Description")
 
 ## Domain
 
@@ -52,7 +52,7 @@ Here you can define information about repository holding accounts or even groups
 - "_Default repository code_" specifies a repository that will be used to found accounts and groups having access to the collected rights.
 -  "_Account or group identifier" is unique among repositories of identical type_" specifies a repository type reference to expand accounts and groups search. For instance, searching all repositories having specified type. Note that, it is mandatory to configure type when collecting _"Active Directory"_ with multi-domain architecture likeSharepoint site shared with accounts and groups from external AD domains,  MailBox delegated to external account in case of Microsoft Exchange,.... One can specify repository type option when creating a repository using repository target.
 
-![Domain]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/right-target/images/right_pro_domain.png "Domain")
+![Domain](igrc-platform/collector/components/targets/right-target/images/right_pro_domain.png "Domain")
 
 ## Right
 
@@ -68,7 +68,7 @@ Here you can made the association between a permission and an account or group.
 - With "Trigger an event if application is not found" option you can activate an event that will be generated if the application is not found in the ledger, if not activated an error will be thrown
 
 
-![Right]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/right-target/images/right_prop_right.png "Right")
+![Right](igrc-platform/collector/components/targets/right-target/images/right_prop_right.png "Right")
 
 ## Parameters
 
@@ -84,7 +84,7 @@ Available fields are :
 - limit
 - custom 1 --\>9
 
-![Parameters]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/right-target/images/Right_target_review.png "Parameters")
+![Parameters](igrc-platform/collector/components/targets/right-target/images/Right_target_review.png "Parameters")
 
 # Example
 

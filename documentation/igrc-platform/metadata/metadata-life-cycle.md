@@ -23,7 +23,7 @@ As such, there are 3 ways to add, update or delete a metadata:
 2. At the end of the execution plan. We will refer to this metadata type as 'computed metadata'. A new step has been added after all the execution plan steps to compute KPIs for example.
 3. In the portal using a workflow. We will refer to this metadata type as 'portal metadata'. A dedicated component has been added in the workflow editor.
 
-![Metadata life cycle]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_lifecycle.png "Metadata life cycle")
+![Metadata life cycle](igrc-platform/metadata/images/metadata_lifecycle.png "Metadata life cycle")
 
 ## Collected metadata
 
@@ -64,7 +64,7 @@ There is another use case where the metadata is collected in all timeslots and t
 However in a given timeslot a user changes the value of the metadata to 456. With this update, the metadata type is changed to 'portal metadata'. This means that this metadata will be automatically copied from timeslot to timeslot starting with timeslot 3.
 In timeslot 3, the collect step still loads the value 123 from the input file into the Ledger. But in the activation phase, the product copies all portal metadata from the previous timeslot and it overrides the collected ones having the same key. In this example, the value for Paul Martin will be 456.
 
-![Metadata and timeslots]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_timeslots.png "Metadata and timeslots")
+![Metadata and timeslots](igrc-platform/metadata/images/metadata_timeslots.png "Metadata and timeslots")
 
 As a rule of thumb, the portal metadata has a higher priority and will 'overwrite' the collected or computed metadata.
 In this example, the value will remain 456 even if the collected data changes from 123 to 789 in timeslot 4.

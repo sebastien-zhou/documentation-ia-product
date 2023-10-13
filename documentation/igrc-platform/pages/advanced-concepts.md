@@ -323,5 +323,5 @@ accountDetailsPageRecorduid = Page {
 When you redirect a user on this page with a recorduid parameter, it automatically retrieve the uid based on the recorduid and redirect the user back to the account details page.   
 
 As you can see, you only have to fulfill the conditional-redirect property with a ConditionalRedirect object.   
-**condition**: contains the condition (must return true or false, see [conditions]({{site.baseurl}}{% link docs/igrc-platform/pages/events-and-actions.md %})for more details)   
-**target**: contains the target (see the [GoTo]({{site.baseurl}}{% link docs/igrc-platform/pages/events-and-actions.md %}) instruction for more details)  
+**condition**: contains the condition (must return true or false, see [conditions](igrc-platform/pages/events-and-actions.md)for more details)   
+**target**: contains the target (see the [GoTo](igrc-platform/pages/events-and-actions.md) instruction for more details)  

@@ -24,13 +24,13 @@ Dialog Boxes are just like a container, and they accept many widgets.
 Dialog boxes are modal. It means that when a dialog box is displayed, the user cannot interact with the underlying page until the dialog box is closed.   
 Dialog boxes can display dialog boxes.
 
-Some dialog boxes are provided by default to display messages or ask for a simple confirmation. Check the [actions and events chapter]({{site.baseurl}}{% link docs/igrc-platform/pages/events-and-actions.md %}) for more about this.
+Some dialog boxes are provided by default to display messages or ask for a simple confirmation. Check the [actions and events chapter](igrc-platform/pages/events-and-actions.md) for more about this.
 
 # Dialog Boxes
 
 Let's start by a simple example:    
 
-![Dialog Boxes]({{site.baseurl}}/docs/igrc-platform/pages/images/dialog01.png "Dialog Boxes")        
+![Dialog Boxes](igrc-platform/pages/images/dialog01.png "Dialog Boxes")        
 
 ```
 myDialogBox = Dialog {
@@ -61,7 +61,7 @@ In order to deal with action buttons you have to leverage the buttons property.
 
 Here is a simple example:   
 
-![Dialog Boxes exemple]({{site.baseurl}}/docs/igrc-platform/pages/images/dialog02.png "Dialog Boxes exemple")        
+![Dialog Boxes exemple](igrc-platform/pages/images/dialog02.png "Dialog Boxes exemple")        
 
 ```
 myDialogBox = Dialog {
@@ -77,7 +77,7 @@ myDialogBox = Dialog {
 ```
 
 As you can see, you declare the buttons as an array (with the [...]).   
-When a user click on an action button, it closes the dialog box. The caller will continue its actions only if the dialog box has been closed with an 'ok' event. More on this on [actions and events]({{site.baseurl}}{% link docs/igrc-platform/pages/events-and-actions.md %}).    
+When a user click on an action button, it closes the dialog box. The caller will continue its actions only if the dialog box has been closed with an 'ok' event. More on this on [actions and events](igrc-platform/pages/events-and-actions.md).    
 
 You can declare :   
 
@@ -85,7 +85,7 @@ You can declare :
 **CancelButton**: Closes the dialog box with a cancel event   
 **ActionButton**: Execute a series of action, do not close the dialog box by default   
 
-You can attach actions to those buttons if you want to deal with variables for instance. In order to do so you have to use the actions property on the action buttons. More on this on [actions and events]({{site.baseurl}}{% link docs/igrc-platform/pages/events-and-actions.md %}).     
+You can attach actions to those buttons if you want to deal with variables for instance. In order to do so you have to use the actions property on the action buttons. More on this on [actions and events](igrc-platform/pages/events-and-actions.md).     
 
 Here is an example:   
 
@@ -113,7 +113,7 @@ ActionButton can be considered as custom buttons and are useful when you want to
 
 Here is an example:   
 
-![ActionButton]({{site.baseurl}}/docs/igrc-platform/pages/images/dialog03.png "ActionButton")        
+![ActionButton](igrc-platform/pages/images/dialog03.png "ActionButton")        
 
 ```
 myDialogBox = Dialog {
@@ -156,7 +156,7 @@ You can also automatically close a dialog box next to an action on any widget, f
 
 Here is an example:
 
-![ActionButton]({{site.baseurl}}/docs/igrc-platform/pages/images/dialog04.png "ActionButton")        
+![ActionButton](igrc-platform/pages/images/dialog04.png "ActionButton")        
 
 ```
 identityPickerDialogBox = Dialog {
@@ -222,7 +222,7 @@ Those dialog do not have any titlebar and buttons. You can exit a transient dial
 
 Here is an example:
 
-![Transient dialog]({{site.baseurl}}/docs/igrc-platform/pages/images/dialog05.png "Transient dialog")        
+![Transient dialog](igrc-platform/pages/images/dialog05.png "Transient dialog")        
 
 ```
 myDialogBox = Dialog {
@@ -256,11 +256,11 @@ As you can see a transient dialog box is declared as a standard dialog box. The 
 You can attach contextual , non modal information to a series of widget.   
 This will add a tiny (i) icon next to the widget label.   
 
-![Info Popup]({{site.baseurl}}/docs/igrc-platform/pages/images/dialog06.png "Info Popup")        
+![Info Popup](igrc-platform/pages/images/dialog06.png "Info Popup")        
 
 When you clic on the (i), the info popup is displayed   
 
-![Info Popup]({{site.baseurl}}/docs/igrc-platform/pages/images/dialog07.png "Info Popup")        
+![Info Popup](igrc-platform/pages/images/dialog07.png "Info Popup")        
 
 Here is an example:   
 
@@ -300,7 +300,7 @@ The following widgets can have info popups:
 
 An info popup can contain any kind of information, for instance:   
 
-![Info Popup]({{site.baseurl}}/docs/igrc-platform/pages/images/dialog08.png "Info Popup")        
+![Info Popup](igrc-platform/pages/images/dialog08.png "Info Popup")        
 
 ```
 myInfo = InfoPopup {
@@ -322,7 +322,7 @@ myInfo = InfoPopup {
 
 An info popup can also accept parameters with the same syntax as dialog boxes except that only the 'to' keyword is supported.   
 
-![Info Popup]({{site.baseurl}}/docs/igrc-platform/pages/images/dialog09.png "Info Popup")        
+![Info Popup](igrc-platform/pages/images/dialog09.png "Info Popup")        
 
 ```
 myInfo = InfoPopup {

@@ -30,7 +30,7 @@ Not applicable.
 
 When editing a collect, select _Perimeter target_ in _Ledger targets_ (previously DataSet targets).  
 
-![Perimeter target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/perimeter-target/images/perimeter-target.PNG "Perimeter target")
+![Perimeter target](igrc-platform/collector/components/targets/perimeter-target/images/perimeter-target.PNG "Perimeter target")
 
 # Properties
 
@@ -42,13 +42,13 @@ In this property you can see/modify general parameters of the component. You wil
 - the "_Display name_" for the _Perimeter target_  
 - the "_Follow just one link_" option which sets the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation evaluation evaluated to true will be executed.
 
-![Perimeter target properties]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/perimeter-target/images/perimeter-target_properties_target.PNG "Perimeter target properties")
+![Perimeter target properties](igrc-platform/collector/components/targets/perimeter-target/images/perimeter-target_properties_target.PNG "Perimeter target properties")
 
 ## Description
 
 Comment regarding actions done by this component.
 
-![Perimeter target description]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/perimeter-target/images/perimeter-target_properties_description.PNG "Perimeter target description")
+![Perimeter target description](igrc-platform/collector/components/targets/perimeter-target/images/perimeter-target_properties_description.PNG "Perimeter target description")
 
 ## Perimeters
 
@@ -58,7 +58,7 @@ With this property, you will define product behaviour when importing _perimeter_
 - _"Attribute containing application identifier"_ must contain the unique identifier for the _application_ on wich the _perimeter_ relies on.
 - _"Trigger an error if perimeter code is null or empty"_ option you can activate an event that will be generated when the attribute containing _perimeter_ code is null or empty (event shown in dedicated logs).
 
-![Perimeter target perimeters]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/perimeter-target/images/perimeter-target_properties_perimeters.PNG "Perimeter target perimeters")
+![Perimeter target perimeters](igrc-platform/collector/components/targets/perimeter-target/images/perimeter-target_properties_perimeters.PNG "Perimeter target perimeters")
 
 ## Parameters
 
@@ -71,7 +71,7 @@ Available fields are :
 - displayname
 - custom field 1--\>9
 
-![Perimeter target parameters]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/perimeter-target/images/perimeter-target_properties_parameters.PNG "Perimeter target parameters")
+![Perimeter target parameters](igrc-platform/collector/components/targets/perimeter-target/images/perimeter-target_properties_parameters.PNG "Perimeter target parameters")
 
 # Example
 
@@ -83,4 +83,4 @@ Not applicable
 
 # See also
 
-See [Right target]({{site.baseurl}}{% link docs/igrc-platform/collector/components/targets/right-target/right-target.md %}) to explain where to use _perimeter_  
+See [Right target](igrc-platform/collector/components/targets/right-target/right-target.md) to explain where to use _perimeter_  

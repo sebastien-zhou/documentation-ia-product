@@ -35,8 +35,8 @@ However, it can also be linked to as any other page using **GoTo Page**.
 The only mandatory parameter is the **UID**, the name of the parameter changes according to the concept following the format: **paramConceptUid**.     
 Some examples: **paramAccountUid** , **paramIdentityUid** , **paramPermissionUid**.   
 
-Detail pages support the new search and navigation system, and for that reason they accept the optional parameters: [paramSearchMode and serialized searchs]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/search-pages-and-navigation-system.md %}).
+Detail pages support the new search and navigation system, and for that reason they accept the optional parameters: [paramSearchMode and serialized searchs](igrc-platform/pages/new-webportal-features/search-pages-and-navigation-system.md).
 
 # How to add more links to the Detail Pages?
 
-There is no need to modify the Detail Pages in order to link to new reports or pages. As detail pages implement the [tagging system]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/tagging-system-for-pages-and-reports.md %}), it is enough to properly tag the new reports/pages following the [default tags an comply with the requirements.]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/links-to-reports-and-pages-from-detail-pages.md %})    
+There is no need to modify the Detail Pages in order to link to new reports or pages. As detail pages implement the [tagging system](igrc-platform/pages/new-webportal-features/tagging-system-for-pages-and-reports.md), it is enough to properly tag the new reports/pages following the [default tags an comply with the requirements.](igrc-platform/pages/new-webportal-features/links-to-reports-and-pages-from-detail-pages.md)    

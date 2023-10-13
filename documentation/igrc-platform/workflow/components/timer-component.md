@@ -8,7 +8,7 @@ permalink: /docs/igrc-platform/workflow/components/timer-component/
 ---
 ---
 
-To poll repeatedly until a certain condition is met you need to define an iteration on the timer activity (see the page on [Itérations]({{site.baseurl}}{% link docs/igrc-platform/workflow/iterations-and-subprocesses.md %}) for more information).   
+To poll repeatedly until a certain condition is met you need to define an iteration on the timer activity (see the page on [Itérations](igrc-platform/workflow/iterations-and-subprocesses.md) for more information).   
 
 The timer activity has to be set for sequential tasks, with :   
 
@@ -19,7 +19,7 @@ This will effectively result in the timer task being repeated until either the c
 
 ![Timer](../images/timer.png "Timer")   
 
-Of course, it is entirely possible that, instead of a single script function, a whole activity or a group of activities is what needs repeating. In that case, you can use an embedded subprocess (see [Itérations]({{site.baseurl}}{% link docs/igrc-platform/workflow/iterations-and-subprocesses.md %}) for more information) which will perform the same iteration on timer and activities both. Here is what it could look like :   
+Of course, it is entirely possible that, instead of a single script function, a whole activity or a group of activities is what needs repeating. In that case, you can use an embedded subprocess (see [Itérations](igrc-platform/workflow/iterations-and-subprocesses.md) for more information) which will perform the same iteration on timer and activities both. Here is what it could look like :   
 
 ![Timer 2](../images/timer2.png "Timer 2")   
 

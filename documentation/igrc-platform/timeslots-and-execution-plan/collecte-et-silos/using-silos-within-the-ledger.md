@@ -18,13 +18,13 @@ permalink: /docs/igrc-platform/timeslots-and-execution-plan/collect-and-sillos/u
 
 As the execution plan is running, all the names, sizes and last modification dates of the files opened by the collect engine are stored in the database. As such, you can view the list of files used during the execution plan in the first tab of the Ledger in the studio; Silos :    
 
-![Listing the used importfiles]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/studio_silo_ledger.png "Listing the used importfiles")              
+![Listing the used importfiles](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/studio_silo_ledger.png "Listing the used importfiles")              
 
 # Listing the loaded silos
 
 For more information on the silos executed during the execution plan you can navigation to the timeslots view by clicking Show timeslots in the audit menu. This view shows a list of all timeslots existing in the database. After selecting a timeslot, the product displays on the right the list of silos loaded during the execution plan.     
 
-![Listing the loaded silos]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/timeslots.png "Listing the loaded silos")              
+![Listing the loaded silos](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/timeslots.png "Listing the loaded silos")              
 
 From this list of silos, you can :     
 
@@ -41,14 +41,14 @@ When reverting to the Sandbox state, returning to the activated state is done us
 
 In the project configuration editor, under the "Execution plan" tab, you will find the blue arrows that can be use to run each step or to run all the step at once.   
 
-![Running silos]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/EP_silo.png "Running silos")              
+![Running silos](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/EP_silo.png "Running silos")              
 
 The 2 actions under Step 1 opens a dialog box asking you to create a new sandbox or select an existing one.   
 
-![Running silos]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/sandbox.png "Running silos")              
+![Running silos](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/sandbox.png "Running silos")              
 
 If you choose to create a new timeslot, the product behaves like in the previous versions of the product.    
 
 If you select an existing timeslot, the product will find all the silos not yet loaded and will only run the silos needed to have a complete timeslot. This means that you can navigate to the timeslot view, delete some silos, declare new silos and collector lines and then run the silo in the execution plan tab so the product adds in the Ledger only what is missing.    
 
-It is also possible to run each silo individually by using the dedicated buttons in the silo editor (see [here]({{site.baseurl}}{% link docs/igrc-platform/getting-started/product-description/using-the-editors/silo-editor/silo-editor.md %}) for more information).  
+It is also possible to run each silo individually by using the dedicated buttons in the silo editor (see [here](igrc-platform/getting-started/product-description/using-the-editors/silo-editor/silo-editor.md) for more information).  

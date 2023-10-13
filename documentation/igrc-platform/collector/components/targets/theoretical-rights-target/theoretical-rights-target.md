@@ -21,7 +21,7 @@ The rights data can come directly from a spreadsheet file, or be based on manual
 Theoretical rights are then resolved to individual theoretical identity-permission rights, through _Entitlement model policies and rules._   
 Theoretical rights data can then be compared against actual permissions and rights to detect over or under allocations and perform other controls.
 
-![Target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/theoretical-rights-target/images/target.png "Target")
+![Target](igrc-platform/collector/components/targets/theoretical-rights-target/images/target.png "Target")
 
 # The properties Tab
 
@@ -35,13 +35,13 @@ the **Target** property tab allows to view/modify general parameters of the comp
 If checked, only the first transition with an activation condition evaluated to true will be executed.   
 If unchecked, all transitions with an activation condition evaluated to true will be executed.
 
-![Rights Target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/theoretical-rights-target/images/rights_target.png "Rights Target")
+![Rights Target](igrc-platform/collector/components/targets/theoretical-rights-target/images/rights_target.png "Rights Target")
 
 ## Description
 
 The **Description** property Tab allows adding notes on the component, such as description of what the component is doing.
 
-![Description]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/theoretical-rights-target/images/rights_desc.png "Description")
+![Description](igrc-platform/collector/components/targets/theoretical-rights-target/images/rights_desc.png "Description")
 
 ## Theoretical rights
 
@@ -57,7 +57,7 @@ The application code must correspond to an existing permission code in the Ledge
 If the option is checked, you have to specify an id for the event to trigger.   
 If the option is unchecked , any missing permission or application will be logged to the general collect log files.
 
-![Theoretical rights]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/theoretical-rights-target/images/rights_rights2.png "Theoretical rights")
+![Theoretical rights](igrc-platform/collector/components/targets/theoretical-rights-target/images/rights_rights2.png "Theoretical rights")
 
 ## Parameters
 
@@ -73,9 +73,9 @@ This is usually a computed attribute in the collect with a static value, such as
 There is no semantic attached to these fields, so no check will be done against the Ledger database.
 - **custom1 - custom9** : optional additional custom fields, if needed.
 
-![Parameters2]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/theoretical-rights-target/images/rights_params2.png "Parameters2")
+![Parameters2](igrc-platform/collector/components/targets/theoretical-rights-target/images/rights_params2.png "Parameters2")
 
-![Parameters3]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/theoretical-rights-target/images/rights_params3.png "Parameters3")
+![Parameters3](igrc-platform/collector/components/targets/theoretical-rights-target/images/rights_params3.png "Parameters3")
 
 # Best practices
 

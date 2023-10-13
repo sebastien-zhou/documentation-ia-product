@@ -22,7 +22,7 @@ This target allow you to create groups in the ledger.
 
 From collect editor select _Group target_ in _Ledger targets._  
 
-![Group target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/group-target/images/2016-07-07_16_36_19-iGRC_Properties.png "Group target")
+![Group target](igrc-platform/collector/components/targets/group-target/images/2016-07-07_16_36_19-iGRC_Properties.png "Group target")
 
 # The properties Tab
 
@@ -34,19 +34,19 @@ In this property you can view/edit general parameters of the Group. You will fin
 - _Display name_ for the _Group target_
 - _Follow just one link_ option for setting the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation evaluation assessed to true will be executed.
 
-![Group target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/group-target/images/2016-07-07_16_38_15-iGRC_Properties.png "Group target")
+![Group target](igrc-platform/collector/components/targets/group-target/images/2016-07-07_16_38_15-iGRC_Properties.png "Group target")
 
 ## Description
 
 This property allows adding comments regarding actions done by this component.
 
-![Description]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/group-target/images/2016-07-07_16_38_35-iGRC_Properties.png "Description")
+![Description](igrc-platform/collector/components/targets/group-target/images/2016-07-07_16_38_35-iGRC_Properties.png "Description")
 
 ## Repository
 
 In this property, you can select the attribute that will contain the repository key. This repository will hold collected groups and must exist in database.
 
-![Repository]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/group-target/images/2016-07-07_16_38_58-iGRC_Properties.png "Repository")
+![Repository](igrc-platform/collector/components/targets/group-target/images/2016-07-07_16_38_58-iGRC_Properties.png "Repository")
 
 ## Group
 
@@ -55,7 +55,7 @@ With this property, you will define product behavior when importing groups, such
 - _"Attribute containing group key"_ which must contain a unique identifier for the group in current used repository, for example _DistinguishedName_ in case of Active Directory groups.
 - _"Trigger an error if groupkey is null or empty"_ option to activate an event that will be generated when the attribute containing group key is null or empty (event shown in dedicated logs).
 
-![Group import]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/group-target/images/group_pro_group.png "Group import")
+![Group import](igrc-platform/collector/components/targets/group-target/images/group_pro_group.png "Group import")
 
 ## Parameters
 
@@ -80,17 +80,17 @@ Available fields are :
 
 Example of an ActiveDirectory group parameters:  
 
-![Group parameters]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/group-target/images/group_pro_params.png "Group parameters")
+![Group parameters](igrc-platform/collector/components/targets/group-target/images/group_pro_params.png "Group parameters")
 
 ## Content
 
 With this property, you will define group content such as:   
 
-- -"Attribute containing group member"- to specify attribute that contain list of accounts and groups identifiers that are members of collected group. For performance reasons, we advise using group member target to collect group members separately from collecting groups, see -[Group Members target]({{site.baseurl}}{% link docs/igrc-platform/collector/components/targets/group-members-target/group-members-target.md %})_ documentation for more details.
+- -"Attribute containing group member"- to specify attribute that contain list of accounts and groups identifiers that are members of collected group. For performance reasons, we advise using group member target to collect group members separately from collecting groups, see -[Group Members target](igrc-platform/collector/components/targets/group-members-target/group-members-target.md)_ documentation for more details.
 - "_Group containing all accounts_" this option is deprecated.
 - _"Trigger an error if one of the children is not found"_ option to activate an event that will be generated when a group member is not found in database (event shown in dedicated logs).
 
-![Group content import]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/group-target/images/group_pro_contetnt.png "Group content import")
+![Group content import](igrc-platform/collector/components/targets/group-target/images/group_pro_contetnt.png "Group content import")
 
 ## Domain
 
@@ -100,7 +100,7 @@ Here you can define how to find accounts and groups who are members of a group. 
 - "_Default repository code_" which specifies a repository that will be used to found accounts and groups who are members of collected group.
 - "_Account or group identifier is unique among repositories of identical type_" in which ou can specify a repository type reference to expand accounts and groups searching (search on all repositories having specified type). Note that, it is mandatory to configure type when collecting _ActiveDirectory_ with multi-domain architecture (a group containing members from external domains, files shared with users from external domains, ...). You can set repository type when creating the repository.
 
-![Group domain]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/group-target/images/group_pro_domain.png "Group domain")
+![Group domain](igrc-platform/collector/components/targets/group-target/images/group_pro_domain.png "Group domain")
 
 # Example
 

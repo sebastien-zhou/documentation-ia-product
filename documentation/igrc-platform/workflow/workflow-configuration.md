@@ -19,7 +19,7 @@ permalink: /docs/igrc-platform/workflow/workflow-configuration/
 <span style="color:red">**Important:**</span>
 
 The in-memory database mode is no longer supported as of Curie R3 version.
-[What's New Curie R3]({{site.baseurl}}{% link docs/what-s-new/curie/what-s-new-curie-r3.md %}#remove-the-in-memory-mode-of-workflow-engine ){: .ref}
+[What's New Curie R3](what-s-new/curie/what-s-new-curie-r3.md#remove-the-in-memory-mode-of-workflow-engine ){: .ref}
 
 ---
 
@@ -51,7 +51,7 @@ Finally in this section it is possible to activate the test mode for timers. Thi
 
 # Calendar
 
-This section allows you to determine the week workdays in order to avoid notification during the weekend for example. Please refer to the page [Reminders, Escalation and task expiration]({{site.baseurl}}{% link docs/igrc-platform/workflow/time-management/reminder-escalation-task-expiration.md %}) for more information.
+This section allows you to determine the week workdays in order to avoid notification during the weekend for example. Please refer to the page [Reminders, Escalation and task expiration](igrc-platform/workflow/time-management/reminder-escalation-task-expiration.md) for more information.
 
 # Workflow DataBase renitialisation
 

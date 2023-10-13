@@ -29,19 +29,19 @@ In order to have a valid notification rule, at least three attributes MUST be pr
 
 In the "Content" tab of the notification rule, select the view to be used to retrieve the recipients and then map the view's attributes to the fullname, email and uid. If the view requires parameters as an input, it is possible to declare them in the table below.   
 
-![Content]({{site.baseurl}}/docs/igrc-platform/notification-rules/images/notification-recepients-content.png "Content")
+![Content](igrc-platform/notification-rules/images/notification-recepients-content.png "Content")
 
 # Number of emails sent  
 
 It is important to understand that the number of emails sent is to the number of distinct email addresses returned by the view. In general, the view retrieves one identity by line, and each identity has a different email address, so the number of emails sent is equal to the number of results from the view. But if some identities have no email address, the number of emails sent will be lower than the number of results from the view.   
 Here is an example with a simple view:   
 
-![Identities]({{site.baseurl}}/docs/igrc-platform/notification-rules/images/notification-recipients-view.png "Identities")   
+![Identities](igrc-platform/notification-rules/images/notification-recipients-view.png "Identities")   
 
 What happens if we add a join to get, for instance, the organizations managed by the identities selected?    
 Some identities actually do not managed organization, some manage one, and others manage more than one.   
 
-![Identities join organization]({{site.baseurl}}/docs/igrc-platform/notification-rules/images/notification-recipients-viewJoin.png "Identities join oganisation")    
+![Identities join organization](igrc-platform/notification-rules/images/notification-recipients-viewJoin.png "Identities join oganisation")    
 
 The view's result is similar to this one:  
 
@@ -53,9 +53,9 @@ The notification rule will send 2 emails since there are only 2 distinct email a
 
 However, in some cases, it might be useful to send an email for result of the view, or each returned line. In the example above, Paul Grall would receive two distinct emails, one for each organization he manages. To do so, you would have to check the following option in the notification rule's first tab:    
 
-![Number of emails sent]({{site.baseurl}}/docs/igrc-platform/notification-rules/images/notification-recipients-emailOption.png "Number of emails sent")  
+![Number of emails sent](igrc-platform/notification-rules/images/notification-recipients-emailOption.png "Number of emails sent")  
 
-As you use a view to select recipients, you can also add rules to filter results of the view. See [here]({{site.baseurl}}{% link docs/igrc-platform/views/advanced-concepts.md %}) for explanation.
+As you use a view to select recipients, you can also add rules to filter results of the view. See [here](igrc-platform/views/advanced-concepts.md) for explanation.
 
 # Workflow recipients  
 

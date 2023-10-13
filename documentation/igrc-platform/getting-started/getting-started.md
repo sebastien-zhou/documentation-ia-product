@@ -9,11 +9,11 @@ permalink: /docs/igrc-platform/getting-started/
 
 This section aims at rending Brainwave concepts familiar. Before getting your hands into the product, you can read this section to have a global understanding of the product.    
 
-- [Brainwave Data Model: understanding the relations amongst data in the product]({{site.baseurl}}{% link docs/igrc-platform/getting-started/brainwave-data-model/brainwave-data-model.md %}): Explains how data is organized in the data model. This needs to be properly understood in order to efficiently manipulate data, rules, controls, reports, etc.    
+- [Brainwave Data Model: understanding the relations amongst data in the product](igrc-platform/getting-started/brainwave-data-model/brainwave-data-model.md): Explains how data is organized in the data model. This needs to be properly understood in order to efficiently manipulate data, rules, controls, reports, etc.    
 
-- [Time Management: The Lifecycle of Timeslots]({{site.baseurl}}{% link docs/igrc-platform/getting-started/time-management/time-management.md %}): Explains how the Brainwave iGRC platform manages data over time   
+- [Time Management: The Lifecycle of Timeslots](igrc-platform/getting-started/time-management/time-management.md): Explains how the Brainwave iGRC platform manages data over time   
 
-- [Understanding the execution plan]({{site.baseurl}}{% link docs/igrc-platform/getting-started/understanding-execution-plan/understanding-execution-plan.md %}): Explains the necessary steps to load data into the Brainwave iGRC platform
+- [Understanding the execution plan](igrc-platform/getting-started/understanding-execution-plan/understanding-execution-plan.md): Explains the necessary steps to load data into the Brainwave iGRC platform
 
 # Brainwave's Data Model
 
@@ -321,9 +321,9 @@ Standard available attributes:
 
 In the collect, assets are a combination of three different targets:   
 
-- [Asset target]({{site.baseurl}}{% link docs/igrc-platform/collector/components/targets/asset-target/asset-target.md %})
-- [Support target]({{site.baseurl}}{% link docs/igrc-platform/collector/components/targets/support-target/support-target.md %})  
-- [Actor target]({{site.baseurl}}{% link docs/igrc-platform/collector/components/targets/actor-target/actor-target.md %})
+- [Asset target](igrc-platform/collector/components/targets/asset-target/asset-target.md)
+- [Support target](igrc-platform/collector/components/targets/support-target/support-target.md)  
+- [Actor target](igrc-platform/collector/components/targets/actor-target/actor-target.md)
 
 Here is a preview :
 
@@ -728,7 +728,7 @@ Many features included in the default project provide fine-grained control on in
 
 For example, in order to be able to reconcile accounts manually using the webportal, a user may need to see and be able to use many widgets in different pages. He will need to have access to a number of features that have already been grouped into a default featureset : accountreconciliation. This makes it easier to give a user access to the reconciliation functionality by using this featureset.   
 
-For more information on features and featuresets please see product documentation : [Features and Roles]({{site.baseurl}}{% link docs/igrc-platform/pages/features-and-roles/features-and-roles.md %})
+For more information on features and featuresets please see product documentation : [Features and Roles](igrc-platform/pages/features-and-roles/features-and-roles.md)
 
 ### Default Featuresets
 
@@ -768,12 +768,12 @@ By default this feature is associated with the **user** role. So that all the us
 ### accountreconciliation
 
 Users with this featureset will be able to see and use a few icons in the account detail page that will allow to manually modify the reconciliation of an account.   
-This featureset is not assigned to any role by default. [See more about this featuresets]({{site.baseurl}}{% link docs/igrc-platform/getting-started/default-project/web-reconciliation.md %})
+This featureset is not assigned to any role by default. [See more about this featuresets](igrc-platform/getting-started/default-project/web-reconciliation.md)
 
 ### editmetadata
 
 This featureset enables to option to edit the description of permissions and applications.     
-This featureset is not assigned to any role by default. [See more about this featureset]({{site.baseurl}}{% link docs/igrc-platform/getting-started/default-project/edit-metadata.md %})
+This featureset is not assigned to any role by default. [See more about this featureset](igrc-platform/getting-started/default-project/edit-metadata.md)
 
 ### ownersmanagement
 
@@ -782,13 +782,13 @@ It concerns the following concepts: permission, application, group, repository a
 
 | **Important**: <br><br> Activating this featureset will allow the use of workflows that required the existence of the expertise domains: _businessowner_ and _technicalowner_. The creation of these expertise domains in the database needs to be done at collect time.|   
 
-This featureset is not assigned to any role by default. [See more about this featureset]({{site.baseurl}}{% link docs/igrc-platform/getting-started/default-project/business-and-technical-owners.md %})
+This featureset is not assigned to any role by default. [See more about this featureset](igrc-platform/getting-started/default-project/business-and-technical-owners.md)
 
 #### ownersmanagementaudit
 
 In addition to being able to modify the business or technical owners of a given concept, the user can also have access to an "audit" view of all the modifications that have been done related to the owners.   
 Users that have this featureset will have access to that information for the concepts: permission, application, group, repository and account.   
-This featureset is not assigned to any role by default. [See more about this featureset]({{site.baseurl}}{% link docs/igrc-platform/getting-started/default-project/business-and-technical-owners.md %})
+This featureset is not assigned to any role by default. [See more about this featureset](igrc-platform/getting-started/default-project/business-and-technical-owners.md)
 
 #### assetsfeatureset
 
@@ -807,11 +807,11 @@ This featureset gives access to the Project Update Manager that allows to update
 
 | **Important**: <br><br> This is an administrator featureset, The access will be located in the Admin page. This means that the users also need to have the featureset **igrcadmin** to see the **Admin** menu.|   
 
-This featureset is not assigned to any role by default.  [See more about this featureset]({{site.baseurl}}{% link docs/igrc-platform/getting-started/default-project/project-update-manager.md %})
+This featureset is not assigned to any role by default.  [See more about this featureset](igrc-platform/getting-started/default-project/project-update-manager.md)
 
 ### Default Roles
 
-Users can have many roles and assigning a user to a role can be done by the web application server or can be set to match IGRC rules. For more information on roles please see the product documentation [Features and Roles]({{site.baseurl}}{% link docs/igrc-platform/pages/features-and-roles/features-and-roles.md %})      
+Users can have many roles and assigning a user to a role can be done by the web application server or can be set to match IGRC rules. For more information on roles please see the product documentation [Features and Roles](igrc-platform/pages/features-and-roles/features-and-roles.md)      
 
 The file webportal/features/default.roles defines 4 roles:   
 
@@ -855,9 +855,9 @@ Applicable as of Brainwave's iGRC version 2016 R3.
 All the reports that are delivered with the default project and that are accessible in the webportal are declared in a page file that is located in :   
 `webportal/pages/reports/standard.page`   
 
-Each report is tagged following the [default tagging system]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/tagging-system-for-pages-and-reports.md %}), these tags can make these reports available automatically in different pages:   
+Each report is tagged following the [default tagging system](igrc-platform/pages/new-webportal-features/tagging-system-for-pages-and-reports.md), these tags can make these reports available automatically in different pages:   
 
-- In [detail pages]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/links-to-reports-and-pages-from-detail-pages.md %}), the reports tagged by concept and byuid   
+- In [detail pages](igrc-platform/pages/new-webportal-features/links-to-reports-and-pages-from-detail-pages.md), the reports tagged by concept and byuid   
 - In the home page webportal/pages/default.page if the reports are tagged as generic
 
 ### Report Classification
@@ -878,7 +878,7 @@ We can also see that the default project includes a featureset file  in `webport
 
 It includes 1 featureset for each one of the available categories. This makes it easy to control the access for each role to each one of the categories of reports in blocks.   
 The browsing reports block is the only one that is available by default to all users. The rest of the reports can be activated to certain roles depending on the requirements of each implementation.   
-For a detailed  list of all the available reports and their category please see the [dedicated section]({{site.baseurl}}{% link docs/igrc-platform/getting-started/default-project/full-report-list.md %})
+For a detailed  list of all the available reports and their category please see the [dedicated section](igrc-platform/getting-started/default-project/full-report-list.md)
 
 #### allreports
 
@@ -947,7 +947,7 @@ Now, the report will also be part of our new featuresets **mydefaultreportset**
 This is then applied to all reports that are to be added to the new group.   
 We just finished creating or new custom group of reports that will be available for the users that have the selected roles.   
 
-For a detailed list of all reports delivered in the default project , you can take a look at the [dedicated section]({{site.baseurl}}{% link docs/igrc-platform/getting-started/default-project/full-report-list.md %})
+For a detailed list of all reports delivered in the default project , you can take a look at the [dedicated section](igrc-platform/getting-started/default-project/full-report-list.md)
 
 ## Full Report List
 
@@ -1072,7 +1072,7 @@ This is applicable as of version 2016 R3 and above
 |  Generic |  controls\_SoDtopControlsFltOrg\_control |  SoD Analysis |
 |  Generic |  custom\_identity\_changes |  Identity Changes |
 
-(\*) These reports are related to the assets concepts. In order to see them, the assets featuresets must be activated. See more details [here]({{site.baseurl}}{% link docs/igrc-platform/getting-started/default-project/default-featuresets.md %})
+(\*) These reports are related to the assets concepts. In order to see them, the assets featuresets must be activated. See more details [here](igrc-platform/getting-started/default-project/default-featuresets.md)
 
 ## Web Reconciliation
 
@@ -1080,7 +1080,7 @@ This is applicable as of version 2016 R3 and above
 This is applicable as of version 2016 R3.     
 
 Manual reconciliation from the webportal is possible. This functionality is disabled by default and to enable it:   
-Modify the featuresets file in `webportal/features/default.featuresets`, and assign the featureset **accounreconciliation** to the proper roles. ([See more]({{site.baseurl}}{% link docs/igrc-platform/getting-started/default-project/default-featuresets.md %}))
+Modify the featuresets file in `webportal/features/default.featuresets`, and assign the featureset **accounreconciliation** to the proper roles. ([See more](igrc-platform/getting-started/default-project/default-featuresets.md))
 
 ### Modify the Reconciliation
 
@@ -1132,7 +1132,7 @@ This is applicable as of version 2016 R3.
 
 The default project includes the functionality to manage the business and technical owner of the following concepts: permission, application, group, repository and account.      
 However, this a functionality that is disabled by default.     
-To enable it modify the featuresets file in `webportal/features/default.featuresets`, and assign the featureset **ownersmanagement** to the proper roles. ([See more]({{site.baseurl}}{% link docs/igrc-platform/getting-started/default-project/reports-featuresets.md %})
+To enable it modify the featuresets file in `webportal/features/default.featuresets`, and assign the featureset **ownersmanagement** to the proper roles. ([See more](igrc-platform/getting-started/default-project/reports-featuresets.md)
 
 ### Manage the Business and Technical Owners
 
@@ -1151,7 +1151,7 @@ It will display an identity picker to select the manager.
 The default project also includes the possibility to audit the modifications on the business and technical owner.   
 
 But this feature is not activate by default , to activate it modify the `featuresets file in
-webportal/features/default.featuresets`, and assign the featureset **ownersmanagementaudit** to the proper roles. ([See more]({{site.baseurl}}{% link docs/igrc-platform/getting-started/default-project/default-featuresets.md %}) about this featuresets file).   
+webportal/features/default.featuresets`, and assign the featureset **ownersmanagementaudit** to the proper roles. ([See more](igrc-platform/getting-started/default-project/default-featuresets.md) about this featuresets file).   
 
 When this option is enabled, the users will see a third button in the previous dialog box:   
 
@@ -1200,7 +1200,7 @@ This is applicable as of version 2016 R3.
 
 Some concepts include by default the option to edit associated metadata such as a description. The concepts concerned : **Application** and **Permission**. This functionality is disabled by default.   
 To enable it :   
-Modify the featuresets file in webportal/features/default.featuresets , and assign the featureset **editmetadata** to the proper roles. ([See more]({{site.baseurl}}{% link docs/igrc-platform/getting-started/default-project/default-featuresets.md %}) about this featuresets file)
+Modify the featuresets file in webportal/features/default.featuresets , and assign the featureset **editmetadata** to the proper roles. ([See more](igrc-platform/getting-started/default-project/default-featuresets.md) about this featuresets file)
 
 ### Editing the Metadata
 
@@ -1222,7 +1222,7 @@ Will give the option to modify the description of the application.
 This is applicable as of version 2016 R3.   
 
 The default project includes a administration functionality to support the update of the project using the webportal. This functionality is disabled by default.   
-To enable it modify the featuresets file in `webportal/features/default.featuresets`, and assign the featureset **projectupdatemanager** to the proper roles. ( [See more]({{site.baseurl}}{% link docs/igrc-platform/getting-started/default-project/default-featuresets.md %}) about this featuresets file ).   
+To enable it modify the featuresets file in `webportal/features/default.featuresets`, and assign the featureset **projectupdatemanager** to the proper roles. ( [See more](igrc-platform/getting-started/default-project/default-featuresets.md) about this featuresets file ).   
 
 | **Important**: <br><br> This feature adds a button in the admin page. This means that in order to see this features, users must have also the featureset **igrcadmin**  to have access to the admin menu.|     
 
@@ -1417,11 +1417,11 @@ Two fields are displayed in the tab.
 1. Definition of data validation test
 2. Validation results
 
-An analysis is performed either by clicking on the analysis tab or when validating data using the [Silo Validation]({{site.baseurl}}{% link docs/igrc-platform/getting-started/product-description/using-the-editors/silo-editor/silo-editor.md %}).  
+An analysis is performed either by clicking on the analysis tab or when validating data using the [Silo Validation](igrc-platform/getting-started/product-description/using-the-editors/silo-editor/silo-editor.md).  
 
 > Data validation occurs **after** the actions defined in the `Configuration` tab of the discovery, as described in the Studio (version `Curie R2` or newer)  
 > ![Validation message](./product-description/using-the-editors/images/validation_important_message.png)  
-> You can also validate data in the **collector**, using the [validation filter]({{site.baseurl}}{% link docs/igrc-platform/collector/components/filters/validation-filter/validation-filter.md %})
+> You can also validate data in the **collector**, using the [validation filter](igrc-platform/collector/components/filters/validation-filter/validation-filter.md)
 
 ##### Usage Tab
 
@@ -1638,7 +1638,7 @@ The syntax is the same as for a configuration variable. The expression must be e
 {dataset.firstname.get() + ' ' + dataset.lastname.get().toUpperCase()}    
 ```
 
-The full syntax is described in the chapter on [macros and scripts]({{site.baseurl}}{% link docs/igrc-platform/collector/macros-and-scripts/macros-and-scripts.md %}).  
+The full syntax is described in the chapter on [macros and scripts](igrc-platform/collector/macros-and-scripts/macros-and-scripts.md).  
 Fields that allow entry of a JavaScript expression also have a small light bulb icon ![Icon](./product-description/using-the-editors/images/2016-06-27_11_23_09-iGRC_Properties_-_toto_collectors_test_test_doc.collector_-_iGRC_Analytics.png "Icon") to the right of the field. These fields also offer auto-completion to help enter an expression. Pressing the Control-Space keys at the same time opens a pop-up window with suggestions related to the cursor position as shown in the screenshot below:   
 ![Example of attribute auto-completion](./product-description/using-the-editors/images/worddavc96f9d425678cdd062f547b7015c6524.png "Example of attribute auto-completion")    
 
@@ -1745,7 +1745,7 @@ This opens the creation wizard where you have to:
 
 - Name the silo file
 - Provide the silo identifier, this has to be unique in your project
-- Declare the silo type (see [here]({{site.baseurl}}{% link docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/dependances.md %}) for more information)
+- Declare the silo type (see [here](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/dependances.md) for more information)
 - Provide a description for the silo (option)
 
 ![New silo file](./product-description/using-the-editors/images/Silo-creationWizard.png "New silo file")    
@@ -1764,7 +1764,7 @@ The .silo files are separated into three different sections:
 
 ![Silo file](./product-description/using-the-editors/images/silo-editorSilo.png "Silo file")     
 
-The parameters section provides the information related to the silo. This is where you can configure the dependencies of the silo (see [here]({{site.baseurl}}{% link docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/dependances.md %}) for more information).   
+The parameters section provides the information related to the silo. This is where you can configure the dependencies of the silo (see [here](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/dependances.md) for more information).   
 
 ---
 
@@ -1780,15 +1780,15 @@ The collector section allows you to define the collector line associated to the 
 - run the silo
 - run the silo in debug mode
 
-The collector section also allows you to configure if you which to iterate over several files (such as different AD domains which include one import file per domain). Please see [here]({{site.baseurl}}{% link docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/iteration-collect-and-silos.md %}) for more information.    
+The collector section also allows you to configure if you which to iterate over several files (such as different AD domains which include one import file per domain). Please see [here](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/iteration-collect-and-silos.md) for more information.    
 
-Finally, the constant section allows you to declare some fixed constants and/or attributes to map to your targets. Please see [here]({{site.baseurl}}{% link docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/using-silo-contants.md %}) for more information.  
+Finally, the constant section allows you to declare some fixed constants and/or attributes to map to your targets. Please see [here](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/using-silo-contants.md) for more information.  
 
 ##### Extract  
 
 This section allows you to configure your data extraction performed by using the the connector capabilities of the product.  
 
-For more information on Extractors and connectors please refer to the corresponding documentation ([here]({{site.baseurl}}{% link docs/how-to/how-to.md %})).     
+For more information on Extractors and connectors please refer to the corresponding documentation ([here](how-to/how-to.md)).     
 
 ![Extract](./product-description/using-the-editors/images/silo-editorExtract.png "Extract")     
 
@@ -1796,7 +1796,7 @@ For more information on Extractors and connectors please refer to the correspond
 
 This tab allow part of the configuration of the automatic data validation.  
 
-> You need to configure validation on the [Discovery]({{site.baseurl}}{% link docs/igrc-platform/getting-started/product-description/using-the-editors/discovery-editor/discovery-editor.md %})  
+> You need to configure validation on the [Discovery](igrc-platform/getting-started/product-description/using-the-editors/discovery-editor/discovery-editor.md)  
 
 ![Validation](./product-description/using-the-editors/images/silo-editorValidation.png "Validation")     
 
@@ -2103,7 +2103,7 @@ It is possible to preview the reports while clicking the 'View report' button on
 
 ---
 
-<span style="color:grey">**Note:**</span> If you're using Internet Explorer 11, please follow [those directions]({{site.baseurl}}{% link docs/how-to/misc/IE-11-preview-errors.md %}).|
+<span style="color:grey">**Note:**</span> If you're using Internet Explorer 11, please follow [those directions](how-to/misc/IE-11-preview-errors.md).|
 
 ---
 
@@ -2397,7 +2397,7 @@ A notable option is the possibility to very easily set up a standard JNDI data s
 ![Configuration](./product-description/using-the-editors/images/technicalConfig-webapp.png "Configuration")    
 
 For more information on the configuration of the webportal please refer to the corresponding documentation:   
-[Brainwave's webportal]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/brainwaves-web-portal.md %})
+[Brainwave's webportal](igrc-platform/installation-and-deployment/brainwaves-web-portal.md)
 
 ##### Workflow Configuration
 
@@ -2557,7 +2557,7 @@ This means that all files present in the previously mentioned folders will never
 ### Installing and uninstalling project archive in web portal
 
 Please see the following link for more information:  
-[Project Update Manager]({{site.baseurl}}{% link docs/igrc-platform/getting-started/default-project/project-update-manager.md %})
+[Project Update Manager](igrc-platform/getting-started/default-project/project-update-manager.md)
 
 ## Step-by-step Tutorial
 
@@ -2924,4 +2924,4 @@ Your table is now paired with your Dataset, it is therefore now able to display 
 ![Table results sorted](./step-by-step-tuto/images/worddav685c9f4a6dde7e863300b6675d7b95b8.png "Table results sorted")   
 **_Previewing the results_**   
 
-| **Note**: <br> If you're using Internet Explorer 11, please follow [these directions]({{site.baseurl}}{% link docs/how-to/misc/IE-11-preview-errors.md %})|
+| **Note**: <br> If you're using Internet Explorer 11, please follow [these directions](how-to/misc/IE-11-preview-errors.md)|

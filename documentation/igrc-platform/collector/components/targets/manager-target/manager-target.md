@@ -22,7 +22,7 @@ With this target you will add management information to the Ledger
 
 ## Dependencies
 
-The concepts (Identity, application, organization for example) on which you want to add on management information must exist in database. For more information, please refer to the article [Understanding the Brainwave Identity GRC data model]({{site.baseurl}}{% link docs/igrc-platform/getting-started/brainwave-data-model/brainwave-data-model.md %}).  
+The concepts (Identity, application, organization for example) on which you want to add on management information must exist in database. For more information, please refer to the article [Understanding the Brainwave Identity GRC data model](igrc-platform/getting-started/brainwave-data-model/brainwave-data-model.md).  
 
 # Procedure
 
@@ -56,7 +56,7 @@ Here you can select the _"Managed entity type"_ between _"Organization", "Reposi
 
 ### Organization
 
-When selecting -"Organization" as managed entity type- you will have to define the "-Attribute containing organization code".- The latter must be the same identifier than the one given in the -Organization- target (see [Organization target]({{site.baseurl}}{% link docs/igrc-platform/collector/components/targets/organization-target/organization-target.md %}) for detail).   
+When selecting -"Organization" as managed entity type- you will have to define the "-Attribute containing organization code".- The latter must be the same identifier than the one given in the -Organization- target (see [Organization target](igrc-platform/collector/components/targets/organization-target/organization-target.md) for detail).   
 
 You can also "_Trigger an error if organization is not found_" and define a customised event.
 

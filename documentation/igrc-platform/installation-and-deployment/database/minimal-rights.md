@@ -43,7 +43,7 @@ GRANT REFERENCES ON SCHEMA :: igrc_schema TO igrc_user ;
 GRANT UPDATE ON SCHEMA :: igrc_schema TO igrc_user ;
 ```
 
-> <span style="color:red">**Important**</span> When migrating from an pre Curie version to Curie R1 stored procedures are used. To execute the upgrade script (see [here]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/database/schema-35-upgrade-procedure.md %}) for the detailed procedure) please ensure that the account can create and execute stored procedures.  
+> <span style="color:red">**Important**</span> When migrating from an pre Curie version to Curie R1 stored procedures are used. To execute the upgrade script (see [here](igrc-platform/installation-and-deployment/database/schema-35-upgrade-procedure.md) for the detailed procedure) please ensure that the account can create and execute stored procedures.  
 
 ```sql  
 GRANT EXECUTE ON SCHEMA :: "<SCHEMA>" TO "<LOGIN>" ;

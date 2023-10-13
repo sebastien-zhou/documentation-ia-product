@@ -34,11 +34,11 @@ No specific dependencies.
 
 In the View editor, new targets have been added for specific elements - as "Identities", "Accounts", "Permissions", "Asset" etc... - and it is now possible to join the element with **_the same element from other timeslots_** , as shown below:   
 
-![Procedure]({{site.baseurl}}/docs/igrc-platform/views/advanced-concepts/images/2016-11-04 11_31_20-iGRC Properties - testr3sp1_views_custom_previousTs.view - iGRC Analytics.png "Procedure")             
+![Procedure](igrc-platform/views/advanced-concepts/images/2016-11-04 11_31_20-iGRC Properties - testr3sp1_views_custom_previousTs.view - iGRC Analytics.png "Procedure")             
 
 The view will return elements that are present both in the selected timeslot AND in other timeslots as well.   
 
-![Procedure]({{site.baseurl}}/docs/igrc-platform/views/advanced-concepts/images/2016-11-04 11_33_49-iGRC Properties - testr3sp1_views_custom_previousTs.view - iGRC Analytics.png "Procedure")             
+![Procedure](igrc-platform/views/advanced-concepts/images/2016-11-04 11_33_49-iGRC Properties - testr3sp1_views_custom_previousTs.view - iGRC Analytics.png "Procedure")             
 
 ## View 1 : Identities that exist at least in one other timeslot
 
@@ -62,7 +62,7 @@ Results will depend on the selected timeslot (timeslot selection in the results 
 
 It's also possible to choose a specific timeslot to be compared with. For example, to compare data from one timeslot with data from the previous timeslot, a specific attribute, **timeslotuid** , should be used :   
 
-![Procedure]({{site.baseurl}}/docs/igrc-platform/views/advanced-concepts/images/2016-11-04 11_43_33-iGRC Properties - testr3sp1_views_custom_previousTs.view - iGRC Analytics.png "Procedure")             
+![Procedure](igrc-platform/views/advanced-concepts/images/2016-11-04 11_43_33-iGRC Properties - testr3sp1_views_custom_previousTs.view - iGRC Analytics.png "Procedure")             
 
 ## View 2 : Identities that were present in the previous timeslot
 

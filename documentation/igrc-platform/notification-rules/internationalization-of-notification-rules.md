@@ -26,7 +26,7 @@ This functionality allows the internationalization of the content of notificatio
 
 In the 'View configuration' pane of the 'Content tab' of the notification rule, the 'Language attribute' field allows the definition of which column of the view will contain the country code for this particular recipient (for example en, fr, and so on...). This attribute is optional and can be left empty when not applicable.     
 
-![View configuration]({{site.baseurl}}/docs/igrc-platform/notification-rules/images/i18n_nr_3.png "View configuration")   
+![View configuration](igrc-platform/notification-rules/images/i18n_nr_3.png "View configuration")   
 
 If this attribute is left unspecified, default from the project will apply (see the section 'How the internationalization is chosen for a recipient' below).
 
@@ -39,19 +39,19 @@ If a user has accessed the portal application at least once, this column is upda
 
 In the 'Notification email' tab of the notification rule editor, the following widget allows the management of the internationalizations of this notification rule:   
 
-![Notification email]({{site.baseurl}}/docs/igrc-platform/notification-rules/images/i18n_nr_1.png "Notification email")   
+![Notification email](igrc-platform/notification-rules/images/i18n_nr_1.png "Notification email")   
 
 The content of the drop-down is bound to the languages defined in the 'Project languages' section of the project configuration:   
 
-![Project languages]({{site.baseurl}}/docs/igrc-platform/notification-rules/images/i18n_nr_7.png "Project languages")   
+![Project languages](igrc-platform/notification-rules/images/i18n_nr_7.png "Project languages")   
 
 If you select a language for which no internationalization exists, the first button will be enabled, allowing to create a new one:   
 
-![Languages]({{site.baseurl}}/docs/igrc-platform/notification-rules/images/i18n_nr_6.png "Languages")   
+![Languages](igrc-platform/notification-rules/images/i18n_nr_6.png "Languages")   
 
 Clicking this button will open a new file wizard:   
 
-![New file wizard]({{site.baseurl}}/docs/igrc-platform/notification-rules/images/i18n_nr_8.png "New file wizard")   
+![New file wizard](igrc-platform/notification-rules/images/i18n_nr_8.png "New file wizard")   
 
 The default file name of the new internationalization is the file name of the notification rule suffixed with the '\_' character followed by the language country code. Although not strictly necessary, it is recommended to stick to this convention.   
 
@@ -61,7 +61,7 @@ When creating a new internationalization for a notification rule, the content of
 
 On the other hand, if there already exists an internationalization for this notification rule and selected language, you will have:   
 
-![internationalization]({{site.baseurl}}/docs/igrc-platform/notification-rules/images/i18n_nr_5.png "Internationalization")   
+![internationalization](igrc-platform/notification-rules/images/i18n_nr_5.png "Internationalization")   
 
 Clicking on the green arrow will open an editor for this particular internationalization. Clicking on the trash can allows to delete the corresponding internationalization.
 
@@ -69,7 +69,7 @@ Clicking on the green arrow will open an editor for this particular internationa
 
 The editor for the internationalization of a notification rule looks like:    
 
-![Notification rule internationalization]({{site.baseurl}}/docs/igrc-platform/notification-rules/images/i18n_nr_2.png "Notification rule internationalization")   
+![Notification rule internationalization](igrc-platform/notification-rules/images/i18n_nr_2.png "Notification rule internationalization")   
 
 Here you will find a reference to the notification rule as well as the language for which its defined.   
 You will also find edition areas for the subject, body, embedded images, attached reports and file attachments. There is also a preview of the resolved subject and body.   
@@ -82,7 +82,7 @@ The 'Results' tab of the notification rule editor take into account the language
 
 Note that for debugging purposes, you can force the display to a given language using the following pane:   
 
-![Notification rule results]({{site.baseurl}}/docs/igrc-platform/notification-rules/images/i18n_nr_4.png "Notification rule results")   
+![Notification rule results](igrc-platform/notification-rules/images/i18n_nr_4.png "Notification rule results")   
 
 This can for example be useful if you plan to have multiple languages in a project but only have a single country in the development database. Using the 'No matching language' value in the combo, you can deactivate all the internationalizations to see only the notification rule itself.  
 

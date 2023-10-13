@@ -16,7 +16,7 @@ permalink: /docs/igrc-platform/workflow/recording-and-replaying-debug-sessions/
 
 # Context
 
-When debugging a process (see the pages on [Debugging]({{site.baseurl}}{% link docs/igrc-platform/workflow/debugging.md %}), you might have to input the same variable values or make the process take the same paths over and over.    
+When debugging a process (see the pages on [Debugging](igrc-platform/workflow/debugging.md), you might have to input the same variable values or make the process take the same paths over and over.    
 It would really be helpful if the process could step automatically up to a certain point, and then let you guide the rest of the execution.
 It might also be very beneficial if you could store the whole debug session, with variable values, events that have occurred, etc, so that you can replay them at a later time to test the validity of certain paths even after the process definition has evolved.
 

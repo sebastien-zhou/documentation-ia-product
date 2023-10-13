@@ -27,7 +27,7 @@ However, a page will not be displayed unless:
 
 Any page can become a Home Page , it just needs to be declared as an attribute in the page object. Using the keyword`homepage-for`   
 
-This attributes support different keywords. Its designed to be used together with [Features]({{site.baseurl}}{% link docs/igrc-platform/pages/features-and-roles/features-and-roles.md %}) to identify a group of users ( More on this in the [Features segment]({{site.baseurl}}{% link docs/igrc-platform/pages/features-and-roles/features-and-roles.md %}) ).   
+This attributes support different keywords. Its designed to be used together with [Features](igrc-platform/pages/features-and-roles/features-and-roles.md) to identify a group of users ( More on this in the [Features segment](igrc-platform/pages/features-and-roles/features-and-roles.md) ).   
 
 The simplest way to use the **homepage-for** attribute is to use the keyword **All**. This will define this page as a Home page for all the users. Since many pages can be declared to be home page, a priority is also given (optional).   
 
@@ -49,7 +49,7 @@ nameOfThePage = Page {
 
 Now our hello world page will be displayed as a home page. We can also navigate to the next or previous home page by using the buttons on the sides:   
 
-![Home page]({{site.baseurl}}/docs/igrc-platform/pages/images/0601.png "Home page")
+![Home page](igrc-platform/pages/images/0601.png "Home page")
 
 # Things to remember
 

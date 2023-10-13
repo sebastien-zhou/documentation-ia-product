@@ -14,19 +14,19 @@ This function is the basis for reports supplied as standard in the Brainwave Ide
 
 View parameters are specified in the Properties Editor of the Audit View.   
 
-![Using configuration]({{site.baseurl}}/docs/igrc-platform/views/advanced-concepts/images/using-configuration-1.png "Using configuration")   
+![Using configuration](igrc-platform/views/advanced-concepts/images/using-configuration-1.png "Using configuration")   
 
 A parameter is added to an Audit View by clicking on the 'Add...' button. A dialog box opens, asking the user to select an identifier and a display name for the parameter.   
 
-![Using configuration]({{site.baseurl}}/docs/igrc-platform/views/advanced-concepts/images/using-configuration-2.png "Using configuration")   
+![Using configuration](igrc-platform/views/advanced-concepts/images/using-configuration-2.png "Using configuration")   
 
 Once your parameter has been added to the Audit View, it is accessible from the 'Global parameter' field of the Attribute Properties Editor of the Audit View.   
 
-![Using configuration]({{site.baseurl}}/docs/igrc-platform/views/advanced-concepts/images/using-configuration-3.png "Using configuration")   
+![Using configuration](igrc-platform/views/advanced-concepts/images/using-configuration-3.png "Using configuration")   
 
 Attributes with values filtered by a parameter appear have a unique appearance in the Audit View Editor: parameters are blue and underlined.   
 
-![Using configuration]({{site.baseurl}}/docs/igrc-platform/views/advanced-concepts/images/using-configuration-4.png "Using configuration")   
+![Using configuration](igrc-platform/views/advanced-concepts/images/using-configuration-4.png "Using configuration")   
 
 It is possible to set the behaviour to be adopted at the data-filtering levels when the parameter is invalid:   
 
@@ -40,4 +40,4 @@ The view '_/views/identity/identity.view_' is a good example as this same view i
 - Carry out multi-criteria identity searches;
 - Obtain details on any given identity.
 
-![Using configuration]({{site.baseurl}}/docs/igrc-platform/views/advanced-concepts/images/using-configuration-5.png "Using configuration")   
+![Using configuration](igrc-platform/views/advanced-concepts/images/using-configuration-5.png "Using configuration")   

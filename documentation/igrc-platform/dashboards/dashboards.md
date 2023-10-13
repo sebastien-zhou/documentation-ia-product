@@ -197,13 +197,13 @@ Both search rules and data views can have parameters ( see below for details).
 
 The following pages detail the configuration of each of the components:
 
-[Table Component]({{site.baseurl}}{% link docs/igrc-platform/dashboards/dashboard-components/dashboard-table-component.md %})   
-[Indicator Component]({{site.baseurl}}{% link docs/igrc-platform/dashboards/dashboard-components/dashboard-indicator-component.md %})   
-[Basic Chart Component]({{site.baseurl}}{% link docs/igrc-platform/dashboards/dashboard-components/basic-chart-components.md %})    
-[Indicator Groups]({{site.baseurl}}{% link docs/igrc-platform/dashboards/dashboard-components/dashboard-indicator-group-components.md %})   
-[Multi series charts components]({{site.baseurl}}{% link docs/igrc-platform/dashboards/dashboard-components/dashboard-multi-charts-components.md %})   
-[Single serie history charts]({{site.baseurl}}{% link docs/igrc-platform/dashboards/dashboard-components/dashboard-single-serie-history-charts-components.md %})   
-[Multi-series history chart]({{site.baseurl}}{% link docs/igrc-platform/dashboards/dashboard-components/multi-series-history-chart.md %})    
+[Table Component](igrc-platform/dashboards/dashboard-components/dashboard-table-component.md)   
+[Indicator Component](igrc-platform/dashboards/dashboard-components/dashboard-indicator-component.md)   
+[Basic Chart Component](igrc-platform/dashboards/dashboard-components/basic-chart-components.md)    
+[Indicator Groups](igrc-platform/dashboards/dashboard-components/dashboard-indicator-group-components.md)   
+[Multi series charts components](igrc-platform/dashboards/dashboard-components/dashboard-multi-charts-components.md)   
+[Single serie history charts](igrc-platform/dashboards/dashboard-components/dashboard-single-serie-history-charts-components.md)   
+[Multi-series history chart](igrc-platform/dashboards/dashboard-components/multi-series-history-chart.md)    
 
 Don't forget to **Save** the dashboard when you are satisfied with the arrangement of components, or **Discard** changes to revert to the previous layout.
 
@@ -222,7 +222,7 @@ For each rule secondary parameter, you can set the parameter **Source** and **Va
 
 You can also select **None** as the source, to leave the parameter empty, if it's not mandatory.   
 
-See [Secondary Parameter Configuration]({{site.baseurl}}{% link docs/igrc-platform/dashboards/advanced-configuration.md %}) for detailed explanations on the different sources.
+See [Secondary Parameter Configuration](igrc-platform/dashboards/advanced-configuration.md) for detailed explanations on the different sources.
 
 ### Data View Parameters
 
@@ -571,7 +571,7 @@ The selected view may have parameters which can be set by clicking the **Params.
     - **Max displayed time slots** : limits the number of time slots to display. For example, typing 5 will display the last 5 timeslots, including the current one.
     - **Reference time slots only** : displays only the last _reference_ time slots.   
 This is typically useful when the period of data collection is more frequent than the period of analysis (eg. daily vs. weekly or monthly).  
-Time slots can be marked as -Reference- through a post-collect workflow. See [How to define and use Reference Timeslots]({{site.baseurl}}{% link docs/how-to/workflow/reference-timeslots.md %})
+Time slots can be marked as -Reference- through a post-collect workflow. See [How to define and use Reference Timeslots](how-to/workflow/reference-timeslots.md)
 
 ![History chart configuration](./images/History_charts_config1.png "History chart configuration")    
 

@@ -1017,7 +1017,7 @@ It is also possible to pass parameters to the Dataset used by the chart componen
 - By clicking on the 'Parameters...' button in the chart creation wizard
 - By selecting the 'Chart' component in the chart editor, then selecting the 'Binding' section in the component's editor properties.   
 
-This setting is identical to that of the Table and List components. We invite you to refer to the documentation section detailing the use of parameters in the Table and List components for more information on this subject ([Subreports]({{site.baseurl}}{% link docs/igrc-platform/creating-reports/advanced-concepts/subreports/subreports.md %})   
+This setting is identical to that of the Table and List components. We invite you to refer to the documentation section detailing the use of parameters in the Table and List components for more information on this subject ([Subreports](igrc-platform/creating-reports/advanced-concepts/subreports/subreports.md)   
 
 ![Chart Dataset](./advanced-concepts/charts/retrieving-chart-data/images/worddavfa471f8235290577c5a9e3937bbf36d2.png "Chart Dataset")   
 **_Editing parameters of the chart Dataset_**

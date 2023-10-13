@@ -21,7 +21,7 @@ Reviewing information in the Brainwave product is done using a workflow which st
 
 To be able to review metadata, the TicketReview target in the workflow editor has been enhanced to attach a ticket to a metadata
 
-![Metadata ticket]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_workflow_ticketreview.png "Metadata ticket")
+![Metadata ticket](igrc-platform/metadata/images/metadata_workflow_ticketreview.png "Metadata ticket")
 
 This target supports multivalued attribute containing several metadata UIDs
 
@@ -35,11 +35,11 @@ Both queries automatically filter on the metadata name (in this example: `acme_u
 
 The following screenshot shows the link between a ticket review and a metadata defined in the project.
 
-![Metadata ticket to metadata]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_ticket_to_metadata.png "Metadata ticket to metadata")
+![Metadata ticket to metadata](igrc-platform/metadata/images/metadata_ticket_to_metadata.png "Metadata ticket to metadata")
 
 The following screenshot shows the same link reversed.
 
-![Metadata to ticket]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_to_ticket.png "Metadata to ticket")
+![Metadata to ticket](igrc-platform/metadata/images/metadata_to_ticket.png "Metadata to ticket")
 
 When using tickets, the best practice is to avoid embedded metadata.
 Tickets on embedded metadata are more difficult to query.

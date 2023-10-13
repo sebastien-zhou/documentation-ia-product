@@ -14,7 +14,7 @@ Audit Views may be used by audit reports to retrieve information to be laid out 
 
 Even though there is no requirement to understand the technical data model behind the Identity Ledger, it is nevertheless necessary to understand the concepts it features. We therefore recommend that you review the chapter dedicated to the Main Ledger in the documentation before reading this guide.   
 
-![Views]({{site.baseurl}}/docs/igrc-platform/views/images/5.png "Views")    
+![Views](igrc-platform/views/images/5.png "Views")    
 
 An Audit View enables the user to specify the information to be extracted from the Main Ledger. By default, this is done by reference to a given date of import. You can also make use of the relationships between the different concepts within the Main Ledger, sort and filter the information presented, or carry out consolidation operations. It is also possible to create Audit Views that bring together information from different import dates within the Identity Ledger.   
 
@@ -23,6 +23,6 @@ Various Audit Views are contained in the sub-folder /views of your audit project
 Audit Views are dynamically analysed by Brainwave Analytics and trigger a series of technical queries in the database that hosts the Identity Ledger to extract information.   
 The result is presented in table format.Each column corresponds to an attribute returned by the query. The results are single-valued in that if there are multiple possible values for any given attribute, the result line will be duplicated for each value of the attribute. For example, if you request a list of accounts for identities, each line will feature the complete dataset for the identity together with one of its associated accounts.   
 
-![Views]({{site.baseurl}}/docs/igrc-platform/views/images/4.png "Views")    
+![Views](igrc-platform/views/images/4.png "Views")    
 
 Over time, you will come to appreciate that Audit Views are at least as powerful as their equivalent SQL queries; they don't have any technical limitations and are much simpler to develop and use than their equivalent SQL query.

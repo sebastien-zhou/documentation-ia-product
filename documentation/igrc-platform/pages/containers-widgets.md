@@ -26,12 +26,12 @@ Group {
 }
 ```
 
-![Group Title]({{site.baseurl}}/docs/igrc-platform/pages/images/1301.png "Group Title")        
+![Group Title](igrc-platform/pages/images/1301.png "Group Title")        
 
 Required attributes are marked in bold   
 **title** the title to be displayed if needed
 **border** True/False indicates if a border should be displayed or not. Note that if a title is given then a border will always exists.   
-Supports the [common attributes]({{site.baseurl}}{% link docs/igrc-platform/pages/widgets-common-attributes.md %}): **feature , layout, mixins, margins, background and hidden**.  
+Supports the [common attributes](igrc-platform/pages/widgets-common-attributes.md): **feature , layout, mixins, margins, background and hidden**.  
 
 # ConditionalGroup
 
@@ -54,14 +54,14 @@ ConditionalGroup {
 }
 ```
 
-![Group Title]({{site.baseurl}}/docs/igrc-platform/pages/images/1301.png "Group Title")        
+![Group Title](igrc-platform/pages/images/1301.png "Group Title")        
 
 Required attributes are marked in bold   
 **title** the title to be displayed if needed   
 **border** True/False indicates if a border should be displayed or not. Note that if a title is given then a border will always exists.   
 Supports the [common attributes](({% link docs/igrc-platform/pages/widgets-common-attributes.md %}): **feature , layout, mixins, margins , background and hidden**.
 
-4 Condition structures are supported depending of the variable type, their syntax is very similar to the corresponding [Predicate Functions]({{site.baseurl}}{% link docs/igrc-platform/pages/predicate-functions.md %}):   
+4 Condition structures are supported depending of the variable type, their syntax is very similar to the corresponding [Predicate Functions](igrc-platform/pages/predicate-functions.md):   
 
 ```
 StringCondition ( variable ) {
@@ -162,7 +162,7 @@ Grid {
 }
 ```
 
-![Grid]({{site.baseurl}}/docs/igrc-platform/pages/images/1302.png "Grid")           
+![Grid](igrc-platform/pages/images/1302.png "Grid")           
 
 Required attributes are marked in bold   
 **columns** declare the columns , and optionally their size in pixels or set them to grow to take as much as possible. syntax is `GridColumn {}` or `GridColumn {width: 100}` or `GridColumn { witdh: grow}`   
@@ -210,7 +210,7 @@ Flow {
 }
 ```
 
-![Flow]({{site.baseurl}}/docs/igrc-platform/pages/images/1303.png "Flow")      
+![Flow](igrc-platform/pages/images/1303.png "Flow")      
 
 Required attributes are marked in bold   
 **disposition** it defines the disposition of the subcontainers. options are `Horizontal` or `Vertical`.   
@@ -235,7 +235,7 @@ TabFolder {
 }
 ```
 
-![Tab 1]({{site.baseurl}}/docs/igrc-platform/pages/images/tabfolder.png "Tab 1")      
+![Tab 1](igrc-platform/pages/images/tabfolder.png "Tab 1")      
 
 Required attributes are marked in bold   
 **position** defines if the tabs are positioned at the top or at the bottom. Options are `Top` or `Bottom`   
@@ -284,7 +284,7 @@ Splitter {
 }
 ```
 
-![Splitter]({{site.baseurl}}/docs/igrc-platform/pages/images/1305.png "Splitter")      
+![Splitter](igrc-platform/pages/images/1305.png "Splitter")      
 
 Required attributes are marked in bold   
 **disposition** defines the disposition of the splitter, it can be : `Horizontal` or `Vertical`   
@@ -322,7 +322,7 @@ Tiles {
 }
 ```
 
-![Tiles]({{site.baseurl}}/docs/igrc-platform/pages/images/1306.png "Tiles")      
+![Tiles](igrc-platform/pages/images/1306.png "Tiles")      
 
 Required attributes are marked in bold   
 **columns** the number of columns of tiles   

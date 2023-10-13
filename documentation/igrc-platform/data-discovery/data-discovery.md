@@ -15,7 +15,7 @@ As such, "data discovery" may be used as a source of data when configuring "Data
 Contrary to classic ETL solutions where it quickly becomes necessary to rely on a programming language (Java, JavaScript, C#) for transformation or filtering operations, the association and wealth of "data discovery" concepts and "data collection" allow these operations to be performed without programming.  
 
 This "data discovery" component can also be used autonomously if you wish to apply transformation/filtering operations on data files regularly. In this case, the results will be available in CSV format. This is an alternative solution that is much more powerful than the filtering tools available in Excel.    
-This objective of this documentation is to give you basic instructions that will allow you to use the Discovery component. You will find numerous "screencasts" on how to configure data "discovery" and "collection" on this site: [Discovery Editor]({{site.baseurl}}{% link docs/igrc-platform/getting-started/product-description/using-the-editors/discovery-editor/discovery-editor.md %})   
+This objective of this documentation is to give you basic instructions that will allow you to use the Discovery component. You will find numerous "screencasts" on how to configure data "discovery" and "collection" on this site: [Discovery Editor](igrc-platform/getting-started/product-description/using-the-editors/discovery-editor/discovery-editor.md)   
 
 # Data sources
 

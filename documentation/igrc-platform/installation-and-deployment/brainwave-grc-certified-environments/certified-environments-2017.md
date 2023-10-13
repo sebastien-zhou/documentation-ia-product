@@ -83,8 +83,8 @@ The following database drivers have been certified with Brainwave GRC:
 1. Oracle's OCI driver is not supported by Brainwave GRC 
 
 2. Oracle and Microsoft SQL JDBC drivers are Third Party Software not provided with Brainwave Identity GRC. Please refer to the following pages for information on how to download and install the drivers :
-    - [How-To install and use Microsofts SQL server official driver]({{site.baseurl}}{% link docs/how-to/database/sqlserver/install-sql-server-driver.md %})
-    - [How-to install and use the official Oracle database driver]({{site.baseurl}}{% link docs/how-to/database/oracle/install-orcl-database-driver.md %})
+    - [How-To install and use Microsofts SQL server official driver](how-to/database/sqlserver/install-sql-server-driver.md)
+    - [How-to install and use the official Oracle database driver](how-to/database/oracle/install-orcl-database-driver.md)
 
 ---
 

@@ -29,19 +29,19 @@ In this sub-tab it is possible to see/modify general parameters of the component
 - _Collector line:_ collect line to use as a data source
 - The "_Follow just one link_" option which sets the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation evaluation evaluated to true will be executed.
 
-![Collector line source]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/collector-line-source/images/collector_line_source.png "Collector line source")   
+![Collector line source](igrc-platform/collector/components/sources/collector-line-source/images/collector_line_source.png "Collector line source")   
 
 ## Description
 
 This section allow the configuration of comments regarding actions done by this source component.
 
-![Description]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/collector-line-source/images/description.png "Description")   
+![Description](igrc-platform/collector/components/sources/collector-line-source/images/description.png "Description")   
 
 ## Configuration
 
 This section allows the user to override variables defined in the collector line.
 
-![Configuration]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/collector-line-source/images/config.png "Configuration")   
+![Configuration](igrc-platform/collector/components/sources/collector-line-source/images/config.png "Configuration")   
 
 ## Request
 
@@ -51,7 +51,7 @@ The query may check values from current record by using dataset variable as if i
 
 For example, `SELECT * FROM dataset WHERE dataset.hrcode <> 'VIP'` keeps only records which have a HR code attribute with a value different from 'VIP'.   
 
-![Request]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/collector-line-source/images/request.png "Request")
+![Request](igrc-platform/collector/components/sources/collector-line-source/images/request.png "Request")
 
 ## Sort
 
@@ -63,7 +63,7 @@ In this section you can configure a multi-criteria sort. You will find:
 
 The sort direction can also be changed (A-Z for ascending or Z-A for descending).
 
-![Sort]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/collector-line-source/images/sort.png "Sort")
+![Sort](igrc-platform/collector/components/sources/collector-line-source/images/sort.png "Sort")
 
 ## Limits
 
@@ -72,7 +72,7 @@ In this section you can configure a limitation on the selected records from the 
 - Skip the <u><i>nb</i></u> first records: Used to select a subset of the records by skipping the first records.  
 - Select a maximum of <u><i>max</i></u> records: Used to select a subset of the records by reading only a specified number of records.
 
-![Limits]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/collector-line-source/images/limits.png "Limits")
+![Limits](igrc-platform/collector/components/sources/collector-line-source/images/limits.png "Limits")
 
 # Best practices
 

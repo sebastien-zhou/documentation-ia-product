@@ -29,19 +29,19 @@ In this section you can see/modify general parameters of the component. You will
 - _the "Display name_" for the _discovery source_
 - _the "Follow just one link" option which sets the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation evaluation evaluated to true will be executed._
 
-![Enumeration]({{site.baseurl}}/docs/igrc-platform/collector/components/filters/filter-enumeration/images/enumerate_2018-04-04_18_55_10-.png "Enumeration")
+![Enumeration](igrc-platform/collector/components/filters/filter-enumeration/images/enumerate_2018-04-04_18_55_10-.png "Enumeration")
 
 ## Description
 
 Comment regarding actions done by this component.
 
-![Description]({{site.baseurl}}/docs/igrc-platform/collector/components/filters/filter-enumeration/images/enumerate_2018-04-04_18_54_59-.png "Description")
+![Description](igrc-platform/collector/components/filters/filter-enumeration/images/enumerate_2018-04-04_18_54_59-.png "Description")
 
 ## Enumeration
 
 In this section you have to choose multivalued attributes that the component will iterate on, you can also specify if you like to iterate on duplicate values or not.
 
-![Enumeration]({{site.baseurl}}/docs/igrc-platform/collector/components/filters/filter-enumeration/images/2018-04-05_12_13_54-.png "Enumeration")
+![Enumeration](igrc-platform/collector/components/filters/filter-enumeration/images/2018-04-05_12_13_54-.png "Enumeration")
 
 
 **<u>Example with iterating on several multivalued attributes:</u>**  

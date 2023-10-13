@@ -31,7 +31,7 @@ This functionality is available as of version 2016 R3
 
 A fragment is declared using the `PageFragment` keyword. It can then be included in the Widget block of a page with the `IncludeFragment` widget.     
 
-A fragment has approximately the same structure as a page. It supports the following optional attributes: `feature:`, `mixins:`, `enter-event:` and `exit-event:`, each having the same meaning as the page attribute of the same name. You can provide the Parameters, Variables, Data-binding and Widgets blocks as defined in [Structure of a Page]({{site.baseurl}}{% link docs/igrc-platform/pages/structure-of-a-page.md %}).    
+A fragment has approximately the same structure as a page. It supports the following optional attributes: `feature:`, `mixins:`, `enter-event:` and `exit-event:`, each having the same meaning as the page attribute of the same name. You can provide the Parameters, Variables, Data-binding and Widgets blocks as defined in [Structure of a Page](igrc-platform/pages/structure-of-a-page.md).    
 
 The simplest possible example of fragment declaration and usage is:     
 
@@ -49,7 +49,7 @@ page1 = Page {
 
 The rendered portal page is:    
 
-![fragment]({{site.baseurl}}/docs/igrc-platform/pages/images/fragments1.png "fragment")   
+![fragment](igrc-platform/pages/images/fragments1.png "fragment")   
 
 A given fragment can be included in any number of pages and a page can include any number of fragments (and even include the same fragment more than once).
 
@@ -92,7 +92,7 @@ page2 = Page {
 
 The corresponding page is:   
 
-![fragment]({{site.baseurl}}/docs/igrc-platform/pages/images/fragments2.png "fragment")   
+![fragment](igrc-platform/pages/images/fragments2.png "fragment")   
 
 In this example, if you change the value of the variable in the Edit widget of the fragment, the value of the Text widget will change accordingly.     
 
@@ -158,7 +158,7 @@ page3 = Page {
 
 The corresponding page is then :    
 
-![fragment]({{site.baseurl}}/docs/igrc-platform/pages/images/fragments3.png "fragment")   
+![fragment](igrc-platform/pages/images/fragments3.png "fragment")   
 
 | **Note**: <br><br> Variable bindings must be done from the including page or fragment to the directly included fragment.  |
 
@@ -225,7 +225,7 @@ page4 = Page {
 
 The corresponding page is then :     
 
-![fragment]({{site.baseurl}}/docs/igrc-platform/pages/images/fragments4.png "fragment")   
+![fragment](igrc-platform/pages/images/fragments4.png "fragment")   
 
 An example of the vigilance point mentioned above is illustrated in the interaction between `var_p2` and `var_f3` which are both editable but any change in `var_p2` will override the value of `var_f3` with the value of `Concat("Modified ", var_p2)`.   
 
@@ -340,7 +340,7 @@ page6 = Page {
 
 The corresponding page is then :     
 
-![fragment]({{site.baseurl}}/docs/igrc-platform/pages/images/fragments7.png "fragment")   
+![fragment](igrc-platform/pages/images/fragments7.png "fragment")   
 
 ## A more realistic example
 
@@ -350,7 +350,7 @@ This example shows an identity master-detail page, with the identity detail also
 
 Variable bindings are used to synchronize the selected identity between the page `identitiesPage` and the fragments `identitiesMasterFragment` (which changes the value of the `selected_identity` variable) and `identityDetailFragment` (which reads the `selected_identity` variable to display the suitable information). An expression propagation is used between the `identityDetailFragment` and `organisationDetailFragment` fragments.     
 
-![fragment]({{site.baseurl}}/docs/igrc-platform/pages/images/fragments_ex1.png "fragment")   
+![fragment](igrc-platform/pages/images/fragments_ex1.png "fragment")   
 
 ```
 organisationDetailFragment = PageFragment {
@@ -449,7 +449,7 @@ identitiesPage = Page {
 
 The corresponding page is then :   
 
-![fragment]({{site.baseurl}}/docs/igrc-platform/pages/images/fragments6.png "fragment")   
+![fragment](igrc-platform/pages/images/fragments6.png "fragment")   
 
 # Dynamic Fragments 
 

@@ -10,17 +10,17 @@ permalink: /docs/igrc-platform/data-discovery/learning-basics/data-types-setting
 
 It is possible to change the type of data of an attribute to convert it into another data format. To do so, click on the type column that corresponds to the attribute.   
 
-![Data settings]({{site.baseurl}}/docs/igrc-platform/data-discovery/learning-the-basics/images/1-data.png "Data settings")   
+![Data settings](igrc-platform/data-discovery/learning-the-basics/images/1-data.png "Data settings")   
 **_Setting the type of an attribute_**     
 
 The attribute will then be converted into a numerical value, date, or Boolean value as the file is read.   
 Format configuration happens in the first tab:   
 
-![Data settings 2]({{site.baseurl}}/docs/igrc-platform/data-discovery/learning-the-basics/images/2-data.png "Data settings 2")    
+![Data settings 2](igrc-platform/data-discovery/learning-the-basics/images/2-data.png "Data settings 2")    
 
 Regarding the dates, the format to use is the Java Format. To do so, you need to rely on the following table:   
 
-![Table]({{site.baseurl}}/docs/igrc-platform/data-discovery/learning-the-basics/images/MicrosoftTeams-image.png "Table")    
+![Table](igrc-platform/data-discovery/learning-the-basics/images/MicrosoftTeams-image.png "Table")    
 
 For example, the format of date like:   
 
@@ -31,9 +31,9 @@ For example, the format of date like:
 
 _<u>Warning</u>:_ The source file data must be correctly formatted to set a date/Boolean/whole value. If the attributes must be pre-processed or filtered, you must use transformation actions in order to convert these attributes into the right type in new computed attributes.   
 
-![Converting the attribute format to date format]({{site.baseurl}}/docs/igrc-platform/data-discovery/learning-the-basics/images/4-data.png "Converting the attribute format to date format")    
+![Converting the attribute format to date format](igrc-platform/data-discovery/learning-the-basics/images/4-data.png "Converting the attribute format to date format")    
 **_Converting the attribute format to date format_**  
 
 
-![Creating a Boolean attribute]({{site.baseurl}}/docs/igrc-platform/data-discovery/learning-the-basics/images/5-data.png "Creating a Boolean attribute")    
+![Creating a Boolean attribute](igrc-platform/data-discovery/learning-the-basics/images/5-data.png "Creating a Boolean attribute")    
 **_Creating a Boolean attribute_**

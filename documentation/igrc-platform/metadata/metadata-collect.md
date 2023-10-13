@@ -18,7 +18,7 @@ In the collect editor, a new component has been added to add data to a metadata.
 
 This component is located in the palette:
 
-![Metadata collect palette]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_collect_palette.png "Metadata collect palette")
+![Metadata collect palette](igrc-platform/metadata/images/metadata_collect_palette.png "Metadata collect palette")
 
 In the properties tab of the component, there are 3 tabs:
 - 'Metadata key' is used to select a declared metadata and map the attributes containing the **key** (references to Ledger entities).
@@ -50,7 +50,7 @@ Keep in mind that using a metadata schema declaration is the best practice.
 
 The following screenshot shows the 'Metadata key' tab:
 
-![Metadata collect key]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_collect_key.png "Metadata collect key")
+![Metadata collect key](igrc-platform/metadata/images/metadata_collect_key.png "Metadata collect key")
 
 This tab is used to define relationships with Ledger entities as keys.
 
@@ -74,7 +74,7 @@ This is the responsibility of the developer to be sure that a non empty value is
 
 The following screenshot shows the 'Metadata model values' tab:
 
-![Metadata collect model values]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_collect_model_values.png "Metadata collect model values")
+![Metadata collect model values](igrc-platform/metadata/images/metadata_collect_model_values.png "Metadata collect model values")
 
 This tab is used to define relationships with Ledger entities as values. These are **not** part of the metadata key.
 
@@ -85,7 +85,7 @@ If a metadata schema has been selected in 'Metadata key' tab, then only the acti
 
 The following screenshot shows the 'Metadata simple values' tab:
 
-![Metadata collect simple values]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_collect_simple_values.png "Metadata collect simple values")
+![Metadata collect simple values](igrc-platform/metadata/images/metadata_collect_simple_values.png "Metadata collect simple values")
 
 This tab is used to map the attributes to the simple values values of the metadata. The following list of values are available:
 
@@ -127,7 +127,7 @@ The component in the collect line only supports single values.
 If you want to write several values for a metadata, you need to enter the metadata component once for each value.
 This is accomplished by using an enumeration above the metadata component as shown in the following screenshot:
 
-![Metadata collect line]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_collect_line.png "Metadata collect line")
+![Metadata collect line](igrc-platform/metadata/images/metadata_collect_line.png "Metadata collect line")
 
 ### Links between metadata
 
@@ -137,4 +137,4 @@ However This feature is not accessible using the collect component but is availa
 
 The use cases and the configuration to create such a metadata tree are explained in the following chapter:
 
-[Modifying metadata in a workflow]({{site.baseurl}}{% link docs/igrc-platform/metadata/metadata-workflow.md %}){: .btn }
+[Modifying metadata in a workflow](igrc-platform/metadata/metadata-workflow.md){: .btn }

@@ -34,7 +34,7 @@ This command allows you to run the execution plan for auditlogs via command line
 
 # igrc_batch
 
-This command allows you to run the standard execution plan via command line. The configuration is performed in the technical configuration of your project. See [here]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/batch-configuration-and-usage.md %}) for more information.  
+This command allows you to run the standard execution plan via command line. The configuration is performed in the technical configuration of your project. See [here](igrc-platform/installation-and-deployment/batch-configuration-and-usage.md) for more information.  
 
 ```powershell  
 "Expecting at least 3 parameters: <project name> <config directory path> <config name>
@@ -70,7 +70,7 @@ Another example: igrc_batch demonstration /var/igrc/config default"
 
 Please refer to the following page for more information on how to break reconciliations:
 
-[Delete Reconciliations]( {{site.baseurl}}{% link docs/igrc-platform/reconciliation/reconciliation-policies/delete-reconciliations/delete-reconciliations.md %} ){: .ref}
+[Delete Reconciliations]( igrc-platform/reconciliation/reconciliation-policies/delete-reconciliations/delete-reconciliations.md ){: .ref}
 
 ## Restart
 
@@ -134,7 +134,7 @@ This command allows you to automatically build facets via command line.
 
 # igrc_notify
 
-This command line allows you to send notify rules via command line. See [here]({{site.baseurl}}{% link docs/igrc-platform/notification-rules/notification-rules.md %}) for more information on how to configure a notification campaign/rule  
+This command line allows you to send notify rules via command line. See [here](igrc-platform/notification-rules/notification-rules.md) for more information on how to configure a notification campaign/rule  
 
 ```powershell  
 "Usage to send emails : igrc_notify <project name> <config folder> <config name> SEND <email campaign name> ['ALL' or <notify rule list>]"
@@ -159,7 +159,7 @@ This command line allows you to send notify rules via command line. See [here]({
 
 # igrc_purge
 
-This command allows you to perform a data purge via command line. Please see [here]({{site.baseurl}}{% link docs/how-to/configuration/purge-timeslots-policy.md %}) for more information on how to configure the purge functionality.  
+This command allows you to perform a data purge via command line. Please see [here](how-to/configuration/purge-timeslots-policy.md) for more information on how to configure the purge functionality.  
 
 ```powershell  
 "Usage: igrc_purge <project name> <config folder> <config name> <keep value> <keep unit> <action>"
@@ -397,13 +397,13 @@ If the csv preferences are not set in parameters file, the command will use same
 * export.csv.separator
 * export.csv.block
 
-![CSV]({{site.baseurl}}/docs/igrc-platform/installation-and-deployment/batch-configuration-and-usage/images/2019-03-12_19_33_29-iGRC_Project_.png "CSV")  
+![CSV](igrc-platform/installation-and-deployment/batch-configuration-and-usage/images/2019-03-12_19_33_29-iGRC_Project_.png "CSV")  
 
 To override default csv preferences, please add (export.csv.encoding, export.csv.separator and\or export.csv.block) entries to parameters file.  
 
 Example of parameters file containing csv preferences:  
 
-![Example of parameters file containing csv preferences]({{site.baseurl}}/docs/igrc-platform/installation-and-deployment/batch-configuration-and-usage/images/2019-03-25_17_09_47.png "Example of parameters file containing csv preferences")  
+![Example of parameters file containing csv preferences](igrc-platform/installation-and-deployment/batch-configuration-and-usage/images/2019-03-25_17_09_47.png "Example of parameters file containing csv preferences")  
 
 To map a multivalued parameter (`view_param1`) please use pilcrow sign '¶' to separate values, example:  
 `view_param1=val1¶val2¶val3`

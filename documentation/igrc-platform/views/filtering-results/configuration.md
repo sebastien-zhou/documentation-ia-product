@@ -12,7 +12,7 @@ Configuration of filters is carried out at the level of your Audit View.
 
 Open the dialog box for 'Edit Attribute Properties' by right clicking and selecting 'Edit Attribute Properties' or double click on the attribute.   
 
-![Configuration]({{site.baseurl}}/docs/igrc-platform/views/filtering-results/images/viewFilterConfiguration.png "Configuration")   
+![Configuration](igrc-platform/views/filtering-results/images/viewFilterConfiguration.png "Configuration")   
 
 Selecting 'Filter values' enables you to configure the filter to be applied to your attribute. You can add a filter rule by clicking on the button 'Add.' You are then asked to select the test operation to carry out on the attribute, as well as the value or values for comparison.     
 The following operations are available:   
@@ -52,7 +52,7 @@ It is possible to apply multiple conditions consecutively to a single attribute,
 - **or** : At least one condition must apply
 - **and** : All the conditions must apply   
 
-![Configuration]({{site.baseurl}}/docs/igrc-platform/views/filtering-results/images/2.png "Configuration")     
+![Configuration](igrc-platform/views/filtering-results/images/2.png "Configuration")     
 
 Once the configuration is complete, this appears in the Audit View Editor showing the combined operations carried out on the attribute. The short names for the filter operations are used:   
 
@@ -73,12 +73,12 @@ Once the configuration is complete, this appears in the Audit View Editor showin
 - **before now/commit date/current validated timeslot**
 - **after now/commit date/current validated timeslot**
 - **is previous timeslot**
-- ![Icon]({{site.baseurl}}/docs/igrc-platform/views/filtering-results/images/equalsBoolean.png "Icon") matches the boolean value     
+- ![Icon](igrc-platform/views/filtering-results/images/equalsBoolean.png "Icon") matches the boolean value     
 
-![Icon]({{site.baseurl}}/docs/igrc-platform/views/filtering-results/images/3.png "Icon")    
+![Icon](igrc-platform/views/filtering-results/images/3.png "Icon")    
 
 Where a filter operation is configured for several attributes, all filter operations must apply to avoid the result line being filtered out (with an 'AND' operation between the filter operations).    
 
-![Icon]({{site.baseurl}}/docs/igrc-platform/views/filtering-results/images/4.png "Icon")    
+![Icon](igrc-platform/views/filtering-results/images/4.png "Icon")    
 
 | **Note**: <br><br> To apply advanced filters, you can also configure an Audit Rule and use it from the Audit View.|

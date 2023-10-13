@@ -28,13 +28,13 @@ In this tab you can see/modify general parameters of the component. You will fin
 - _Display name_ for the _Support target_
 - _Follow just one link_ option which sets the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation condition evaluated to true will be executed.
 
-![Target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/actor-target/images/actor_2018-04-06_15_48_40-.png "Target")
+![Target](igrc-platform/collector/components/targets/actor-target/images/actor_2018-04-06_15_48_40-.png "Target")
 
 ## Description  
 
 This property allows adding comment regarding actions done by this component.  
 
-![Description]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/actor-target/images/actor_2018-04-06_15_48_53-.png "Description")
+![Description](igrc-platform/collector/components/targets/actor-target/images/actor_2018-04-06_15_48_53-.png "Description")
 
 ## Actor
 
@@ -43,7 +43,7 @@ In this tab, you will specify:
 _"Attribute containing organization"_ is the code of the organization (mandatory, mono-valued)
 _"Attribute containing asset"_ is the code of the asset (mandatory, mono-valued)
 
-![Actor]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/actor-target/images/actor_2018-04-06_15_49_10-.png "Actor")
+![Actor](igrc-platform/collector/components/targets/actor-target/images/actor_2018-04-06_15_49_10-.png "Actor")
 
 # Error handling
 

@@ -25,7 +25,7 @@ There is always a main process called 'master'. This process is the one launched
 The master process finds how the reviewed items will be split. For an account review by repository managers, the split is by repository.
 The master process launches as many sub-processes as entities for the split. For example, if we have 3 repositories, we will end up with 3 detail processes.
 
-![Review workflow architecture]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_workflow_architecture.png "Review workflow architecture")
+![Review workflow architecture](igrc-platform/review-wizard/images/review_workflow_architecture.png "Review workflow architecture")
 
 The scope of the campaign defines 3 repositories to review: Active Directory, Elyxo repository and Sage repository.
 The ledger contains also the repository managers. A single person may manage several repositories.
@@ -66,7 +66,7 @@ And for the 'Who', we want to target the managers of the 'Sales' division. Anoth
 
 The following schema shows how both dimensions (rights and organizations) are handled in the scope.
 
-![Review scope definition]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_scope_definition.png "Review scope definition")
+![Review scope definition](igrc-platform/review-wizard/images/review_scope_definition.png "Review scope definition")
 
 This schema shows that the rights involved in this review are filtered using criteria like the kind of account and the application name.
 The 'What' is reduced to a subset of the rights.
@@ -135,7 +135,7 @@ To handle several items by category (for example, all rights of a given identity
 
 The following screenshot shows the review list:
 
-![Review list page]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_list_page.png "Review list page")
+![Review list page](igrc-platform/review-wizard/images/review_list_page.png "Review list page")
 
 Many options in this page can be customized like:
 
@@ -157,7 +157,7 @@ For the columns, a first header line may contain applications and a second heade
 
 The following screenshot shows the review crosstab:
 
-![Review crosstab page]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_crosstab_page.png "Review crosstab page")
+![Review crosstab page](igrc-platform/review-wizard/images/review_crosstab_page.png "Review crosstab page")
 
 Each header line or row is called a dimension. In this example we have 4 dimensions (2 dimensions in rows and 2 dimensions in columns).
 All the features in the list mode are available in the cross table mode except the grouping.
@@ -189,7 +189,7 @@ When all rights having discrepancies are handled, we can go to the second step w
 
 The second step uses the cross table representation. In this page, the manager should click on the icon to sort the table.
 
-![Review crosstab page sorted]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_crosstab_page_sorted.png "Review crosstab page sorted")
+![Review crosstab page sorted](igrc-platform/review-wizard/images/review_crosstab_page_sorted.png "Review crosstab page sorted")
 
 This operation changes both the columns and the rows to make some rectangles appear. These rectangles represent some people having the same rights.
 Then, the manager looks at the identities and check that they are all from the same team or that they share the same business activities or job titles.
@@ -245,7 +245,7 @@ All the task notifications, the reminders and the escalation notifications are s
 These emails can be customized (change the title, the body, the attachments...) and nationalized (the identity language is used).
 The following screenshot shows a notification email received by a manager:
 
-![Review notification email]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_notification_email.png "Review notification email")
+![Review notification email](igrc-platform/review-wizard/images/review_notification_email.png "Review notification email")
 
 # Compliance report
 
@@ -253,7 +253,7 @@ When a manager finishes his review, a report is generated for his scope.
 When all the managers have finished, the main process generates a compliance report with all scopes consolidated.
 The following screenshot is the first page of the compliance report/
 
-![Review compliance report]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_main_report.png "Review compliance report")
+![Review compliance report](igrc-platform/review-wizard/images/review_main_report.png "Review compliance report")
 
 **NOTE**: the compliance report is always generated even if the due date was reached before all reviewers have finished and
 even if the campaign is killed.

@@ -168,7 +168,7 @@ Once realms configuration are done, the next step is to create the role mapping 
 <LDAP_ROLEn>=<PORTAL_ROLEn>
 ``` 
 
-> Note: Brainwave Identity GRC needs at least the **user** specific role to be mapped. Others default IAP portal roles are detailed in the [Web Portal Roles]({{site.baseurl}}{% link docs/ias/integration-guide/web-portal-roles.md %}) article. 
+> Note: Brainwave Identity GRC needs at least the **user** specific role to be mapped. Others default IAP portal roles are detailed in the [Web Portal Roles](ias/integration-guide/web-portal-roles.md) article. 
 
 ### Multiple LDAP
 

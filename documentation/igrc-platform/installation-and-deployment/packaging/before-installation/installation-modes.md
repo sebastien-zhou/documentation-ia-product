@@ -22,7 +22,7 @@ For desktop mode the command is: `brainwave init`.
 Desktop mode allows the user to create different projects on their environment. Each project is independent from one another.  
 
 > For more detailed information on the installation steps for each environnement please refer to the dedicated pages  
-> [Installation procedures]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/packaging/installation.md %}){: .ref}
+> [Installation procedures](igrc-platform/installation-and-deployment/packaging/installation.md){: .ref}
 
 To Start and stop the project instance deployment use the following commands:  
 
@@ -42,7 +42,7 @@ This mode is only supported in Linux environments and its the recommended mode f
 In server mode, a single instance can exists. There is no notion of project.
 
 > For more detailed information on the installation steps for each environnement please refer to the dedicated pages  
-> [Installation procedure]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/packaging/installation.md %}){: .ref}
+> [Installation procedure](igrc-platform/installation-and-deployment/packaging/installation.md){: .ref}
 
 The installation will use the following directories:  
 
@@ -51,7 +51,7 @@ The installation will use the following directories:
 - `/usr/local/brainwave`
 - `/var/log/brainwave`
 
-For more information on the above mentioned folder please see the [requirements]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/packaging/before-installation/requirements.md %}#docker-host-disk) page.  
+For more information on the above mentioned folder please see the [requirements](igrc-platform/installation-and-deployment/packaging/before-installation/requirements.md#docker-host-disk) page.  
 
 To start the services use `brainwave start`  
 To stop the services use `brainwave stop`  

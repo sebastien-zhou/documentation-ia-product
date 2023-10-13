@@ -15,6 +15,6 @@ The tabs include:
 
 - An Activity tab, which includes the display name. You can also chose the display method.
 - A Description tab which can only include a description
-- An Updates tab to configure which values, if necessary, are to update at the end of the process execution. Please refer to the page on [Start, End and manual activity composants description]({{site.baseurl}}{% link docs/igrc-platform/workflow/components/start-or-manual-activity-composants.md %}) for more information on the update configuration.   
+- An Updates tab to configure which values, if necessary, are to update at the end of the process execution. Please refer to the page on [Start, End and manual activity composants description](igrc-platform/workflow/components/start-or-manual-activity-composants.md) for more information on the update configuration.   
 
 ![The End component](../images/Image_Documentation23_bis.png "The End component")

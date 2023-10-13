@@ -21,7 +21,7 @@ Debugging is an essential step when creating a workflow. The following article w
 
 # Procedure
 
-Those familiar with the collector debug mode will find themselves quite at ease with the debug mode of the workflow editor (see [Collecte]({{site.baseurl}}{% link docs/igrc-platform/collector/collector.md %}). As in the collector editor, it is possible to set breakpoints to wait on any given activity, inspect variable values, proceed forward step by step, etc. The workflow debugger, however, has been enriched with two major additions :   
+Those familiar with the collector debug mode will find themselves quite at ease with the debug mode of the workflow editor (see [Collecte](igrc-platform/collector/collector.md). As in the collector editor, it is possible to set breakpoints to wait on any given activity, inspect variable values, proceed forward step by step, etc. The workflow debugger, however, has been enriched with two major additions :   
 
 - E-Mails view
 - A main debug dialog.
@@ -52,7 +52,7 @@ The debugging dialog is very straightforward to use, with an input area that wil
 - force task to escalate. This will put the task in escalation mode, exactly as if the escalation timer had expired
 - set the task to expire, as if the expiration timer had gone off. This will make the process branch on expiration links (those with red color)   
 
-The checkbox to 'save scenario on exit' is always available during debug. See the pages on [Recording and replaying debug sessions using scenarios]({{site.baseurl}}{% link docs/igrc-platform/workflow/recording-and-replaying-debug-sessions-using-scenarios.md %}) for more information.
+The checkbox to 'save scenario on exit' is always available during debug. See the pages on [Recording and replaying debug sessions using scenarios](igrc-platform/workflow/recording-and-replaying-debug-sessions-using-scenarios.md) for more information.
 
 # See also
 

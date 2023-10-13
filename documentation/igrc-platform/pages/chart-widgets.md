@@ -20,7 +20,7 @@ The page technology embed chart capabilities, we will detail in this chapter how
 
 You can easily add  charts in your pages, such as:   
 
-![Charts1]({{site.baseurl}}/docs/igrc-platform/pages/images/chart01.png "Charts1")        
+![Charts1](igrc-platform/pages/images/chart01.png "Charts1")        
 
 In order to do so, you have to use the Chart widget.   
 
@@ -36,9 +36,9 @@ layout:Layout{grab:horizontal True vertical True}
 }
 ```
 
-![Charts2]({{site.baseurl}}/docs/igrc-platform/pages/images/chart02.png "Charts2")        
+![Charts2](igrc-platform/pages/images/chart02.png "Charts2")        
 
-![Charts3]({{site.baseurl}}/docs/igrc-platform/pages/images/chart03.png "Charts3")        
+![Charts3](igrc-platform/pages/images/chart03.png "Charts3")        
 
 The Chart widget relies on a chart template (more on this on the next chapter). you will find the default chart templates in your project under webportal/pages/charts.   
 
@@ -61,7 +61,7 @@ layout:Layout{grab:horizontal True vertical True}
 }
 ```
 
-![Charts4]({{site.baseurl}}/docs/igrc-platform/pages/images/chart04.png "Charts4")        
+![Charts4](igrc-platform/pages/images/chart04.png "Charts4")        
 
 In order to declare some data you have to provide a dataset to your chart. This dataset must contain at least one attribute of type string (the category) and one attribute of type Date/Double/integer (the value).    
 As a result, your view will most likely contain an aggregation function for computing the value (count, sum, ...).   
@@ -82,7 +82,7 @@ You can actually add new templates. In order to do so go to the webportal/pages/
 
 It will open the Chart template editor:   
 
-![Custom Charts]({{site.baseurl}}/docs/igrc-platform/pages/images/chart05.png "Custom Charts")        
+![Custom Charts](igrc-platform/pages/images/chart05.png "Custom Charts")        
 
 _This editor is the same as the one used in the reports. Please read the Reporting engine documentation for more details about it. We will only focus here on the changes._   
 
@@ -90,7 +90,7 @@ You can customize your chart through the first and the third tabs.
 
 In order to prepare the data mapping you have to open the second tab and to declare strings in the values and category placeholders.   
 
-![Custom Charts]({{site.baseurl}}/docs/igrc-platform/pages/images/chart06.png "Custom Charts")        
+![Custom Charts](igrc-platform/pages/images/chart06.png "Custom Charts")        
 
 Those strings are used in the 'series' attribute of the Chart widget:   
 
@@ -117,7 +117,7 @@ layout:Layout{grab:horizontal True vertical True}
 }
 ```
 
-Somehow, you will have to use a [join dataset]({{site.baseurl}}{% link docs/igrc-platform/pages/advanced-data-binding.md %}) to consolidate those information in a single dataset.    
+Somehow, you will have to use a [join dataset](igrc-platform/pages/advanced-data-binding.md) to consolidate those information in a single dataset.    
 Note that the pages chart engine does not support embedded chart aggregation functions.    
 
 # Decorators
@@ -126,7 +126,7 @@ You can add preconfigured charts to your widgets, this is useful to provide addi
 
 Those 'tiny' charts are displayed along with your display widget, such as:    
 
-![Decorators]({{site.baseurl}}/docs/igrc-platform/pages/images/chart07.png "Decorators")        
+![Decorators](igrc-platform/pages/images/chart07.png "Decorators")        
 
 You declare a decorator with the 'decorator' property.   
 

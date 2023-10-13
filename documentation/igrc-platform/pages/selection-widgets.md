@@ -20,7 +20,7 @@ These widgets can offer many functionalities to interact with. For example, they
 
 To accomplish their goal they are also linked to one of many selection variables that they will modify when a selection action is registered.   
 
-![Widgets]({{site.baseurl}}/docs/igrc-platform/pages/images/1504.png "Widgets")         
+![Widgets](igrc-platform/pages/images/1504.png "Widgets")         
 
 Selection variables can later be used by Display Widgets, or sent as parameters to secondary Datasets.   
 
@@ -29,7 +29,7 @@ Selection variables can later be used by Display Widgets, or sent as parameters 
 A Table helps you to present a list of information stored in a Dataset.   
 Here is a simple example:
 
-![Table]({{site.baseurl}}/docs/igrc-platform/pages/images/1503.png "Table")         
+![Table](igrc-platform/pages/images/1503.png "Table")         
 
 ```
 sourceData = Dataset {
@@ -110,11 +110,11 @@ Table {
 }
 ```
 
-![Table configuration]({{site.baseurl}}/docs/igrc-platform/pages/images/1503.png "Table configuration")        
+![Table configuration](igrc-platform/pages/images/1503.png "Table configuration")        
 
 As you can see, we added a new column for the identity uid along with the selection: `selectedIdentityUid` keyword. It means that when a user click on a line the selectedIdentityUid variable is updated with the corresponding dataset uid content. As the uid is a technical information, this column is hidden from the end user.   
 
-This is used for instance for [master/detail]({{site.baseurl}}{% link docs/igrc-platform/pages/data-binding.md %}) pages where you want to present dynamic content.  
+This is used for instance for [master/detail](igrc-platform/pages/data-binding.md) pages where you want to present dynamic content.  
 
 ## Preserving table selection on change 
 By default, a table's selection is cleared when the table's data changes.  
@@ -146,11 +146,11 @@ It is possible to organise the data displayed in a table in the portal. For this
 
 Adding this option will then add new menus to the right click:   
 
-![Table configuration]({{site.baseurl}}/docs/igrc-platform/pages/images/table-RightClick.png "Table configuration")        
+![Table configuration](igrc-platform/pages/images/table-RightClick.png "Table configuration")        
 
 This allows you to display/hide, using the eye icon and rearrange the columns of a table, using the dedicated buttons, through the following pop-up :   
 
-![Table configuration]({{site.baseurl}}/docs/igrc-platform/pages/images/table-configuration.png "Table configuration")        
+![Table configuration](igrc-platform/pages/images/table-configuration.png "Table configuration")        
 
 The page designer can control which table columns are initially visible when page loads using the `initially-masked:` attribute. This attribute contains a constant predicate, for example:   
 
@@ -225,7 +225,7 @@ PaginatedTable {
 }
 ```
 
-![PaginatedTable]({{site.baseurl}}/docs/igrc-platform/pages/images/paginated_table.png "PaginatedTable")        
+![PaginatedTable](igrc-platform/pages/images/paginated_table.png "PaginatedTable")        
 
 # Tree
 
@@ -240,7 +240,7 @@ selectedOrganisationUid = Variable {
 
 From a view that is designed as following:   
 
-![Tree]({{site.baseurl}}/docs/igrc-platform/pages/images/1505.png "Tree")        
+![Tree](igrc-platform/pages/images/1505.png "Tree")        
 
 We can create the dataset:   
 
@@ -278,7 +278,7 @@ Tree {
 }
 ```
 
-![Tree]({{site.baseurl}}/docs/igrc-platform/pages/images/1506.png "Tree")        
+![Tree](igrc-platform/pages/images/1506.png "Tree")        
 
 # TemplateTable
 
@@ -312,7 +312,7 @@ TemplateTable {
 }
 ```
 
-![TemplateTable]({{site.baseurl}}/docs/igrc-platform/pages/images/1507.png "TemplateTable")        
+![TemplateTable](igrc-platform/pages/images/1507.png "TemplateTable")        
 
 # Action links 
 {: .d-inline-block }
@@ -322,7 +322,7 @@ New in **Ader R1 SP4**
 
 You can set action links in cells of tables, trees , tables with grouping and paginated tables using **actions:** attribute.
 
-![table link]({{site.baseurl}}/docs/igrc-platform/pages/images/table_link.png) 
+![table link](igrc-platform/pages/images/table_link.png) 
 
 The action links are defined per **Column** and can carry out any actions ( eg open a detail dialog box, display a message) , not only opening another page or report.  
 You can have one different action link on each column. The actions can reference any dataset column of the row being clicked, using **Current attribute** syntax.

@@ -18,7 +18,7 @@ permalink: /docs/igrc-platform/collector/components/filter/join-filter/
 
 This property allows to join two sources, in order to obtain a dataset containing information from both sources.  
 
-![Join diagram]({{site.baseurl}}/docs/igrc-platform/collector/components/filters/join-filter/images/join_diag.png "Join diagram")   
+![Join diagram](igrc-platform/collector/components/filters/join-filter/images/join_diag.png "Join diagram")   
 
 It has two distinct modes of operation (cache is enabled or not) which are detailed in the section Operating mode below.  
 
@@ -32,25 +32,25 @@ In this tab you can see/modify general parameters of the component. You will fin
 - _Display name_ for the _Join filter_
 - _Follow just one link_ option which sets the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation condition evaluated to true will be executed.
 
-![Join1]({{site.baseurl}}/docs/igrc-platform/collector/components/filters/join-filter/images/join1.png "Join1")   
+![Join1](igrc-platform/collector/components/filters/join-filter/images/join1.png "Join1")   
 
 ## Description
 
 This property allows adding comment regarding actions done by this component.
 
-![Join2]({{site.baseurl}}/docs/igrc-platform/collector/components/filters/join-filter/images/join2.png "Join2")   
+![Join2](igrc-platform/collector/components/filters/join-filter/images/join2.png "Join2")   
 
 ## Source
 
 This property allows to select which one of the two attached sources is the secondary one, i.e. the source used to augment the dataset.  
 
-![Join3]({{site.baseurl}}/docs/igrc-platform/collector/components/filters/join-filter/images/join3.png "Join3")   
+![Join3](igrc-platform/collector/components/filters/join-filter/images/join3.png "Join3")   
 
 ## Attributes
 
 This property allows to map attributes of the secondary dataset to attributes of the main dataset.  
 
-![Join4]({{site.baseurl}}/docs/igrc-platform/collector/components/filters/join-filter/images/join4.png "Join4")   
+![Join4](igrc-platform/collector/components/filters/join-filter/images/join4.png "Join4")   
 
 For example, in this case, the _name_ attribute of the secondary source (_discoverysource - company_) will be added to the main dataset under the name _company\_name_.  
 
@@ -58,13 +58,13 @@ For example, in this case, the _name_ attribute of the secondary source (_discov
 
 This property allows to specify the behavior of the join when less than one or more than one records of the secondary dataset matches.  
 
-![Join5]({{site.baseurl}}/docs/igrc-platform/collector/components/filters/join-filter/images/join5.png "Join5")   
+![Join5](igrc-platform/collector/components/filters/join-filter/images/join5.png "Join5")   
 
 ## Cache
 
 This property allows to specify the behavior of the cache (see next section).
 
-![Join6]({{site.baseurl}}/docs/igrc-platform/collector/components/filters/join-filter/images/join6.png "Join6")   
+![Join6](igrc-platform/collector/components/filters/join-filter/images/join6.png "Join6")   
 
 # Operating modes
 

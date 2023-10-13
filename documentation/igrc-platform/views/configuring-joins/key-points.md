@@ -24,6 +24,6 @@ This operation is recursive: It is possible to settle on any concept within the 
 
 | **Important**: <br><br> The names of attributes returned by an Audit View must be unique. We recommend therefore that you systematically apply a prefix to all secondary concepts within your Audit View.|
 
-![Key points]({{site.baseurl}}/docs/igrc-platform/views/configuring-joins/images/6.png "Key points")   
+![Key points](igrc-platform/views/configuring-joins/images/6.png "Key points")   
 
 | **Important**: <br><br>  Implementing links between the Concepts within the Main Ledger assists in assigning multi-values to attributes. For example, for each Identity, retrieve in addition the list of accounts available. <br> An Audit View result is systematically a two-dimensional table with single-value attributes. Implementing links between Main Ledger Concepts gives rise to a Cartesian product of the relevant concepts: in the previous example, the result will contain the attributes of the attached identity for each access account. The number of results is therefore equal to (_number of identities_) \* (_number of accounts by identity)_.|

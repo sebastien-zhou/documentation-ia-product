@@ -31,7 +31,7 @@ You can hide a timeslot directly from the webportal:
 
 If a purge policy is defined in the technical configuration, it will be run automatically after each ingestion (timeslot creation).  
 
-> See [Define the purge]({{site.baseurl}}{% link docs/how-to/configuration/purge-timeslots-policy.md %}#define-the-purge) to learn how to configure the purge in your technical configuration.  
+> See [Define the purge](how-to/configuration/purge-timeslots-policy.md#define-the-purge) to learn how to configure the purge in your technical configuration.  
 
 Be aware that there is already a purge policy in the default `docker` technical configuration that comes with the packaging project:  
 ![Docker configuration default purge](../images/docker_conf_default_purge.png)  

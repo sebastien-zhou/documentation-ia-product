@@ -21,7 +21,7 @@ File share rights also known as ACLs (_Access Control Lists_) are collected in t
 
 From collect editor select _File share target_ in _Ledger targets._  
 
-![File share target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/file-share-target/images/2016-07-07_17_18_56-iGRC_Properties.png "File share target")
+![File share target](igrc-platform/collector/components/targets/file-share-target/images/2016-07-07_17_18_56-iGRC_Properties.png "File share target")
 
 # The properties Tab
 
@@ -33,13 +33,13 @@ In this property you can view/edit general parameters of the ACLs. You will find
 - the _Display name_ for the _File share target_  
 - the _Follow just one link_ option to set the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation condition evaluated to true will be executed.
 
-![Target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/file-share-target/images/file_prop_target.png "Target")
+![Target](igrc-platform/collector/components/targets/file-share-target/images/file_prop_target.png "Target")
 
 ## Description
 
 This property allows user to add comment regarding actions done by this component.
 
-![Description]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/file-share-target/images/file_prop_desc.png "Description")
+![Description](igrc-platform/collector/components/targets/file-share-target/images/file_prop_desc.png "Description")
 
 ## File share
 
@@ -51,7 +51,7 @@ Here you can made the association between a permission (folder or file) and an a
 -  "Trigger an error if account or group does not exist" option to activate an event that will be generated when a group or account having this ACL does not exist in database. Such event is shown in dedicated logs.
 - "Trigger an error if domain does not exist" option to activate an event that will be generated when the repository used to search group or account does not exist in database (event shown in dedicated logs).
 
-![Fileshare]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/file-share-target/images/fileshare.png "Fileshare")
+![Fileshare](igrc-platform/collector/components/targets/file-share-target/images/fileshare.png "Fileshare")
 
 ## Parameters
 
@@ -67,13 +67,13 @@ Available fields are :
 
 _Example from FileShare Facet parameters_   
 
-![Parameters]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/file-share-target/images/file_prop_params.png "Parameters")
+![Parameters](igrc-platform/collector/components/targets/file-share-target/images/file_prop_params.png "Parameters")
 
 ## Replace
 
 Here you can define a mapping of ACL recipient to a list of replacement recipient. For instance, for windows file share, we can map "_Tout le monde","Everyone",_ windows group on known SID "_S-1-1-0_" to found associated group in the ledger. SID known as Security Identifiers is a unique identifier but group name can change according to system language, case of windows default groups. Below is presented an example _from FileShare Facet replace._  
 
-![Replace]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/file-share-target/images/file_prop_replace.png "Replace")
+![Replace](igrc-platform/collector/components/targets/file-share-target/images/file_prop_replace.png "Replace")
 
 # Example
 
@@ -85,6 +85,6 @@ Not applicable
 
 # See also
 
-[ACL extraction script]({{site.baseurl}}{% link docs/igrc-platform/add-ons/extraction-scripts/acl-extraction-script.md %})      
+[ACL extraction script](igrc-platform/add-ons/extraction-scripts/acl-extraction-script.md)      
 [Windows Access Control Lists](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374872(v=vs.85).aspx)     
-[Understanding the action right field when loading file shares]({{site.baseurl}}{% link docs/how-to/collectors/how-to-understand-FS-right-action.md %})       
+[Understanding the action right field when loading file shares](how-to/collectors/how-to-understand-FS-right-action.md)       

@@ -30,7 +30,7 @@ A person is going to move to other responsabilities, in the meantime this person
 
 | **Note**: <br><br> The exception feature does not remove the control results. It adds additional information that can be linked to it.<br><br>You can then choose how to display this information to end-users through the portal.<br>For instance hide results with controls defects, or to display them in another format and/or with additional information (the control defect reason, start and end date...) etc.|
 
-From a technical point of view, exceptions are compatible with all control families except "theoretical rights" where a [derogation]({{site.baseurl}}{% link docs/igrc-platform/collector/components/targets/derogation-target/derogation-target.md %}) should be used instead.    
+From a technical point of view, exceptions are compatible with all control families except "theoretical rights" where a [derogation](igrc-platform/collector/components/targets/derogation-target/derogation-target.md) should be used instead.    
 Exception can be managed in two different ways:  
 
 - directly from the studio of Brainwaves iGRC platefom:  

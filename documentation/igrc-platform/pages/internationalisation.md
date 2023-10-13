@@ -105,4 +105,4 @@ The list of languages from which he can choose can be modified using the `interf
 
 For more information on nationalization please check the following page:
 
-[Advanced Concepts]({{site.baseurl}}{% link docs/igrc-platform/pages/advanced-concepts.md %}){: .btn }
+[Advanced Concepts](igrc-platform/pages/advanced-concepts.md){: .btn }

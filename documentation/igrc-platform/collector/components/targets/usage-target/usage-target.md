@@ -28,19 +28,19 @@ In this tab you can see/modify general parameters of the component. You will fin
 - _Display name_ for the _Usage target_
 - _Follow just one link_ option which sets the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation condition evaluated to true will be executed.
 
-![The properties Tab]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/usage-target/images/usage1.png "The properties Tab")
+![The properties Tab](igrc-platform/collector/components/targets/usage-target/images/usage1.png "The properties Tab")
 
 ## Description
 
 This property allows adding comment regarding actions done by this component.  
 
-![The description Tab]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/usage-target/images/usage2.png "The description Tab")
+![The description Tab](igrc-platform/collector/components/targets/usage-target/images/usage2.png "The description Tab")
 
 ## Repository
 
 This tab allows to specify the code of the (account) repository which contains the account specified in the next tab.  
 
-![The Repository Tab]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/usage-target/images/usage3.png "The Repository Tab")
+![The Repository Tab](igrc-platform/collector/components/targets/usage-target/images/usage3.png "The Repository Tab")
 
 ## Usage
 
@@ -51,7 +51,7 @@ In this tab, you will specify:
 - "_Attribute containing permission_" is the code of a permission (optional, mono-valued), if specified the application must also be specified
 - "_Attribute containing aggregate key_" is a project specific key identifying this particular set of usages, for example "Access".
 
-![The Usage Tab]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/usage-target/images/usage4.png "The Usage Tab")
+![The Usage Tab](igrc-platform/collector/components/targets/usage-target/images/usage4.png "The Usage Tab")
 
 ## Parameters  
 
@@ -68,7 +68,7 @@ Available fields are :
 - usage display name  
 - custom 1 --\> 9
 
-![The Parameters Tab]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/usage-target/images/usage5.png "The Parameters Tab")
+![The Parameters Tab](igrc-platform/collector/components/targets/usage-target/images/usage5.png "The Parameters Tab")
 
 ## User  
 
@@ -77,7 +77,7 @@ When you want to directly rattach an identity to this usage, you can indicate wh
 - _Trigger an error if the identity is not found_ and indicate the event display name.
 - _Trigger an error if several identities match_ and indicate the event display name.
 
-![The User Tab]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/usage-target/images/usage6.png "The User Tab")
+![The User Tab](igrc-platform/collector/components/targets/usage-target/images/usage6.png "The User Tab")
 
 If the HR code is not available (but you can access other identity attributes like mail, fullname,...) you can use the property below.
 
@@ -85,7 +85,7 @@ If the HR code is not available (but you can access other identity attributes li
 
 Here you can select attributes that will fetch an identity for the import usage if HR code is not available.  
 
-![The Resolution Tab]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/usage-target/images/usage7.png "The Resolution Tab")
+![The Resolution Tab](igrc-platform/collector/components/targets/usage-target/images/usage7.png "The Resolution Tab")
 
 # Best practices
 

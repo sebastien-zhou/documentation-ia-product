@@ -70,9 +70,9 @@ This chapter explains how to configure, collect and work with Audit Logs in Brai
 
 ## Chapter content
 
-- [Configuring the database for Audit Logs]({{site.baseurl}}{% link docs/igrc-platform/audit-logs/setting-up-audit-logs.md %})   
-- [Collecting Audit Logs]({{site.baseurl}}{% link docs/igrc-platform/audit-logs/collecting-audit-logs.md %})   
-- [Working with Audit Logs]({{site.baseurl}}{% link docs/igrc-platform/audit-logs/working-with-audit-logs.md %})    -->
+- [Configuring the database for Audit Logs](igrc-platform/audit-logs/setting-up-audit-logs.md)   
+- [Collecting Audit Logs](igrc-platform/audit-logs/collecting-audit-logs.md)   
+- [Working with Audit Logs](igrc-platform/audit-logs/working-with-audit-logs.md)    -->
 
 # How to Collect Audit Logs
 

@@ -20,7 +20,7 @@ Metadata can also be changed by the user through a workflow.
 
 The workflow editor has a new component in the palette in the Metadata section.
 
-![Metadata workflow component]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_workflow_palette.png "Metadata workflow component")
+![Metadata workflow component](igrc-platform/metadata/images/metadata_workflow_palette.png "Metadata workflow component")
 
 The component is composed of several tabs that let you create, modify or delete some metadata.
 
@@ -35,7 +35,7 @@ If 5 metadata have to be created or updated, all variables mapped in the compone
 
 The tab named 'General options' is used to select the operation to perform at runtime.
 
-![Metadata workflow component tabs]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_workflow_tabs.png "Metadata workflow component tabs")
+![Metadata workflow component tabs](igrc-platform/metadata/images/metadata_workflow_tabs.png "Metadata workflow component tabs")
 
 The field 'Action' contains the operation. The available actions are:
 - Creation or modification of metadata,
@@ -54,7 +54,7 @@ A workflow variable containing an identity uid (or several if metadata is multiv
 
 The following screenshot shows the 'Metadata key':
 
-![Metadata workflow key]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_workflow_key.png "Metadata workflow key")
+![Metadata workflow key](igrc-platform/metadata/images/metadata_workflow_key.png "Metadata workflow key")
 
 In this tab, you can either select a schema using the first field or map an attribute containing the metadata key variable (second field).
 This is used to select between the 2 modes: with or without a schema.
@@ -72,7 +72,7 @@ This is the responsibility of the developer to be sure that a non empty value is
 
 The following screenshot shows the 'Metadata model values':
 
-![Metadata workflow model values]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_workflow_model_values.png "Metadata workflow model values")
+![Metadata workflow model values](igrc-platform/metadata/images/metadata_workflow_model_values.png "Metadata workflow model values")
 
 This tab is used to define relationships with Ledger entities but as values (not part of the metadata key).
 
@@ -83,7 +83,7 @@ If a metadata schema has been selected in 'Metadata key' tab, then only the acti
 
 The following screenshot shows the 'Metadata simple values':
 
-![Metadata workflow simple values]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_workflow_simple_values.png "Metadata workflow simple values")
+![Metadata workflow simple values](igrc-platform/metadata/images/metadata_workflow_simple_values.png "Metadata workflow simple values")
 
 This tab is used to map the attributes for simple values:
 * 2 strings
@@ -109,7 +109,7 @@ Anyway, let's try to do it the wrong way to understand the problem:
 - The organization is a metadata key
 - The identities and the permissions are defined in the metadata values
 
-![Metadata workflow metadata tree wrong]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_workflow_tree_wrong.png "Metadata workflow metadata tree wrong"){:.large}
+![Metadata workflow metadata tree wrong](igrc-platform/metadata/images/metadata_workflow_tree_wrong.png "Metadata workflow metadata tree wrong"){:.large}
 
 The name can be stored in the first string in 'Simple values' tab.
 
@@ -134,18 +134,18 @@ In this example, we have 3 cardinalities (1, x, y) so we need 3 metadata definit
 - A second metadata contains the list of identities as values. This metadata is linked to the first metadata.
 - A third metadata contains the list of permissions as values. This metadata is also linked to the first metadata.
 
-![Metadata workflow metadata tree]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_workflow_tree.png "Metadata workflow metadata tree")
+![Metadata workflow metadata tree](igrc-platform/metadata/images/metadata_workflow_tree.png "Metadata workflow metadata tree")
 
 The following screenshots show the 3 metadata definitions.
 
-![Metadata workflow metadata tree good 1]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_workflow_tree_good_1.png "Metadata workflow metadata tree good 1"){:.large}
+![Metadata workflow metadata tree good 1](igrc-platform/metadata/images/metadata_workflow_tree_good_1.png "Metadata workflow metadata tree good 1"){:.large}
 
-![Metadata workflow metadata tree good 2]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_workflow_tree_good_2.png "Metadata workflow metadata tree good 2"){:.large}
+![Metadata workflow metadata tree good 2](igrc-platform/metadata/images/metadata_workflow_tree_good_2.png "Metadata workflow metadata tree good 2"){:.large}
 
 As you can see, there is nothing to link this schema with the first one in the definition.
 The parent link is given at runtime when this second metadata is written.
 
-![Metadata workflow metadata tree good 3]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_workflow_tree_good_3.png "Metadata workflow metadata tree good 3"){:.large}
+![Metadata workflow metadata tree good 3](igrc-platform/metadata/images/metadata_workflow_tree_good_3.png "Metadata workflow metadata tree good 3"){:.large}
 
 ---
 

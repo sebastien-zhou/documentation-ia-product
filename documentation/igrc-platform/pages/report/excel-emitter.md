@@ -79,10 +79,10 @@ For instance, if your report contains a label which value is `APPLICATION`, nami
 
 This is then defined for all the pages.
 - Declare a user property at the root of the report named: `ExcelFreezePane`
-![User properties]({{site.baseurl}}/docs/igrc-platform/pages/report/images/freezepane1.png "User properties")
+![User properties](igrc-platform/pages/report/images/freezepane1.png "User properties")
 
 - Assign a string value to it ( `Advanced` tab of the properties); _e.g.:_ `3x5` where 3 and 5 are the columns and rows (starting with zero) position where frozen panes.
-![Advanced]({{site.baseurl}}/docs/igrc-platform/pages/report/images/freezepane2.png "Advanced")
+![Advanced](igrc-platform/pages/report/images/freezepane2.png "Advanced")
 
 ### At tab level
 - the same user property can be defined on the report item carrying the information about the page (eg: its name contains the string `sheetname`, see **Renaming Tabs**)
@@ -129,7 +129,7 @@ The `ExcelPrintFitToPage` option sets the print area in number of pages in width
 ## Automatic filter
 
 In order to define an automatic filter on a table, give the table item a unique name containing the string `autofilter`:
-![Automatic Filtering]({{site.baseurl}}/docs/igrc-platform/pages/report/images/autofilter1.png "Automatic Filtering")
+![Automatic Filtering](igrc-platform/pages/report/images/autofilter1.png "Automatic Filtering")
 
 
 | **Note:** <br><br> when exporting to XLS format AND protecting the sheet (using a password), the autofilter is disabled. This is Excel's standard behavior. You can bypass this by exporting in XLSX format. |

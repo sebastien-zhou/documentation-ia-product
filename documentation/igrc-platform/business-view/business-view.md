@@ -175,7 +175,7 @@ To describe the business view editor, we are going to create a business view bas
 
 In the creation wizard, select any ledger view in the view field and click on `Finish`. In the example below the business view is based on the ledger view `br_application`.  
 
-The business view editor is built the same way as the other graphical editors in the product (see [here]({{site.baseurl}}{% link docs/igrc-platform/getting-started/product-description/using-the-editors/using-the-editors.md %}) for more graphical editor descriptions). The editor contains the graphical part in the middle, the palette containing all the available components on the right and the Properties window at the bottom of the studio (see caption below).  
+The business view editor is built the same way as the other graphical editors in the product (see [here](igrc-platform/getting-started/product-description/using-the-editors/using-the-editors.md) for more graphical editor descriptions). The editor contains the graphical part in the middle, the palette containing all the available components on the right and the Properties window at the bottom of the studio (see caption below).  
 
 ![Business view editor](./editor/images/bv_editor.png "Business view editor")
 
@@ -348,7 +348,7 @@ _Business View result after adding two attributes (app\_displayname, repo\_code)
 
 ## Common Operations
 
-For more information on the common operators implemented in all components, please refer the the following documentation: [Common operators]({{site.baseurl}}{% link docs/igrc-platform/business-view/common-features/common-features.md %})
+For more information on the common operators implemented in all components, please refer the the following documentation: [Common operators](igrc-platform/business-view/common-features/common-features.md)
 
 ## Source Components
 
@@ -495,7 +495,7 @@ The read function reads the next CSV line and return null if no more record is a
 
 The dispose function closes the file. Note that even if an error occurs in the read function, the dispose function is called to allow freeing resources.  
 
-> More information on the [file parser function]({{site.baseurl}}{% link docs/how-to/collectors/parsing-a-file-js.md %})  
+> More information on the [file parser function](how-to/collectors/parsing-a-file-js.md)  
 
 ## Filter Components
 
@@ -518,7 +518,7 @@ The union component performs an union operation between records coming from a pr
 Both discriminators accept expressions so you can build a key composed of several columns from the current record.  
 
 It is mandatory to configure a view in the union component to perform the union operation.   
-Please refer to the help of view source component for [how to configure the view]({{site.baseurl}}{% link docs/igrc-platform/business-view/components/components.md %})    
+Please refer to the help of view source component for [how to configure the view](igrc-platform/business-view/components/components.md)    
 ![Union view](./components/images/union_view.png "Union view")
 
 #### Examples
@@ -598,7 +598,7 @@ The join types implemented in the component are (see caption below):
 Both keys accept expressions so you can build a key composed of several columns from the current record.   
 
 It is mandatory to configure a view in the join component to perform the join operation.   
-Please refer to the help of view source component for [how to configure the view]({{site.baseurl}}{% link docs/igrc-platform/business-view/components/components.md %})     
+Please refer to the help of view source component for [how to configure the view](igrc-platform/business-view/components/components.md)     
 ![Union view](./components/images/union_view.png "Union view")
 
 #### Examples
@@ -795,7 +795,7 @@ function filterDispose() {
 }
 ```
 
-> More information on the [file parser function]({{site.baseurl}}{% link docs/how-to/collectors/parsing-a-file-js.md %})  
+> More information on the [file parser function](how-to/collectors/parsing-a-file-js.md)  
 
 When the business view execution starts, the script is run. It means that all instructions or declarations outside functions are executed. In the above example, the 3 variables are initialised (csvParser, header, recordNumber). This execution is only executed once even if there are several Script components. What is important to know is that the global context of the JavaScript will be shared among all the components. As such, global variables may be used to share data between the different Script components.   
 
@@ -1111,7 +1111,7 @@ What is the best practice to follow ?
 The best methodology is make the database work as much as possible. The database has some indexes that can speed up the search and is also optimized to perform various sort operations.   
 
 
-| **Note** <br><br> Please remember that it is necessary to refresh or recalculate the indexes after each execution plan, to make the most of their performance benefits. <br> See [Rebuild the database indexes on SQL Server]({{site.baseurl}}{% link docs/how-to/database/sqlserver/rebuild-the-database-indexes-on-sql-server.md %}) or [Rebuild the database indexes on Oracle Server]({{site.baseurl}}{% link docs/how-to/database/oracle/orcl-rebuild-indexes.md %}) for more information on building indexes.|  
+| **Note** <br><br> Please remember that it is necessary to refresh or recalculate the indexes after each execution plan, to make the most of their performance benefits. <br> See [Rebuild the database indexes on SQL Server](how-to/database/sqlserver/rebuild-the-database-indexes-on-sql-server.md) or [Rebuild the database indexes on Oracle Server](how-to/database/oracle/orcl-rebuild-indexes.md) for more information on building indexes.|  
 
 However, if the Ledger view is rich and complex it can generate a complex SQL query. The database is then not able to generate an efficient execution plan resulting in bad response times. In this case, splitting the complex Ledger view into 2 simplified ledger views and joining them in a business view can be a good idea. The sum of the execution times of the three resulting views being smaller than the execution time of the unique complex view.   
 

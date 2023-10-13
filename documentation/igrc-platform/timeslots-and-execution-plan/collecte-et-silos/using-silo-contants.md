@@ -10,7 +10,7 @@ permalink: /docs/igrc-platform/timeslots-and-execution-plan/collect-and-silos/us
 
 In a collect line, we often need to have constants in attributes to map to targets. As an example, in the account target, an attribute containing the repository code is required. To facilitate the creation of your collect lines, in the silo definition, there is a section that allows you to declare some fixed constants. All these fields are optional however these can be extremely useful especially in the case of iteration. As a results the referential can be dynamically created as a function of the silo name. This would allow you to have a different repository for each Active Directory domain, for example.      
 
-![Change the name of the silo]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/studio_silo_constants.png "Change the name of the silo")              
+![Change the name of the silo](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/studio_silo_constants.png "Change the name of the silo")              
 
 In the collect line, all the constants are automatically added to your main dataset. Your dataset contains the following attributes, the name of the attribute is shown as a tooltip in the silo editor (see caption above) :  
 

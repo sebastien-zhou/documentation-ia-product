@@ -74,7 +74,7 @@ Please note that:
 
 * Domain name: The domain name of the server. It can only be changed through brainwave CLI.  
 * Timezone: The timezone of the server.  
-* TLS enabled: Enable or disable TLS. If you activate TLS, you will have to provide a certificate and a key. Please refer to [SSL configuration page]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/packaging/configuration/ssl-configuration.md %}) for more information.  
+* TLS enabled: Enable or disable TLS. If you activate TLS, you will have to provide a certificate and a key. Please refer to [SSL configuration page](igrc-platform/installation-and-deployment/packaging/configuration/ssl-configuration.md) for more information.  
 * Debug mode enabled: Enable or disable debug mode. This will add some logs. It shouldn't be used in production.  
 * Batch memory: The max memory allocated to the batch.  
 * Portal memory: The max memory allocated to the portal.  

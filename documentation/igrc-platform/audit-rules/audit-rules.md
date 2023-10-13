@@ -343,7 +343,7 @@ Within the framework of a project, it can often be useful to create extra rule c
 - To render data stored in the 'custom' fields of the Ledger intelligible
 - To format ready-to-use searches that are specific to client context ('The VIP partners who have access to SAP')
 
-This operation is simple and is carried out by configuring a rule and publishing it in the form of a criterion. Please refer to the chapter [Using rule parameters]({{site.baseurl}}{% link docs/igrc-platform/audit-rules/advanced-concepts/using-parameters/using-parameters.md %}) to find out how to make it possible to configure your criteria.   
+This operation is simple and is carried out by configuring a rule and publishing it in the form of a criterion. Please refer to the chapter [Using rule parameters](igrc-platform/audit-rules/advanced-concepts/using-parameters/using-parameters.md) to find out how to make it possible to configure your criteria.   
 To publish a rule as a criterion, select the entry in the contextual menu 'Package as a criterion' in the graphic rules editor. A dialogue box will open. You will need to successively:
 
 - Indicate the library file name that will contain your criterion
@@ -490,7 +490,7 @@ The product has only a few built-in flags. What about if you want to query somet
 The problem is that we do not have a built-in flag to know if someone got a new application compared to the previous timeslot.   
 But the product lets you define your own custom flags so that you can use them in the rule editor.  
 
-Please, read the article [Creating temporal analysis rule criteria]({{site.baseurl}}{% link docs/igrc-platform/audit-rules/advanced-concepts/temporal-criteria/temporal-criteria.md %}) to know how to create custom flags.
+Please, read the article [Creating temporal analysis rule criteria](igrc-platform/audit-rules/advanced-concepts/temporal-criteria/temporal-criteria.md) to know how to create custom flags.
 
 # Create Temporal Analysis Rule Criteria
 

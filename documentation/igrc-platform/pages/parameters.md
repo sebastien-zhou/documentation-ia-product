@@ -62,7 +62,7 @@ Mandatory attributes are marked in bold.
 
 When visiting a page that receives parameters , the portal allows us to explore and modify the values of all the parameters in a page:
 
-![Parameters Editor]({{site.baseurl}}/docs/igrc-platform/pages/images/0711.png "Parameters Editor")   
+![Parameters Editor](igrc-platform/pages/images/0711.png "Parameters Editor")   
 
 # Advanced Attributes
 
@@ -82,7 +82,7 @@ type must be set to Integer. min and max are optional
 
 This will allow the attribute to take integer values in the range [5,10] . In the parameter editor:   
 
-![Parameters Editor]({{site.baseurl}}/docs/igrc-platform/pages/images/0701.png "Parameters Editor")   
+![Parameters Editor](igrc-platform/pages/images/0701.png "Parameters Editor")   
 
 ```
    constraint: Date { type: Date format:"dd/MM/yyyy" date-before: Date("31/12/2016")
@@ -93,7 +93,7 @@ type must be set to Date. date-before and date-after are optional
 
 It will allow to select a date in 2016. Date selector will be displayed. In the parameter editor   
 
-![Parameters Editor]({{site.baseurl}}/docs/igrc-platform/pages/images/0702.png "Parameters Editor")     
+![Parameters Editor](igrc-platform/pages/images/0702.png "Parameters Editor")     
 
 `constraint: Text { match: "[a-z]*" min-size: 5 max-size: 10 }`
 
@@ -101,15 +101,15 @@ type must be set to String. match , min-size and max-size are optional
 
 It will allow a text that matches the provided regex with the required length . In the parameter editor:   
 
-![Parameters Editor]({{site.baseurl}}/docs/igrc-platform/pages/images/0703.png "Parameters Editor")     
+![Parameters Editor](igrc-platform/pages/images/0703.png "Parameters Editor")     
 
-![Parameters Editor]({{site.baseurl}}/docs/igrc-platform/pages/images/0704.png "Parameters Editor")     
+![Parameters Editor](igrc-platform/pages/images/0704.png "Parameters Editor")     
 
 `constraint: Picker { picker: organisationPicker returning outUid }`
 
 This constraint uses the picker objects ( See more in the pickers segment ). The value of the parameter is the uid :   
 
-![Parameters Editor]({{site.baseurl}}/docs/igrc-platform/pages/images/0705.png "Parameters Editor")     
+![Parameters Editor](igrc-platform/pages/images/0705.png "Parameters Editor")     
 
 ```
 constraint: Picker { picker: organisationPicker returning outUid display: Display
@@ -120,7 +120,7 @@ A variation of the last example. This time the value of the parameter is the uid
 
 The dataset organisations must exists and must be linked to a view that brings all the organisations. The output:   
 
-![Parameters Editor]({{site.baseurl}}/docs/igrc-platform/pages/images/0706.png "Parameters Editor")     
+![Parameters Editor](igrc-platform/pages/images/0706.png "Parameters Editor")     
 
 `constraint: Lookup { data: organisations text: Current shortname value: Current uid }`   
 
@@ -128,7 +128,7 @@ The lookup constraint allows to select a value from an existing dataset organisa
 
 In this case the value of the parameter will be the uid. The displayed value will be the shortname   
 
-![Parameters Editor]({{site.baseurl}}/docs/igrc-platform/pages/images/0707.png "Parameters Editor")     
+![Parameters Editor](igrc-platform/pages/images/0707.png "Parameters Editor")     
 
 ```
 constraint: Lookup { data: organisations text: Current shortname value: Current uid }
@@ -137,17 +137,17 @@ constraint: Lookup { data: organisations text: Current shortname value: Current 
 
 You can pick several values with a lookup by setting your parameter to "multi valued"      
 
-![Parameters Editor]({{site.baseurl}}/docs/igrc-platform/pages/images/param01.png "Parameters Editor")       
+![Parameters Editor](igrc-platform/pages/images/param01.png "Parameters Editor")       
 
 `constraint: Choice { values: [ "Yes", "No"] presentation: Radio }`   
 
 The Choice constraint lets the user select from a list of values. presentation can be : Radio , List or Combo. In the editor:   
 
-![Parameters Editor]({{site.baseurl}}/docs/igrc-platform/pages/images/0708.png "Parameters Editor")       
+![Parameters Editor](igrc-platform/pages/images/0708.png "Parameters Editor")       
 
-![Parameters Editor]({{site.baseurl}}/docs/igrc-platform/pages/images/0709.png "Parameters Editor")       
+![Parameters Editor](igrc-platform/pages/images/0709.png "Parameters Editor")       
 
-![Parameters Editor]({{site.baseurl}}/docs/igrc-platform/pages/images/0710.png "Parameters Editor")       
+![Parameters Editor](igrc-platform/pages/images/0710.png "Parameters Editor")       
 
 # How-to pass parameter from Page to Rule
 
@@ -183,7 +183,7 @@ It is the path to the .rptdesign and here we pass the parameters of the report.
 
 If we take a look about the Report, specifically to the **Report Parameters** section.   
 
-![Report Parameters]({{site.baseurl}}/docs/igrc-platform/pages/images/report_parameter.png "Report Parameters")       
+![Report Parameters](igrc-platform/pages/images/report_parameter.png "Report Parameters")       
 
 ## From Report to View
 
@@ -191,7 +191,7 @@ Now that the value passed from the Page to the Report we can use it to filter Vi
 
 When editing the Dataset, parameters can be edited within the Parameters section.   
 
-![Report Parameters property]({{site.baseurl}}/docs/igrc-platform/pages/images/report_parameter_property.png "Report Parameters property")       
+![Report Parameters property](igrc-platform/pages/images/report_parameter_property.png "Report Parameters property")       
 
 Here you have an overview of all existing parameters declared in the View attached to the Dataset (see [Audit view editor: user guide](https://download.brainwavegrc.com/index.php/s/r9NKmP4BjrJd94m) for detail).    
 
@@ -209,7 +209,7 @@ br_identity = Dataset {
     }
 ```
 
-See [View Binding]({{site.baseurl}}{% link docs/igrc-platform/pages/data-binding.md %}).   
+See [View Binding](igrc-platform/pages/data-binding.md).   
 
 ## From View to Rule
 
@@ -219,17 +219,17 @@ When the rule is used, the display name of the parameter will automatically appe
 
 From the View editor, when using a rule as a filter.   
 
-![Report Parameters View]({{site.baseurl}}/docs/igrc-platform/pages/images/report_parameter_view.png "Report Parameters View")       
+![Report Parameters View](igrc-platform/pages/images/report_parameter_view.png "Report Parameters View")       
 
-![Report Parameters View Rule]({{site.baseurl}}/docs/igrc-platform/pages/images/report_parameter_view_rule.png "Report Parameters View Rule")       
+![Report Parameters View Rule](igrc-platform/pages/images/report_parameter_view_rule.png "Report Parameters View Rule")       
 
-See [Using the parameters of a rule]({{site.baseurl}}{% link docs/igrc-platform/audit-rules/advanced-concepts/using-parameters/using-parameters.md %}).
+See [Using the parameters of a rule](igrc-platform/audit-rules/advanced-concepts/using-parameters/using-parameters.md).
 ## From Control to Rule
 
 For a parameter to be accessible from outside the rule (view, another rule ...) it is essential that its identifier appear in the display name of the rule. The naming rule is to have the identifier appear between {}.   
 
 When the rule is used, the display name of the parameter will automatically appear in the form of a hyperlink that allows it to be edited.   
 
-![Report Parameters View Rule]({{site.baseurl}}/docs/igrc-platform/pages/images/control_parameter.png "Report Parameters View Rule")       
+![Report Parameters View Rule](igrc-platform/pages/images/control_parameter.png "Report Parameters View Rule")       
 
-See [Control Methods present in Analytics]({{site.baseurl}}{% link docs/igrc-platform/controls/control-methods/control-methods.md %}).
+See [Control Methods present in Analytics](igrc-platform/controls/control-methods/control-methods.md).

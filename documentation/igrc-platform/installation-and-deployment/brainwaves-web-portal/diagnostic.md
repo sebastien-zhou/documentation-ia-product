@@ -17,7 +17,7 @@ nav_order: 4
 
 All errors are written in a log file to facilitate diagnostic. Log files are written in several locations in the product.   
 
-1. They are written in the log folder of your project: `<project>\logs`. Depending on the settings used when exporting the web portal (see [Parametrization]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/brainwaves-web-portal/parametrization.md %}) the location of the folder can change.   
+1. They are written in the log folder of your project: `<project>\logs`. Depending on the settings used when exporting the web portal (see [Parametrization](igrc-platform/installation-and-deployment/brainwaves-web-portal/parametrization.md) the location of the folder can change.   
 - If the project is included in the generated WAR file it is located:    
 `...\<YourTomcatDirectory>\webapps\<YourProjectName>\WEB-INF\workspace\<Project>\logs`
 - If the project is excluded from the WAR file and points to the current workspace of the studio it is located:   

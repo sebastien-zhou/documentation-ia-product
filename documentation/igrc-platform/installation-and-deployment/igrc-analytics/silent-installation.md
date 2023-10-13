@@ -46,7 +46,7 @@ Where:
 
 # Example
 
-![Example]({{site.baseurl}}/docs/igrc-platform/installation-and-deployment/igrc-analytics/images/silent_install_command.PNG "Example")
+![Example](igrc-platform/installation-and-deployment/igrc-analytics/images/silent_install_command.PNG "Example")
 
 # Scripting recommendation
 

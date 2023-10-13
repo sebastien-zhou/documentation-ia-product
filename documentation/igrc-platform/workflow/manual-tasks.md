@@ -49,7 +49,7 @@ Reminders: there are two options
   - N reminders every X (business days \| days \| months) after M (business days \| days \| months)  
   - N reminders every X (business days \| days \| months) before the date of D    
 
-See the [page on reminders]({{site.baseurl}}{% link docs/igrc-platform/workflow/time-management/reminder-escalation-task-expiration.md %}) for more information.  
+See the [page on reminders](igrc-platform/workflow/time-management/reminder-escalation-task-expiration.md) for more information.  
 
 # Escalation
 
@@ -101,7 +101,7 @@ Number of the action associated with the ticket: the unique identifier of the ti
 
 List of updates to be done on workflow variables. You also can call a script.  
 
-See [variable modification functions]({{site.baseurl}}{% link docs/igrc-platform/workflow/variables/understanding-variable.md %}) for more details on your options.  
+See [variable modification functions](igrc-platform/workflow/variables/understanding-variable.md) for more details on your options.  
 
 # Ticket
 
@@ -109,7 +109,7 @@ See [variable modification functions]({{site.baseurl}}{% link docs/igrc-platform
 
 If enabled, a ticket associated to the manual activity will be created in the ledger.    
 
-See [tickets]({{site.baseurl}}{% link docs/igrc-platform/workflow/tickets.md %}) for more details on this subject.  
+See [tickets](igrc-platform/workflow/tickets.md) for more details on this subject.  
 
 # Iteration
 
@@ -117,4 +117,4 @@ See [tickets]({{site.baseurl}}{% link docs/igrc-platform/workflow/tickets.md %})
 
 Allows the manual activity to be iterated.   
 
-See [iteration]({{site.baseurl}}{% link docs/igrc-platform/workflow/iterations-and-subprocesses.md %}) to learn more about this.   
+See [iteration](igrc-platform/workflow/iterations-and-subprocesses.md) to learn more about this.   

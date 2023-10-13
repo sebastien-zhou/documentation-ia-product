@@ -19,7 +19,7 @@ has_children: true
 The following information is only applicable for the version **2017 R3** of **Brainwave GRC** and on wards.   
 
 For previous versions please refer to the following documentation :  
-[How-To customize iGRC Web portal login page]({{site.baseurl}}{% link docs/how-to/web-portal/customize-login-page.md %})
+[How-To customize iGRC Web portal login page](how-to/web-portal/customize-login-page.md)
 
 # Introduction
 

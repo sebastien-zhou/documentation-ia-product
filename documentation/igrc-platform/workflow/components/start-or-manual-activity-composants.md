@@ -25,7 +25,7 @@ From the iGRC backoffice pallete, drag and drop the "manual activity" component 
 
 # Activity
 
-The "Activity" sub tab of the manual activity component needs both information the "display name" as well as the task "due date" (see [Difference between task due date and task expiration]({{site.baseurl}}{% link docs/igrc-platform/workflow/time-management/difference-between-task-due-date-and-task-expiration.md %}) for more information on the due date).   
+The "Activity" sub tab of the manual activity component needs both information the "display name" as well as the task "due date" (see [Difference between task due date and task expiration](igrc-platform/workflow/time-management/difference-between-task-due-date-and-task-expiration.md) for more information on the due date).   
 
 ![Activity](../images/Image_Documentation4.png "Activity")   
 
@@ -49,10 +49,10 @@ This tab is only available for the start component and lists the variables value
 
 # Role/Reminder
 
-This tab allows the definition of the candidates being eligible to perform the task through the "Role" item. In other words it nominates through an audit rule, the candidates who have the right to launch the process instance. Once created, such audit rule is linked to the process via its configuration tab, under the "Process roles". Please see the page on [Roles]({{site.baseurl}}{% link docs/igrc-platform/workflow/roles.md %}) for more information.       
+This tab allows the definition of the candidates being eligible to perform the task through the "Role" item. In other words it nominates through an audit rule, the candidates who have the right to launch the process instance. Once created, such audit rule is linked to the process via its configuration tab, under the "Process roles". Please see the page on [Roles](igrc-platform/workflow/roles.md) for more information.       
 
 In this example, this manual task should be performed by application managers.   
-It is also possible to configure notifications. More information on how to perform detailed configuration of email notification are available on the following pages on [E-mail notifications]({{site.baseurl}}{% link docs/igrc-platform/workflow/email-notifications.md %}) and [Reminders, Escalation and task expiration]({{site.baseurl}}{% link docs/igrc-platform/workflow/time-management/reminder-escalation-task-expiration.md %}).
+It is also possible to configure notifications. More information on how to perform detailed configuration of email notification are available on the following pages on [E-mail notifications](igrc-platform/workflow/email-notifications.md) and [Reminders, Escalation and task expiration](igrc-platform/workflow/time-management/reminder-escalation-task-expiration.md).
 
 # Page
 
@@ -98,7 +98,7 @@ Ticket review indicates the impacted object in the workflow process and the asso
 
 ![Ticketing](../images/Image_Documentation33.png "Ticketing")      
 
-| **Note**: <br><br> a workflow instance references a ticket log and a manual activity reference a ticket action. A ticket log can reference several ticket actions. More information on workflow tickets is available at [Tickets]({{site.baseurl}}{% link docs/igrc-platform/workflow/tickets.md %})|
+| **Note**: <br><br> a workflow instance references a ticket log and a manual activity reference a ticket action. A ticket log can reference several ticket actions. More information on workflow tickets is available at [Tickets](igrc-platform/workflow/tickets.md)|
 
 # Iteration
 

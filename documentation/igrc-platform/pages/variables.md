@@ -164,6 +164,6 @@ Text {
 }
 ```
 
-![Binding variables]({{site.baseurl}}/docs/igrc-platform/pages/images/var01.png "Binding variables")      
+![Binding variables](igrc-platform/pages/images/var01.png "Binding variables")      
 
 As you can see, when you type something on the edit field, it updates the variable 'myvar'. As this variable is displayed with a text widget, the text widget content is updated on the fly.  

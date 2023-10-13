@@ -49,7 +49,7 @@ SetNavigator {
 }
 ```
 
-![SetNavigator]({{site.baseurl}}/docs/igrc-platform/pages/images/1701.png "SetNavigator")        
+![SetNavigator](igrc-platform/pages/images/1701.png "SetNavigator")        
 
 Starting with the 2016 version of the product, new attributes have been added in the SetNavigator widget:   
 

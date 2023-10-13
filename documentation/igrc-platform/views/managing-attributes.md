@@ -17,7 +17,7 @@ Attributes are characterised according to:
 
 The toolbox displays the attributes following the format _identifier-description._ Once an attribute is selected in the editor, the user sees only its identifier in the graphical part; the description of the selected attribute is visible in the 'Outline' view of the editor.      
 
-![Attributes]({{site.baseurl}}/docs/igrc-platform/views/images/1.png "Attributes")   
+![Attributes](igrc-platform/views/images/1.png "Attributes")   
 **_Identifier and description of attributes_**   
 
 Several attribute families are available:   
@@ -34,7 +34,7 @@ Several attribute families are available:
 
 To make the editor easier to read, icons are shown before each attribute to enable the user to see at a glance to which family the attribute belongs:   
 
-![Icons]({{site.baseurl}}/docs/igrc-platform/views/images/2.png "Icons")   
+![Icons](igrc-platform/views/images/2.png "Icons")   
 
 Attributes are added in the graphical editor by dragging and dropping from the toolbox. Attributes are deleted by selecting the attribute in the graphical editor and pressing the 'Delete' key or by clicking on the 'Delete' contextual menu.     
 It is possible to rename the attribute identifier locally. This is carried out via the 'Attribute alias' field in the configuration box of the attribute. It is also possible to prefix explicitly those attributes of a concept that have not been renamed, via the concept's contextual menu 'Modify table prefix'

@@ -14,7 +14,7 @@ permalink: /docs/igrc-platform/metadata/metadata-compute/
 {:toc}
 ---
 
-It is also possible to compute a metadata. Some of the use cases that have been described in this document ([here]({{site.baseurl}}{% link docs/igrc-platform/metadata/metadata-use-cases.md %})) use computed metadata.
+It is also possible to compute a metadata. Some of the use cases that have been described in this document ([here](igrc-platform/metadata/metadata-use-cases.md)) use computed metadata.
 
 The use case that calculates KPIs requires computation of metadata. Computing KPIs can be difficult at collect time because they can require information collected or computed during the activation phase. In the case of the KPI of the number of privileged accounts per identity the reconciliation phase needs to be computed.
 
@@ -38,7 +38,7 @@ If you need to collect metadata and then compute values based on those collected
 The way metadata are computed is using a view. The result of the view is used to fill the metadata.
 The configuration is shown with the following screenshot:
 
-![Metadata compute configuration]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_compute.png "Metadata compute configuration"){:.large}
+![Metadata compute configuration](igrc-platform/metadata/images/metadata_compute.png "Metadata compute configuration"){:.large}
 
 The above example produces a KPI (an integer number).
 Aggregation of values is not handled during the runtime of computing a metadata. As a result the view must return a single integer.
@@ -64,7 +64,7 @@ The product loads all metadata declarations and runs the computation if:
 - The checkbox 'Include in execution plan' is checked and
 - A view has been selected in the field 'View used as a source'.
 
-![Metadata compute condition]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_compute_plan.png "Metadata compute condition")
+![Metadata compute condition](igrc-platform/metadata/images/metadata_compute_plan.png "Metadata compute condition")
 
 As metadata computation is performed at the end of the execution plan, the view can then leverage control results and add KPIs on entities to speed up the display of dashboard or pages statistics.
 
@@ -83,7 +83,7 @@ It is obvious that the second metadata `acme_rep_nb_accounts_to_disable` should 
 This is the purpose of the dependency. The metadata `acme_rep_nb_accounts_to_disable` depends on `acme_account_to_disable`.
 During runtime this information is used to order the metadata computation so `metadata acme_account_to_disable` is executed before `acme_rep_nb_accounts_to_disable`.
 
-![Metadata compute condition]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_dependency.png "Metadata compute condition")
+![Metadata compute condition](igrc-platform/metadata/images/metadata_dependency.png "Metadata compute condition")
 
 In the above screenshot, the metadata named `acme_rep_nb_accounts_to_disable` depends on the metadata named `acme_account_to_disable`.
 
@@ -98,11 +98,11 @@ In the above screenshot, the metadata named `acme_rep_nb_accounts_to_disable` de
 In the metadata editor in tab called 'Metadata computation', there is a button (blue arrow) that allows the user to save the result of a computed metadata to a given timeslot.
 When the button is clicked, the product opens a dialog box to select a timeslot and then saves the results in the Ledger.
 
-![Metadata save results]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_save_results.png "Metadata save results")
+![Metadata save results](igrc-platform/metadata/images/metadata_save_results.png "Metadata save results")
 
 If you want to execute all metadata computations, there is an option in the execution plan tab of the audit menu.
 
-![Metadata in execution plan]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_execution_plan.png "Metadata in execution plan")
+![Metadata in execution plan](igrc-platform/metadata/images/metadata_execution_plan.png "Metadata in execution plan")
 
 The option 'Run metadata computations' has 2 buttons:
 - The icon with a question marks displays the order used by the product to execute all metadata computations.

@@ -33,7 +33,7 @@ The validation step has to be configured in three different places : in the disc
 
 The input files validation parameters are defined in the discovery editor, under the 'Validation' tab, as shown below :   
 
-![Discovery editor]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/studio_validation_discovery.png "Discovery editor")              
+![Discovery editor](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/studio_validation_discovery.png "Discovery editor")              
 
 For each discovery attribute, it is possible to set one or several of the following conditions :   
 
@@ -49,13 +49,13 @@ Please bear in mind that these validation checks are not of the same nature as t
 - Applying a mandatory check on the attribute will effectively filter all empty values of the attribute, which means that there is a tolerance for empty valued being present in the file, even if we don't want to see them end up in the database  
 - Including a validation check on this attribute will reject the file as invalid if an empty value is present   
 
-![Discovery editor]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/studio_validation_result.png "Discovery editor")              
+![Discovery editor](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/studio_validation_result.png "Discovery editor")              
 
 # In the Silo editor  
 
 You may be aware that a discovery can be applied to several input files during collection, or at least to a data file overriding the path defined in the discovery. Thus it is imperative to declare on which file(s) to apply the discovery checks during the validation step. This has to be done in the silo definition, in the 'Validation' tab :   
 
-![Silo editor]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/studio_validation_silo.png "Silo editor")               
+![Silo editor](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/studio_validation_silo.png "Silo editor")               
 
 The tab holds only a list with the file paths and their associated discovery. The path can either be pointing to a single file, or can be a file pattern describing any number of files. In the example shown above, for instance, all the LDIF files present in the /importfiles/demo/AD folder will be tested to verify that they follow the requirements of an AD users input file. This means that, if we have to take another AD domain into account later on, just dropping the new LDIF file will automatically ensure that it is checked along with the other domains. If, moreover, a similar file pattern has been set for silo collection, there will be no additional configuration required to have the new file checked and collected.   
 
@@ -72,11 +72,11 @@ There are two distinct behaviours that can be defined for each silo :
 
 If left unspecified, the default behaviour is to prevent all data collection.   
 
-![Defining a collection strategy]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/studio_validation_exec.png "Defining a collection strategy")               
+![Defining a collection strategy](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/studio_validation_exec.png "Defining a collection strategy")               
 
 The validation step will automatically be performed when running silos collection, either from the studio or from the batch command line. It is possible to check all files without triggering any collection in the execution plan, by clicking on the green check under the 'Run silos' actions.
 
-![Defining a collection strategy]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/EP_silo.png "Defining a collection strategy")               
+![Defining a collection strategy](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/EP_silo.png "Defining a collection strategy")               
 
 The errors found during validation are placed in a different log file for each silo, in the logs folder, under the name _silovalidation\_\<silo name\>\_\<timeslot name\>.txt_.     
 

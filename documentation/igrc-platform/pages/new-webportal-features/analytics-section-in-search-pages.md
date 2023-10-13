@@ -19,7 +19,7 @@ permalink: /docs/igrc-platform/pages/new-webportal-features/analytics-section/
 An analytics section has been added to the search pages as of version 2015 R3.     
 Thanks to this section you can throw your search results in a dedicated pages or report for further analysis:   
 
-![Analytics section in search pages]({{site.baseurl}}/docs/igrc-platform/pages/new-webportal-features/images/2015-07-09_08_53_00-Brainwave_Identity_GRC.png "Analytics section in search pages")
+![Analytics section in search pages](igrc-platform/pages/new-webportal-features/images/2015-07-09_08_53_00-Brainwave_Identity_GRC.png "Analytics section in search pages")
 
 # How to enable/disable the feature?
 
@@ -38,7 +38,7 @@ The corresponding features are located in the /webportal/features/pages.featurec
 
 # Managing analytics pages and reports
 
-The search pages have been designed to create the links dynamically to analytics pages and reports taking advantage of the [tagging system]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/tagging-system-for-pages-and-reports.md %}). They will link automatically to all pages and reports that are properly tagged with the same concept and that expect to receive the UIDs as a parameter. The Identity Search page will link to all pages and reports that contain the tags **identity** and **byuids**. Follow the default tags and comply with the requirements in order to obtain the best results.  
+The search pages have been designed to create the links dynamically to analytics pages and reports taking advantage of the [tagging system](igrc-platform/pages/new-webportal-features/tagging-system-for-pages-and-reports.md). They will link automatically to all pages and reports that are properly tagged with the same concept and that expect to receive the UIDs as a parameter. The Identity Search page will link to all pages and reports that contain the tags **identity** and **byuids**. Follow the default tags and comply with the requirements in order to obtain the best results.  
 
 # What parameters are sent?
 
@@ -63,10 +63,10 @@ The minimal required tags are:  the concept tag and the **byuids** tag. However,
 
 An example of a properly tagged analytics Page:    
 
-![properly tagged analytics Page]({{site.baseurl}}/docs/igrc-platform/pages/new-webportal-features/images/2015-07-09_09_05_15-iGRC_Project_-_PortalFacets_webportal_pages_bw_analytics_reports_identity_orgmin.png "properly tagged analytics Page")
+![properly tagged analytics Page](igrc-platform/pages/new-webportal-features/images/2015-07-09_09_05_15-iGRC_Project_-_PortalFacets_webportal_pages_bw_analytics_reports_identity_orgmin.png "properly tagged analytics Page")
 
 The uids parameter should be used as such in the views :
 
-![uids parameter]({{site.baseurl}}/docs/igrc-platform/pages/new-webportal-features/images/2015-07-09_09_06_55-iGRC_Properties_-_PortalFacets_views_bw_analytics_reports_identity_analytics_org.png "uids parameter")
+![uids parameter](igrc-platform/pages/new-webportal-features/images/2015-07-09_09_06_55-iGRC_Properties_-_PortalFacets_views_bw_analytics_reports_identity_analytics_org.png "uids parameter")
 
 | **Important**: <br><br> Please note that due to a technical constraint the uids parameter won't be able to address more than 2000 distinct values.|

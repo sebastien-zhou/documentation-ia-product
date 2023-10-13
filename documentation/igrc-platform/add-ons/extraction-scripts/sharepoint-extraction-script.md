@@ -82,4 +82,4 @@ For performance reasons and volume we don't advise to browse the entire tree if 
 
 # See also
 
-[Active Directory extraction script]({{site.baseurl}}{% link docs/igrc-platform/add-ons/extraction-scripts/ad-extraction-script.md %})
+[Active Directory extraction script](igrc-platform/add-ons/extraction-scripts/ad-extraction-script.md)

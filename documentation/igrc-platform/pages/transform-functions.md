@@ -21,7 +21,7 @@ As a general rule, every time that a value is required, we can directly use some
 
 Using Ctrl+Space can be useful to discover all the built-in functions and the parameters that are available:   
 
-![Built-In Functions]({{site.baseurl}}/docs/igrc-platform/pages/images/1801.png "Built-In Functions")        
+![Built-In Functions](igrc-platform/pages/images/1801.png "Built-In Functions")        
 
 Lets make list of the most useful functions in the main categories:   
 
@@ -29,7 +29,7 @@ Lets make list of the most useful functions in the main categories:
 
 `Transform variable using mappingFunction`: Transforms the value of the variable by sending it to the mappingFunction. 
 
-Learn more about [mapping functions]({{site.baseurl}}{% link docs/igrc-platform/pages/mapping-functions.md %}).    
+Learn more about [mapping functions](igrc-platform/pages/mapping-functions.md).    
 
 ## Dataset Functions   
 
@@ -73,7 +73,7 @@ and is similar to the Pages NLS features.
 
 ---
 
-<span style="color:red">**Warning:**</span> As of version 2017 R3, it is possible to [use javascript expression directly in the pages]({{site.baseurl}}{% link docs/how-to/web-portal/page-javascript-expressions.md %}). 
+<span style="color:red">**Warning:**</span> As of version 2017 R3, it is possible to [use javascript expression directly in the pages](how-to/web-portal/page-javascript-expressions.md). 
 
 For this reason, the following string `Format("{0,number,#.## }"` will be treated as a javascript expression and will throw an error in the page.
 

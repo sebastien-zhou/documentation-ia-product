@@ -36,7 +36,7 @@ Old timeslots that were used to launch workflows can have different rules for th
 
 > **Note:** For an existing project in production, the purge command is compatible with the previous version. There is no need to migrate or change anything to the command line of the old purge if the old system suits your needs.
 
-See [How-To Purge old Timeslots from the database]({{site.baseurl}}{% link docs/how-to/configuration/purge-timeslots.md %}).
+See [How-To Purge old Timeslots from the database](how-to/configuration/purge-timeslots.md).
 
 # Purge and workflow
 
@@ -48,7 +48,7 @@ You can also set a type to workflow definitions. This type is used by the purge 
 
 Once a timeslot is deleted, the process history tabs still shows the process that was launched on the timeslot. A new feature has been introduced in this version to keep the workflow report so that the user can still view what happened in this process even though the timeslot with all the information has been deleted. To accomplish this, you can point to a report in the workflow advanced configuration tab of your process definition. This report will be generated as soon as the process is finished (even if it is terminated by an administrator). This report will always be available in the portal.     
 
-To set up the workflow report, you can look at the article [Workflow compliance reports]({{site.baseurl}}{% link docs/igrc-platform/workflow/components/workflow-compliance-reports.md %}).  
+To set up the workflow report, you can look at the article [Workflow compliance reports](igrc-platform/workflow/components/workflow-compliance-reports.md).  
 
 # Purge configuration
 
@@ -71,31 +71,31 @@ Purge configuration is based on a list of rules called criterias. You can define
 
 This allows you to define criteria that keeps the first or last timeslot of a period (week,month,quarter,..) beyond a duration of time.  
 
-![Timeslot retention criteria]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/images/timeslot_criteria.png "Timeslot retention criteria")
+![Timeslot retention criteria](igrc-platform/timeslots-and-execution-plan/images/timeslot_criteria.png "Timeslot retention criteria")
 
 ### workflow retention criteria
 
 This allows you to define criteria that keeps timeslots containing certain types of workflows for a duration of time. Even if you have a timeslot criteria that allows deleting a timeslot, the workflow criteria prevents the purge if timeslot is corresponding to a workflow criteria.  
 
-![workflow retention criteria]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/images/workflow_criteria.png "workflow retention criteria")
+![workflow retention criteria](igrc-platform/timeslots-and-execution-plan/images/workflow_criteria.png "workflow retention criteria")
 
 ## Declaration of Workflow Type
 
 Workflow types can be declared in project configuration in the workflow configuration tab:   
 
-![Declaration of Workflow Type]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/images/workflow_types.png "Declaration of Workflow Type")
+![Declaration of Workflow Type](igrc-platform/timeslots-and-execution-plan/images/workflow_types.png "Declaration of Workflow Type")
 
 ## How to type a workflow
 
 Open the `.workflow` file and go to advanced configuration then choose a previously defined workflow type.     
 
-![How to type a workflow]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/images/set_workflow_type.png "How to type a workflow")
+![How to type a workflow](igrc-platform/timeslots-and-execution-plan/images/set_workflow_type.png "How to type a workflow")
 
 ## Run the purge
 
 Purge can be launched from within the igrc studio under the execution plan tab. You can launch the purge or a purge simulation which just computes what timeslots should be deleted and explains why we have to keep or remove each timeslot depending on configured criteria:  
 
-![Run the purge]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/images/run_purge.png "Run the purge")
+![Run the purge](igrc-platform/timeslots-and-execution-plan/images/run_purge.png "Run the purge")
 
 # Batch Mode (Command line)
 
@@ -144,7 +144,7 @@ Purge the four oldest timeslots
 
 Simulate deletion of all sandbox and activated timeslot.  
 
-> For a complete list of timeslots statuses, see [here]({{site.baseurl}}{%link docs/igrc-platform/timeslots-and-execution-plan/timeslot-status.md %})  
+> For a complete list of timeslots statuses, see [here](igrc-platform/timeslots-and-execution-plan/timeslot-status.md)  
 
 ## Advanced purge
 

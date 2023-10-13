@@ -1009,7 +1009,7 @@ If checked, **Event** lets you define the specific event name to trigger
 This action allow you to set a new value for an existing attribute.
 
 - **Attribute** selects the attribute to be modifed from the dataset. Use the right arrow menu to select an attribute
-- **Value** defines the new value using a -Macro- expression. Read more on Macros : [Macros et scripts]({{site.baseurl}}{% link docs/igrc-platform/collector/macros-and-scripts/macros-and-scripts.md %})   
+- **Value** defines the new value using a -Macro- expression. Read more on Macros : [Macros et scripts](igrc-platform/collector/macros-and-scripts/macros-and-scripts.md)   
 - **Trigger an error if the attribute to modify does not exist**  option will trigger an error in the log event file if the attribute to select was dynamically removed without notice ( this should not normally occur)   
 If checked, **Event** lets you define the specific event name to trigger
 
@@ -1022,7 +1022,7 @@ If the attribute contains another value, its value is not modified.
 
 - **Attribute** selects the attribute from the dataset for which values should be replaced. Use the right arrow menu to select an attribute
 - **Old Value** sets the value to search and replace. This is a static value that will be interpreted based on the attribute type.
-- **Value** defines the new value using a -Macro- expression. Read more on Macros : [Macros et scripts]({{site.baseurl}}{% link docs/igrc-platform/collector/macros-and-scripts/macros-and-scripts.md %})   
+- **Value** defines the new value using a -Macro- expression. Read more on Macros : [Macros et scripts](igrc-platform/collector/macros-and-scripts/macros-and-scripts.md)   
 - **Trigger an error if the attribute to modify does not exist**  option will trigger an error in the log event file if the attribute to select was dynamically removed without notice ( this should not normally occur)   
 If checked, **Event** lets you define the specific event name to trigger
 
@@ -1035,7 +1035,7 @@ This action allow you to set a default value for a given attribute if its curren
 If the attribute value is not null, it's not modified.
 
 - **Attribute** selects the attribute to be modifed from the dataset. Use the right arrow menu to select an attribute
-- **Value** defines the default value using a -Macro- expression. Read more on Macros : [Macros et scripts]({{site.baseurl}}{% link docs/igrc-platform/collector/macros-and-scripts/macros-and-scripts.md %}).
+- **Value** defines the default value using a -Macro- expression. Read more on Macros : [Macros et scripts](igrc-platform/collector/macros-and-scripts/macros-and-scripts.md).
 - **Trigger an error if the attribute to modify does not exist**  option will trigger an error in the log event file if the attribute to select was dynamically removed without notice ( this should not normally occur)   
 If checked, **Event** lets you define the specific event name to trigger
 
@@ -1046,7 +1046,7 @@ If checked, **Event** lets you define the specific event name to trigger
 This actions allows to change  on-the-fly the dynamic name of the silo, that is the value of _config.siloName_variable._   
 This could be useful for example if several input files are gathered into one single source file and must be processed in the same collect line.    
 
-- **Value** defines the value for the dynamic silo name as a -Macro- expression. Read more on Macros : [Macros et scripts]({{site.baseurl}}{% link docs/igrc-platform/collector/macros-and-scripts/macros-and-scripts.md %}).
+- **Value** defines the value for the dynamic silo name as a -Macro- expression. Read more on Macros : [Macros et scripts](igrc-platform/collector/macros-and-scripts/macros-and-scripts.md).
 
 ![Silo](./components/filters/update-filter/images/silo.png "Silo")   
 
@@ -1133,7 +1133,7 @@ There are 3 possible matching conditions:
 > **2.**  **Computed expression** : compares the elements in the list with the value of a macro expression.
 > > - Items in the list that are equal to the value of the computed expression will be selected
 
-- **Value** : type a macro expression , which value will be compared to each item in the list. Read more on Macros : [Macros et scripts]({{site.baseurl}}{% link docs/igrc-platform/collector/macros-and-scripts/macros-and-scripts.md %}).
+- **Value** : type a macro expression , which value will be compared to each item in the list. Read more on Macros : [Macros et scripts](igrc-platform/collector/macros-and-scripts/macros-and-scripts.md).
 
 > **3.**  **Pattern** : matches the elements in the list against a regular expression pattern.
 > > - Items in the list that that match the pattern will be selected. Syntax of the regular expression pattern follows javascript RegExp syntax.   
@@ -1151,7 +1151,7 @@ That is, for each row index that was removed from the list ( according to filter
 This action allows you to replace all values from a list attribute with another static or computed value.
 
 - **Attribute** lets you select the multivalued attribute to be processed. only multivalued attributes can be selected.
-- **Value** defines the replacement value for each item using a -Macro- expression. Read more on Macros : [Macros et scripts]({{site.baseurl}}{% link docs/igrc-platform/collector/macros-and-scripts/macros-and-scripts.md %}).
+- **Value** defines the replacement value for each item using a -Macro- expression. Read more on Macros : [Macros et scripts](igrc-platform/collector/macros-and-scripts/macros-and-scripts.md).
 
 | **Note:** <br><br> The replacement value can use the original value of each item in the list.  
 In this case, the original value will be available as a single-valued attribute with the same name.<br> For example, to capitalize all values in a multivalued attribute called _list1_, you would use the following expression:  {dataset.list1.get().toUppercase()}|

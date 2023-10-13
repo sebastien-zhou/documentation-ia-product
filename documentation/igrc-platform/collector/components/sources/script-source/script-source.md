@@ -34,20 +34,20 @@ In this tab you can see/modify general parameters of the component. You will fin
 - _onScriptDispose_ is the function called at the end of the collect line. It is always called, whether the line ends successfully or not, and should be used to free all the resources allocated during the initialization phase (close files, database connections and so on)  
 - _Follow just one link_ option which sets the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation condition evaluated to true will be executed.
 
-![Script source1]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/script-source/images/script_src1.png "Script source1")   
+![Script source1](igrc-platform/collector/components/sources/script-source/images/script_src1.png "Script source1")   
 Note that all the _onScript..._ functions are optional.  
 
 # Description
 
 This property allows adding comment regarding actions done by this component.
 
-![Script source2]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/script-source/images/script_src2.png "Script source2")
+![Script source2](igrc-platform/collector/components/sources/script-source/images/script_src2.png "Script source2")
 
 ## Attributes
 
 This property can be used to declare additional attributes to include in the collect line schema, for example when attributes are injected to the dataset by the JavaScript read function.
 
-![Script source3]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/script-source/images/script_src3.png "Script source3")
+![Script source3](igrc-platform/collector/components/sources/script-source/images/script_src3.png "Script source3")
 
 ## Request
 
@@ -57,7 +57,7 @@ The query may check values from current record by using dataset variable as if i
 
 For example, `SELECT * FROM dataset WHERE dataset.hrcode <> 'VIP'` keeps only records which have a HR code attribute with a value different from 'VIP'.
 
-![Script source4]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/script-source/images/script_src4.png "Script source4")
+![Script source4](igrc-platform/collector/components/sources/script-source/images/script_src4.png "Script source4")
 
 ## Sort
 
@@ -69,7 +69,7 @@ In this section you can configure a multi-criteria sort. You will find:
 
 The sort direction can also be changed (A-Z for ascending or Z-A for descending).
 
-![Script source5]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/script-source/images/script_src5.png "Script source5")
+![Script source5](igrc-platform/collector/components/sources/script-source/images/script_src5.png "Script source5")
 
 ## Limits
 
@@ -78,7 +78,7 @@ In this section you can configure a limitation on the selected records from the 
 - Skip the <u>_nb_</u> first records: Used to select a subset of the records by skipping the first records.  
 - Select a maximum of <u>_max_</u> records: Used to select a subset of the records by reading only a specified number of records.
 
-![Script source6]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/script-source/images/script_src6.png "Script source6")
+![Script source6](igrc-platform/collector/components/sources/script-source/images/script_src6.png "Script source6")
 
 # Best practices
 

@@ -8,7 +8,7 @@ permalink: /docs/igrc-platform/reconciliation/reconciliation-policies/referencin
 ---
 
 Once you have created your reconciliation policy you must reference it in the execution plan.   
-Please see [http://documentation.brainwavegrc.com]({{site.baseurl}}{% link docs/docs.md %}) to understand data loading in the execution plan.     
+Please see [http://documentation.brainwavegrc.com](docs.md) to understand data loading in the execution plan.     
 This stage corresponds to the execution of all the reconciliation rules on the repositories that were defined in the reconciliation policy. The accounts are reconciled and the results saved in the Ledger in the active analysis period.   
 
 - On the main menu click on **technical configuration**  then on **Execution Plan** tab.

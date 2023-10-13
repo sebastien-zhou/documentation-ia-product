@@ -19,7 +19,7 @@ permalink: /docs/igrc-platform/pages/advanced-data-binding/
 In some cases, there are some records or datasets that are not needed under certain conditions.   
 For example, if the only widget that displays a dataset is hidden then this dataset is not needed.
 
-In these cases, we can disable the record or dataset using the same [condition or predicate]({{site.baseurl}}{% link docs/igrc-platform/pages/predicate-functions.md %}) that is used to hide the widget. To do this we can use the attribute:   
+In these cases, we can disable the record or dataset using the same [condition or predicate](igrc-platform/pages/predicate-functions.md) that is used to hide the widget. To do this we can use the attribute:   
 
 **disabled** takes a boolean value (or result of one of the Predicates)   
 &emsp; if true, the record or the dataset will be disabled.   
@@ -36,7 +36,7 @@ Here is an  example:
 
 You define this view:   
 
-![Dataset]({{site.baseurl}}/docs/igrc-platform/pages/images/dataset02.png "Dataset")     
+![Dataset](igrc-platform/pages/images/dataset02.png "Dataset")     
 
 And you declare your dataset as:   
 
@@ -52,12 +52,12 @@ orgwiththemostpeople = Dataset {
 We can filter the results of a dataset using either one of these attributes:   
 
 `includes: Boolean Expression`   
-&emsp; It will keep the result only if evaluation of the [Boolean Expression]({{site.baseurl}}{% link docs/igrc-platform/pages/predicate-functions.md %})   
+&emsp; It will keep the result only if evaluation of the [Boolean Expression](igrc-platform/pages/predicate-functions.md)   
 
 `excludes: ``Boolean Expression`   
-&emsp; It will filter out the result only if evaluation of the [Boolean Expression]({{site.baseurl}}{% link docs/igrc-platform/pages/predicate-functions.md %})    
+&emsp; It will filter out the result only if evaluation of the [Boolean Expression](igrc-platform/pages/predicate-functions.md)    
 
-The boolean expression can be any of the available [Predicates]({{site.baseurl}}{% link docs/igrc-platform/pages/predicate-functions.md %})), It will be evaluated for each row of the dataset.   
+The boolean expression can be any of the available [Predicates](igrc-platform/pages/predicate-functions.md)), It will be evaluated for each row of the dataset.   
 
 We can access the values of the current item by using the keyword **Current**.   
 
@@ -187,7 +187,7 @@ In order to do that, we declare a discriminator for each dataset, and the discri
 
 We will get something like this as a result:     
 
-![Datasets Unions]({{site.baseurl}}/docs/igrc-platform/pages/images/1003.png "Datasets Unions")      
+![Datasets Unions](igrc-platform/pages/images/1003.png "Datasets Unions")      
 
 Attributes:   
 
@@ -243,7 +243,7 @@ joinDataset = Dataset {
 }
 ```
 
-![Joining Datasets]({{site.baseurl}}/docs/igrc-platform/pages/images/1004.png "Joining Datasets")      
+![Joining Datasets](igrc-platform/pages/images/1004.png "Joining Datasets")      
 
 A default example with results similar to a left join:   
 
@@ -263,7 +263,7 @@ joinDataset = Dataset {
 }
 ```
 
-![Joining Datasets]({{site.baseurl}}/docs/igrc-platform/pages/images/1005.png "Joining Datasets")      
+![Joining Datasets](igrc-platform/pages/images/1005.png "Joining Datasets")      
 
 # Computing trends
 
@@ -273,7 +273,7 @@ Here is an example:
 
 You declare this view:   
 
-![Computing trends]({{site.baseurl}}/docs/igrc-platform/pages/images/dataset03.png "Computing trends")      
+![Computing trends](igrc-platform/pages/images/dataset03.png "Computing trends")      
 
 You want to identify if some organisation changed in terms of size, here is the corresponding dataset:   
 
@@ -294,7 +294,7 @@ orgpeople = Dataset {
 
 It automatically adds a column to the dataset named after the 'difference-column-name' property (diff) in our case:   
 
-![Computing trends]({{site.baseurl}}/docs/igrc-platform/pages/images/dataset04.png "Computing trends")      
+![Computing trends](igrc-platform/pages/images/dataset04.png "Computing trends")      
 
 ```
 Table {
@@ -310,7 +310,7 @@ Table {
 Here is how it works:   
 
 **join-column**: the column that will be used to find the same entry in the other timeslot, most of the time you declare an uid here but you can also for some complex use case declare a computed column built based on uids (account + permission for instance)   
-**timeslot**: the timeslot that will be used to compute the trend. You can specify either an absolute value (a timeslot uid) or a relative timeslot. In this example we use FromPage(-1) to declare that we are interested by the previous timeslot to compute the trend. Note that since version 2017 R3 SP1, reference timeslots will be used when available (see the section on timeslot selection in [Data Binding]({{site.baseurl}}{% link docs/igrc-platform/pages/data-binding.md %}).    
+**timeslot**: the timeslot that will be used to compute the trend. You can specify either an absolute value (a timeslot uid) or a relative timeslot. In this example we use FromPage(-1) to declare that we are interested by the previous timeslot to compute the trend. Note that since version 2017 R3 SP1, reference timeslots will be used when available (see the section on timeslot selection in [Data Binding](igrc-platform/pages/data-binding.md).    
 **value-column**: the column you will be used to compute the difference. It must be an integer.   
 **difference-column-name**: the name of the column that will be dynamically added in the dataset.   
 
@@ -325,7 +325,7 @@ You can filter the results with the following keywords:
 You can leverage the Dataset Trend feature for this.   
 You create a view with a computed column on type integer and with 1 as a value.     
 
-![Computing trends]({{site.baseurl}}/docs/igrc-platform/pages/images/dataset06.png "Computing trends")      
+![Computing trends](igrc-platform/pages/images/dataset06.png "Computing trends")      
 
 ```
 identities = Dataset {
@@ -426,13 +426,13 @@ For example:
 
 The root view will be called br\_organisation\_root :   
 
-![Organisation root]({{site.baseurl}}/docs/igrc-platform/pages/images/1001.png "Organisation root")      
+![Organisation root](igrc-platform/pages/images/1001.png "Organisation root")      
 
 This view will return all organisations without a parent. So, root organisations.   
 
 And a second view br\_organisation\_children :   
 
-![Organisation children]({{site.baseurl}}/docs/igrc-platform/pages/images/1001.png "Organisation children")      
+![Organisation children](igrc-platform/pages/images/1001.png "Organisation children")      
 
 This view receives one parameter parent\_uid, and return the list of children of organisation. Empty if none.       
 

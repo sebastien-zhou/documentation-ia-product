@@ -30,7 +30,7 @@ In the product there are two types of dependencies : Implicit and explicit
 
 When you create a silo using the creation wizard, you have to select a silo type as shown in the following snapshot:    
 
-![Silo]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/newSilo.png "Silo")
+![Silo](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/newSilo.png "Silo")
 
 This type of silo is used as a first level of dependency. This dependency is implicit.  
 When running the execution plan, the product loads the data in different phases:     
@@ -54,7 +54,7 @@ As of version 2016 R3 the types of silos have been augmented to include the foll
 
 These in turn correspond to the main stages of the execution plan and allow better control of the execution sequence of silos.   
 
-![Silo]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/Silo-creationWizard.png "Silo")
+![Silo](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/Silo-creationWizard.png "Silo")
 
 # Explicit dependencies
 
@@ -62,7 +62,7 @@ In the silo definition, you can add an explicit dependency between 2 silos which
 
 The following diagram shows an example of the dependencies between silos:   
 
-![Silo]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/siloDependency.png "Silo")
+![Silo](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/siloDependency.png "Silo")
 
 The best practice for silos of Application type is to separate the repository level (repository, accounts, group) and the application level (permissions, applications and rights) as shown in the above diagram for AD and SharePoint.     
 
@@ -76,4 +76,4 @@ This is not always possible depending on the input data files, however, splittin
 
 It is possible to visualise the sequence in which the silos will be executed. For this navigate the the execution plan tab in the project configuration. By clicking the question-mark button next to the run silos option a new window wil open displaying the silo dependency tree, in the top section, and the silo execution, sequence in the bottom section.    
 
-![Silo]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/Silo-executionOrder.png "Silo")
+![Silo](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/Silo-executionOrder.png "Silo")

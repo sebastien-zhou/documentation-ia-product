@@ -12,6 +12,6 @@ As the product automatically runs all silos located in the silos folder during t
 
 The exhaustive list of silos appears in the technical configuration under the "Silos" tab. In this list, you can click in the column "Exclude from execution plan" to disable a silo when running the execution plan. In a similar manner, if connectors are defined in a Silo (see the corresponding documentation for more information) you can also choose to not extract the data for a specific silo.     
 
-![Silo execution configuration]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/technicalConfigurationSilo.png "Silo execution configuration")    
+![Silo execution configuration](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/images/technicalConfigurationSilo.png "Silo execution configuration")    
 
 The important point to note is that you can define a different set of silos to exclude for each configuration. For example, Exchange silo could be loaded in Dev and not in Prod.  

@@ -127,7 +127,7 @@ Apart from passing arguments to the notification rule (like for instance the rev
 
 ![Workflow related variables ](../images/task_url.png "Workflow related variables ")  
 
-These variables are explained [here]({{site.baseurl}}{% link docs/igrc-platform/notification-rules/notification-macros.md %}).  
+These variables are explained [here](igrc-platform/notification-rules/notification-macros.md).  
 
 # E-mail Policy
 

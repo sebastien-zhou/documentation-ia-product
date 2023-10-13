@@ -194,7 +194,7 @@ We ran one execution plan with the `Save permission impact for each result eleme
 
 ## Context
 
-This document functionally describes the different types of controls provided with iGRC. The technical functionalities are described in the following article available [Control Methods present in Analytics]({{site.baseurl}}{% link docs/igrc-platform/controls/control-methods/control-methods.md %})    
+This document functionally describes the different types of controls provided with iGRC. The technical functionalities are described in the following article available [Control Methods present in Analytics](igrc-platform/controls/control-methods/control-methods.md)    
 
 Brainwave Identity GRC incorporates the concept of control. Controls are of several types including:   
 
@@ -211,7 +211,7 @@ A control allows identifying such problems:
 
 ## iGRC Analytics Types of Controls
 
-Among the defined controls under the mentioned article: [Control Methods present in Analytics]({{site.baseurl}}{% link docs/igrc-platform/controls/control-methods/control-methods.md %}), and depending on the type of parameter, such results can be obtained:   
+Among the defined controls under the mentioned article: [Control Methods present in Analytics](igrc-platform/controls/control-methods/control-methods.md), and depending on the type of parameter, such results can be obtained:   
 
 - Arbitrary set: The control result is the result of a rule. It is useful in the case of data quality issues. Examples of concepts of the iGRC ledger that can be titled by a control discrepancy are account, identity, etc.; setting such type of control comes to implement a rule of type:
   - list of the orphan, dormant accounts,
@@ -240,7 +240,7 @@ Brainwave iGRC analytics includes a "SoD target" for creating SoD controls. The 
 
 This can be access request verification via an authorization management system. For example, some rights can be awarded to some users and not to others. Such controls can then compare the actually granted authorizations to those granted through a workflow process for example.   
 
-Configuring a theoretical right control involves specifying the perimeter on which this control is applied, both in terms of population (identities) and permissions covered by associated applications. The control will thereby compare on the given perimeter the actually granted permissions to the "theoretical" ones in order to highlight the results lists. The technical documentation on configuring the theoretical rights controls into iGRC Analytics is available [here]({{site.baseurl}}{% link docs/docs.md %})   
+Configuring a theoretical right control involves specifying the perimeter on which this control is applied, both in terms of population (identities) and permissions covered by associated applications. The control will thereby compare on the given perimeter the actually granted permissions to the "theoretical" ones in order to highlight the results lists. The technical documentation on configuring the theoretical rights controls into iGRC Analytics is available [here](docs.md)   
 
 <u> A theoretical right can be:</u>
 

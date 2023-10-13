@@ -49,7 +49,7 @@ As an example , the standard Default and Classic themes are both implemented usi
 
 ## Writing a Portal Skin class
 
-A portal Skin java class is a regular java class that must implement the interface [IPortalSkin Java reference]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/brainwaves-web-portal/web-portal-theme-customization/level-4-customization-via-scripting/iportalskin-reference.md %}).It's strongly recommended that your implementation be a subclass of **com.brainwave.portal.ui.skin.PortalSkinBase:**   
+A portal Skin java class is a regular java class that must implement the interface [IPortalSkin Java reference](igrc-platform/installation-and-deployment/brainwaves-web-portal/web-portal-theme-customization/level-4-customization-via-scripting/iportalskin-reference.md).It's strongly recommended that your implementation be a subclass of **com.brainwave.portal.ui.skin.PortalSkinBase:**   
 
 - it provides all the required member variables and associated getters,
 - it provides a default implementation for the top header

@@ -68,7 +68,7 @@ You can also use roles in the "Escalation" tab (optional):
 
 ![Start](../images/escalation.png "Start")     
 
-| **Note**: <br><br> if you check the option "Include initial role", once the escalation starts, the people in the initial role can still take the task.<br>See the [Manual Tasks]({{site.baseurl}}{% link docs/igrc-platform/workflow/manual-tasks.md %}) section for more information on this subject. |
+| **Note**: <br><br> if you check the option "Include initial role", once the escalation starts, the people in the initial role can still take the task.<br>See the [Manual Tasks](igrc-platform/workflow/manual-tasks.md) section for more information on this subject. |
 
 # Notifications
 
@@ -79,4 +79,4 @@ Roles for notifications are configured via a drop-down list:
 | **Note**: <br><br> if you select the option "Add the role of the current task (if manual task)", you can dynamically pass the role configured in the manual task (see above) to the notification. |
 
 See the notification section for more information on this subject.    
-[Workflow email notification]({{site.baseurl}}{% link docs/igrc-platform/workflow/email-notifications.md %}).
+[Workflow email notification](igrc-platform/workflow/email-notifications.md).

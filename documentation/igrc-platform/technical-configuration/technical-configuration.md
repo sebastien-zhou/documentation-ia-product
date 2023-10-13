@@ -19,12 +19,12 @@ permalink: /docs/igrc-platform/technical-configuration/
 This version makes a clear separation between the project configuration (shared by all technical environments) and many technical configurations (for each platform).
 
 The current technical configuration is now selected from the main menu. A project may have several configurations like DEV, TEST, UAT, PROD,... The name of the current configuration is stored in the local workspace (in metadata). When working in a team using GIT or SVN, the selection of a different configuration by one member does not alter any file in the project.
-![Studio configuration menu]({{site.baseurl}}/docs/igrc-platform/technical-configuration/images/studio_config_menu.png "Studio configuration menu")
+![Studio configuration menu](igrc-platform/technical-configuration/images/studio_config_menu.png "Studio configuration menu")
 
 ## Configuration editor
 
 The configuration is a file with the extension `.configuration` in the new folder `configurations`. Now, when executing batch or running the portal, a configuration must be specified.
-![Studio configuration tabs]({{site.baseurl}}/docs/igrc-platform/technical-configuration/images/studio_config_tabs.png "Studio configuration tabs")
+![Studio configuration tabs](igrc-platform/technical-configuration/images/studio_config_tabs.png "Studio configuration tabs")
 
 Each configuration file contains the following elements
 - Values for project variables. The list of declared variables is still located in the project but the values are defined in each configuration
@@ -40,12 +40,12 @@ Each configuration file contains the following elements
 ## Properties export
 
 The legacy properties files (`datasource.properties`,`mail.properties`,...) may still be used to override some values. This icon lets you save these files with only the values usually overridden like database URL, login, password,...
-![Studio Export the configuration]({{site.baseurl}}/docs/igrc-platform/technical-configuration/images/studio_config_export.png "Studio Export the configuration")
+![Studio Export the configuration](igrc-platform/technical-configuration/images/studio_config_export.png "Studio Export the configuration")
 
 ## JNDI datasource
 
 Now you can use a JNDI datasource. This means that the datasource to access the Brainwave database is declared in the Web container (like Tomcat) and not in `datasource.properties`. The icon is used to export a context.xml file to put in `conf/Catalina/localhost` folder inside Tomcat installation directory. Then this file should be renamed with the name of the webapp
-![Studio export the JNDI context file]({{site.baseurl}}/docs/igrc-platform/technical-configuration/images/studio_config_jndi.png "Studio export the JNDI context file")
+![Studio export the JNDI context file](igrc-platform/technical-configuration/images/studio_config_jndi.png "Studio export the JNDI context file")
 
 This configuration has the following benefits :
 
@@ -55,12 +55,12 @@ This configuration has the following benefits :
 ## WAR settings
 
 In the previous version, the only way to point to the studio project from the webapp was to edit the web.xml file. Now this is part of the configuration and you can use different options depending on the configuration (DEV, PROD,...)
-![Studio WAR file configuration]({{site.baseurl}}/docs/igrc-platform/technical-configuration/images/studio_config_war.png "Studio WAR file configuration")
+![Studio WAR file configuration](igrc-platform/technical-configuration/images/studio_config_war.png "Studio WAR file configuration")
 
 ## Sandbox name template
 
 The name of the sandox can be changed in the configuration. This name will be used by the studio and the batch. This is a kind of template where the current date can be included. The product provides 6 date formats.
-![Studio sandbox name configuration]({{site.baseurl}}/docs/igrc-platform/technical-configuration/images/studio_config_sandbox.png "Studio sandbox name configuration")
+![Studio sandbox name configuration](igrc-platform/technical-configuration/images/studio_config_sandbox.png "Studio sandbox name configuration")
 
 # Defining custom configuration variables
 
@@ -69,13 +69,13 @@ To allow better customization of the project, configuration variables can be def
 To achieve this a dedicated file with extension `.configvariables` that will hold the definitions of your variables. This type of file has to be put in the `/configurations` folder of the project.
 
 To create such a file, simply choose the **Configuration variables** entry in the **New...** option of the main menu:
-![New configuration variable file]({{site.baseurl}}/docs/igrc-platform/technical-configuration/images/new-config-var-menu.png "New configuration variable file")
+![New configuration variable file](igrc-platform/technical-configuration/images/new-config-var-menu.png "New configuration variable file")
 
 You will then access the configuration variables editor, which looks like this:
 
 Each variable has a name, a type, and a display name. Those display names will be used to explain what the variable stands for and what kind of value is expected.
 The typical value will be used as a default value if the variables are used to build a facet, otherwise it serves as an example that will be displayed when a value for the variable is prompted.
-![Config variables]({{site.baseurl}}/docs/igrc-platform/technical-configuration/images/configvariables.png "Config variables")
+![Config variables](igrc-platform/technical-configuration/images/configvariables.png "Config variables")
 
 **WARNING:** Please bear in mind that the name of the variable has to be unique in the project. It is therefore **strongly** advised to avoid names like the `filename` given in the above example, as it is :
 1. Non descriptive

@@ -16,7 +16,7 @@ grand_parent: "Installation and deployment"
 >  
 > For more information on the updated libraries please refer to the following page:  
 >
-> [Updated libraries]({{site.baseurl}}{% link docs/downloads/updated-libraries.md %}){: .ref}  
+> [Updated libraries](downloads/updated-libraries.md){: .ref}  
 
 # Context
 

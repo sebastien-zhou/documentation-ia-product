@@ -22,7 +22,7 @@ If you have the previous error, you probably have a reminder set in the past. Th
 
 In the example above, scpDateExpiration needs to be at least 6 days away (two time three), otherwise the reminder system will fail.   
 
-See: [Time management]({{site.baseurl}}{% link docs/igrc-platform/workflow/time-management.md %}) for detailed information on reminders.  
+See: [Time management](igrc-platform/workflow/time-management.md) for detailed information on reminders.  
 
 # String or binary date would be truncated
 

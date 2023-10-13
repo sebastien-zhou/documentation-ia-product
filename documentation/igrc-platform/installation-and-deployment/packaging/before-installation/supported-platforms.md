@@ -17,7 +17,7 @@ Please find below the list of supported plate forms and modes :
 
 If you require more information on the available modes please refer to the following pages :
 
-[Installation modes]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/packaging/before-installation/installation-modes.md %}){: .ref}
+[Installation modes](igrc-platform/installation-and-deployment/packaging/before-installation/installation-modes.md){: .ref}
 
 # Architectures
 

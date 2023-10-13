@@ -25,7 +25,7 @@ There are three type of tickets :
 - ticketAction
 - ticketReview  
 
-> See [Tickets and Workflows]({{site.baseurl}}{% link docs/igrc-platform/workflow/tickets-and-workflows.md %}) for a deep dive into Workflow and tickets creation  
+> See [Tickets and Workflows](igrc-platform/workflow/tickets-and-workflows.md) for a deep dive into Workflow and tickets creation  
 
 # TicketLog
 

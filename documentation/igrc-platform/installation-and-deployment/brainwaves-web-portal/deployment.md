@@ -76,14 +76,14 @@ The export tab allows you to configure the web portal generation options.
 In this tab you can configure:   
 
 - The desired theme
-- The use of a JNDI datasource (see [here]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/brainwaves-web-portal/parametrization.md %}) for more information)
+- The use of a JNDI datasource (see [here](igrc-platform/installation-and-deployment/brainwaves-web-portal/parametrization.md) for more information)
 - The project location
 - The location of the licence and properties files
 - The location of the webapps work directory
 
 ![Export parameters  ](../images/TechConfig-ExportTab.png "Export parameters  ")   
 
-| **Note**: <br><br> As of version 2016 R3 it is also possible to configure the location of the webapps workspace. This corresponds to the bottom section Work directory location.  <br> This is also the case for the theme. See [here]({{site.baseurl}}{% link docs/how-to/web-portal/select-webportal-theme.md %}) for more information. <br> As of version 2016 R3 SP6 and when using a Linux OS, it is possible to declare the project folder as read-only. In this case it is necessary to check the check box "Allow read only project directory".|   
+| **Note**: <br><br> As of version 2016 R3 it is also possible to configure the location of the webapps workspace. This corresponds to the bottom section Work directory location.  <br> This is also the case for the theme. See [here](how-to/web-portal/select-webportal-theme.md) for more information. <br> As of version 2016 R3 SP6 and when using a Linux OS, it is possible to declare the project folder as read-only. In this case it is necessary to check the check box "Allow read only project directory".|   
 
 The configuration of each option is independent from one another.  
 
@@ -98,7 +98,7 @@ As of version 2016 R3 if you choose to detach the project from the workspace and
 
 ## Licence and properties location
 
-In the same way the location of the licence file and the properties files can either be embedded in or detached from the web archive. The use of property file is optional but allows the user to overwrite the information provided in the technical configuration. Please see [here]({{site.baseurl}}{% link docs/igrc-platform/getting-started/product-description/using-the-editors/configuration-editor/configuration-editor.md %})for more information.  
+In the same way the location of the licence file and the properties files can either be embedded in or detached from the web archive. The use of property file is optional but allows the user to overwrite the information provided in the technical configuration. Please see [here](igrc-platform/getting-started/product-description/using-the-editors/configuration-editor/configuration-editor.md)for more information.  
 
 ## Work directory location
 

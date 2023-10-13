@@ -24,7 +24,7 @@ The Metadata editor is the editor that allows the user to configure the schema o
 
 A metadata is created from the main menu by selecting `New...` and then `Metadata schema`.
 
-![Metadata creation]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_creation.png "Metadata creation")
+![Metadata creation](igrc-platform/metadata/images/metadata_creation.png "Metadata creation")
 
 This menu opens a wizard to create a new schema extension. The metadata id field is the name of the schema extension and it must be unique among all extensions in the project, created in the project or included in installed add-ons.
 Brainwave add-ons containing metadata always use a prefix `bw` for the metadata id.
@@ -32,7 +32,7 @@ The best practice is to use a prefix describing the project (or the customer) an
 
 The best practice is to fill in the description of the created metadata with the purpose of the extension. This helps document what the schema extension will be used for.
 
-![Metadata id]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_id.png "Metadata id")
+![Metadata id](igrc-platform/metadata/images/metadata_id.png "Metadata id")
 
 # Schema definition
 
@@ -40,7 +40,7 @@ Upon completion of the wizard an editor is opened that allows the configuration 
 
 The following snapshot shows the definition for the first use case.
 
-![Metadata editor]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_editor_full.png "Metadata editor"){:.large}
+![Metadata editor](igrc-platform/metadata/images/metadata_editor_full.png "Metadata editor"){:.large}
 
 As a metadata is to be used in views and rules. The view editor and the rule editor requires icons to display the entities or attributes in the palette.
 This is why the metadata editor expects 2 icons: one in 16x16 and one in 48x48. An icon is provided by default but the user has the option to add custom icons.
@@ -64,12 +64,12 @@ The following paragraphs explain how to configure the entity or the links.
 
 The following caption shows a new standalone concept called `acme_my_concept`.  that is not linked to a Brainwave entity.
 
-![Metadata zero entity]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_zero_entity.png "Metadata zero entity"){:.s50}
+![Metadata zero entity](igrc-platform/metadata/images/metadata_zero_entity.png "Metadata zero entity"){:.s50}
 
 To do so, in the editor, keep all checkbox unchecked.
 The 'short metadata title' **must** be filled to see the metadata in the view editor palette.
 
-![Metadata zero entity configuration]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_my_concept.png "Metadata zero entity configuration"){:.large}
+![Metadata zero entity configuration](igrc-platform/metadata/images/metadata_my_concept.png "Metadata zero entity configuration"){:.large}
 
 As there are no links from the metadata to any Brainwave concept, this mode is rarely used but can be useful to store configuration information for example.
 
@@ -78,11 +78,11 @@ As there are no links from the metadata to any Brainwave concept, this mode is r
 This is the most common usage of metadata. The attributes defined in a metadata are added to a Brainwave entity.
 The following picture shows a metadata called `acme_my_extension` extending the Identity concept.
 
-![Metadata one entity with embedded attributes]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_one_embedded_entity.png "Metadata one entity with embedded attributes"){:.s50}
+![Metadata one entity with embedded attributes](igrc-platform/metadata/images/metadata_one_embedded_entity.png "Metadata one entity with embedded attributes"){:.s50}
 
 To extend a Brainwave concept check the checkbox named 'Display metadata attributes in the following concept in the view editor'.
 
-![Embed a metadata in single entity]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_single_entity.png "Embed a metadata in single entity")
+![Embed a metadata in single entity](igrc-platform/metadata/images/metadata_single_entity.png "Embed a metadata in single entity")
 
 When checked, the entity holding the attributes must be selected in the dedicated combobox among the following list:
 - Organization
@@ -94,7 +94,7 @@ When checked, the entity holding the attributes must be selected in the dedicate
 - Application
 - Asset
 
-![Select the entity to embed the metadata]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_single_entity_combo.png "Select the entity to embed the metadata")
+![Select the entity to embed the metadata](igrc-platform/metadata/images/metadata_single_entity_combo.png "Select the entity to embed the metadata")
 
 In this mode, all attributes defined in the metadata schema are visible directly on the entity itself in the view editor.
 
@@ -104,12 +104,12 @@ In this mode, there is still a single concept but the metadata designer does not
 Technically this means that in the view editor, it is necessary to perform a join on the main entity to reach the desired metadata attribute.
 The following picture shows the metadata named `acme_my_extension` which has an explicit link to the identity
 
-![Metadata one entity with explicit link]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_one_link_entity.png "Metadata one entity with explicit link"){:.s80}
+![Metadata one entity with explicit link](igrc-platform/metadata/images/metadata_one_link_entity.png "Metadata one entity with explicit link"){:.s80}
 
 To do so keep the checkbox named 'Display metadata attributes in the following concept in the view editor' unchecked.
 Then select the link called 'Use and activate the link towards identities' and enter the label that will appear in the join section of the palette when the metadata is selected.
 
-![Metadata editor with explicit link]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_editor_explicit_link.png "Metadata editor with explicit link"){:.large}
+![Metadata editor with explicit link](igrc-platform/metadata/images/metadata_editor_explicit_link.png "Metadata editor with explicit link"){:.large}
 
 > <span style="color:grey">**NOTE 1:**</span> This mode can seem less useful than embedding attributes in the target concept using an explicit link can be beneficial.
 > This is the case when the metadata is multivalued. For example in the use case with the certifications on identities, it is better to have an explicit join from the identity to the certification metadata.
@@ -126,12 +126,12 @@ Then select the link called 'Use and activate the link towards identities' and e
 Defining a metadata with links to several entities is a way to create a new relation in the Brainwave data model.
 The following picture illustrates a new link called `acme_my_link` between an identity and an application.
 
-![Metadata link with several entities]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_several_entities.png "Metadata link with several entities"){:.s80}
+![Metadata link with several entities](igrc-platform/metadata/images/metadata_several_entities.png "Metadata link with several entities"){:.s80}
 
 To create such a link, check at least 2 checkboxes defining a link towards entities in the metadata editor.
 The following screenshot shows the configuration for adding a link between organization and application to define a responsibility for example.
 
-![Metadata with several links]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_several_links.png "Metadata with several links"){:.large}
+![Metadata with several links](igrc-platform/metadata/images/metadata_several_links.png "Metadata with several links"){:.large}
 
 In this configuration, both the organization and the application have a new component to join in the view or rule palette to access the linked attributes.
 Using these joins, it is possible to go from the organization to the metadata containing the `mngr_exp_date` attribute and then go to the managed application.
@@ -190,7 +190,7 @@ The available types are:
 
 Once the value identifier is filled in, the label field to the right of the identifier field is then enabled. The label field is used to populate the palette in the view editor.
 
-![Metadata simple values]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_simple_values.png "Metadata simple values")
+![Metadata simple values](igrc-platform/metadata/images/metadata_simple_values.png "Metadata simple values")
 
 The field 'Details value identifier' at the bottom of the list corresponds to the blob field which can be used to save details about the metadata (for example XML or JSON content) or a binary content.
 
@@ -198,7 +198,7 @@ The field 'Details value identifier' at the bottom of the list corresponds to th
 
 A metadata value can also contain a link or reference to an entity.
 
-![Metadata simple values]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_entity_values.png "Metadata simple values")
+![Metadata simple values](igrc-platform/metadata/images/metadata_entity_values.png "Metadata simple values")
 
 ### Metadata entity value use case
 
@@ -296,7 +296,7 @@ In this configuration, in order to get all applications managed by a given organ
 The following table shows the timeslots with data collected or updated in the portal.
 The last columns with a title 'Timeslot 2 (final result)' shows what the user can see when looking at the management information in the portal.
 
-![Metadata with organization as key and application as value]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_org_key_app_value.png "Metadata with organization as key and application as value")
+![Metadata with organization as key and application as value](igrc-platform/metadata/images/metadata_org_key_app_value.png "Metadata with organization as key and application as value")
 
 The general rule for dealing with conflicts is that the whole list of the values (applications) for a given key (organization) is taken either from a single source 
 - The collect 
@@ -329,7 +329,7 @@ At most, we have 8 metadata:
 
 The same scenario as detailed previously is executed, the metadata are collected then changed in the portal. The end result is different as shown in the following table.
 
-![Metadata with organization and application as keys]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_org_key_app_key.png "Metadata with organization and application as keys")
+![Metadata with organization and application as keys](igrc-platform/metadata/images/metadata_org_key_app_key.png "Metadata with organization and application as keys")
 
 As a reminder, for each key, the activation keeps either the collected data or, if updated in the portal, the data from the previous timeslot.
 
@@ -350,7 +350,7 @@ In this model, the application either have no metadata, meaning no organization 
 
 The result is shown in the following table:
 
-![Metadata with organization as value and application as key]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_org_value_app_key.png "Metadata with organization as value and application as key")
+![Metadata with organization as value and application as key](igrc-platform/metadata/images/metadata_org_value_app_key.png "Metadata with organization as value and application as key")
 
 After executing our scenario, we find the following results:
 - `Elyxo` has no managing organization anymore because the last collect does not include `Elyxo`.
@@ -386,11 +386,11 @@ Metadata can be used in the rule editor in 4 different situations:
 In case 1, 2 and 3 (embedded, key link, and value link ) , the metadata can be used in rules through specific joins from the linked entities.  
 For example, if the metadata is linked or embedded to Identity entity , a join to this metadata will be available from the identity entity in the palette.
 
-![Rule editor metadata joins]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_editor_rule_join.png "Rule editor metadata joins"){:.large}
+![Rule editor metadata joins](igrc-platform/metadata/images/metadata_editor_rule_join.png "Rule editor metadata joins"){:.large}
 
 The metadata join will propose various criteria on the attributes of the metadata, depending on the type of the attribute, and criteria on generic properties of the metadata, such as description, creator, subkey , etc. 
 
-![Rule editor metadata join attribute]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_editor_rule_join_attr.png "Rule editor metadata join attribute")
+![Rule editor metadata join attribute](igrc-platform/metadata/images/metadata_editor_rule_join_attr.png "Rule editor metadata join attribute")
 
 In case (1) metadata with attributes embedded into another entity , it's also possible to use the metadata directly as criteria on the embedding entity in the rule editor.  
 But this requires the metadata to follow some restrictions:  
@@ -399,11 +399,11 @@ But this requires the metadata to follow some restrictions:
 
 For this reason, this option must be set **explicitly** by checking the **Display also in Smart Search interface and rule editor as criteria of the single concept** box.
 
-![Rule editor check embedded attribute]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_editor_rule_check.png "Rule editor check embedded attributes")
+![Rule editor check embedded attribute](igrc-platform/metadata/images/metadata_editor_rule_check.png "Rule editor check embedded attributes")
 
 In which case, the embedding entity will propose additional criteria for the embedded metadata attributes which can be used like the other entity attributes:
 
-![Rule editor embedded attributes]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_editor_rule_embed_attr.png "Rule editor embedded attributes")
+![Rule editor embedded attributes](igrc-platform/metadata/images/metadata_editor_rule_embed_attr.png "Rule editor embedded attributes")
 
 ## Metadata in the Smart Search
 
@@ -416,11 +416,11 @@ For example, if the prefix is "which" and the label is "certification name", the
 For example, the label could be "has expired" and the negation would be "has not expired"
 - leaving the search prefix or negation label empty for an attribute will hide the attribute from the list of Smart Search criteria for the embedding entity. 
  
-![metadata editor search labels]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_editor_search.png "metadata editor search labels")
+![metadata editor search labels](igrc-platform/metadata/images/metadata_editor_search.png "metadata editor search labels")
  
 This is how the SmartSearch could look like.  In the example above, certification date and expiration dates are hidden.  
  
-![metadata Smart Search UI]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_editor_smartsearch.png "metadata Smart Search UI")
+![metadata Smart Search UI](igrc-platform/metadata/images/metadata_editor_smartsearch.png "metadata Smart Search UI")
   
 ## Localizing metadata labels
 
@@ -428,7 +428,7 @@ You can localize all the metadata labels (name, attributes , relations and searc
 To make the localization task much easier, you can generate a localization template for all the active attributes and relations.
 To generate the template text to the clipboard, click on the **Copy Label localization template to the clipboard** button at the bottom right of the editor.
  
-![metadata localization]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_editor_nls.png "metadata localization")
+![metadata localization](igrc-platform/metadata/images/metadata_editor_nls.png "metadata localization")
    
 In the example above, this will copy the following text to the clipboard.  
 You can then paste the text to the appropriate properties files and fill the blanks or translate the labels.

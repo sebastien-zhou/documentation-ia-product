@@ -18,7 +18,7 @@ Edition Widgets are generally linked to a variable.
 
 They will display the value of the variable, but they will also allow to user to interact and modify its value.   
 
-![Edition Widgets ]({{site.baseurl}}/docs/igrc-platform/pages/images/1601.png "Edition Widgets ")        
+![Edition Widgets ](igrc-platform/pages/images/1601.png "Edition Widgets ")        
 
 # Edit
 
@@ -31,7 +31,7 @@ Edit {
 }
 ```
 
-![Edit]({{site.baseurl}}/docs/igrc-platform/pages/images/1603.png "Edit")        
+![Edit](igrc-platform/pages/images/1603.png "Edit")        
 
 # Combo
 
@@ -49,7 +49,7 @@ Combo {
 }
 ```
 
-![Combo]({{site.baseurl}}/docs/igrc-platform/pages/images/1604.png "Combo")        
+![Combo](igrc-platform/pages/images/1604.png "Combo")        
 
 # DateTime
 
@@ -62,7 +62,7 @@ DateTime {
 }
 ```
 
-![DateTime]({{site.baseurl}}/docs/igrc-platform/pages/images/1605.png "DateTime")        
+![DateTime](igrc-platform/pages/images/1605.png "DateTime")        
 
 # Checkbox
 
@@ -75,7 +75,7 @@ Checkbox {
 }
 ```
 
-![Checkbox]({{site.baseurl}}/docs/igrc-platform/pages/images/1606.png "Checkbox")        
+![Checkbox](igrc-platform/pages/images/1606.png "Checkbox")        
 
 # RadioButtons
 
@@ -100,7 +100,7 @@ RadioButtons {
 }
 ```
 
-![RadioButtons]({{site.baseurl}}/docs/igrc-platform/pages/images/1607.png "RadioButtons")        
+![RadioButtons](igrc-platform/pages/images/1607.png "RadioButtons")        
 
 # Scale
 
@@ -117,7 +117,7 @@ Scale {
 }
 ```
 
-![Scale]({{site.baseurl}}/docs/igrc-platform/pages/images/1608.png "Scale")        
+![Scale](igrc-platform/pages/images/1608.png "Scale")        
 
 # Spinner
 
@@ -133,7 +133,7 @@ Spinner {
 }
 ```
 
-![Spinner]({{site.baseurl}}/docs/igrc-platform/pages/images/1609.png "Spinner")        
+![Spinner](igrc-platform/pages/images/1609.png "Spinner")        
 
 # MultiEdit
 
@@ -149,7 +149,7 @@ MultiEdit {
 }
 ```
 
-![MultiEdit]({{site.baseurl}}/docs/igrc-platform/pages/images/1610.png "MultiEdit")        
+![MultiEdit](igrc-platform/pages/images/1610.png "MultiEdit")        
 
 # Upload
 
@@ -163,4 +163,4 @@ Upload {
 }
 ```
 
-![Upload]({{site.baseurl}}/docs/igrc-platform/pages/images/1611.png "Upload")        
+![Upload](igrc-platform/pages/images/1611.png "Upload")        

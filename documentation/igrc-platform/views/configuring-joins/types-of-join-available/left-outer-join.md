@@ -12,4 +12,4 @@ A 'left outer join' involves enumerating, for each concept located on the left s
 
 Returning to the previous example and setting the join to be 'LEFT', the result will contain the list of access accounts associated with each identity, as before. The results table will contain an additional line for each identity with no associated access accounts. The attribute values relating to the account will be set to _null_.   
 
-![Left outer join]({{site.baseurl}}/docs/igrc-platform/views/configuring-joins/images/worddava3bed2f09bfef9766a0369823a86c1d5.png "Left outer join")
+![Left outer join](igrc-platform/views/configuring-joins/images/worddava3bed2f09bfef9766a0369823a86c1d5.png "Left outer join")

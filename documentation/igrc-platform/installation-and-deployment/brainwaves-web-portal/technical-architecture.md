@@ -29,4 +29,4 @@ The web service is based on the model of roles.
 
 # 1.2 Compatible server environments
 
-A list of supported environments by the software Brainwave Identity GRC can be found at the following link: [Download]({{site.baseurl}}{% link docs/downloads.md %})
+A list of supported environments by the software Brainwave Identity GRC can be found at the following link: [Download](downloads.md)

@@ -20,7 +20,7 @@ This document describes how SoD Matrix are collected in Brainwave iGRC. Usually,
 
 The traditional format for such matrix in external Excel sheets usually use pivot table:
 
-![Pivot table]({{site.baseurl}}/docs/igrc-platform/collector/components/collecting-sod-matrix/images/SoD_Pivot_Table.png "Pivot table")   
+![Pivot table](igrc-platform/collector/components/collecting-sod-matrix/images/SoD_Pivot_Table.png "Pivot table")   
 > > > > > > Figure 1: SoD Pivot table example
 
 Brainwave iGRC data model concept integrates the two following SoD concepts:   
@@ -38,34 +38,34 @@ Brainwave iGRC 2016 R2
 
 In order to define SoD Matrix, an additional target is available in collector palette:
 
-![Collector palette]({{site.baseurl}}/docs/igrc-platform/collector/components/collecting-sod-matrix/images/SoD_Palet1.png "Collector palette")   
+![Collector palette](igrc-platform/collector/components/collecting-sod-matrix/images/SoD_Palet1.png "Collector palette")   
 
 The SOD matrix target creates a new matrix in Brainwave data model:
 
-![SOD matrix target]({{site.baseurl}}/docs/igrc-platform/collector/components/collecting-sod-matrix/images/SoD_Collect1.png "SOD matrix target")   
+![SOD matrix target](igrc-platform/collector/components/collecting-sod-matrix/images/SoD_Collect1.png "SOD matrix target")   
 
 
-![SOD matrix target]({{site.baseurl}}/docs/igrc-platform/collector/components/collecting-sod-matrix/images/SoD_Collect2.png "SOD matrix target")   
+![SOD matrix target](igrc-platform/collector/components/collecting-sod-matrix/images/SoD_Collect2.png "SOD matrix target")   
 
 In order to define SoD rules, an additional target is available in collector palette:
 
-![Collector palette]({{site.baseurl}}/docs/igrc-platform/collector/components/collecting-sod-matrix/images/SoD_Palet2.png "Collector palette")   
+![Collector palette](igrc-platform/collector/components/collecting-sod-matrix/images/SoD_Palet2.png "Collector palette")   
 
 This target add new SoD rules in an existing SoD matrix:
 
-![SoD matrix]({{site.baseurl}}/docs/igrc-platform/collector/components/collecting-sod-matrix/images/SoD_Collect4.png "SoD matrix")   
+![SoD matrix](igrc-platform/collector/components/collecting-sod-matrix/images/SoD_Collect4.png "SoD matrix")   
 
 A rule has to be inserted in an existing SoD Matrix. This rule references first permission incompatible with a second one:
 
-![SoD matrix]({{site.baseurl}}/docs/igrc-platform/collector/components/collecting-sod-matrix/images/SoD_Collect3.png "SoD matrix")   
+![SoD matrix](igrc-platform/collector/components/collecting-sod-matrix/images/SoD_Collect3.png "SoD matrix")   
 
 Additional information can be added for each risk:
 
-![Parameters]({{site.baseurl}}/docs/igrc-platform/collector/components/collecting-sod-matrix/images/SoD_Collect5.png "Parameters")   
+![Parameters](igrc-platform/collector/components/collecting-sod-matrix/images/SoD_Collect5.png "Parameters")   
 
 Some SoD componants can be used in views to list information regarding collected SoD Matrix and SoD rules (permission pairs):
 
-![SoD view]({{site.baseurl}}/docs/igrc-platform/collector/components/collecting-sod-matrix/images/SoD_View1.png "SoD view")   
+![SoD view](igrc-platform/collector/components/collecting-sod-matrix/images/SoD_View1.png "SoD view")   
 
 # Example
 

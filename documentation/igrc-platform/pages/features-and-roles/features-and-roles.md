@@ -32,7 +32,7 @@ However, for users is different, the relationship between users and features is 
 
 One or many **Features** are grouped into **FeatureSets**. **FeatureSets** are associated with **Roles**. And finally **Roles** are associated with **Users**.   
 
-![General concepts]({{site.baseurl}}/docs/igrc-platform/pages/images/2401.png "General concepts")          
+![General concepts](igrc-platform/pages/images/2401.png "General concepts")          
 
 This organisation of access rights models is inspired in the need to group fine-grained access rights into groups that can after be used many times.  
 
@@ -57,21 +57,21 @@ Lets take a closer look into each one of these concepts
 
 Features are described in files with extension ".features" placed in folder webportal/features.    
 
-![Features]({{site.baseurl}}/docs/igrc-platform/pages/images/2402.png "Features")          
+![Features](igrc-platform/pages/images/2402.png "Features")          
 
 A features creation wizard will walk you through the process. First a filename:   
 
-![features creation wizard]({{site.baseurl}}/docs/igrc-platform/pages/images/2403.png "features creation wizard")          
+![features creation wizard](igrc-platform/pages/images/2403.png "features creation wizard")          
 
 Then some unique identifier and description for this file.   
 Here, it will offer the option to change the standard feature to FeatureSet assign method:   
 Default one, is the first one (Recommended).   
 
-![features creation]({{site.baseurl}}/docs/igrc-platform/pages/images/2404.png "features creation")          
+![features creation](igrc-platform/pages/images/2404.png "features creation")          
 
 Then it will be posible to add new features to this file by clicking on "Add..."   
 
-![features creation]({{site.baseurl}}/docs/igrc-platform/pages/images/2405.png "features creation")          
+![features creation](igrc-platform/pages/images/2405.png "features creation")          
 
 To create a feature you need to provide:   
 
@@ -79,7 +79,7 @@ To create a feature you need to provide:
 - Description (Optional)
 - Select the featuresets that will include this feature ( Can be done later )   
 
-![features edition]({{site.baseurl}}/docs/igrc-platform/pages/images/2406.png "features edition")          
+![features edition](igrc-platform/pages/images/2406.png "features edition")          
 
 Many features can be declared in the same file. And they will be usable from any page of the project.   
 
@@ -87,30 +87,30 @@ Many features can be declared in the same file. And they will be usable from any
 
 FeatureSets are declared in a file ".featureset" placed in folder webportal/features.   
 
-![FeatureSet]({{site.baseurl}}/docs/igrc-platform/pages/images/2407.png "FeatureSet")          
+![FeatureSet](igrc-platform/pages/images/2407.png "FeatureSet")          
 
 A featureset creation wizard will walk you through the process. First a filename:   
 
-![FeatureSet]({{site.baseurl}}/docs/igrc-platform/pages/images/2408.png "FeatureSet")          
+![FeatureSet](igrc-platform/pages/images/2408.png "FeatureSet")          
 
 Then we will need an identifier and a description for the file.   
 
-![FeatureSet]({{site.baseurl}}/docs/igrc-platform/pages/images/2409.png "FeatureSet")          
+![FeatureSet](igrc-platform/pages/images/2409.png "FeatureSet")          
 
 Once the file is created you can create a new featureset by clicking on "Add.."   
 
-![FeatureSet]({{site.baseurl}}/docs/igrc-platform/pages/images/2410.png "FeatureSet")          
+![FeatureSet](igrc-platform/pages/images/2410.png "FeatureSet")          
 
 To create a new featureset you will need:   
 
 - A name or identifier
 - A description
 
-![FeatureSet]({{site.baseurl}}/docs/igrc-platform/pages/images/2411.png "FeatureSet")          
+![FeatureSet](igrc-platform/pages/images/2411.png "FeatureSet")          
 
 Once created, you will see the featureset displayed in the list. And you will notice that there is one column per existing role in your project:   
 
-![FeatureSet]({{site.baseurl}}/docs/igrc-platform/pages/images/2412.png "FeatureSet")          
+![FeatureSet](igrc-platform/pages/images/2412.png "FeatureSet")          
 
 To assign the featureset to any of the roles, it is enough to click on the empty cells. A green check will appear. This means the role will contain all the features in this featureset.  
 You can create as many featuresets as you you need. They will appear automatically in all ".features" files of the project so that you can include features to it.
@@ -119,19 +119,19 @@ You can create as many featuresets as you you need. They will appear automatical
 
 Finally, the roles are declared in ".roles" files located in webportal/features.   
 
-![Roles]({{site.baseurl}}/docs/igrc-platform/pages/images/2413.png "Roles")          
+![Roles](igrc-platform/pages/images/2413.png "Roles")          
 
 A roles file creation wizard will walk you through the process. First a filename:   
 
-![Roles]({{site.baseurl}}/docs/igrc-platform/pages/images/2414.png "Roles")          
+![Roles](igrc-platform/pages/images/2414.png "Roles")          
 
 Then we will need an identifier and a description for the file.   
 
-![Roles]({{site.baseurl}}/docs/igrc-platform/pages/images/2415.png "Roles")          
+![Roles](igrc-platform/pages/images/2415.png "Roles")          
 
 Now you can add a new role by clicking on "Add..."   
 
-![Roles]({{site.baseurl}}/docs/igrc-platform/pages/images/2416.png "Roles")          
+![Roles](igrc-platform/pages/images/2416.png "Roles")          
 
 To create a new role, you will need:   
 
@@ -139,7 +139,7 @@ To create a new role, you will need:
 - A description for the roles (optional)
 - A set of rules to describe the role and its perimeters (Optional)   
 
-![Roles]({{site.baseurl}}/docs/igrc-platform/pages/images/2417.png "Roles")          
+![Roles](igrc-platform/pages/images/2417.png "Roles")          
 
 # How to Assign Users to the Roles ?
 
@@ -174,11 +174,11 @@ You can use one of the default rules or you can create a new one.
 
 After, to assign it to the role , all you need to do is to edit the role in the roles file and change the **Identities in role** by clicking on the icon:   
 
-![Using Rules]({{site.baseurl}}/docs/igrc-platform/pages/images/2418.png "Using Rules")          
+![Using Rules](igrc-platform/pages/images/2418.png "Using Rules")          
 
 Then you can select one of the available rules. For example the roles that returns **Organisation Managers**  ( Based on job )   
 
-![Using Rules]({{site.baseurl}}/docs/igrc-platform/pages/images/2419.png "Using Rules")          
+![Using Rules](igrc-platform/pages/images/2419.png "Using Rules")          
 
 # What About the web portal menus?
 
@@ -187,12 +187,12 @@ You can add other menu entries through the access rights management.
 
 In order to do this you have to declare 'menu items' in your configuration:   
 
-![Menu items]({{site.baseurl}}/docs/igrc-platform/pages/images/roles01.png "Menu items")          
+![Menu items](igrc-platform/pages/images/roles01.png "Menu items")          
 
 A menu item will appear if the current user has access to the corresponding feature within its roles.   
 The menu item will be positioned left to right, depending on its priority. A menu item is linked to a target page.   
 
-![Menu items]({{site.baseurl}}/docs/igrc-platform/pages/images/roles02.png "Menu items")          
+![Menu items](igrc-platform/pages/images/roles02.png "Menu items")          
 
 The menu configuration is stored as a series of files within the /webportal/features/ subdirectory.   
 Menu item declaration files end by .menuitems   
@@ -215,20 +215,20 @@ The user will only be able to see the identities inside the perimeter.
 In order to to so, you have to activate the perimeter restriction in your view through the 'Toggle [concept] perimeter visibility' option.     
 A funnel will then appear next to your concept.   
 
-![Perimeters]({{site.baseurl}}/docs/igrc-platform/pages/images/toogleperimeter.png "Perimeters")          
+![Perimeters](igrc-platform/pages/images/toogleperimeter.png "Perimeters")          
 
 This can be useful for example for a manager of an organisation, we can define a perimeter with only people of the organisation that is managed.   
 Like that, the pages and reports that the manager can see, will only show his team.   
 
 To do this, we will need to create a rule with a parameter **principalUid**  that will contain the uid of the connected user. Then:   
 
-![Perimeters]({{site.baseurl}}/docs/igrc-platform/pages/images/2420.png "Perimeters")          
+![Perimeters](igrc-platform/pages/images/2420.png "Perimeters")          
 
 This rule will return the list of people in the team of the manager with the uid **principalUid** ( The connected user), if any.  
 
 And finally, assign this rule to the Identity Perimeter of the role by clicking on the icon:   
 
-![features edition]({{site.baseurl}}/docs/igrc-platform/pages/images/2421.png "features edition")          
+![features edition](igrc-platform/pages/images/2421.png "features edition")          
 
 For the roles having no associated perimeters, the "default identity perimeter" (same for application and repository perimeter) is used.   
 If no default perimeter is defined, then no perimeter applies and the user will see all the database (identities, applications or repositories).   
@@ -242,7 +242,7 @@ If you see objects in the protal whch should have been filtered, then you should
 - for each role, check that you have a perimeter that applies
 - if one of your role has no associated perimeter, check the default perimeter.   
 
-![Default perimeter]({{site.baseurl}}/docs/igrc-platform/pages/images/default_perimeters.PNG "Default perimeter")          
+![Default perimeter](igrc-platform/pages/images/default_perimeters.PNG "Default perimeter")          
 
 As of version 2017 R2 SP6, it is possible to use additional parameter in the rule defining the role perimeters.   
 
@@ -251,11 +251,11 @@ As of version 2017 R2 SP6, it is possible to use additional parameter in the rul
 
 > Do **not** make the view parameter *optional* (`uid [ = principalUid ]`), as this can cause perfomance issues: the view can be called without parameter and return **all** identities (can happen during report generation)  
 
-![Root view]({{site.baseurl}}/docs/igrc-platform/pages/images/root_view_principaluid.png "Root view")  
+![Root view](igrc-platform/pages/images/root_view_principaluid.png "Root view")  
 
 - This view should be added to the technical configuration (user.perimeter-params.view)   
 
-![Others perimeters]({{site.baseurl}}/docs/igrc-platform/pages/images/techconf_perimeterparam.png "Others perimeters")          
+![Others perimeters](igrc-platform/pages/images/techconf_perimeterparam.png "Others perimeters")          
 
 - This view contains the attribute needed for the perimeter rules. This attribute should be renamed to have a unique nickname (ie : countrycode)   
 
@@ -263,4 +263,4 @@ As of version 2017 R2 SP6, it is possible to use additional parameter in the rul
   - this rule should use the view attribute as a parameter (ie : repository code is $countrycode)
   - in the rule displayname, it is mandatory to display this parameter   
 
-![Perimeter rule]({{site.baseurl}}/docs/igrc-platform/pages/images/perimeter_rule.png "Perimeter rule")          
+![Perimeter rule](igrc-platform/pages/images/perimeter_rule.png "Perimeter rule")          

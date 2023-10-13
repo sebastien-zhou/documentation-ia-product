@@ -45,7 +45,7 @@ If you are running a demonstration or sandbox environment, add the hostname you 
 
 Please use the following link for more information on the folders (paths) used by the packaging:  
 
-[Data location]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/packaging/before-installation/requirements.md %}#docker-host-disk){: .ref}
+[Data location](igrc-platform/installation-and-deployment/packaging/before-installation/requirements.md#docker-host-disk){: .ref}
 
 ### Update / upgrade
 
@@ -94,7 +94,7 @@ This volume is mounted in the `bwbatch` container as `/data/importfiles`.
 > This is why in the `docker.configuration`, the `importfiles` variable points to `/data/importfiles`  
 > It's content should be the same as `/var/lib/brainwave/importfiles`  
 
-To use external data sources (not extracted via integrated connectors), you will need to use the [bw_data_collector.ps1]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/packaging/configuration/powershell-extraction.md %})
+To use external data sources (not extracted via integrated connectors), you will need to use the [bw_data_collector.ps1](igrc-platform/installation-and-deployment/packaging/configuration/powershell-extraction.md)
 (configuration/powershell-extraction.md) script.  
 You can configure it to upload each needed folder and files.  
 After doing this you will need to create a `Generic bridge - file` datasource.  

@@ -30,7 +30,7 @@ In the rule editor, metadata are always accessed through a join.
 
 ---
 
-![Metadata rule joins in palette]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_rule_palette_join.png "Metadata rule joins in palette")
+![Metadata rule joins in palette](igrc-platform/metadata/images/metadata_rule_palette_join.png "Metadata rule joins in palette")
 
 ## Rule links
 
@@ -105,7 +105,7 @@ Obviously, the result is false.
 
 Let's revert to a standalone metadata and have a look at this rule:
 
-![Metadata wrong rule with embedded metadata]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_rule_embedded_wrong.png "Metadata wrong rule with embedded metadata")
+![Metadata wrong rule with embedded metadata](igrc-platform/metadata/images/metadata_rule_embedded_wrong.png "Metadata wrong rule with embedded metadata")
 
 Again, this rule is false as it would give the exact same result as detailed above.
 
@@ -117,7 +117,7 @@ As a result an identity owning 2 certifications (`Health` and `ISO27000`) will n
 
 The usual way to translate the above question in the rule editor is shown below:
 
-![Metadata good rule with embedded metadata]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_rule_embedded_good.png "Metadata good rule with embedded metadata")
+![Metadata good rule with embedded metadata](igrc-platform/metadata/images/metadata_rule_embedded_good.png "Metadata good rule with embedded metadata")
 
 This generates the following HQL query:
 
@@ -143,7 +143,7 @@ When the metadata component is selected in the editor, the palette shows the lis
 
 For each attribute, the list of criteria is automatically created as a function of the attribute type as shown in the following screenshot for the attribute 'certification name':
 
-![Metadata rule values in palette]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_rule_palette_criteria.png "Metadata rule values in palette")
+![Metadata rule values in palette](igrc-platform/metadata/images/metadata_rule_palette_criteria.png "Metadata rule values in palette")
 
 # Metadata in the view editor
 
@@ -165,7 +165,7 @@ The palette contains
 When you drop a project specific metadata in the editor, a filter is automatically applied on the metadata name to fetch only the selected ones.
 Here is a screenshot where a metadata `acme_use_case_3` has been set as the root component and a first attribute has been added.
 
-![Metadata root in view editor]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_view_metadata_root.png "Metadata root in view editor")
+![Metadata root in view editor](igrc-platform/metadata/images/metadata_view_metadata_root.png "Metadata root in view editor")
 
 From there, you can add attributes and apply criteria.
 Joins are also available to jump to other entities either through the declared metadata keys or the metadata entity values.
@@ -180,7 +180,7 @@ For example, if the metadata is attached to the identity, the attributes availab
 - The standard identity attributes,
 - The attributes from all the metadata declared in the project.
 
-![Embedded metadata palette in view editor]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_view_embedded_palette.png "Embedded metadata palette in view editor")
+![Embedded metadata palette in view editor](igrc-platform/metadata/images/metadata_view_embedded_palette.png "Embedded metadata palette in view editor")
 
 As you can see, all attributes from a metadata have their names automatically composed of 2 parts:
 - the metadata name
@@ -190,7 +190,7 @@ For example the attribute `cert_name` in the metadata `acme_use_case_1` becomes 
 
 If the certification metadata was declared as embedded, the view editor palette would display the following attributes in the identity:
 
-![Embedded metadata in view editor]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_view_embedded.png "Embedded metadata in view editor")
+![Embedded metadata in view editor](igrc-platform/metadata/images/metadata_view_embedded.png "Embedded metadata in view editor")
 
 ### Result cardinality
 
@@ -215,7 +215,7 @@ With embedded metadata, the implicit joins can be tricky to filter.
 Again, we will use the certification metadata in our example as if it was declared as embedded metadata.
 We want to get the list of identities having a `Health` certification.
 
-![Filtering embedded metadata 1]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_view_embedded_filter_1.png "Filtering embedded metadata 1")
+![Filtering embedded metadata 1](igrc-platform/metadata/images/metadata_view_embedded_filter_1.png "Filtering embedded metadata 1")
 
 The above view returns only the identities having a certification called `Heath`.
 Identities having no certification or not the `Health` certification are not returned.
@@ -224,14 +224,14 @@ Internally, the join towards metadata has been converted to an inner join becaus
 Now we want to get the full list of identities and display in a column a boolean if they have the `Health` certification.
 We could change the filter to keep the identity when the `cert_name` is null like this but it does not work !
 
-![Filtering embedded metadata 2]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_view_embedded_filter_2.png "Filtering embedded metadata 2")
+![Filtering embedded metadata 2](igrc-platform/metadata/images/metadata_view_embedded_filter_2.png "Filtering embedded metadata 2")
 
 This does not work as the join is an inner join and the condition `cert_name is null` is executed after the inner join has filtered the identities.
 Changing the filter scope as global does not change the result. It is still wrong as the join remains inner and identities without certifications get filtered.
 The correct way to do this is to remove the filter from the attribute so that the join reverts to outer left, there is then no filtering anymore.
 Then add the filter in the 'SQL filtering' with an SQL syntax like this:
 
-![Filtering embedded metadata 3]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_view_embedded_filter_3.png "Filtering embedded metadata 3")
+![Filtering embedded metadata 3](igrc-platform/metadata/images/metadata_view_embedded_filter_3.png "Filtering embedded metadata 3")
 
 ## Separate metadata
 
@@ -239,7 +239,7 @@ When the option 'Display metadata attributes in the following concept in the vie
 This design is mandatory if the metadata defines a link between several entities.
 Here is an example with a metadata defining a link between an organization and an application:
 
-![Filtering separate metadata]({{site.baseurl}}/docs/igrc-platform/metadata/images/metadata_view_separate.png "Filtering separate metadata")
+![Filtering separate metadata](igrc-platform/metadata/images/metadata_view_separate.png "Filtering separate metadata")
 
 This view starts from organization and fetches all metadata regarding the managed applications. Left joins are used to get all organizations in the result.
 The metadata appears as a standalone component containing the attributes (the expiration date) and having links towards organizations and applications.

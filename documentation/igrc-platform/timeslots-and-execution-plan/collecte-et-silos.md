@@ -32,7 +32,7 @@ In versions 2015 and above, you can define different silos (for example one per 
 
 The Timeslot view of the product displays the list of silos collected and you can delete just one silo and reload it after modifying the collect line.     
 
-![Timeslot]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/images/Show_timeslots.PNG "Timeslot")   
+![Timeslot](igrc-platform/timeslots-and-execution-plan/images/Show_timeslots.PNG "Timeslot")   
 
 As an example of what can be done using Silo. This new concept offers the following benefits :    
 
@@ -50,7 +50,7 @@ As an example of what can be done using Silo. This new concept offers the follow
 
 A silo is a file with a `.silo` extension in the silos folder. It has a name and refers to a collect line. Due to the addition of silos the main collect line previously used for the project does not exist any more. When running the execution plan, the product enumerates all silo files in the silos folder (if not excluded in technical configuration - explained later) and run the associated collect line.
 
-![Timeslot]({{site.baseurl}}/docs/igrc-platform/timeslots-and-execution-plan/images/Silo.PNG "Timeslot")   
+![Timeslot](igrc-platform/timeslots-and-execution-plan/images/Silo.PNG "Timeslot")   
 
 Of course, the collect line referenced by a silo may still call sub-lines. For example, SharePoint sil   o refers to a SharePoint main collect line which calls 3 sub-lines to load nodes, groups and rights.  
 

@@ -38,9 +38,9 @@ In the latest version of the `DB_check` you will find the list of unused indexes
 
 Please use one of the following links for more information on the usage of the `DB_Check`
 
-- [Microsoft SQLserver]({{site.baseurl}}{% link docs/how-to/database/sqlserver/performance-investigation-sql-server.md %}){: .ref}  
-- [Postgresql]({{site.baseurl}}{% link docs/how-to/database/postgresql/psql-performance-issue-investigation.md %}){: .ref}  
-- [Oracle]({{site.baseurl}}{% link docs/how-to/database/oracle/performance-investigation-oracle.md %}){: .ref}  
+- [Microsoft SQLserver](how-to/database/sqlserver/performance-investigation-sql-server.md){: .ref}  
+- [Postgresql](how-to/database/postgresql/psql-performance-issue-investigation.md){: .ref}  
+- [Oracle](how-to/database/oracle/performance-investigation-oracle.md){: .ref}  
 
 ## Index management
 

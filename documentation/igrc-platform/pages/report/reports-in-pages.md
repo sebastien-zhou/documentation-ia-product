@@ -17,7 +17,7 @@ permalink: /docs/igrc-platform/pages/report/
 
 Pages offer the option to open BIRT reports by pointing to the ".rptdesign" file located in ProjectPath/reports/   
 
-![Report01]({{site.baseurl}}/docs/igrc-platform/pages/images/report01.png "Report01")        
+![Report01](igrc-platform/pages/images/report01.png "Report01")        
 
 Through the report viewer, you will be able to:   
 
@@ -53,9 +53,9 @@ Mandatory attributes are marked in bold
 **report** the path to the .rptdesign and here we pass the paramaters of the report    
 `report: "pathtoreport" with localparam to reportparam`    
 the localparam must be declare in the Report block    
-Check for the [parameters chapter]({{site.baseurl}}{% link docs/igrc-platform/pages/parameters.md %}) for more information about parameters    
+Check for the [parameters chapter](igrc-platform/pages/parameters.md) for more information about parameters    
 
-**tags** here we can define tags an priorities if any, this can be used to create a [dataset of pages/reports]({{site.baseurl}}{% link docs/igrc-platform/pages/advanced-data-binding.md %})     
+**tags** here we can define tags an priorities if any, this can be used to create a [dataset of pages/reports](igrc-platform/pages/advanced-data-binding.md)     
 `tags:"identity" priority 100, "byuid", "printable"`   
 The report will be able to be found by using the tags identity,    
 byuid and printable   
@@ -72,10 +72,10 @@ Title of the report will be changed dynamically to show the hrcode and identity 
 `large-icon: "48/details/printable_48.png" `   
 
 **description** a description for the report   
-Supports the [common attributes]({{site.baseurl}}{% link docs/igrc-platform/pages/widgets-common-attributes.md %}): **feature** and **background**
-Supports the events: **enter-event** and **exit-event**. [ Learn more about events]({{site.baseurl}}{% link docs/igrc-platform/pages/events-and-actions.md %})    
+Supports the [common attributes](igrc-platform/pages/widgets-common-attributes.md): **feature** and **background**
+Supports the events: **enter-event** and **exit-event**. [ Learn more about events](igrc-platform/pages/events-and-actions.md)    
 
-Then, the report can be called using the [GoTo Action]({{site.baseurl}}{% link docs/igrc-platform/pages/events-and-actions.md %}).    
+Then, the report can be called using the [GoTo Action](igrc-platform/pages/events-and-actions.md).    
 
 For example:
 
@@ -98,11 +98,11 @@ Here is how to do it:
 
 Create a new page and select 'Page declaring reports'  
 
-![Page declaring reports]({{site.baseurl}}/docs/igrc-platform/pages/images/report02.png "Page declaring reports")        
+![Page declaring reports](igrc-platform/pages/images/report02.png "Page declaring reports")        
 
 Select the reports you want to publish in the web portal   
 
-![report03]({{site.baseurl}}/docs/igrc-platform/pages/images/report03.png "report03")        
+![report03](igrc-platform/pages/images/report03.png "report03")        
 
 It will automatically create a file containing the reports declaration, such as:   
 
@@ -192,7 +192,7 @@ Don't forget to specify as well some icons and descriptions as they will be used
 
 Here is a simple example to add a report named 'My report sample' to the account details page:   
 
-![report04]({{site.baseurl}}/docs/igrc-platform/pages/images/report04.png "report04")        
+![report04](igrc-platform/pages/images/report04.png "report04")        
 
 ```
 myReports = Report {
@@ -217,10 +217,10 @@ Because of the 'byuid' tag, this report must have a 'uid' parameter positionned.
 
 Please refer to the following sections to learn more about the tags available in the brainwave web portal:   
 
-[Tagging System for Pages and Reports]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/tagging-system-for-pages-and-reports.md %})      
-[Links to Reports and Pages from Detail Pages]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/links-to-reports-and-pages-from-detail-pages.md %})   
-[General Menu in the Home Page]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/general-menu-of-the-home-pages.md %})     
-[Analytics section in search pages]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/analytics-section-in-search-pages.md %})   
+[Tagging System for Pages and Reports](igrc-platform/pages/new-webportal-features/tagging-system-for-pages-and-reports.md)      
+[Links to Reports and Pages from Detail Pages](igrc-platform/pages/new-webportal-features/links-to-reports-and-pages-from-detail-pages.md)   
+[General Menu in the Home Page](igrc-platform/pages/new-webportal-features/general-menu-of-the-home-pages.md)     
+[Analytics section in search pages](igrc-platform/pages/new-webportal-features/analytics-section-in-search-pages.md)   
 
 # Linking back to a page from a report
 
@@ -232,14 +232,14 @@ In order to do so you have to leverage a special syntax within the report engine
 
 Here is an example:   
 
-![report05]({{site.baseurl}}/docs/igrc-platform/pages/images/report05.png "report05")        
+![report05](igrc-platform/pages/images/report05.png "report05")        
 
 While configuring the hyperlink you will have to select "drill-through" and a report.       
 Although you have to select a report it won't be used as we will override the information (thus you can select the report itself for instance).   
 
 In the report parameters you have to add a parameter named `__overridetarget`.   
 
-This parameter contains as a string the link type and the target (see [actions and events]({{site.baseurl}}{% link docs/igrc-platform/pages/events-and-actions.md %}).         
+This parameter contains as a string the link type and the target (see [actions and events](igrc-platform/pages/events-and-actions.md).         
 
 Here for instance we specified that the link goes to the page named "repositoryDetailsPageRecorduid".   
 You then have to add the other parameters, as required.   
@@ -440,7 +440,7 @@ The notify rule must accept the three following parameters:
 - reportTitle the title of the report,  
 - reportUrl the URL where the report can be directly accessed.
 
-![report06]({{site.baseurl}}/docs/igrc-platform/pages/images/report06.png "report06")        
+![report06](igrc-platform/pages/images/report06.png "report06")        
 
 # Report caching capabilities
 
@@ -468,7 +468,7 @@ In the cache directory, each user have its own sub-directory (of the form `u_<us
 
 When a report is displayed in the portal interface, the page header contains two icons used to reload the report:      
 
-![Report]({{site.baseurl}}/docs/igrc-platform/pages/images/2015-06-24_16_55_17-Identity_GRC.png "Report")        
+![Report](igrc-platform/pages/images/2015-06-24_16_55_17-Identity_GRC.png "Report")        
 
 The left one reload the report using the cache, the right one removes the cached document before reloading the page (thus re-executing both rendering phases).   
 
@@ -530,4 +530,4 @@ Button {
 
 ```
 
-Consider reading [actions and events]({{site.baseurl}}{% link docs/igrc-platform/pages/events-and-actions.md %}) for more information about this.
+Consider reading [actions and events](igrc-platform/pages/events-and-actions.md) for more information about this.

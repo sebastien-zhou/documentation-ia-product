@@ -16,7 +16,7 @@ permalink: /docs/igrc-platform/pages/new-webportal-features/general-menu/
 
 # What is new General Menu?
 
-Even if the General Menu does not look much different, it has been redesigned in the way it works. It implements the new [tagging system]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/tagging-system-for-pages-and-reports.md %}) which makes it very flexible and customizable.
+Even if the General Menu does not look much different, it has been redesigned in the way it works. It implements the new [tagging system](igrc-platform/pages/new-webportal-features/tagging-system-for-pages-and-reports.md) which makes it very flexible and customizable.
 
 # How to customize it?
 

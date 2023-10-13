@@ -297,6 +297,6 @@ The menu items are defined in a `.menuitems` file. The file is located in the fo
 
 ![Menu items](../images/webportal-menuitem.png "Menu items")    
 
-For more information on how to build a web page, please refer to the related documentation ([Pages]({{site.baseurl}}{% link docs/igrc-platform/pages/pages.md %})).   
+For more information on how to build a web page, please refer to the related documentation ([Pages](igrc-platform/pages/pages.md)).   
 
-For some example on how to use roles, features, featuresets and menu items please refer to the default project documentation: [Default featuresets and Roles]({{site.baseurl}}{% link docs/igrc-platform/getting-started/default-project/default-featuresets.md %}).
+For some example on how to use roles, features, featuresets and menu items please refer to the default project documentation: [Default featuresets and Roles](igrc-platform/getting-started/default-project/default-featuresets.md).

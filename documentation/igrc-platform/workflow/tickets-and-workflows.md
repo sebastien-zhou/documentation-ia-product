@@ -18,9 +18,9 @@ permalink: /docs/igrc-platform/workflow/tickets-and-workflows/
 
 There are four types of tickets in the Ledger that are linked to workflows, as documented on Expert-Exchange or PS Tools:  
 
- * [TicketLog]({{site.baseurl}}{% link docs/igrc-platform/workflow/tickets.md %}#ticketlog)  
- * [TicketAction]({{site.baseurl}}{% link docs/igrc-platform/workflow/tickets.md %}#ticketaction)  
- * [TicketReview]({{site.baseurl}}{% link docs/igrc-platform/workflow/tickets.md %}#ticketreview)  
+ * [TicketLog](igrc-platform/workflow/tickets.md#ticketlog)  
+ * [TicketAction](igrc-platform/workflow/tickets.md#ticketaction)  
+ * [TicketReview](igrc-platform/workflow/tickets.md#ticketreview)  
  * Remediation Ticket  
 
 > This page intends to give an overview of these ticket types and how they interact  

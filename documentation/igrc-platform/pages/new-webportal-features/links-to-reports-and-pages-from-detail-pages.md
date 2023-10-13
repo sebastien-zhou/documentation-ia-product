@@ -27,7 +27,7 @@ New pages and reports that follow the custom tags and comply with requirements w
 
 # How are they included?
 
-The detail pages have been designed to create the links dynamically taking advantage of the [tagging system]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/tagging-system-for-pages-and-reports.md %}). They will link automatically to all pages and reports that are properly tagged with the same concept and that expect to receive the UID as a parameter. The Identity Detail page will link to all pages and reports that contain the tags **identity** and **byuid**. Follow the default tags and comply with the requirements in order to obtain the best results.   
+The detail pages have been designed to create the links dynamically taking advantage of the [tagging system](igrc-platform/pages/new-webportal-features/tagging-system-for-pages-and-reports.md). They will link automatically to all pages and reports that are properly tagged with the same concept and that expect to receive the UID as a parameter. The Identity Detail page will link to all pages and reports that contain the tags **identity** and **byuid**. Follow the default tags and comply with the requirements in order to obtain the best results.   
 
 # What parameters are sent?
 
@@ -35,7 +35,7 @@ Detail pages will send:
 
 - The **recorduid** of the concept being reviewed, this parameter is sent in order to guarantee backwards compatibility with legacy reports that use the uid. The use of this parameter in new pages and reports is **strongly** discouraged. The best practice is to use the **uid** instead.
 - The **uid**  of the concept being reviewed, serves as default identifier of the element.
-- Two parameters related to the search mode:  [searchMode flag and the serialized search]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/search-pages-and-navigation-system.md %}).   
+- Two parameters related to the search mode:  [searchMode flag and the serialized search](igrc-platform/pages/new-webportal-features/search-pages-and-navigation-system.md).   
 
 The page and report might use more parameters; However, they will not be sent by default by the detail page. For that reason, it is recommended that any other parameter is declared optional.
 

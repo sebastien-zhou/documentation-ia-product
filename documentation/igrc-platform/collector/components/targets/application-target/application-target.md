@@ -22,7 +22,7 @@ This target allows you to collect application in the ledger.
 
 From collect editor select _Application target_ in _Ledger targets._
 
-![Application target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/application-target/images/2016-07-07_17_47_08-iGRC_Properties.png "Application target")
+![Application target](igrc-platform/collector/components/targets/application-target/images/2016-07-07_17_47_08-iGRC_Properties.png "Application target")
 
 # The properties Tab
 
@@ -36,19 +36,19 @@ In this property you can view/edit general parameters of the application. You wi
 
 This option sets the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation evaluation assessed to true will be executed.
 
-![Target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/application-target/images/app_prop_target.png "Target")
+![Target](igrc-platform/collector/components/targets/application-target/images/app_prop_target.png "Target")
 
 ## Description
 
 Here you can add comments regarding actions done by this component.
 
-![Description]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/application-target/images/2016-04-05_13_17_04-iGRC_Properties.png "Description")
+![Description](igrc-platform/collector/components/targets/application-target/images/2016-04-05_13_17_04-iGRC_Properties.png "Description")
 
 ## Repository
 
 In this property, you can select the attribute that will contain the repository key. This repository will hold collected applications, repository must exist in database.
 
-![Repository]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/application-target/images/2016-07-07_17_51_53-iGRC_Properties.png "Repository")
+![Repository](igrc-platform/collector/components/targets/application-target/images/2016-07-07_17_51_53-iGRC_Properties.png "Repository")
 
 ## Application
 
@@ -58,7 +58,7 @@ With this property, you will define product behavior when importing application.
 - "Application type" with which you can define application type by choosing from role or profile based application, Fileshare, Sharepoint, ... ) or set it to custom type.
 - _"Trigger an error if application is not found"_ option from which you can activate an event that will be generated when the attribute containing application code is null or empty (event shown in dedicated logs).
 
-![Application target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/application-target/images/Application_target_image3.png "Application target")
+![Application target](igrc-platform/collector/components/targets/application-target/images/Application_target_image3.png "Application target")
 
 ## Parameters
 
@@ -79,25 +79,25 @@ Available fields are :
 - reference type 1--\>9
 - reference value 1--\>9  
 
-![Application target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/application-target/images/Application_target_image1.png "Application target")
+![Application target](igrc-platform/collector/components/targets/application-target/images/Application_target_image1.png "Application target")
 
 ## Permission
 
 With this property you can create generic permission for the import application by defining the "_Permission identifier_" and the "_Permission displayname_".
 
-![Permission]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/application-target/images/2016-04-05_13_23_38-iGRC_Properties.png "Permission")
+![Permission](igrc-platform/collector/components/targets/application-target/images/2016-04-05_13_23_38-iGRC_Properties.png "Permission")
 
 ## Manager  
 
-Here you can indicate which attribute contains application manager. For instance, you can indicate which "-attribute contains manager HR code-", the "-expertise domain-" as well as "-attribute containing comments-" related to application manager. You can as well fill delegation information such as the "_attribute containing the delegation flag_", the "_delegation priority_", the "_start date_", the "_end date_", and the "_reason_". More informations regarding manager property is available under the article: [Manager target]({{site.baseurl}}{% link docs/igrc-platform/collector/components/targets/manager-target/manager-target.md %})   
+Here you can indicate which attribute contains application manager. For instance, you can indicate which "-attribute contains manager HR code-", the "-expertise domain-" as well as "-attribute containing comments-" related to application manager. You can as well fill delegation information such as the "_attribute containing the delegation flag_", the "_delegation priority_", the "_start date_", the "_end date_", and the "_reason_". More informations regarding manager property is available under the article: [Manager target](igrc-platform/collector/components/targets/manager-target/manager-target.md)   
 
-![Application target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/application-target/images/Application_target_image2.png "Application target")
+![Application target](igrc-platform/collector/components/targets/application-target/images/Application_target_image2.png "Application target")
 
 ## Resolution  
 
 This part enables you to set up attributes that will fetch direct manager of the import application whether the corresponding manager HR code is not available.
 
-![Resolution]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/application-target/images/07_resolution.png "Resolution")
+![Resolution](igrc-platform/collector/components/targets/application-target/images/07_resolution.png "Resolution")
 
 # Example
 
@@ -109,4 +109,4 @@ Not applicable.
 
 # See also
 
-[Understanding the Brainwave Identity GRC data model]({{site.baseurl}}{% link docs/igrc-platform/getting-started/brainwave-data-model/brainwave-data-model.md %})     
+[Understanding the Brainwave Identity GRC data model](igrc-platform/getting-started/brainwave-data-model/brainwave-data-model.md)     

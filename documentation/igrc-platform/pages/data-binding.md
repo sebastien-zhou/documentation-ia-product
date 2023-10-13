@@ -18,7 +18,7 @@ Data binding allows to obtain information stored in the ledger. Objects declared
 
 The Data Binding process works like this:  
 
-![Data Binding]({{site.baseurl}}/docs/igrc-platform/pages/images/0801.png "Data Binding")  
+![Data Binding](igrc-platform/pages/images/0801.png "Data Binding")  
 
 There are three type of objects supported in the data binding block:  
 
@@ -56,7 +56,7 @@ view: view_identifier with
     (value2) to paramName2 [unless-empty]
 ```
 
-Values that are sent can be modified before sending using one of the many [transformation functions]({{site.baseurl}}{% link docs/igrc-platform/pages/transform-functions.md %}), for example:  
+Values that are sent can be modified before sending using one of the many [transformation functions](igrc-platform/pages/transform-functions.md), for example:  
 
 `view: br_organisations with Concat ( "%", displaynamefilter, "%") to displayname`
 
@@ -112,7 +112,7 @@ Text {
 
 Here is a full example:  
 
-![Record]({{site.baseurl}}/docs/igrc-platform/pages/images/record01.png "Record")  
+![Record](igrc-platform/pages/images/record01.png "Record")  
 
 ```page  
 import "/webportal/pages/resources/pickers.page"
@@ -198,11 +198,11 @@ We can send values to parameters like with Records but a Dataset is always expec
 For this reason, the datasets require to be iterated and can only be used by widgets that support Iteration.  
 Some of them: Tables, Tiles, Text, Link, Grid.  
 
-Datasets can offer much more data binding features. See the [advanced data binding]({{site.baseurl}}{% link docs/igrc-platform/pages/data-binding.md %}) segment for more information.  
+Datasets can offer much more data binding features. See the [advanced data binding](igrc-platform/pages/data-binding.md) segment for more information.  
 
 Here is a full example:  
 
-![Datasets]({{site.baseurl}}/docs/igrc-platform/pages/images/dataset01.png "Datasets")  
+![Datasets](igrc-platform/pages/images/dataset01.png "Datasets")  
 
 ```page  
 import "/webportal/pages/resources/concepts_nls.page"
@@ -257,7 +257,7 @@ Views used with this datasets should be designed to include hierarchy informatio
 
 Considering the following view (`br_organistation_tree`):  
 
-![Hierarchical Dataset]({{site.baseurl}}/docs/igrc-platform/pages/images/0802.png "Hierarchical Dataset")  
+![Hierarchical Dataset](igrc-platform/pages/images/0802.png "Hierarchical Dataset")  
 
 We can create a hierarchical dataset based on it:  
 
@@ -285,9 +285,9 @@ Attributes:
 Hierarchical Datasets are very particular and are supported by a very limited number of widgets.  
 The Tree widgets will display:  
 
-![The Tree widgets]({{site.baseurl}}/docs/igrc-platform/pages/images/0803.png "The Tree widgets")  
+![The Tree widgets](igrc-platform/pages/images/0803.png "The Tree widgets")  
 
-| **Note**: <br><br> The Hierarchical Dataset will need to load all the information of the dataset before rendering. This can have an impact on the performance. A different implementation with better performance is described in the [advanced data binding]({{site.baseurl}}{% link docs/igrc-platform/pages/data-binding.md %}) segment.|
+| **Note**: <br><br> The Hierarchical Dataset will need to load all the information of the dataset before rendering. This can have an impact on the performance. A different implementation with better performance is described in the [advanced data binding](igrc-platform/pages/data-binding.md) segment.|
 
 Here is the full example:  
 
@@ -330,7 +330,7 @@ In a master/detail page, by selecting an item on a list and you display its deta
 
 Here is what it looks like:  
 
-![Master/Details pages]({{site.baseurl}}/docs/igrc-platform/pages/images/md03.png "Master/Details pages")  
+![Master/Details pages](igrc-platform/pages/images/md03.png "Master/Details pages")  
 
 In order to do this, you have to declare at least 2 views: one for the master section (the list) and another one for the detail section (the entries).  
 You will have to instruct the second view to be updated based on the selection on the first view.  
@@ -493,8 +493,8 @@ Here are the corresponding views:
 
 Master view  
 
-![Master view ]({{site.baseurl}}/docs/igrc-platform/pages/images/md01.png "Master view ")  
+![Master view ](igrc-platform/pages/images/md01.png "Master view ")  
 
 Detail view (with the parameter)
 
-![Detail View]({{site.baseurl}}/docs/igrc-platform/pages/images/md02.png "Detail View")  
+![Detail View](igrc-platform/pages/images/md02.png "Detail View")  

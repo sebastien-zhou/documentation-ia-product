@@ -20,13 +20,13 @@ permalink: /docs/igrc-platform/pages/new-webportal-features/search-pages-and-nav
 
 Search pages have been reviewed and completely modified. A new widget has been included to bring the richness of the core search engine to the webportal. The widget support 2 modes of operation: simple and advanced.
 In the simple mode, the most commonly used fields are exposed to offer the possibility to filter. In advanced mode, it allows to create advanced queries like the desktop client would.      
-The capabilities of the new search system don't stop there. When a query has been built the set of results are kept in the [Detail Page]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/detail-pages.md %}). It is represented as a Navigator:    
+The capabilities of the new search system don't stop there. When a query has been built the set of results are kept in the [Detail Page](igrc-platform/pages/new-webportal-features/detail-pages.md). It is represented as a Navigator:    
 
 ![Search Pages](../images/img6.png "Search Pages")   
 
 The navigator is a widget that allows to move from an element to another in the set of results. It also allows to go back to the search in case the user needs to modify it.   
 
-But the navigator is not only present in the [Detail Page]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/detail-pages.md %}) , any page can support the navigator functionality. It has also been implemented in the new pages that handle the reports category browsing.   
+But the navigator is not only present in the [Detail Page](igrc-platform/pages/new-webportal-features/detail-pages.md) , any page can support the navigator functionality. It has also been implemented in the new pages that handle the reports category browsing.   
 
 ![Search Pages](../images/img5.png "Search Pages")   
 
@@ -42,7 +42,7 @@ The search definition can be serialized to be sent as a parameter. This is neede
 
 ![Search Widget](../images/img8.png "Search Widget")   
 
-This two parameters are sent by default from the Search Pages to the [Detail Page]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/detail-pages.md %}) and from there to all the [pages and reports it links to]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/links-to-reports-and-pages-from-detail-pages.md %}). The target pages may use them to show a navigator. By default , the navigator is supported in all browsing pages.
+This two parameters are sent by default from the Search Pages to the [Detail Page](igrc-platform/pages/new-webportal-features/detail-pages.md) and from there to all the [pages and reports it links to](igrc-platform/pages/new-webportal-features/links-to-reports-and-pages-from-detail-pages.md). The target pages may use them to show a navigator. By default , the navigator is supported in all browsing pages.
 
 # How does the Navigator Work?
 
@@ -89,7 +89,7 @@ SearchEdition {
  ]
 }
 ```
-2) By using a view where the perimiter has been configured and the perimeters have been defined in the corresponding `.roles` files. See [Features and Roles]({{site.baseurl}}{% link docs/igrc-platform/pages/features-and-roles/features-and-roles.md %}) for more information on how to configure perimeters in the `.roles` files.   
+2) By using a view where the perimiter has been configured and the perimeters have been defined in the corresponding `.roles` files. See [Features and Roles](igrc-platform/pages/features-and-roles/features-and-roles.md) for more information on how to configure perimeters in the `.roles` files.   
 
 Several components can be declared at the same time. The list of applicable components is as followed:  
 

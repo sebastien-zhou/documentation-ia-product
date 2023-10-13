@@ -7,7 +7,7 @@ toc: true
 ---
 
 > :warning: It is **always** recommended to perform a backup of the application before running the upgrade.  
-> See [here]({{site.baseurl}}{%  link docs/igrc-platform/installation-and-deployment/packaging/run-ops/backup-restore.md %}) for more information
+> See [here](igrc-platform/installation-and-deployment/packaging/run-ops/backup-restore.md) for more information
 
 # Upgrading Brainwave CLI
 

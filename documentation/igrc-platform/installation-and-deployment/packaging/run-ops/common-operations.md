@@ -10,11 +10,11 @@ toc: true
 
 `<hostname>/` will allow the user to navigate to the portal. It will forward to configuration interface if its not possible to load the portal.  
 
-`<hostname>/config` will open the configuration interface. This interface contains the secret manager and license upload location. Please see [here]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/packaging/configuration/config-ui.md %}) for the documentation on the configuration interface.  
+`<hostname>/config` will open the configuration interface. This interface contains the secret manager and license upload location. Please see [here](igrc-platform/installation-and-deployment/packaging/configuration/config-ui.md) for the documentation on the configuration interface.  
 
 `<hostname>/auth` will open Keycloak admin interface.  
 
-`<hostname>/controller` will open the controller UI. Please see [here]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/packaging/containers/controller.md %}) for the controller documentation.  
+`<hostname>/controller` will open the controller UI. Please see [here](igrc-platform/installation-and-deployment/packaging/containers/controller.md) for the controller documentation.  
 
 # CLI operations
 

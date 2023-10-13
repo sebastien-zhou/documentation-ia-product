@@ -20,7 +20,7 @@ But further customizations can be applied if needed, thanks to the high customiz
 
 The next paragraphs explain the whole process from the design of the review to the launch of this review:
 
-![Review steps]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_steps.png "Review steps")
+![Review steps](igrc-platform/review-wizard/images/review_steps.png "Review steps")
 
 Step 1: A wizard is available in the product if all the prerequisites are matched (see next chapter).
 This wizard lets you define the review behavior.
@@ -67,17 +67,17 @@ It is recommended to get the latest version of each add-on.
 
 When all add-ons have been installed, you can start the review wizard by selecting the following item in the New... menu:
 
-![Review new]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_new.png "Review new")
+![Review new](igrc-platform/review-wizard/images/review_new.png "Review new")
 
 This menu opens a dialog box asking you for a `.review` file which will be created when the dialog box is validated.
 The `.review` file must be located in the 'workflow' folder.
 The `.review` file is used to store all the designer's choices for the review.
 
-![Review start dialog]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_start_dialog.png "Review start dialog")
+![Review start dialog](igrc-platform/review-wizard/images/review_start_dialog.png "Review start dialog")
 
 The next panel asks for a review identifier:
 
-![Review start dialog 2]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_start_dialog_2.png "Review start dialog 2")
+![Review start dialog 2](igrc-platform/review-wizard/images/review_start_dialog_2.png "Review start dialog 2")
 
 The review identifier is very important. It will be used as a process identifier so it must be unique in the project.
 Be careful to avoid typos in the identifier because it can not be changed later.
@@ -107,7 +107,7 @@ Then for each right, the review finds the identity owning this right.
 From the identity, the review finds which organization the identity is working in.
 The organization manager is selected as the reviewer.
 
-![Review who what 1]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_who_what_1.png "Review who what 1")
+![Review who what 1](igrc-platform/review-wizard/images/review_who_what_1.png "Review who what 1")
 
 Another example: For a risk based review, we want to review all high privileged accounts regardless the application they belong to.
 The reviewers will be the repository owners.
@@ -115,7 +115,7 @@ To create such a campaign, we select these options:
 - Who will do the review: Repository managers
 - What will be reviewed: Accounts
 
-![Review who what 2]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_who_what_2.png "Review who what 2")
+![Review who what 2](igrc-platform/review-wizard/images/review_who_what_2.png "Review who what 2")
 
 ### How to choose Who and What
 
@@ -171,7 +171,7 @@ Some of them have no meaning. Some of them are never used.
 
 The wizard dialog displays an error if you choose an unsupported combination. This is illustrated in the following screenshot:
 
-![Review dialog error]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_dialog_error.png "Review dialog error")
+![Review dialog error](igrc-platform/review-wizard/images/review_dialog_error.png "Review dialog error")
 
 ## Templates
 
@@ -185,7 +185,7 @@ Then, inside bw_campaigntemplates, another folder is created using the review id
 
 The following screenshot shows the 2 sub-folders in notifications folder but this is the same in views folder, rules folder...:
 
-![Review folders]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_folders.png "Review folders")
+![Review folders](igrc-platform/review-wizard/images/review_folders.png "Review folders")
 
 The second operation performed by the wizard when the dialog box is validated is to copy files into these newly created folders.
 The files come from the bw_reviewtemplates add-on.
@@ -197,7 +197,7 @@ To avoid duplicates view identifier in the project, the view is patched to add t
 With a review named `rights_by_organisation`, the view identifier `campaign_entities` is renamed to `rights_by_organisation_campaign_entities`
 while being copied into the folder views/bw_campaigntemplates/rights_by_organisation/campaign entities.view.
 
-![Review templates]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_templates.png "Review templates")
+![Review templates](igrc-platform/review-wizard/images/review_templates.png "Review templates")
 
 ---
 
@@ -222,16 +222,16 @@ It means that these files can be edited as usual (in the view editor for a view)
 
 Once the wizard dialog is closed and the files are copied into the project folders, the editor is opened.
 
-![Review editor]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_editor.png "Review editor")
+![Review editor](igrc-platform/review-wizard/images/review_editor.png "Review editor")
 
 In this editor, you, as the review designer, define the behavior of the review (what is displayed, what are the details tabs, how many reminders, when to escalate...)
 This editor and all its tabs will be described in details in the next chapter.
 When you are ready to generate the review from all your settings, you can switch to the Build tab.
 The following screenshot shows the Build tab:
 
-![Review build]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_build.png "Review build")
+![Review build](igrc-platform/review-wizard/images/review_build.png "Review build")
 
-For more details on build review operation please refer to **[Review build and migration]({{site.baseurl}}{% link docs/igrc-platform/review-wizard/review-wizard-4-build.md %})** chapter.
+For more details on build review operation please refer to **[Review build and migration](igrc-platform/review-wizard/review-wizard-4-build.md)** chapter.
 
 # Publication and execution
 
@@ -239,14 +239,14 @@ When the review files have been generated, it is time to build the WAR and publi
 When the portal is up and running, a new process definition is available.
 In the main campaign manager screen, press the button `Add a new campaign` to define a campaign based on the review definition that has been published.
 
-![Review campaign manager]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_campaign_manager.png "Review campaign manager")
+![Review campaign manager](igrc-platform/review-wizard/images/review_campaign_manager.png "Review campaign manager")
 
 Then select the title of your campaign from the list of review definitions.
 
-![Review campaign definition]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_campaign_definition.png "Review campaign definition")
+![Review campaign definition](igrc-platform/review-wizard/images/review_campaign_definition.png "Review campaign definition")
 
 And fill the parameters (title, start date, frequency, owner...)
 
-![Review campaign parameters]({{site.baseurl}}/docs/igrc-platform/review-wizard/images/review_campaign_parameter.png "Review campaign parameters")
+![Review campaign parameters](igrc-platform/review-wizard/images/review_campaign_parameter.png "Review campaign parameters")
 
 Now you are ready to start your campaign.

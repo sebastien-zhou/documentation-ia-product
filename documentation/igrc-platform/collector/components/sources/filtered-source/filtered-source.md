@@ -31,13 +31,13 @@ In this property you can see/modify general parameters of the component. You wil
 - _Data file_ is the absolute path of data file to load. This parameter allow the use of macros such as `{config.projectPath}`. This parameter is optional, and if empty then the file defined in the discovery file is used.  
 - The "_Follow just one link_" option which sets the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation evaluation evaluated to true will be executed.
 
-![Filtered discovery source]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/filtered-source/images/filtered_discovery_source.png "Filtered discovery source")
+![Filtered discovery source](igrc-platform/collector/components/sources/filtered-source/images/filtered_discovery_source.png "Filtered discovery source")
 
 ## Description
 
 This property allows adding comment regarding actions done by this component.
 
-![Filtered discovery source description]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/filtered-source/images/filtered_discovery_source_description.png "Filtered discovery source description")
+![Filtered discovery source description](igrc-platform/collector/components/sources/filtered-source/images/filtered_discovery_source_description.png "Filtered discovery source description")
 
 ## Request
 
@@ -47,7 +47,7 @@ The query may check values from current record by using dataset variable as if i
 
 For example, `SELECT * FROM dataset WHERE dataset.hrcode <> 'VIP'` keeps only records which have a HR code attribute with a value different from 'VIP'.
 
-![Filtered discovery source request]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/filtered-source/images/filtered_discovery_source_request.png "Filtered discovery source request")
+![Filtered discovery source request](igrc-platform/collector/components/sources/filtered-source/images/filtered_discovery_source_request.png "Filtered discovery source request")
 
 ## Sort
 
@@ -59,7 +59,7 @@ In this section you can configure a multi-criteria sort. You will find:
 
 The sort direction can also be changed (A-Z for ascending or Z-A for descending).
 
-![Filtered discovery source sort]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/filtered-source/images/filtered_discovery_source_sort.png "Filtered discovery source sort")
+![Filtered discovery source sort](igrc-platform/collector/components/sources/filtered-source/images/filtered_discovery_source_sort.png "Filtered discovery source sort")
 
 ## Limits
 
@@ -68,7 +68,7 @@ In this section you can configure a limitation on the selected records from the 
 - _"Skip the <u>nb</u> first records"_: Used to select a subset of the records by skipping the first records.  
 - _"Select a maximum of <u>max</u> records"_: Used to select a subset of the records by reading only a specified number of records.
 
-![Filtered discovery source limit]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/filtered-source/images/filtered_discovery_source_limit.png "Filtered discovery source limit")
+![Filtered discovery source limit](igrc-platform/collector/components/sources/filtered-source/images/filtered_discovery_source_limit.png "Filtered discovery source limit")
 
 ## Constraints
 
@@ -80,7 +80,7 @@ In this section you can define contraintes to not use the file, You will find:
 
 - _"If a column is missing in the file"_: Triggers an exception and stops collector line if the file schema is diferent from the schema defined in the source component. Used to prevent from reading a file with a bad format in automatic mode because of a format or layout change in the exported data for example.
 
-![Filtered discovery source constraints]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/filtered-source/images/filtered_discovery_source_constraints.png "Filtered discovery source constraints")
+![Filtered discovery source constraints](igrc-platform/collector/components/sources/filtered-source/images/filtered_discovery_source_constraints.png "Filtered discovery source constraints")
 
 # Best practices
 

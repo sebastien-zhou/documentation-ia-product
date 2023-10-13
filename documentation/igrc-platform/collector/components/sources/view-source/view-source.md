@@ -22,7 +22,7 @@ Another use case is to retrieve right reviews data (through a View source on Tic
 
 | **Note** <br><br> The view source should be used with caution on regular Ledger Entities, such as accounts, applications, and identities, as the underlying view retrieves data from the **_previous_** timeslot.|
 
-![Editor]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/view-source/images/editor.png "Editor")
+![Editor](igrc-platform/collector/components/sources/view-source/images/editor.png "Editor")
 
 # The Properties tab
 
@@ -34,7 +34,7 @@ This tab lets you select the view to be used, and set parameters if needed.
 - **Parameters** : you can set parameters to the view if needed.   
 To set a parameter, click Add button, select a parameter for the list and set a view.
 
-![Tab view]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/view-source/images/tabview.png "Tab view")
+![Tab view](igrc-platform/collector/components/sources/view-source/images/tabview.png "Tab view")
 
 ## Limits tab
 
@@ -43,13 +43,13 @@ This tab lets yous optionally set limits to the results of the view. You can ski
 - **Skip** : type a number to skip the first records of the view. If left blank, not records are skipped.
 - **Select maximum** : type a number to limit the maximum number of records that will be returned by the view. Leave blank to return all records.
 
-![Limits tab]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/view-source/images/tablimits.png "Limits tab")
+![Limits tab](igrc-platform/collector/components/sources/view-source/images/tablimits.png "Limits tab")
 
 ## Description tab
 
 This tab lets you put a description on the purpose of this component.
 
-![Description tab]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/view-source/images/tabdesc.png "Description tab")
+![Description tab](igrc-platform/collector/components/sources/view-source/images/tabdesc.png "Description tab")
 
 # Best practices
 

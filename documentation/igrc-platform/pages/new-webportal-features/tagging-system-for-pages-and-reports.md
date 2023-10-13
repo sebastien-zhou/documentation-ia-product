@@ -62,6 +62,6 @@ Some tags have been declared by default in the Webportal. This have been done ma
 
 It has been implemented in:   
 
-- [General Menu in the Home Page]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/general-menu-of-the-home-pages.md %})
-- [Search Pages Menu]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/search-pages-menu.md %})
-- [Reports and Pages in the Detail Pages]({{site.baseurl}}{% link docs/igrc-platform/pages/new-webportal-features/links-to-reports-and-pages-from-detail-pages.md %})
+- [General Menu in the Home Page](igrc-platform/pages/new-webportal-features/general-menu-of-the-home-pages.md)
+- [Search Pages Menu](igrc-platform/pages/new-webportal-features/search-pages-menu.md)
+- [Reports and Pages in the Detail Pages](igrc-platform/pages/new-webportal-features/links-to-reports-and-pages-from-detail-pages.md)

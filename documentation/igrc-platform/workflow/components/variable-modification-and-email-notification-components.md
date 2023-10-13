@@ -44,7 +44,7 @@ As its name indicates, this sub tab is an editable field allowing user to add te
 
 ### Updates  
 
-The updates sub-tab allows user to perform if necessary modification on workflow variables values including filling variables with the columns of an audit view (ledger data), clean or resize multivalued variables, etc. The full list is provided in the chapter on the [Start or Manual activity component]({{site.baseurl}}{% link docs/igrc-platform/workflow/components/start-or-manual-activity-composants.md %}). Below is an example of configuration from which a workflow variable named "ticketloguid" is filled with the columns of a view.    
+The updates sub-tab allows user to perform if necessary modification on workflow variables values including filling variables with the columns of an audit view (ledger data), clean or resize multivalued variables, etc. The full list is provided in the chapter on the [Start or Manual activity component](igrc-platform/workflow/components/start-or-manual-activity-composants.md). Below is an example of configuration from which a workflow variable named "ticketloguid" is filled with the columns of a view.    
 
 ![Updates](../images/Image_Documentation50_bis.png "Updates")         
 
@@ -58,7 +58,7 @@ The configuration of an email notification component includes configuring the fo
 
 ### Activity
 
-This tab enables the setting of the component display name as well as the process email. The process email implementation is available under the chapter on [E-mail notifications]({{site.baseurl}}{% link docs/igrc-platform/workflow/email-notifications.md %}).  
+This tab enables the setting of the component display name as well as the process email. The process email implementation is available under the chapter on [E-mail notifications](igrc-platform/workflow/email-notifications.md).  
 
 ![Activity](../images/Image_Documentation54.png "Activity")         
 
@@ -81,6 +81,6 @@ Note that the "List of persons for which no mail address could be found" item re
 
 ### Iteration  
 
-As detailed in the chapter on [Iterations and subprocesses]({{site.baseurl}}{% link docs/igrc-platform/workflow/iterations-and-subprocesses.md %}), the iteration sub tab in this component will permit to configure notifications with the possibility of enabling multiple instances of the same activity based on a multivalued variable.     
+As detailed in the chapter on [Iterations and subprocesses](igrc-platform/workflow/iterations-and-subprocesses.md), the iteration sub tab in this component will permit to configure notifications with the possibility of enabling multiple instances of the same activity based on a multivalued variable.     
 
 ![Output](../images/Image_Documentation57.png "Output")         

@@ -27,7 +27,7 @@ Some widgets allows you to attach a series of action. Those actions are executed
 
 When a Widget accept an action, an 'actions' property is present. You can click on Ctrl+Space to have a broad view of all the actions available.   
 
-![Button action 1]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction1.png "Button action 1")        
+![Button action 1](igrc-platform/pages/images/buttonaction1.png "Button action 1")        
 
 Through actions you can:   
 
@@ -48,7 +48,7 @@ Button {
 }
 ```
 
-![Button action 2]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction2.png "Button action 2")        
+![Button action 2](igrc-platform/pages/images/buttonaction2.png "Button action 2")        
 
 You can also execute a series of action, in order to do so you just have to use the ',' character as a separator:   
 
@@ -65,7 +65,7 @@ Now that we know that we can catch an event, lets see what actions are available
 
 Like in many cases, Ctrl+space is recommended to discover the options:   
 
-![options]({{site.baseurl}}/docs/igrc-platform/pages/images/2101.png "options")        
+![options](igrc-platform/pages/images/2101.png "options")        
 
 Here is a list of the most common actions.
 
@@ -77,20 +77,20 @@ The 'Message' keyword is used to display information dialog box. Here is a simpl
 
 `Message "Hello world"`   
 
-![Button action 3]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction3.png "Button action 3")        
+![Button action 3](igrc-platform/pages/images/buttonaction3.png "Button action 3")        
 
 You can also add an icon to your dialog box (Warning, Error, Information),   
 if nothing is specified, the Information icon is used.
 
 `Message Information "Hello world"`   
 
-![Button action 3]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction3.png "Button action 3")        
+![Button action 3](igrc-platform/pages/images/buttonaction3.png "Button action 3")        
 
 Your dialog box can contain several lines of text:   
 
 `Message Information "Hello world\nthis a long message..."`   
 
-![Button action 4]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction4.png "Button action 4")        
+![Button action 4](igrc-platform/pages/images/buttonaction4.png "Button action 4")        
 
 And of course it can also reference dynamic values such as variables, Record fields, nationalized fields,...   
 all transformation actions are also accepted.    
@@ -100,7 +100,7 @@ myVariable = Variable{initial:"hello world"}
 Message Concat(myVariable, " my name is john doe")
 ```
 
-![Button action 5]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction5.png "Button action 5")        
+![Button action 5](igrc-platform/pages/images/buttonaction5.png "Button action 5")        
 
 ## Displaying a confirmation dialog box
 
@@ -111,7 +111,7 @@ The 'Confirm' keyword is used to display dialog box. Here is a simple example:
 
 `Confirm "Are you sure?"`   
 
-![Button action 6]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction6.png "Button action 6")        
+![Button action 6](igrc-platform/pages/images/buttonaction6.png "Button action 6")        
 
 The user can either clic on the OK button of the Cancel button.   
 If the user doesn't clic on the OK button, the remaining actions won't be executed.   
@@ -137,7 +137,7 @@ Here is a simple example:
 
 `Flash "Here is a simple flash information message"`   
 
-![Button action 7]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction7.png "Button action 7 ")        
+![Button action 7](igrc-platform/pages/images/buttonaction7.png "Button action 7 ")        
 
 You can add a type to your flash information (Warning, Error, Information), it will change its background color.   
 
@@ -255,7 +255,7 @@ for instance:
 
 Please not that autocompletion is available to help you fulfilling the page id.  
 
-![Button action 9]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction9.png "Button action 9")        
+![Button action 9](igrc-platform/pages/images/buttonaction9.png "Button action 9")        
 
 ### Portal Reports
 
@@ -285,7 +285,7 @@ Reports can accept parameters in the same way as pages:
 
 please note that autocompletion is available to help you finding the report id
 
-![Button action 8]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction8.png "Button action 8")        
+![Button action 8](igrc-platform/pages/images/buttonaction8.png "Button action 8")        
 
 ### Embedded static HTML content
 
@@ -882,7 +882,7 @@ Button {
 
 You can use the CloseDialog action in order to close a dialog box next to any action:   
 
-![dialog04]({{site.baseurl}}/docs/igrc-platform/pages/images/dialog04.png "dialog04")        
+![dialog04](igrc-platform/pages/images/dialog04.png "dialog04")        
 
 ```
 identityPickerDialogBox = Dialog {
@@ -919,7 +919,7 @@ If you want to close a dialog box with an Ok event, the Ok button must be declar
 You can display a minimal dialog box (without title bar, border and buttons).   
 This is useful if you want for instance display charts or html content as dialog boxes.   
 
-![Displaying a transient dialog box]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction16.png "Displaying a transient dialog box")        
+![Displaying a transient dialog box](igrc-platform/pages/images/buttonaction16.png "Displaying a transient dialog box")        
 
 Transient dialog box are modal, upon dialog box closing the remaining actions will be executed.   
 
@@ -982,7 +982,7 @@ Button {
 
 "myworkflowid" corresponds to the id of the workflow as defined in your configuration:   
 
-![Create a new workflow instance]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction11.png "Create a new workflow instance")        
+![Create a new workflow instance](igrc-platform/pages/images/buttonaction11.png "Create a new workflow instance")        
 
 Note that the workflow instance won't be created until the TaskComplete action is called.    
 
@@ -1002,7 +1002,7 @@ Button {
 }
 ```
 
-![Process variables]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction12.png "Process variables")        
+![Process variables](igrc-platform/pages/images/buttonaction12.png "Process variables")        
 
 When calling the TaskComplete action, the workflow is launched asynchronously, this means that actions continues although the workflow instance has not been completely launched.   
 If you want to wait till the task is completed this you should use the following syntax :
@@ -1055,7 +1055,7 @@ Button {
 }
 ```
 
-![Process variables]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction12.png "Process variables")        
+![Process variables](igrc-platform/pages/images/buttonaction12.png "Process variables")        
 
 When calling the TaskComplete action, the workflow instance is updated asynchronously, this means that actions continues although the workflow instance has stabilized to a stable state (waiting for a user interaction,timer, finalized, error).   
 
@@ -1138,7 +1138,7 @@ Thus, in the upper example, task.myWorkflowVariablewill remain with the same ori
 You can specify a series of business rules to validate workflow variables upon a manual task completion.   
 Those business rules are defined directly in the workflow definition:   
 
-![Business conditions]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction13.png "Business conditions")        
+![Business conditions](igrc-platform/pages/images/buttonaction13.png "Business conditions")        
 
 In order to leverage those business rules in your page you have to declare the following pattern on your action:   
 
@@ -1384,7 +1384,7 @@ Table {
 You can declare an information page in your process. This page can be displayed when the process is active.   
 As a best practice, you define within this page some details about the process instance (a read-only version of a review screen, ...) in order for the manager to have an orverview of what's going on inside the process instance.
 
-![process information page]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction14.png "process information page")        
+![process information page](igrc-platform/pages/images/buttonaction14.png "process information page")        
 
 In order to display the information page, you use:   
 
@@ -1408,7 +1408,7 @@ Once a process instance is finalized, it remains in the workflow database.
 You can still show a page related to this workflow instance, in order to do so you have to declare this page in the 'report page' section of the workflow definition.   
 This is useful if you want to provide management interfaces with summary pages of finalized process instances.
 
-![process report page]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction14.png "process report page")        
+![process report page](igrc-platform/pages/images/buttonaction14.png "process report page")        
 
 In order to jump to the process report page, you use:  
 
@@ -1429,7 +1429,7 @@ Button {
 You can declare a compliance report in a workflow definition.   
 This report will be automatically generated upon workflow instance completion. The report will be kept in binary format along with the 'TicketLog' associated with the workflow instance.   
 
-![compliance report]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction15.png "compliance report")        
+![compliance report](igrc-platform/pages/images/buttonaction15.png "compliance report")        
 
 You can download the compliance report thanks to the following syntax:  
 
@@ -1540,18 +1540,18 @@ You access to the web portal in delegated mode.
 
 This can be done through the web portal: if a delegation is active, the user just have to click on the upper right corner icon to choose a delegatee.    
 
-![Dealing with delegation]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction21.png "Dealing with delegation")        
+![Dealing with delegation](igrc-platform/pages/images/buttonaction21.png "Dealing with delegation")        
 
 Once clicked, the web portal will appear in delegatee mode (XXX as YYY).   
 
-![Dealing with delegation]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction22.png "Dealing with delegation")        
+![Dealing with delegation](igrc-platform/pages/images/buttonaction22.png "Dealing with delegation")        
 
 The user just have to click once again on the upper right corner icon to terminate the delegation.    
 
 In order to configure a delegation, the user have to declare it, either through the delegation facet sample or through a dedicated page along with its workflow (delegation are managed through workflow activities for audit purposes).      
 If using the delegation facet sample, the delegation is configured through the user preference (accessible by clicking on the user name on the web portal).   
 
-![Dealing with delegation]({{site.baseurl}}/docs/igrc-platform/pages/images/buttonaction20.png "Dealing with delegation")        
+![Dealing with delegation](igrc-platform/pages/images/buttonaction20.png "Dealing with delegation")        
 
 You can be in a situation where you want to force the activation of the delegatee mode on your app. In that case you can use dedicated orders as described below.   
 
@@ -1916,7 +1916,7 @@ When you click on a command button, you can execute a series of action.
 
 for instance:
 
-![Commands]({{site.baseurl}}/docs/igrc-platform/pages/images/command01.png "Commands")        
+![Commands](igrc-platform/pages/images/command01.png "Commands")        
 
 Is defined as:    
 
@@ -2052,9 +2052,9 @@ The provided actions can be a list of actions sepparated by ',' and they will be
 
 You will find below a list of all available events    
 
-![Event table]({{site.baseurl}}/docs/igrc-platform/pages/images/events_table.png "Event table")
+![Event table](igrc-platform/pages/images/events_table.png "Event table")
 
-[Open excel file]({{site.baseurl}}/docs/igrc-platform/pages/download/event_table.xlsx)
+[Open excel file](igrc-platform/pages/download/event_table.xlsx)
 
 ## Page post render event
 {: .d-inline-block }
@@ -2096,7 +2096,7 @@ management_page = Page {
    . . .
 
 ```
-![Post Reder event example]({{site.baseurl}}/docs/igrc-platform/pages/images/post-render-event.png "Post Reder event example")  
+![Post Reder event example](igrc-platform/pages/images/post-render-event.png "Post Reder event example")  
  
 ## Page periodic actions
 {: .d-inline-block }

@@ -19,7 +19,7 @@ Through this technology, you can declare your own dashboards, analytics, forms o
 A Page can be as simple as a 1 KPI dashboard or as rich as the Workflow Task Manager.   
 All the web portal interfaces are provided as Pages along with their .sources!   
 
-![Web portal]({{site.baseurl}}/docs/igrc-platform/pages/images/0101.png "Web portal")   
+![Web portal](igrc-platform/pages/images/0101.png "Web portal")   
 
 # Things you need to know
 

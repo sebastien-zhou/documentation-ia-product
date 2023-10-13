@@ -135,11 +135,11 @@ To prepare the environnement to use an external database, it is required to:
 
 Visit the Configuration UI at `<hostname>/config` to finalize the configuration of the external database:
 
-[Configuration UI]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/packaging/configuration/config-ui.md %}){: .ref}
+[Configuration UI](igrc-platform/installation-and-deployment/packaging/configuration/config-ui.md){: .ref}
 
 The standard requirements are to be followed when sizing the database:
 
-[Database best practices]({{site.baseurl}}{% link docs/best-practice/databases.md %}){: .ref}
+[Database best practices](best-practice/databases.md){: .ref}
 
 ## Data base initialization
 

@@ -28,13 +28,13 @@ In this tab you can see/modify general parameters of the component. You will fin
 - _Display name_ for the _Support target_
 - _Follow just one link_ option which sets the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation condition evaluated to true will be executed.
 
-![Target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/support-target/images/2018-04-03_14_11_17-support1.png "Target")
+![Target](igrc-platform/collector/components/targets/support-target/images/2018-04-03_14_11_17-support1.png "Target")
 
 ## Description
 
 This property allows adding comment regarding actions done by this component.
 
-![Description]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/support-target/images/2018-04-03_14_13_33-comment.png "Description")
+![Description](igrc-platform/collector/components/targets/support-target/images/2018-04-03_14_13_33-comment.png "Description")
 
 ## Support
 
@@ -46,7 +46,7 @@ In this tab, you will specify:
 - "_Attribute containing displayname_" is the display name of this support object (optional, mono-valued),
 - "_Attribute containing comment_" is a comment associated to this support object (optional, mono-valued).
 
-![Support]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/support-target/images/2018-04-03_14_16_08-support3.png "Support")
+![Support](igrc-platform/collector/components/targets/support-target/images/2018-04-03_14_16_08-support3.png "Support")
 
 # Error handling
 

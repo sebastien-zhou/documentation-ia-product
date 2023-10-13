@@ -69,6 +69,6 @@ No known limitations.
 
 # See also
 
-- [FileShare extraction script]({{site.baseurl}}{% link docs/igrc-platform/add-ons/extraction-scripts/acl-extraction-script.md %})
-- [Sharepoint extraction script]({{site.baseurl}}{% link docs/igrc-platform/add-ons/extraction-scripts/sharepoint-extraction-script.md %})
-- [Exchange extraction script]({{site.baseurl}}{% link docs/igrc-platform/add-ons/extraction-scripts/exchange-extraction-script.md %})
+- [FileShare extraction script](igrc-platform/add-ons/extraction-scripts/acl-extraction-script.md)
+- [Sharepoint extraction script](igrc-platform/add-ons/extraction-scripts/sharepoint-extraction-script.md)
+- [Exchange extraction script](igrc-platform/add-ons/extraction-scripts/exchange-extraction-script.md)

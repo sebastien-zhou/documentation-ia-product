@@ -11,7 +11,7 @@ has_children: true
 
 Before attempting any upgrade of the database please go through all steps detailed in the page below.
 
-[**Release notes**]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/database/schema-35-upgrade-procedure.md %}){: .ref}
+[**Release notes**](igrc-platform/installation-and-deployment/database/schema-35-upgrade-procedure.md){: .ref}
 
 In addition if executing the sql requests directly in powershell is necessary to install the SqlServer powershell module. This is done by running the following command in a powershell window using administrative privileges:  
 

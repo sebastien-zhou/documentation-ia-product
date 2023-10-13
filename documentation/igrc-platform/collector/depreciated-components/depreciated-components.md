@@ -39,7 +39,7 @@ This facette allows the user to iterate on a number of input files in a collecto
 This facette was developed before the addition of silos in the version 2015 that included this functionality by default in the product.   
 As a result, this source remains in the product for compatibility reasons, however if you wish to iterate over input files it is highly recommended to use the iteration capabilities of silos :  
 
-![Silo iteration]({{site.baseurl}}/docs/igrc-platform/collector/depreciated-components/images/silo-iteration.png "Silo iteration")
+![Silo iteration](igrc-platform/collector/depreciated-components/images/silo-iteration.png "Silo iteration")
 
 # SOD control target
 

@@ -30,7 +30,7 @@ Not applicable
 
 When editing a collect, select _Repository target_ in _Ledger targets_ (previously DataSet targets).  
 
-![Repository target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/repository-target/images/repository-target.PNG "Repository target")
+![Repository target](igrc-platform/collector/components/targets/repository-target/images/repository-target.PNG "Repository target")
 
 # Properties
 
@@ -42,13 +42,13 @@ In this property you can see/modify general parameters of the component. You wil
 - the "_Display name_" for the _Repository target_  
 - the "_Follow just one link_" option which sets the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation evaluation evaluated to true will be executed.
 
-![Repository target properties]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/repository-target/images/repository-target_target.PNG "Repository target properties")
+![Repository target properties](igrc-platform/collector/components/targets/repository-target/images/repository-target_target.PNG "Repository target properties")
 
 ## Description
 
 Comment regarding actions done by this component.
 
-![Repository target description]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/repository-target/images/repository-target_description.PNG "Repository target description")
+![Repository target description](igrc-platform/collector/components/targets/repository-target/images/repository-target_description.PNG "Repository target description")
 
 ## Repository
 
@@ -60,7 +60,7 @@ With this property, you will define product behaviour when importing repository 
 - _"Repository custom type"_ where you can define a custom type to the _repository_ (different than the _Repository type_ attribute above)
 - _"Trigger an error if repository is not found"_ option you can activate an event that will be generated when the attribute containing _repository_ code is null or empty (event shown in dedicated logs).
 
-![Repository target repository]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/repository-target/images/repository-target_repository.PNG "Repository target repository")
+![Repository target repository](igrc-platform/collector/components/targets/repository-target/images/repository-target_repository.PNG "Repository target repository")
 
 ## Parameters
 
@@ -72,7 +72,7 @@ Available fields are :
 
 - custom field 1--\>9
 
-![Repository parameters]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/repository-target/images/repository_parameters.PNG "Repository parameters")
+![Repository parameters](igrc-platform/collector/components/targets/repository-target/images/repository_parameters.PNG "Repository parameters")
 
 # Example
 

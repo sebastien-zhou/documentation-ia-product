@@ -36,9 +36,9 @@ In this tab you can see/modify general parameters of the component. You will fin
 - _Excel File (XLS, XLSX)_ is the path to the Excel file to use  
 - _Follow just one link_ option which sets the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation condition evaluated to true will be executed.
 
-![Source]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/sheet-enumerator/images/xls1.png "Source")
+![Source](igrc-platform/collector/components/sources/sheet-enumerator/images/xls1.png "Source")
 
 ## Description
 This property allows adding comment regarding actions done by this component.  
 
-![Description]({{site.baseurl}}/docs/igrc-platform/collector/components/sources/sheet-enumerator/images/xls2.png "Description")
+![Description](igrc-platform/collector/components/sources/sheet-enumerator/images/xls2.png "Description")

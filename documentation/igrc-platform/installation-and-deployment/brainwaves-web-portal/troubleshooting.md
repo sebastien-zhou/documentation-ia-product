@@ -30,7 +30,7 @@ If your project was setup such as it points to the current studio's workspace or
 
 To log onto the web service the user must fill two conditions:    
 
-- He must be a tomcat use: [Parametrization]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/brainwaves-web-portal/parametrization.md %})
+- He must be a tomcat use: [Parametrization](igrc-platform/installation-and-deployment/brainwaves-web-portal/parametrization.md)
 - He must be present in the identity ledger   
 As such, a user only authenticated in the Tomcat instance will not be able to log onto the web portal.  
 
@@ -74,7 +74,7 @@ at com.brainwave.portal.config.modules.ConfigurationModule.configure(Configurati
 at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:133)
 ```
 
-To correct this, please refer to section: [Deployement]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/brainwaves-web-portal/deployment.md %})
+To correct this, please refer to section: [Deployement](igrc-platform/installation-and-deployment/brainwaves-web-portal/deployment.md)
 
 # Unauthorized access
 

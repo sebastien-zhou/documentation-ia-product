@@ -20,7 +20,7 @@ A **cross table** is a two-way table that displays aggregated information (also 
 A typical cross table  example in the context of IAM would be to display access rights by permissions and user accounts.   
 Columns and rows of the cross table can be optionally grouped to further emphasize the organization of data. For example, permissions could be grouped by applications, and accounts by repository or groups.     
 
-![Cross table]({{site.baseurl}}/docs/igrc-platform/pages/images/crosstab_01.png "Cross table")
+![Cross table](igrc-platform/pages/images/crosstab_01.png "Cross table")
 
 Pages language offers three variants of cross tables:   
 
@@ -103,7 +103,7 @@ Pages language offers three variants of cross tables:
 
 **Example1** : a simple crosstab that displays people count by organization and application   
 
-![Cross table]({{site.baseurl}}/docs/igrc-platform/pages/images/crosstab_02.png "Cross table")
+![Cross table](igrc-platform/pages/images/crosstab_02.png "Cross table")
 
 ```
 identityByOrgAndPerm = Dataset {
@@ -124,7 +124,7 @@ CrossTable {
 
 **Example2** : a more complex crosstab with column and row grouping, text+color content and header click enabled.    
 
-![Cross table]({{site.baseurl}}/docs/igrc-platform/pages/images/crosstab_03.png "Cross table")
+![Cross table](igrc-platform/pages/images/crosstab_03.png "Cross table")
 
 ```
 rightsLabel = IntMapping {
@@ -239,9 +239,9 @@ Crosstable {
 } 
 ```
 
-![Cross table]({{site.baseurl}}/docs/igrc-platform/pages/images/crosstab_09.png "Cross table")
+![Cross table](igrc-platform/pages/images/crosstab_09.png "Cross table")
 
-![Cross table]({{site.baseurl}}/docs/igrc-platform/pages/images/crosstab_10.png "Cross table")
+![Cross table](igrc-platform/pages/images/crosstab_10.png "Cross table")
 
 # Editable Cross Table
 
@@ -254,7 +254,7 @@ This variant displays a cross table where cell values can be edited by the end-u
   - through selection from a list of choices, static or dynamic (e.g. retrieved from a view).
 - the current values of the crosstable can be exported as an Excel spreadsheet file.
 
-![Cross table]({{site.baseurl}}/docs/igrc-platform/pages/images/crosstab_05.png "Cross table")
+![Cross table](igrc-platform/pages/images/crosstab_05.png "Cross table")
 
 The API allows to easily track changes on the cross table, for example to update review tickets.   
 The main difference with the fixed cross table is that the original data for the crosstable are provided by a set of coordinated multi-valued variables and the resulting edited data will be stored in one of these variables.   
@@ -264,7 +264,7 @@ Cells that have not mapping in the variables cannot be edited. This allows to pr
 
 The schema below explains the relationship between the edition variables (to the left) and the resulting editable cross table.   
 
-![Schema]({{site.baseurl}}/docs/igrc-platform/pages/images/edit_schema.png "Schema")
+![Schema](igrc-platform/pages/images/edit_schema.png "Schema")
 
 ## Syntax
 
@@ -353,7 +353,7 @@ editCrosstabCheck = Page {
 }
 ```
 
-![Cross table]({{site.baseurl}}/docs/igrc-platform/pages/images/crosstab_04.png "Cross table")
+![Cross table](igrc-platform/pages/images/crosstab_04.png "Cross table")
 
 **Example2** : editable cross table with static list of choices   
 
@@ -425,7 +425,7 @@ editCrosstabList = Page {
 }
 ```
 
-![Cross table]({{site.baseurl}}/docs/igrc-platform/pages/images/crosstab_06.png "Cross table")
+![Cross table](igrc-platform/pages/images/crosstab_06.png "Cross table")
 
 **Example3** : editable cross table with dynamic list of choices   
 
@@ -470,7 +470,7 @@ editCrosstabDynamicList = Page {
 }
 ```
 
-![Cross table]({{site.baseurl}}/docs/igrc-platform/pages/images/crosstab_07.png "Cross table")
+![Cross table](igrc-platform/pages/images/crosstab_07.png "Cross table")
 
 # Dynamic Cross Table
 
@@ -481,7 +481,7 @@ editCrosstabDynamicList = Page {
 - the user can filter the different dimensions to display only a subset of the crosstable
 - the user can export the crosstab to an Excel spreadsheet file
 
-![Cross table]({{site.baseurl}}/docs/igrc-platform/pages/images/crosstab_08.png "Cross table")
+![Cross table](igrc-platform/pages/images/crosstab_08.png "Cross table")
 
 ## Syntax
 

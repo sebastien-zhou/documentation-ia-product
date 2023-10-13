@@ -89,7 +89,7 @@ The table below list the theme colors
 | **Focus** | color of highlighted area when a wiget is in focus (eg. button, check-box, table, tab-folder, text edit, etc...) |
 | **Custom#1 through Custom#5** | these colors can be freely used in customer projects pages using `Theme.user1` through `Theme.user5` |
 
-[Theme configuration]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/brainwaves-web-portal/web-portal-theme-customization/level-1.md %}){: .ref }
+[Theme configuration](igrc-platform/installation-and-deployment/brainwaves-web-portal/web-portal-theme-customization/level-1.md){: .ref }
 
 # SVG images
 It's now possible to use SVG images in portal pages, wherever bitmap images are accepted.

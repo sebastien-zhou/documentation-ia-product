@@ -28,7 +28,7 @@ You can iterate through dataset values in a text widget, it will present all the
 
 Here is a simple example:   
 
-![Text]({{site.baseurl}}/docs/igrc-platform/pages/images/iterable01.png "Text")        
+![Text](igrc-platform/pages/images/iterable01.png "Text")        
 
 ```
 directions = Dataset {
@@ -50,7 +50,7 @@ If you want to leverage a dataset value in an interation you need to leverage th
 
 You can iterate through dataset values in a link widget, it will present all the values. If you click on an item the corresponding 'target' property value will be leveraged.   
 
-![Link]({{site.baseurl}}/docs/igrc-platform/pages/images/iterable01.png "Link")        
+![Link](igrc-platform/pages/images/iterable01.png "Link")        
 
 ```
 directions = Dataset {
@@ -76,7 +76,7 @@ You can leverage iterations in Grid containers as well. This is a very powerfull
 
 Here is an example:   
 
-![GridRowGroup]({{site.baseurl}}/docs/igrc-platform/pages/images/iterable02.png "GridRowGroup")        
+![GridRowGroup](igrc-platform/pages/images/iterable02.png "GridRowGroup")        
 
 ```
 directions = Dataset {
@@ -115,7 +115,7 @@ You can leverage iterations in Grid containers as well. This is a very powerfull
 
 Here is an example:   
 
-![TileGroup]({{site.baseurl}}/docs/igrc-platform/pages/images/iterable03.png "TileGroup")        
+![TileGroup](igrc-platform/pages/images/iterable03.png "TileGroup")        
 
 ```
 Tiles {

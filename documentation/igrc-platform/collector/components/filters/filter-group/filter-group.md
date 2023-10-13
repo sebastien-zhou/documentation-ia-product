@@ -21,7 +21,7 @@ The data grouping component is useful for gathering several values that were ini
 The grouping component works by detecting ruptures. An expression based on the content of the dataset is set in the component in order to allow it, during the execution of the collector line, to determine when a rupture occurs. In the example with the job, the rupture is when first name and last name change. In this case, enter the expression as follows:  
 { dataset.GroupID.get() }  
 
-![Sharepoint group]({{site.baseurl}}/docs/igrc-platform/collector/components/filters/filter-group/images/2018-04-06_17_15_03-sharepoint-Groups.csv_-_Excel.png "Sharepoint group")
+![Sharepoint group](igrc-platform/collector/components/filters/filter-group/images/2018-04-06_17_15_03-sharepoint-Groups.csv_-_Excel.png "Sharepoint group")
 
 For each dataset arriving in the grouping component, the expression is evaluated. If the result is different from the result of the expression in the previous dataset, this means that the new dataset relates to a different group, otherwise the dataset completes the previous dataset as it is for the same group(same Group ID). This detection is called rupture detection.     
 
@@ -60,25 +60,25 @@ In this section you can see/modify general parameters of the component. You will
 - _the "Display name_" for the _discovery source_
 - _the "Follow just one link" option which sets the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation evaluation evaluated to true will be executed._
 
-![Group filter]({{site.baseurl}}/docs/igrc-platform/collector/components/filters/filter-group/images/Group_filter.png "Group filter")
+![Group filter](igrc-platform/collector/components/filters/filter-group/images/Group_filter.png "Group filter")
 
 ## Description
 
 Comment regarding actions done by this component.
 
-![Group filter description]({{site.baseurl}}/docs/igrc-platform/collector/components/filters/filter-group/images/Group_filter_description.png "Group filter description")
+![Group filter description](igrc-platform/collector/components/filters/filter-group/images/Group_filter_description.png "Group filter description")
 
 ## Criterion
 
 In this section you can specify the expression that will be used to agreggate data
 
-![Group filter criterion]({{site.baseurl}}/docs/igrc-platform/collector/components/filters/filter-group/images/Group_filter_criterion.png "Group filter criterion")
+![Group filter criterion](igrc-platform/collector/components/filters/filter-group/images/Group_filter_criterion.png "Group filter criterion")
 
 ## Aggregation
 
 In this section you have to choose attributes where values will be grouped, attributes chosen must be multivalued.
 
-![Group filter aggregation]({{site.baseurl}}/docs/igrc-platform/collector/components/filters/filter-group/images/Group_filter_aggregation.png "Group filter aggregation")
+![Group filter aggregation](igrc-platform/collector/components/filters/filter-group/images/Group_filter_aggregation.png "Group filter aggregation")
 
 # Best practices
 

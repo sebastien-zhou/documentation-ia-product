@@ -42,13 +42,13 @@ This declares a Page object with the name or identifier **nameOfThePage**, the i
 
 A page can have many attributes , but only 1 is required: title. To browse the list of attributes supported by the language, we can always use the autocompletion as a guide. Using the key combination **Ctrl + Space**  will show a list of possible keywords or objects to include:   
 
-![Page Object]({{site.baseurl}}/docs/igrc-platform/pages/images/0301.png "Page Object")   
+![Page Object](igrc-platform/pages/images/0301.png "Page Object")   
 
 # Objects in a Page
 
 After the attributes, the page will contain objects organised in **blocks** following this structure:   
 
-![Objects in a Page]({{site.baseurl}}/docs/igrc-platform/pages/images/0302.png "Objects in a Page")   
+![Objects in a Page](igrc-platform/pages/images/0302.png "Objects in a Page")   
 
 All the blocks are **optional**  but they must be declared in that fixed order
 

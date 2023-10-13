@@ -80,7 +80,7 @@ The list of application models will increase as the `bw_appmodeltemplates` Add-O
 
 For more information on the included data models please refer to the following pages:
 
-[Aplication model templates]({{site.baseurl}}{% link docs/igrc-platform/collect-wizard/templates.md %}){: .ref}
+[Aplication model templates](igrc-platform/collect-wizard/templates.md){: .ref}
 
 ## Build
 
@@ -92,7 +92,7 @@ This editor allows the collect designer to define the collect mappings, the conf
 
 For more information on the configuration of the application model editor please refer to the following page:
 
-[Aplication model templates]({{site.baseurl}}{% link docs/igrc-platform/collect-wizard/editor.md %}){: .ref}
+[Aplication model templates](igrc-platform/collect-wizard/editor.md){: .ref}
 
 Once all configuration completed the Build tab allows the user to generate all data collection lines and the documentation.
 
@@ -186,7 +186,7 @@ It is recommended to fill out all attribute mapping descriptions. These descript
 
 ![Edit attribute mapping](./images/appmodel_attribute_mapping-2.png "Edit attribute mapping")
 
-Please see [here]({{site.baseurl}}{% link docs/igrc-platform/collect-wizard/editor.md %}#generate-documentation) for more information. 
+Please see [here](igrc-platform/collect-wizard/editor.md#generate-documentation) for more information. 
 
 
 # Application Model Editor
@@ -306,7 +306,7 @@ This section allows the user to generate the files necessary to build a facet ba
 
 Once all files generated please refer to the following pages to build the facet:
 
-[Creating add-ons]({{site.baseurl}}{% link docs/igrc-platform/add-ons/creating-add-ons.md %}){: .ref}
+[Creating add-ons](igrc-platform/add-ons/creating-add-ons.md){: .ref}
 
 ### Generate documentation
 

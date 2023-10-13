@@ -27,7 +27,7 @@ This can be done:
 
 - Ticking the checkboxes "Activate debug mode" and Automatically reload modified pages in the tab **Web portal**
 
-![Web portal]({{site.baseurl}}/docs/igrc-platform/pages/images/0201.png "Web portal")   
+![Web portal](igrc-platform/pages/images/0201.png "Web portal")   
 
 By default, a timeout interval of 10 seconds is set between pages reload. You can reduce this interval through the `pages.auto-reload.interval` property.  
 
@@ -35,7 +35,7 @@ By default, a timeout interval of 10 seconds is set between pages reload. You ca
 
 With this option, the project will not be embedded in the .war file. The portal will load the files directly from the current directory. We will be working with the same files that are being deployed.    
 
-![Export tab ]({{site.baseurl}}/docs/igrc-platform/pages/images/0202.png "Export tab ")   
+![Export tab ](igrc-platform/pages/images/0202.png "Export tab ")   
 
 After changing these options in the technical configuration, we can save it, **Generate Web portal** and deploy the portal.   
 
@@ -46,6 +46,6 @@ Our development environment is now ready. The .page files will be read and parse
 Activating the debug mode as described before, can be useful to inspect the values of parameters and variables of the pages.    
 When the debug mode is activated correctly , you will be able to see the icon of a little bug in every page :   
 
-![Debug Mode]({{site.baseurl}}/docs/igrc-platform/pages/images/0203.png "Debug Mode")     
+![Debug Mode](igrc-platform/pages/images/0203.png "Debug Mode")     
 
 Clicking on it will display a dialog box with information about the variables and parameters of the page.

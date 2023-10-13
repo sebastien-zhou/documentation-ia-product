@@ -91,7 +91,7 @@ Syntax is straightforward:
 
 `feature: featureIdentifier`   
 
-For more on features take a look to the [features and roles segment]({{site.baseurl}}{% link docs/igrc-platform/pages/features-and-roles/features-and-roles.md %}).   
+For more on features take a look to the [features and roles segment](igrc-platform/pages/features-and-roles/features-and-roles.md).   
 
 # Styling Attribute
 
@@ -207,7 +207,7 @@ The syntax is very simple:
 
 > hidden: booleanValue
 
-We can use a fixed value like True/False , but to make it useful we can combine this with any of the [Predicate functions]({{site.baseurl}}{% link docs/igrc-platform/pages/predicate-functions.md %}).
+We can use a fixed value like True/False , but to make it useful we can combine this with any of the [Predicate functions](igrc-platform/pages/predicate-functions.md).
 
 The predicate function will return True or False depending on the value of a variable, parameter or record column:   
 

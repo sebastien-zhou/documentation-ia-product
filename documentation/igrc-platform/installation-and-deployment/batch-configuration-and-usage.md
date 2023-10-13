@@ -33,7 +33,7 @@ Upon installation of Brainwave GRC a number of batch script files (`.cmd` files 
 - **igrc\_project.cmd**: to export project
 - **igrc\_archive.cmd**: to export project archive  
 
-The following page provide information on how to use and configure these features :[Command files]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/batch-configuration-and-usage/command-files.md %})
+The following page provide information on how to use and configure these features :[Command files](igrc-platform/installation-and-deployment/batch-configuration-and-usage/command-files.md)
 
 # Automatic data loading - igrc_batch {#igrc_batch}
 
@@ -43,7 +43,7 @@ For more information on how to configure Brainwave GRC to perform automatic data
 
 In order to access batch mode, iGRC Analytics must be installed on the computer. The home installation includes the `igrc_batch.cmd` script that runs all steps of the execution plan as configured in the technical configuration within the project. The executed steps are defined in the Execution plan tab :   
 
-![Installation and planning]({{site.baseurl}}/docs/igrc-platform/installation-and-deployment/images/batchEpConfiguration.png "Installation and planning")   
+![Installation and planning](igrc-platform/installation-and-deployment/images/batchEpConfiguration.png "Installation and planning")   
 
 Once the execution plan is completed, the command 'igrc\_batch.cmd' ends and returns control.
 
@@ -60,15 +60,15 @@ The project to be executed must be copied in the product installation directory 
 
 In the technical configuration of your project it is necessary to define the database to use in the Ledger base tab:   
 
-![Configuration]({{site.baseurl}}/docs/igrc-platform/installation-and-deployment/images/batchBaseConfiguration.png "Configurationg")   
+![Configuration](igrc-platform/installation-and-deployment/images/batchBaseConfiguration.png "Configurationg")   
 
 All parameters and elements configured in the technical configuration are automatically used when executing the execution plan in batch mode. It is nevertheless possible to use the legacy properties files to override the information provided by the technical configuration. To be taken into account when execution the batch command these `.properties` files must be place in the same folder as your valid licence file. These files can automatically be created base on a technical configuration by using the export to properties functionality in the Variables tab of the technical configuration:   
 
-![Configuration]({{site.baseurl}}/docs/igrc-platform/installation-and-deployment/images/batchExportProperties.png "Configurationg")   
+![Configuration](igrc-platform/installation-and-deployment/images/batchExportProperties.png "Configurationg")   
 
 | **Note**: <br><br> As the information present in the `.properties` files overwrites the values provided in the technical configuration the best practice is to use this methodology only for sensitive data, such as DB connection credentials or passwords.|
 
-See [here]({{site.baseurl}}{% link docs/igrc-platform/installation-and-deployment/batch-configuration-and-usage/legacy-property-files.md %}) for more information on the `.properties` configuration.  
+See [here](igrc-platform/installation-and-deployment/batch-configuration-and-usage/legacy-property-files.md) for more information on the `.properties` configuration.  
 
 ## Command line
 

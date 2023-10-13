@@ -23,13 +23,13 @@ Dedicated tabs within the graphical editor enable you to understand how your Aud
 
 This tab provides you with a list of files on which the current view is dependent:   
 
-![Dependencies]({{site.baseurl}}/docs/igrc-platform/views/advanced-concepts/images/viewdependencies.png "Dependencies")           
+![Dependencies](igrc-platform/views/advanced-concepts/images/viewdependencies.png "Dependencies")           
 
 # Usage  
 
 The usage tab allows you to browse the files that are dependent, or that use the current view:     
 
-![Usage]({{site.baseurl}}/docs/igrc-platform/views/advanced-concepts/images/viewusages.png "Usage")           
+![Usage](igrc-platform/views/advanced-concepts/images/viewusages.png "Usage")           
 
 This can include a list of reports that use the view to populate it's datasets.  
 
@@ -42,4 +42,4 @@ The buttons on the top right hand side allow you to :
 - Fold the entire dependency/usage tree
 - Display the full reference tree: The operation can be time consuming but allows you to propagate the dependency or usage calculation (see the caption bellow):  
 
-![Usage]({{site.baseurl}}/docs/igrc-platform/views/advanced-concepts/images/viewexpandedusage.png "Usage")           
+![Usage](igrc-platform/views/advanced-concepts/images/viewexpandedusage.png "Usage")           

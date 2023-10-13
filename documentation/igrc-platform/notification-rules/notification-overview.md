@@ -35,7 +35,7 @@ The main characteristics of Email notifications are as follows:
 
 You can customize the mail content. This means that you can dynamically modify the subject, the content and attachments for each recipient. To do so, the body of the mail uses macros. For instance the content of the mail sent to abourget@acme.com can start with "Dear Adrien Bourget" whereas the one sent to mdupont@acme.com starts with "Dear Marc Dupont". Attachments can also be modified depending on the current recipient, by passing information on the current recipient to the Brit report (for instance you could list the current recipient's team members).   
 
-![Notification rules]({{site.baseurl}}/docs/igrc-platform/notification-rules/images/notification-overview-dynamicAttachements.png "Notification rules")
+![Notification rules](igrc-platform/notification-rules/images/notification-overview-dynamicAttachements.png "Notification rules")
 
 Notification rules can be used in three situations : independently, during workflows or through the Web Portal.  
 
@@ -51,8 +51,8 @@ In this context, notifications are used to notify candidates of manual tasks tha
 
 ## Webportal execution  
 
-You can also send emails from Webportal, click [here]({{site.baseurl}}{% link docs/igrc-platform/pages/events-and-actions.md %})
+You can also send emails from Webportal, click [here](igrc-platform/pages/events-and-actions.md)
 
 # See also
 
-Notification rules for Workflows : [Notifications par mail]({{site.baseurl}}{% link docs/igrc-platform/workflow/email-notifications.md %})
+Notification rules for Workflows : [Notifications par mail](igrc-platform/workflow/email-notifications.md)

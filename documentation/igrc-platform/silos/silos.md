@@ -205,4 +205,4 @@ It means that you can go to the timeslot view, delete some silos, declare new si
 A mechanism of detection of invalid input files has been included in the discovery and the silos execution. There are 2 goals:
 - If an input file is invalid, the whole silo can be ignored if it is not sensitive.
 - All errors found in input files are logged in a different file for each silo. This way, sending the problems to the application owner is easier.
-This feature is covered this article: [Data files validation]({{site.baseurl}}{% link docs/igrc-platform/timeslots-and-execution-plan/collecte-et-silos/input-file-validation.md %}).
+This feature is covered this article: [Data files validation](igrc-platform/timeslots-and-execution-plan/collecte-et-silos/input-file-validation.md).

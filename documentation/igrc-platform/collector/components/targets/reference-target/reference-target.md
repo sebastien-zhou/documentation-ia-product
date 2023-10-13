@@ -28,7 +28,7 @@ Not applicable
 
 When editing a collect, select _Reference target_ in _Ledger targets_ (previously DataSet targets).  
 
-![Reference target]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/reference-target/images/reference-target.PNG "Reference target")
+![Reference target](igrc-platform/collector/components/targets/reference-target/images/reference-target.PNG "Reference target")
 
 # Properties
 
@@ -40,13 +40,13 @@ In this property you can see/modify general parameters of the component. You wil
 - the "_Display name_" for the _Reference target_  
 - the "_Follow just one link_" option which sets the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation evaluation evaluated to true will be executed.
 
-![Reference target properties]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/reference-target/images/reference-target_properties_target.PNG "Reference target properties")
+![Reference target properties](igrc-platform/collector/components/targets/reference-target/images/reference-target_properties_target.PNG "Reference target properties")
 
 ## Description
 
 Comment regarding actions done by this component
 
-![Reference target description]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/reference-target/images/reference-target_properties_description.PNG "Reference target description")
+![Reference target description](igrc-platform/collector/components/targets/reference-target/images/reference-target_properties_description.PNG "Reference target description")
 
 ## Title
 
@@ -56,7 +56,7 @@ When activated you will have to provide an attribute containing the _title_ code
 
 Also you can activate an option that triggers an error if the title is _null_ or _empty._   
 
-![Reference target title]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/reference-target/images/reference-target_properties_title.PNG "Reference target title")
+![Reference target title](igrc-platform/collector/components/targets/reference-target/images/reference-target_properties_title.PNG "Reference target title")
 
 ## Employee type
 
@@ -66,7 +66,7 @@ When activated you will have to provide an attribute containing the _employee ty
 
 Also you can activate an option that triggers an error if the _employee type_ is _null_ or _empty._   
 
-![Reference target  employee type]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/reference-target/images/reference-target_properties_employee_type.PNG "Reference target employee type")
+![Reference target  employee type](igrc-platform/collector/components/targets/reference-target/images/reference-target_properties_employee_type.PNG "Reference target employee type")
 
 ## Job title
 
@@ -84,7 +84,7 @@ When activated you will have to provide an attribute containing the _expertise d
 
 Also you can activate an option that triggers an error if the _expertise domain_ is _null_ or _empty._   
 
-![Reference target domain]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/reference-target/images/reference-target_properties_expertise_domain.PNG "Reference target domain")
+![Reference target domain](igrc-platform/collector/components/targets/reference-target/images/reference-target_properties_expertise_domain.PNG "Reference target domain")
 
 ## Organization type
 
@@ -94,7 +94,7 @@ When activated you will have to provide an attribute containing the _organizatio
 
 Also you can activate an option that triggers an error if the _organization type_ is _null_ or _empty._
 
-![Reference target Organization type]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/reference-target/images/reference-target_organization_type.PNG "Reference target Organization type")
+![Reference target Organization type](igrc-platform/collector/components/targets/reference-target/images/reference-target_organization_type.PNG "Reference target Organization type")
 
 ## Organization link type
 
@@ -104,7 +104,7 @@ When activated you will have to provide an attribute containing the _organizatio
 
 Also you can activate an option that triggers an error if the _organization link type_ is _null_ or _empty._
 
-![Reference target organization link type]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/reference-target/images/reference-target_organization_link_type.PNG "Reference target organization link type")
+![Reference target organization link type](igrc-platform/collector/components/targets/reference-target/images/reference-target_organization_link_type.PNG "Reference target organization link type")
 
 ## Asset category  
 
@@ -114,7 +114,7 @@ When activated you will have to provide an attribute containing the _asset_ _cat
 
 Also you can activate an option that triggers an error if the _asset_ _category_ is _null_ or _empty._   
 
-![Reference target asset category]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/reference-target/images/reference-target_properties_asset_category.PNG "Reference target asset category")
+![Reference target asset category](igrc-platform/collector/components/targets/reference-target/images/reference-target_properties_asset_category.PNG "Reference target asset category")
 
 ## Reference type
 
@@ -124,7 +124,7 @@ When activated you will have to provide an attribute containing the _reference t
 
 Also you can activate an option that triggers an error if the _reference type_ is _null_ or _empty._   
 
-![Reference target reference type]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/reference-target/images/reference-target_properties_reference_type.PNG "Reference target reference type")
+![Reference target reference type](igrc-platform/collector/components/targets/reference-target/images/reference-target_properties_reference_type.PNG "Reference target reference type")
 
 ## Reference value
 
@@ -132,7 +132,7 @@ When activated you will have to provide an attribute containing the _reference v
 
 Also you can activate an option that triggers an error if the _reference value_ is _null_ or _empty._    
 
-![Reference target reference value]({{site.baseurl}}/docs/igrc-platform/collector/components/targets/reference-target/images/reference-target_properties_reference_value.PNG "Reference target reference value")
+![Reference target reference value](igrc-platform/collector/components/targets/reference-target/images/reference-target_properties_reference_value.PNG "Reference target reference value")
 
 # Example
 

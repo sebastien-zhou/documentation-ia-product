@@ -28,9 +28,9 @@ Iterations are configured in the Iteration tab of the activity properties :
 
 ## Sequential vs parallel
 
-The iteration will create a number of instances of our activity, and these can be created all at once, to be executed in parallel, or one after the other to be executed sequentially. Most often we will require parallel paths (especially for manual activities, as we want people to complete their tasks in their own time, not having to wait for other tasks to be finished), so this is the default mode, but there are a number of uses for sequential iteration as well, like polling (see [Timer Component]({{site.baseurl}}{% link docs/igrc-platform/workflow/components/timer-component.md %}) for more information).  
+The iteration will create a number of instances of our activity, and these can be created all at once, to be executed in parallel, or one after the other to be executed sequentially. Most often we will require parallel paths (especially for manual activities, as we want people to complete their tasks in their own time, not having to wait for other tasks to be finished), so this is the default mode, but there are a number of uses for sequential iteration as well, like polling (see [Timer Component](igrc-platform/workflow/components/timer-component.md) for more information).  
 
-| **Note**: <br><br>  To avoid unpredicted behaviour or racing conditions, the iteration will always be forced to be sequential when debugging a process ([see Debugging]({{site.baseurl}}{% link docs/igrc-platform/workflow/debugging.md %}) for more information).|
+| **Note**: <br><br>  To avoid unpredicted behaviour or racing conditions, the iteration will always be forced to be sequential when debugging a process ([see Debugging](igrc-platform/workflow/debugging.md) for more information).|
 
 ## Iterated variables
 
