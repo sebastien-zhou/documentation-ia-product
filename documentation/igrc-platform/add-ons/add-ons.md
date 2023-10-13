@@ -1,34 +1,23 @@
 ---
-layout: page
-title: "Add-ons"
-parent: "iGRC Platform"
-nav_order: 200
-has_children: true
-permalink: /docs/igrc-platform/add-ons/
+title: Add-ons
+Description: Documentation related to the creation, the installation and the usage of Add-ons
 ---
 
-# Table of contents
-{: .no_toc .text-delta }
+# Add-ons / Facets
 
-1. TOC
-{:toc}
----
+A dedicated framework allowing to create your own add-ons, also known as facets, is included in iGRCanalytics. It can be used to help structure your project, so even if your goal is not to make a publishable facet, we advise you to check it out.  
 
-# Facets: Principles
+## What is a facet?
 
-A dedicated framework allowing to create your own facets is included in iGRC. It can be used to help structure your project, so even if your goal is not to make a publishable facet, we advise you to check it out.  
-
-## What is a Facet ?
-
-A facet is basically a part of a project that can be installed and uninstalled at will, allowing to add / remove functionalities in a seamless way. Those can be collectors for specific applications, workflow processes, reports, examples or documentation, etc. The advantage of delivering project content in a facet over simply dropping a bunch of files are mainly :     
+A facet is basically a part of a project that can be installed and uninstalled at will, allowing to add / remove functionalities in a seamless way. Those can be collectors for specific applications, workflow processes, reports, examples or documentation, etc. The advantage of delivering project content in a facet over simply dropping a bunch of files are mainly:  
 
 - the possibility to install and remove the files in a single operation, allowing to avoid interferences with the rest of the project
-- the possibility to repeat the same installation on any number of iGRC instances  
+- the possibility to repeat the same installation on any number of iGRCanalytics instances  
 - the possibility to track file modifications and to apply upgrades
 - the possibility to provide out-of-the-box functionalities to people that will not need to understand every detail of the content, thanks to advanced features like variables usage or conditional installation of files
 - the possibility to make your work available to others through Brainwave's marketplace
 
-You can check out our [Tips for designing a facet collecting data]({{site.baseurl}}{% link docs/igrc-platform/add-ons/facet-creation-tips.md %}) if you are interested in creating a facet dedicated to a given application.
+You can check out our [Tips for designing a facet collecting data](iGRCanalytics-platform/add-ons/facet-creation-tips.md) if you are interested in creating a facet dedicated to a given application.
 
 ## Start a New Facet Project
 
@@ -119,7 +108,7 @@ Declaring dependencies will make sure they will always be installed along with y
 
 ## Build your Facet
 
-Once you are satisfied with the content of your facet, you can build the .facet file that can be installed in other iGRC projects. To do this, simply select the action **Build facet** in the **Build** tab. The files that will be included in this build are listed in the table at the bottom of the screen. The empty facet directories are not shown in this list and will be discarded.  
+Once you are satisfied with the content of your facet, you can build the .facet file that can be installed in other iGRCanalytics projects. To do this, simply select the action **Build facet** in the **Build** tab. The files that will be included in this build are listed in the table at the bottom of the screen. The empty facet directories are not shown in this list and will be discarded.  
 
 ![Build](../add-ons/images/build.png "Build")
 
@@ -129,11 +118,11 @@ The build action will create a facet file with the correct name and version in t
 
 ## Work with Variables
 
-Some facets require user input to function properly (a file or folder path, a repository name, ...). The best way to deal with this is to define [configuration variables]({{site.baseurl}}{% link docs/igrc-platform/technical-configuration/technical-configuration.md %}).   
+Some facets require user input to function properly (a file or folder path, a repository name, ...). The best way to deal with this is to define [configuration variables](iGRCanalytics-platform/technical-configuration/technical-configuration.md).   
 In a .configvariable file included in the facet, and to use them where this information is needed (a discovery file, a collector line, etc). This ensures that your facet project is running completely with the values inside you local configuration, and that, during facet installation, the user will be prompted for those values.     
 Please note that your configuration variables will be automatically renamed in the user project, to avoid naming conflicts, so that you do not need to choose elaborate naming patterns juste for this purpose. In the configuration editor, the variables will be clearly stated as having the facet for origin. Also, the user will be able to change the choices he made initally having to reinstall the facet, by simply overriding those variable values.  
 
-It is possible to have variables labels nationalized, allowing for the correct label to be displayed in the user interface when installing the facet. See our article on [Nationalisation of labels included in project files]({{site.baseurl}}{% link docs/igrc-platform/pages/features-and-roles/label-localisation.md %})
+It is possible to have variables labels nationalized, allowing for the correct label to be displayed in the user interface when installing the facet. See our article on [Nationalisation of labels included in project files](iGRCanalytics-platform/pages/features-and-roles/label-localisation.md)
 
 ## Conditional File Installation
 
@@ -149,7 +138,7 @@ A facet, otherwise called an add-on, for data collection should take advantage o
 This way, adding a new data file into the project, being a new file system, a new server or a new domain, will be as easy as dropping the new file in an input folder.  
 
 To achieve this, you have to create a silo for your application, and check the option 'Iterate on files within a folder' (please refere to the corresponding documentation for more information).     
-The name of the file will have to carry the information you need (for instance the server name). You can also use the filter, with naming conventions, if you have more than one file to include in the collection. See the article on [Silo concept]({{site.baseurl}}{% link docs/igrc-platform/silos/silos.md %}).      
+The name of the file will have to carry the information you need (for instance the server name). You can also use the filter, with naming conventions, if you have more than one file to include in the collection. See the article on [Silo concept](iGRCanalytics-platform/silos/silos.md).      
 
 ![Silo](../add-ons/images/silo.png "Silo")
 
@@ -165,7 +154,7 @@ As a result, the user will only be asked for this directory location when instal
 
 ## Overview
 
-A dedicated facet management tool has been included in iGRC. It can be used to: 
+A dedicated facet management tool has been included in iGRCanalytics. It can be used to: 
 
 - List all available facets
 - List all installed facets
