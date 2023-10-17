@@ -821,7 +821,7 @@ The view must have " **Allow selection of the view in the portal**" option to be
 - If the view has parameters, click **Params...** to edit the parameters of the view.
 
 - Select in **Value column** a column from the selected view that will provide the value of the parameter.    
-This value will usually be used to modify data in the dashboard, It could be for exemple an organization permanent UID or code.
+This value will usually be used to modify data in the dashboard, It could be for example an organization permanent UID or code.
 - Select in **Label column**  a column from the selected view that will provide the label of the parameter value to be displayed in the parameter panel.   
 The parameter label can also be included component titles.
 - Check the **Allow empty value** option to allow a null value to be selected for this parameter.
@@ -906,7 +906,7 @@ Cascading parameters are useful when selecting a value from items that are hiera
 Cascading parameters means that the list of values proposed for a parameter depends on the selected value from another parameter.
 
 To define cascading parameters, do the following:
-- Define the parent parameter, for exemple `app (Applications)`
+- Define the parent parameter, for example `app (Applications)`
 - Define the child parameter, for example `perm (Permission)`
   - select **Dynamic values** for the source
   - select the **Source View** which must accept a parameter that points to the parent parameter selection value ( eg. application permanent identifier).

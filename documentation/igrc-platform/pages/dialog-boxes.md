@@ -61,7 +61,7 @@ In order to deal with action buttons you have to leverage the buttons property.
 
 Here is a simple example:   
 
-![Dialog Boxes exemple](igrc-platform/pages/images/dialog02.png "Dialog Boxes exemple")        
+![Dialog Boxes example](igrc-platform/pages/images/dialog02.png "Dialog Boxes example")        
 
 ```
 myDialogBox = Dialog {
