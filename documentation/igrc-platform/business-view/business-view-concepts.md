@@ -13,11 +13,11 @@ A business view, as all views, is identified by a unique ID. All types of views 
 
 A business view is built on another view, usually a ledger view or a log view. But it is also possible for a business view to extend another business view. The following diagram shows the architecture of the different types of view in the product. Ledger views and log views are mapped to a database. It is important to understand that a business view will never submit request to a database directly. Instead, they call a ledger or log view to get records from these databases and then work on the data in memory.  
 
-![Architecture](./main-concepts/images/bv_architecture.png "Architecture")
+![Architecture](./images/bv_architecture.png "Architecture")
 
 The best analogy to understand the business views is a pipe. The business view starts with a source component which sends records into the pipe. The source is usually a ledger view reading some records from the database and spilling them into the pipe. Along the pipe, components can be used to alter the records. The execution order of the components in the pipe starts from the source, at the top of the screen, towards the bottom of the pipe. The records exiting the pipe are then sent to the Pages or the Birt reports.  
 
-![Busness view pipe](./main-concepts/images/bv_pipe.png "Busness view pipe")
+![Busness view pipe](./images/bv_pipe.png "Busness view pipe")
 
 ## Available Components  
 
@@ -64,7 +64,7 @@ It is possible to remove columns from the output. These columns will be ignored 
 Building business views on top of other business views is the recommended design pattern to use when dealing with complex use cases.  
 For example, the method would be recommended to perform the union of the trends of two ledger views. This need can be expressed with business view using a Y design as shown in the following diagram:  
 
-![Business view Y](./main-concepts/images/bv_y.png "Business view Y")
+![Business view Y](./images/bv_y.png "Business view Y")
 
 As a business view is always a single line, or a single pipe, of components. As a result having two main source lines in a single business view is not possible. The solution is to split the processing into two business views:  
 
@@ -74,8 +74,8 @@ The an example of the two business views are shown and described below:
 
 In this example, the first business view reads groups and computes trends. The view ID (not shown here) is sample3.
 
-![Business view Y1](./main-concepts/images/bv_y1.png "Business view Y1")
+![Business view Y1](./images/bv_y1.png "Business view Y1")
 
 The second business view reads accounts, computes trends and then merge the results with the first business view using a union. The union calls the sample3 view.  
 
-![Business view Y2](./main-concepts/images/bv_y2.png "Business view Y2")
+![Business view Y2](./images/bv_y2.png "Business view Y2")

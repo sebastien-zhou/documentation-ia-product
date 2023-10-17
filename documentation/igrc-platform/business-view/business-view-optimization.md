@@ -72,7 +72,7 @@ One last important point to keep in mind is that, even if you do not ask for a s
 
 In the result tab, a link under the table gives access to the timing statistics as well as the global execution time of the business view. This statistics page displays a tree showing the execution times of each component of the business view:  
 
-![Performance investigation tool](./optimisations/images/bv_timings.png "Performance investigation tool")
+![Performance investigation tool](./images/bv_timings.png "Performance investigation tool")
 
 The tree begins with the last component of the pipe as configured in the business view as this component delivers the requested records to the page and/or report.
 This last component reads records from the previous component which appears on the second line, and so on ...  
@@ -89,6 +89,7 @@ The columns of the tree split the time into component features. As a result, you
 - Time (ms) : Indicates the time spent in the component. It includes the specific processing of the component (matching attributes for a join and merging records) and the time spent sorting, filtering and computing attributes. However, the time spent reading an inner view or getting records from the previous component is not part of this time. The formula is : Time = Sort time + Attribute computation time + Filter time + Component specific processing time.
 - Total time (ms) : Indicates the cumulative time of this component and the time needed to read inner view or getting records from the previous component. The formula is : Total time = Time + Inner view time + Previous component total time.  
 Using the example displayed above the total time for the component test is 1294 which is 348 + 945. The difference of one millisecond due to the fact that the time is measured in nanoseconds and then rounded when displayed in the table.  
+
 > [!note] &emsp;- The timings are displayed are for a maximum of 1000 output records. <br><br> The studio never display more than 1000 line in the result table. To get the actual timing information for the execution of a business view in the portal (returning more than 1000 results) you have the possibility to use a debug option `-Dbusinessviewtimings=true` in the `JAVA_OPTS` of parameters of the portal. Adding this option generates a .csv file in the portal logs folder containing all the sizing and performance information. This option should only be used when investigating business view performance issues.<br><br> &emsp;- The background of the lines are colored to highlight the component taking the most time. This is just a hint to help the user to focus on the "heavy" components or inner views.<br><br> By studying the timings you can identify if it is the business view or the underlying Ledger view that takes the most time. If it is the underlying Ledger view that takes 99 percent of the time, there is no need to optimize the business view settings. You should then try to optimize the Ledger view by redesign it, splitting it or adding an index.
 
 ## Script Performance  
