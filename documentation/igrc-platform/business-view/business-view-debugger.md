@@ -38,7 +38,7 @@ In the upper left pane, the stack shows which JavaScript functions have been cal
 
 In debug mode, when the execution is suspended on a breakpoint, you can inspect the variables. The config variable contains the project global variables. The dataset variables contains the business view parameters. You can also execute the script step by step. You can also resume it by clicking on the yellow and green arrow ![Debug](./debugger/images/2017-04-05_11_28_12-Debug_-_demobusinessviews_views_new_businessview.javascript_-_iGRC_Analytics.png "Debug") in the toolbar so that the execution continues until the end or until the next breakpoint is reached.
 
->**Note**: Without any JavaScript the debug mode is still useful as the business engine displays every action in the console and writes them in a log file
+> [!note] Without any JavaScript the debug mode is still useful as the business engine displays every action in the console and writes them in a log file
 
 The console looks like this:
 

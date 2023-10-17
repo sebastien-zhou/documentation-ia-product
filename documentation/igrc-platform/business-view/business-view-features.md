@@ -129,7 +129,7 @@ The computed columns are then added to the displayed results:
 
 ![Computed columns](./common-features/images/computedcolumns.png "Computed columns")
 
->**Note**: It should be noted that the script is executed on each result line in the component to calculate the column value and therefore it is helpful to prepare scripts that take into account possible NULL values for columns by the `dataset.isEmpty('columnname')` expression.
+> [!note] It should be noted that the script is executed on each result line in the component to calculate the column value and therefore it is helpful to prepare scripts that take into account possible NULL values for columns by the `dataset.isEmpty('columnname')` expression.
 
 ### Exclude Attributes from Output Schema
 

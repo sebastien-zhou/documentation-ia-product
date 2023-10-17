@@ -57,7 +57,7 @@ New attributes can be added to the outputted results. The computed attribute can
 
 It is possible to remove columns from the output. These columns will be ignored and will never outputted from the business view.  
 
->**Note**: A script component is also available if the customer need is not covered by the stock components.
+> [!note] A script component is also available if the customer need is not covered by the stock components.
 
 ## Aggregate Results of Multiple Business Views  
 
