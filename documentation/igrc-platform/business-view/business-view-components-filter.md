@@ -23,8 +23,8 @@ The union component performs an union operation between records coming from a pr
 
 Both discriminators accept expressions so you can build a key composed of several columns from the current record.  
 
-It is mandatory to configure a view in the union component to perform the union operation.   
-Please refer to the help of view source component for [how to configure the view](igrc-platform/business-view/components/components.md)    
+It is mandatory to configure a view in the union component to perform the union operation.
+Please refer to the help of view source component for [how to configure the view](igrc-platform/business-view/components/components.md)
 ![Union view](./components/images/union_view.png "Union view")
 
 #### Examples
@@ -34,12 +34,12 @@ In this example, we are going to build a table that lists the group movements fo
 - A string value ' **+**' is added at the beginning of the line for each group added
 - A string ' **-**' is added at the beginning of the line for each deleted group
 
-**<u>Definition:</u>**   
+**<u>Definition:</u>**
 
-The business view will perform union between two ledger views as illustrated in the caption bellow    
+The business view will perform union between two ledger views as illustrated in the caption bellow
 
 - The new\_group ledger view lists the new groups (importaction = 'C')
-- The deleted\_groups ledger view lists the deleted groups (deleteaction = '1')   
+- The deleted\_groups ledger view lists the deleted groups (deleteaction = '1')
 
 The database contain only two timeslots:  
 
@@ -57,12 +57,12 @@ Configuration of the Union component (removed\_groups\_component)
 
 ![Exemple configuration 2](./components/images/exampl_config2.png "Exemple configuration 2")
 
-Configuration of the view in the union component (removed\_groups\_component)   
+Configuration of the view in the union component (removed\_groups\_component)
 The deleted\_groups ledger view will be executed in BusinessView\_timeslot - 1.  
 
 ![Exemple configuration 3](./components/images/exampl_config3.png "Exemple configuration 3")
 
-**<u>Results:</u>**   
+**<u>Results:</u>**
 
 Results of a separate execution of "new\_groups" ledger view on "current" timeslot:  
 
@@ -72,7 +72,7 @@ Result of a separate execution of "deleted\_groups" ledger view on "history" tim
 
 ![Exemple configuration 2](./components/images/example_result_2.png "Exemple result 2")
 
-Results of the business view execution on "current" timeslot:   
+Results of the business view execution on "current" timeslot:
 
 ![Exemple configuration 3](./components/images/example_result_3.png "Exemple result 3")
 
@@ -80,9 +80,9 @@ Results of the business view execution on "current" timeslot:
 
 #### Objective
 
-The Join filter is used to link records from two different data source, the first data source is the parent component in the business view (pipe) and the second is the view set in join configuration.   
+The Join filter is used to link records from two different data source, the first data source is the parent component in the business view (pipe) and the second is the view set in join configuration.
 
-The join types implemented in the component are (see caption below):    
+The join types implemented in the component are (see caption below):
 
 - Left
 - Right
@@ -99,17 +99,17 @@ The join types implemented in the component are (see caption below):
 
 1. joint type that will be performed. It can be: Left, Right, Inner, Full, Difference or Exclusion.  
 2. An expression that will be calculated for records coming from parent component (pipe) to match with the "Join key of secondary view" expression.
-3. An expression that will be calculated for records coming from the view in join configuration to match with the "Join key of principal view" expression.   
+3. An expression that will be calculated for records coming from the view in join configuration to match with the "Join key of principal view" expression.
 
-Both keys accept expressions so you can build a key composed of several columns from the current record.   
+Both keys accept expressions so you can build a key composed of several columns from the current record.
 
-It is mandatory to configure a view in the join component to perform the join operation.   
-Please refer to the help of view source component for [how to configure the view](igrc-platform/business-view/components/components.md)     
+It is mandatory to configure a view in the join component to perform the join operation.
+Please refer to the help of view source component for [how to configure the view](igrc-platform/business-view/components/components.md)
 ![Union view](./components/images/union_view.png "Union view")
 
 #### Examples
 
-This example will illustrate how to perform multi-counts.   
+This example will illustrate how to perform multi-counts.
 The concept is to list all applications and for each application display the associated number of permissions and accounts.
 
 **<u>Definition:</u>**
@@ -120,7 +120,7 @@ The concept is to list all applications and for each application display the ass
 
 **<u>Configuration:</u>**
 
-It is necessary to Configure a join between data from the `permissions` component (the _permissions\_count_ ledger view) and the results of `accounts_count` ledger view.   
+It is necessary to Configure a join between data from the `permissions` component (the _permissions\_count_ ledger view) and the results of `accounts_count` ledger view.
 
 The join is based on:
 
@@ -129,7 +129,7 @@ The join is based on:
 
 ![Exemple configuration](./components/images/bv_join_example_config.png "Exemple configuration")
 
-**<u>Result:</u>**   
+**<u>Result:</u>**
 
 Results of a separate execution of `permissions_count` ledger view on current timeslot.  
 
@@ -143,12 +143,12 @@ Results of Business View execution on current timeslot
 
 ![Result2](./components/images/result2.png "Result2")
 
-**<u>Reducing the memory usage:</u>**   
+**<u>Reducing the memory usage:</u>**
 
 - The join filter (Left, Inner, Full, Difference or Exclusion) stores the data from secondary component in a memory cache, it is highly recommended to perform the necessary filtering in ledger view (_i.e._ performed by the database) before performing the join operation in the business view
 - The join filter (Right) stores the data from the primary component in a memory cache, it is highly recommended to perform necessary filtering in ledger view (_i.e._ performed by the database) before performing the join operation in the business view
 
-| **Important** <br><br> It is **not** recommended to use a generic Brainwave view, delivered with the default project when you require a limited number of attributs as input. These views return a large number of attributes that will be stored in a memory cache and greatly increase the memory usage, impacting performance.|
+**Important** <br><br> It is **not** recommended to use a generic Brainwave view, delivered with the default project when you require a limited number of attributs as input. These views return a large number of attributes that will be stored in a memory cache and greatly increase the memory usage, impacting performance.
 
 ### Trend
 
@@ -173,7 +173,7 @@ The trend filter allows the calculation of trends and/or differences by re-execu
 
 #### Examples
 
-The aim is to list all applications present in the ledger and for each application:   
+The aim is to list all applications present in the ledger and for each application:
 
 - Show the status of the application if it is New, Modified (according to number of permissions), identical or Deleted comparing with previous timeslot
 - Show number of permissions in current timeslot , previous timeslot, and the difference(current - previous)
@@ -187,13 +187,13 @@ Configuration:
 
 ![Configuration trend setting](./components/images/2017-03-30_19_28_30-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_trend_test.businessvi.png "Configuration trend setting")
 
-**<u>Results:</u>**   
+**<u>Results:</u>**
 
 Result of `list_application` ledger view execution on current timeslot:  
 
 ![List application](./components/images/2017-03-30_19_25_42-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_custom_application.vi.png "List application")
 
-Result of `list_application` ledger view execution on previous timeslot:    
+Result of `list_application` ledger view execution on previous timeslot:
 
 ![List application](./components/images/2017-03-30_19_25_13-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_custom_application.vi.png "List application")
 
@@ -201,11 +201,11 @@ Result of BusinessView execution (trend operation):
 
 ![List application](./components/images/2017-03-30_19_26_50-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_trend_test.businessvi.png "List application")
 
-**<u>Reducing the memory usage</u>**   
+**<u>Reducing the memory usage</u>**
 
 - The trend filter stores all the results of one of the two views a memory cache, it is highly recommended to perform necessary filtering in ledger view before performing the trend operation in the business view
 
-| **Important** <br><br> It is **not** recommended to use ageneric Brainwave view, delivered with the default project when you require a limited number of attributs as input. These views return a large number of attributes that will be stored in a memory cache and greatly increase the memory usage, impacting performance.|
+**Important** <br><br> It is **not** recommended to use ageneric Brainwave view, delivered with the default project when you require a limited number of attributs as input. These views return a large number of attributes that will be stored in a memory cache and greatly increase the memory usage, impacting performance.
 
 ### Script
 
@@ -215,9 +215,9 @@ When the predefined components offered in the business view are not enough to im
 
 #### Specific Configuration
 
-The configuration of a Script filter is the same as the script source. The 3 events (init, read and dispose) are mapped to 3 JavaScript functions. Please see the event table in the Script source section for a detailed description of each event.   
-The only difference between a source and a filter is that the filter must receive all the records from a source instead of generating them. The difference is in the function read where an API is offered to get the next record from the source.   
-A predefined global object called `businessview` is available in the script. The most important method in the `businessview` object is `getNextRecord()`.    
+The configuration of a Script filter is the same as the script source. The 3 events (init, read and dispose) are mapped to 3 JavaScript functions. Please see the event table in the Script source section for a detailed description of each event.
+The only difference between a source and a filter is that the filter must receive all the records from a source instead of generating them. The difference is in the function read where an API is offered to get the next record from the source.
+A predefined global object called `businessview` is available in the script. The most important method in the `businessview` object is `getNextRecord()`.
 
 The following example shows a filter that reads records from the source and feeds them to the next component. This filter does nothing but shows the minimum architecture of the Script filter.  
 
@@ -234,7 +234,7 @@ function dispose() {
 }
 ```
 
-The function `read()` calls the `getNextRecord()` method to get a record from the previous component (maybe a source). As in the Script source, the `read()` method of the Script filter is called repeatedly until it returns `null`.    
+The function `read()` calls the `getNextRecord()` method to get a record from the previous component (maybe a source). As in the Script source, the `read()` method of the Script filter is called repeatedly until it returns `null`.
 In this example, the record from the source is returned directly without modifying it. If the source has no more records, the `getNextRecord()` method returns `null` and the `read()` function also returns `null`.  
 
 When there are several scripts in a single business view (for example 2 Script filters or a Script source and a Script filter), then it is important to understand the life cycle of variables and how and when the two scripts are executed.  
@@ -303,12 +303,12 @@ function filterDispose() {
 
 > More information on the [file parser function](how-to/collectors/parsing-a-file-js.md)  
 
-When the business view execution starts, the script is run. It means that all instructions or declarations outside functions are executed. In the above example, the 3 variables are initialised (csvParser, header, recordNumber). This execution is only executed once even if there are several Script components. What is important to know is that the global context of the JavaScript will be shared among all the components. As such, global variables may be used to share data between the different Script components.   
+When the business view execution starts, the script is run. It means that all instructions or declarations outside functions are executed. In the above example, the 3 variables are initialised (csvParser, header, recordNumber). This execution is only executed once even if there are several Script components. What is important to know is that the global context of the JavaScript will be shared among all the components. As such, global variables may be used to share data between the different Script components.
 
-Then, the business view engine calls the `init()` function of each component in the reverse order in the graphical editor. The `init()` function of the last component is called first and the `init()` function of the source is called last. If any `init()` function generates an error (an exception), then the execution is stopped, the other `init()` function will not be called but the `dispose()` function will still be called.     
+Then, the business view engine calls the `init()` function of each component in the reverse order in the graphical editor. The `init()` function of the last component is called first and the `init()` function of the source is called last. If any `init()` function generates an error (an exception), then the execution is stopped, the other `init()` function will not be called but the `dispose()` function will still be called.
 
-After that, the business view engine calls the `read()` function of the last component in the graphical editor. In the above example, the `filterRead()` function is called. The script gets the next available record from the source by calling the `businessview.getNextRecord()` method, Inside this call (we are still in the `filterRead()` function), the source is called and the `sourceRead()` function is executed which creates a record from a CSV file. It returns a record which is returned by the `businessview.getNextRecord()` method in the `filterRead()` function. A count number is added and then the record is returned to the business view engine.     
-When `null` is returned by the last component`, filterRead()` function, the business view engine understands that there is no records available. The `dispose()` methods of each component is then called to free resources.   
+After that, the business view engine calls the `read()` function of the last component in the graphical editor. In the above example, the `filterRead()` function is called. The script gets the next available record from the source by calling the `businessview.getNextRecord()` method, Inside this call (we are still in the `filterRead()` function), the source is called and the `sourceRead()` function is executed which creates a record from a CSV file. It returns a record which is returned by the `businessview.getNextRecord()` method in the `filterRead()` function. A count number is added and then the record is returned to the business view engine.
+When `null` is returned by the last component`, filterRead()` function, the business view engine understands that there is no records available. The `dispose()` methods of each component is then called to free resources.
 
 The `businessview` global object contains other methods that can be helpful  
 
@@ -402,32 +402,34 @@ function dispose() {
 
 This example expects that the Ledger view is sorted using the same criteria as the ones used in the key in the code:  
 
-1. surname,  
-2. givenname,  
+1. surname
+2. givenname
 3. hrcode  
 
 The algorithm uses a buffer for the last record seen. The `read()` function repeatedly gets records from the source and if this is the same identity as the previous identity, it stores the `orgcode`. When the identity is different, the previous identity is returned with the list of organizations and the last read identity is stored in the buffer.  
 
 #### Example 2: Enumerate
 
-The following code enumerates values in a field. It is similar to the Enumerate filter in the collect.   
+The following code enumerates values in a field. It is similar to the Enumerate filter in the collect.
 
 For example, with the following input data:  
 
 | **column1** | **column2** |
-|  a | 1,2,3 |
-|  b | 4,5 |
+|-------------|-------------|
+|  a          | 1,2,3       |
+|  b          | 4,5         |
 
-the script will produce this result:   
+the script will produce this result:
 
 | **column1** | **column2** |
-|  a | 1 |
-|  a | 2 |
-|  a | 3 |
-|  b | 4 |
-|  b | 5 |
+|-------------|-------------|
+|  a          | 1           |
+|  a          | 2           |
+|  a          | 3           |
+|  b          | 4           |
+|  b          | 5           |
 
-To use this code, create a new script filter and link the onScriptRead field to the onEnumRead fonction.   
+To use this code, create a new script filter and link the onScriptRead field to the onEnumRead fonction.
 Then, set the variable "ATTR\_NAME" to specify the attribute name to enumerate, and set the "SEPARATOR" variable to specify the values separator.  
 
 ```javascript  
@@ -470,27 +472,29 @@ function onEnumRead() {
 
 #### Example 3:
 
-In this example, the script filter gets all values in an attribute for all records and produce one record by unique value.   
+In this example, the script filter gets all values in an attribute for all records and produce one record by unique value.
 
-For example, this input data:    
-
-| **column1** |
-| a,b,c |
-| d,a,e |
-| c,b,f |
-| e,c,c |
-
-will produce this result:   
+For example, this input data:
 
 | **column1** |
-| a |
-| b |
-| c |
-| d |
-| e |
-| f |
+|-------------|
+| a,b,c       |
+| d,a,e       |
+| c,b,f       |
+| e,c,c       |
 
-To use this code, create a new script filter and link the onScriptRead field to the onEnumRead fonction.   
+will produce this result:
+
+| **column1** |
+|-------------|
+| a           |
+| b           |
+| c           |
+| d           |
+| e           |
+| f           |
+
+To use this code, create a new script filter and link the onScriptRead field to the onEnumRead fonction.
 Then, set the variable "ATTR\_NAME" to specify the attribute name to enumerate, and set the "SEPARATOR" variable to specify the values separator.  
 
 ```javascript  

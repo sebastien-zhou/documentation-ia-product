@@ -16,13 +16,13 @@ When a JavaScript source or filter is added to the component pipe, it can be hel
 
 ![Debug mode](./debugger/images/2017-04-05_10_20_35-iGRC_Properties_-_demobusinessviews_views_new_businessview.businessview_-_iGRC_A.png "Debug mode")
 
-When this option is selected, the business view currently edited in memory is executed, meaning that there is no need to save it on disk before starting the debug session.   
-In a debug session, the execution is suspended when a breakpoint is reached. **In business views, breakpoints can only be set on JavaScript lines, not on components in the graphical editor**.   
+When this option is selected, the business view currently edited in memory is executed, meaning that there is no need to save it on disk before starting the debug session.
+In a debug session, the execution is suspended when a breakpoint is reached. **In business views, breakpoints can only be set on JavaScript lines, not on components in the graphical editor**.
 To set a breakpoint on a JavaScript line, double click on the left side of this line : a blue spot will be added there.  
 
 ![Debug mode](./debugger/images/2017-04-05_10_37_26-iGRC_Project_-_demobusinessviews_views_new_businessview.javascript_-_iGRC_Analyt.png "Debug mode")
 
-Breakpoints can also be set on JavaScript lines of an inner business view. The execution will be suspended when the breakpoints are reached in the inner view. The following diagram shows the architectures of 2 business views.   
+Breakpoints can also be set on JavaScript lines of an inner business view. The execution will be suspended when the breakpoints are reached in the inner view. The following diagram shows the architectures of 2 business views.
 
 ![Debug mode](./debugger/images/bv_subview.png "Debug mode")
 
@@ -34,15 +34,15 @@ When a breakpoint is reached, it will be asked to switch to the debug perspectiv
 
 ![Debug](./debugger/images/bv_debug.png "Debug")
 
-In the upper left pane, the stack shows which JavaScript functions have been called. In the upper right pane, the variables are displayed. If the variables have changed since the last suspended state they appear in a yellow background. The content of the variable window is contextual to the selected function in the stack pane. The variables shown are the last known values of the selected stack level.    
+In the upper left pane, the stack shows which JavaScript functions have been called. In the upper right pane, the variables are displayed. If the variables have changed since the last suspended state they appear in a yellow background. The content of the variable window is contextual to the selected function in the stack pane. The variables shown are the last known values of the selected stack level.
 
-In debug mode, when the execution is suspended on a breakpoint, you can inspect the variables. The config variable contains the project global variables. The dataset variables contains the business view parameters. You can also execute the script step by step. You can also resume it by clicking on the yellow and green arrow ![Debug](./debugger/images/2017-04-05_11_28_12-Debug_-_demobusinessviews_views_new_businessview.javascript_-_iGRC_Analytics.png "Debug") in the toolbar so that the execution continues until the end or until the next breakpoint is reached.    
+In debug mode, when the execution is suspended on a breakpoint, you can inspect the variables. The config variable contains the project global variables. The dataset variables contains the business view parameters. You can also execute the script step by step. You can also resume it by clicking on the yellow and green arrow ![Debug](./debugger/images/2017-04-05_11_28_12-Debug_-_demobusinessviews_views_new_businessview.javascript_-_iGRC_Analytics.png "Debug") in the toolbar so that the execution continues until the end or until the next breakpoint is reached.
 
-| **Note** <br><br> Without any JavaScript the debug mode is still useful as the business engine displays every action in the console and writes them in a log file|
+>**Note**: Without any JavaScript the debug mode is still useful as the business engine displays every action in the console and writes them in a log file
 
-The console looks like this:   
+The console looks like this:
 
 ![Console](./debugger/images/bv_debuglog.png "Console")
 
 Each blue line is a record getting out of the business view. This is the result of the business view. The purple lines are the messages sent by the print() function in the JavaScript file.  
-If the number of output records is too big, then the log file will be easier to search for a specific line.  
+If the number of output records is too big, then the log file will be easier to search for a specific line.

@@ -5,10 +5,9 @@ Description: Documentation related to the main concepts of business views
 
 # Main Concepts
 
+When used in a page or a report, a business view is no different than a ledger view or a log view. In other words, the type of view used is irrelevant for pages or reports; as in Pages a dataset can reference a view whatever its type; or in Birt it is possible to select any type of view from the Dataset configuration panel.
 
-When used in a page or a report, a business view is no different than a ledger view or a log view. In other words, the type of view used is irrelevant for pages or reports; as in Pages a dataset can reference a view whatever its type; or in Birt it is possible to select any type of view from the Dataset configuration panel.   
-
-A business view, as all views, is identified by a unique ID. All types of views are included in the same identifier namespace. This means that an ID already assigned to a ledger view will not be re-used for a business view or a log view. A business view accepts parameters (String, Number, Boolean and Date) that can be monovalued or multivalued. It will return records with a set of attributes known as the view schema. Business views accept sorting options and are timeslot based.   
+A business view, as all views, is identified by a unique ID. All types of views are included in the same identifier namespace. This means that an ID already assigned to a ledger view will not be re-used for a business view or a log view. A business view accepts parameters (String, Number, Boolean and Date) that can be monovalued or multivalued. It will return records with a set of attributes known as the view schema. Business views accept sorting options and are timeslot based.
 
 ## Architecture  
 
@@ -22,7 +21,7 @@ The best analogy to understand the business views is a pipe. The business view s
 
 ## Available Components  
 
-There are three different components available:   
+There are three different components available:
 
 - Joins
 - Unions
@@ -58,7 +57,7 @@ New attributes can be added to the outputted results. The computed attribute can
 
 It is possible to remove columns from the output. These columns will be ignored and will never outputted from the business view.  
 
-| **Note** <br><br> A script component is also available if the customer need is not covered by the stock components.|   
+>**Note**: A script component is also available if the customer need is not covered by the stock components.
 
 ## Aggregate Results of Multiple Business Views  
 
@@ -71,9 +70,9 @@ As a business view is always a single line, or a single pipe, of components. As 
 
 - The first computing the trend on the first source
 - The second initially computing the trend on the second source and then performing the the union first trend.
-The an example of the two business views are shown and described below:   
+The an example of the two business views are shown and described below:
 
-In this example, the first business view reads groups and computes trends. The view ID (not shown here) is sample3.   
+In this example, the first business view reads groups and computes trends. The view ID (not shown here) is sample3.
 
 ![Business view Y1](./main-concepts/images/bv_y1.png "Business view Y1")
 
