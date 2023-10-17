@@ -36,28 +36,28 @@ An audit rule is created by configuring search criteria on the concepts that are
 
 Adding a criterion to the rule is carried out by effecting a drag and drop of the criterion from the palette to the rule graphic editor. In cases where the criterion gets a parameter it is represented by a hypertext link in the criterion text. Double clicking the hyperlink will highlight the parameter of the criterion.  
 
-![Available criteria for the Account concept](./search-criteria//images/08-01-palette_1.png "Available criteria for the Account concept")  
+![Available criteria for the Account concept](./images/rule-palette-1.png "Available criteria for the Account concept")  
 
 Note that at the top right position there is an input box where you can filter the list of criteria to show only matching labels. For example:  
 
-![Account criteria filtered to only whose matching 'contains'](./search-criteria//images/08-01-palette_2.png "Account criteria filtered to only whose matching 'contains'")  
+![Account criteria filtered to only whose matching 'contains'](./images/rule-palette-2.png "Account criteria filtered to only whose matching 'contains'")  
 
-It is possible to attach several search criteria to a given concept. This operation is performed directly at the concept level with the help of the AND/OR operator graphic ![2](./search-criteria//images/2.png "2"), either by positioning the group operators ![3](./search-criteria//images/3.png "3") if you want to configure a precedence between the operators, or if you want to carry out a 'NO' operation to the criterion.
+It is possible to attach several search criteria to a given concept. This operation is performed directly at the concept level with the help of the AND/OR operator graphic ![switch icon](./images/icon-switch.png "switch icon"), either by positioning the group operators ![link icon](./images/icon-link.png "link icon") if you want to configure a precedence between the operators, or if you want to carry out a 'NO' operation to the criterion.
 
-![Example of a combination of criteria](./search-criteria//images/4.png "Example of a combination of criteria")
+![Example of a combination of criteria](./images/rule-criteria-combination.png "Example of a combination of criteria")
 
-![Example of a combination of criteria](./search-criteria//images/5.png "Example of a combination of criteria")  
+![Example of a combination of criteria](./images/rule-criteria-combination-text.png "Example of a combination of criteria")  
 
 We invite you to refer to the chapter on available criteria for each Ledger object for the full list of the criteria that are available for each concept of the Ledger.  
 
 Finally, it is possible to use the result of another rule as a criterion for a rule. This operation is performed by carrying out a drag and drop of the '_result of the rule {rule}_' in the '_Sub-rule of identities_' section of the palette. A dialogue box will appear, allowing you to select the rule to be applied as a criterion.
 
-![Selection of a rule](./search-criteria//images/6.png "Selection of a rule")  
+![Selection of a rule](./images/rule-selection.png "Selection of a rule")  
 
-The graphic editor will show the criterion preceded by this icon : ![7](./search-criteria/images/7.png "7")  
+The graphic editor will show the criterion preceded by this icon : ![icon magnifying glass](./images/icon-magnifying-glass.png "icon magnifying glass")  
 Double clicking the hyperlink allows the rule in question to be edited.
 
-![Rule that calls upon another audit rule](./search-criteria//images/8.png "Rule that calls upon another audit rule")  
+![Rule that calls upon another audit rule](./images/rule-call-rule.png "Rule that calls upon another audit rule")  
 
 This can be useful when you have a rule (for example a list of highly privileged permissions) that you want to use to scope other audit rules (for example a list of identity that can access to highly privileged permissions).  
 
@@ -67,11 +67,11 @@ The strength of the rule engine lies in its capacity to make use of all of the d
 
 The links available per concept in the Ledger are displayed in the 'Links from...' section of the palette. In cases where it is possible to reach a concept by several paths, the text in parenthesis specifies the path taken in the Ledger.
 
-![Links from the account concept](./adding-search-dimensions/images/1.png "Links from the account concept")  
+![Links from the account concept](./images/rule-palette-account.png "Links from the account concept")  
 
 Using a link is performed by simply dragging and dropping the link to the graphic editor, followed by selection of the concept of the rule onto which you want to apply additional concepts.
 
-![Using a link](./adding-search-dimensions//images/2.png "Using a link")  
+![Using a link](./images/rule-link-usage.png "Using a link")  
 
 This operation is recursive and it is not subject to limits. In this way it is possible to go through all of the concepts of the Ledger in order to answer a given question. For example:  
 
@@ -79,7 +79,7 @@ This operation is recursive and it is not subject to limits. In this way it is p
 
 We would encourage you at first to refer to the graphic representation of identities in the Ledger to identify the 'paths' to follow when configuring rules that contain links between concepts. If you have taken part in the training course, you will have received the Ledger in this way in the shape of a mouse mat.
 
-![Identity Ledger](./adding-search-dimensions//images/3.png "Identity Ledger")  
+![Identity Ledger](./images/ledger-model.png "Identity Ledger")  
 
 We invite you to refer to the chapter _Available criteria per object in the Ledger_ in this guide to find the full list of relations available per concept in the Ledger.
 
@@ -89,13 +89,13 @@ We invite you to refer to the chapter _Available criteria per object in the Ledg
 
 You can visualize the results of your rule at any time by choosing the 'Results' tab of the graphic editor. The analysis is carried out on the last period loaded and the result is displayed in the form of a master/detail list : clicking on any element of the list displays its details on the right hand side of the screen.
 
-![Rule Results](./results/visualising/images/1.png "Rule Results")
+![Rule Results](./images/rule-result-tab-1.png "Rule Results")
 
 > In the case of a concept of the 'Account' type, the detail interface of the result allows you to intervene actively on account reconciliation. In this way it is possible to perform search operations on accounts with the help of the rule engine in order to carry out manual reconciliation operations.  
 >
 > Only the first 1,000 results are displayed. If your audit rule returns more than 1,000 results, you have the option of filtering the results returned with the help of the 'Filter' banner. For this, you need to click on the 'Filter' text in order to display the filtering criteria that are available.
 
-![Rule Results 2](./results/visualising//images/2.png "Rule Results 2")
+![Rule Results 2](./images/rule-result-tab-2.png "Rule Results 2")
 
 You can visualize the results on any period of time that has been loaded to the Ledger. To do this, simply select the desired time period in the 'Time base' dropdown menu.
 
@@ -114,9 +114,9 @@ It is possible to export the results of an audit rule in the form of a report in
 - OpenOffice Draw
 - Excel
 
-Exporting in report format is performed by clicking on the 'Report' button in the 'Results' tab of the graphic editor. The list of available reports will appear. The contents of this list depend on the main concept being handled by the audit rule.
+Exporting in report format is performed by clicking on the 'Report' button in the 'Results' tab of the graphic editor: ![report button](./images/icon-report.png "report button"). The list of available reports will appear. The contents of this list depend on the main concept being handled by the audit rule.
 
-![Report Format](./results/exporting-results/images/1.jpg "Report Format")
+![Report model selection](./images/rule-report-selection.png "Report model selection")
 
 Choosing a report will cause it to appear in the Web viewer. Please refer to the [Guide to the report editor](..\creating-reports\creating-reports) for more details about this viewer interface.
 
@@ -126,7 +126,7 @@ It is possible to narrow down the questions asked by adding enumeration constrai
 
 - _Which people have a Microsoft Active Directory account that gives access to more than 50 applications?_
 
-![An example of enumeration](./adding-enumeration-constraints/images/1.png "An example of enumeration")  
+![An example of enumeration](./images/rule-enumeration-example-1.png "An example of enumeration")  
 
 This configuration is carried out at the sub-concept level of the rule either by double clicking on the text of the concept, or with the help of the contextual menu 'Modifying enumeration parameters'.  
 The enumeration configuration box allows you to perform the following operations:  
@@ -141,7 +141,7 @@ The enumeration configuration box allows you to perform the following operations
 
 The default operation performed is "at least 1 result" (when 'None' is selected).
 
-![Configuration Enumeration](./adding-enumeration-constraints//images/2.png "Configuration Enumeration")  
+![Configuration Enumeration](./images/rule-enumeration-example-2.png "Configuration Enumeration")  
 
 Once configured, the enumeration appears in the upper area of the concept in the graphic editor. The enumeration is also taken into account in the 'text' version of the audit rule.
 
@@ -151,15 +151,15 @@ Once configured, the enumeration appears in the upper area of the concept in the
 
 Debugging the rules can be facilitated by displaying the intermediate results of the rule. This operation is performed with the help of the contextual menu 'Hide/Show the result numbers'. Activating this option causes each criterion to be displayed with the number of results returned as well as the unit time taken to extract this information from the Ledger.  
 
-![Clarifying the rules](./advanced-concepts/debugging-rules/images/1.png "Clarifying the rules")
+![Clarifying the rules](./images/rule-debug-timming.png "Clarifying the rules")
 
 It is also possible to display the partial results of the criteria of sub-concepts of the audit rule by double clicking on the criteria text or by double clicking on the sub-concepts icon.  
 
-![Partial results of the audit rule](./advanced-concepts/debugging-rules/images/2.png "Partial results of the audit rule")
+![Partial results of the audit rule](./images/rule-debug-results.png "Partial results of the audit rule")
 
 Finally, it is possible to display the query carried out in pseudo SQL by double clicking on the icon located on the main concept handled by the audit rule. However, the analysis of this content necessitates intimate knowledge of the technical data model and is in practice reserved solely for use by Brainwave technical support.  
 
-![Pseudo SQL Query](./advanced-concepts/debugging-rules/images/3.png "Pseudo SQL Query")
+![Pseudo SQL Query](./images/rule-debug-hql.png "Pseudo SQL Query")
 
 ### Criteria
 
@@ -174,7 +174,7 @@ It is possible to create rule criteria that intervene directly on the attributes
 
 Advanced criteria are used in the same way as standard criteria, however, they do necessitate finer knowledge of the data model because they are handled directly on the level of the attributes.
 
-![Advanced Criteria](./advanced-concepts/criteria/advanced-criteria/images/worddav20b.png "Advanced Criteria")
+![Advanced Criteria](./images/rule-advanced-critiria.png "Advanced Criteria")
 
 #### Criteria Comparison
 
@@ -192,16 +192,16 @@ It is possible to configure the comparisons between the attributes within an aud
 
 Configuring the second attribute requires referencing on which concept the comparison is to be carried out. If your analysis rule contains concepts that are interlinked, you will absolutely have to define an alias name for your concept. This operation is carried out with the help of the editing link enumeration constraints box in the 'Definition of a reference alias in a criterion' section.
 
-![Alias for a rule concept](./advanced-concepts/criteria/criteria-comparison/images/1.png "Alias for a rule concept")
+![Alias for a rule concept](./images/rule-alias.png "Alias for a rule concept")
 
 Please note that it is not possible to define an alias for the main concept rule which must have the name '_root_' as its alias.  
 Configuration of the second parameter is facilitated by a dedicated assistant that will present you with all of the available attributes for the main concept per concept on which an alias has been positioned.
 
-![Configuring a second attribute](./advanced-concepts/criteria/criteria-comparison/images/2.png "Configuring a second attribute")
+![Configuring a second attribute](./images/rule-secondary-attribut.png "Configuring a second attribute")
 
 Once configured, the criterion will show the attributes handled in the attribute editor. A point notion is used to identify the second attribute in a unique way.
 
-![Attribute editor](./advanced-concepts/criteria/criteria-comparison/images/3.png "Attribute editor")
+![Attribute editor](./images/rule-attribut-editor.png "Attribute editor")
 
 > [!warning] Putting this functionality to work does not support the joint use of advanced criteria combinations or tests on the same concepts level very well. Be sure to form simple rules and to respect the following principle: A secondary attribute should be in the same concept or in one of the criterion's parent concepts.
 
@@ -213,13 +213,13 @@ Once integrated into the execution plan, the rule will be automatically executed
 
 Inserting a rule into the execution plan is carried out by checking the 'Include in the execution plan' box in the 'Execution plan' tab of the rule properties.
 
-![Inserting the rule into the execution plan](./advanced-concepts/rule-in-execution-plan/images/1.png "Inserting the rule into the execution plan")  
+![Inserting the rule into the execution plan](./images/rule-include-in-ep.png "Inserting the rule into the execution plan")  
 
 > For the rule to be taken into account by the Web portal results, its identifier must begin with `control_`.
 
-You can force the re-valuation of all of the rules integrated into the execution plan for the current period of time with the help of the ![Icon](./advanced-concepts/rule-in-execution-plan/images/worddav7d3d0c16f86d2454da2404e65c752dfa.png "Icon") button in the 'Execution Plan' tab of your audit project.
+You can force the re-valuation of all of the rules integrated into the execution plan for the current period of time with the help of the ![Icon](./images/icon-blue-arrow.png "Icon") button in the 'Execution Plan' tab of your audit project.
 
-![Visualization of the Execution Plan](./advanced-concepts/rule-in-execution-plan/images/2016-07-08_10_33_05-iGRC_Project_-_demo_demo.audit_-_iGRC_Analytics.png "Visualization of the Execution Plan")  
+![Visualization of the Execution Plan](./images/rule-run-rules-ep.png "Visualization of the Execution Plan")  
 
 ### History of Rule Results
 
@@ -227,7 +227,7 @@ It is possible to manually publish the results of a rule in the Web portal or to
 
 To do this, simply use the 'History' tab in the rules editor. The list of results that are accessible from the web portal will appear. It is possible to delete or to add periods of time or to export the given results in report format.
 
-![Rules controls account](./advanced-concepts/managing-rule-result-history/images/rules_controls_account.png "Rules controls account")  
+![Rules execution history](./images/rule-execution-history.png "Rules execution history")  
 
 > For the rule to be taken into account by the Web portal reports its identifier must begin with `control_`.
 
@@ -258,7 +258,7 @@ The following tag names are available :
 The values can only be static chains of characters.  
 The tags are then accessible just like any attribute of the results of the rules in the audit view editor. We invite you to refer to the chapter [Data model](../views/views.md) in the Guide to the audit view editor to find a description of the different attributes available in the Ledger for the results of the rules.
 
-![Using a rule's tags in an audit view](./advanced-concepts/using-tags/images/rule_tag.png "Using a rule's tags in an audit view")  
+![Using a rule's tags in an audit view](./images/rule-tags-in-views.png "Using a rule's tags in an audit view")  
 
 ### Rule Parameters
 
@@ -269,19 +269,19 @@ It is possible to externalize the value of the parameters of the criteria of an 
 - To extend the criteria available to a concept
 
 This is carried out by creating parameters for a rule.  
-Adding or using a rule parameter is completed directly in the Editing a rule parameter dialogue box. Simply click on 'Valorize the criterion with a global parameter rule' and click on the parameter. The ![Icon](./advanced-concepts/using-parameters/images/addruleparametericon.png "Icon") button allows you to add a new global parameter to the rule.
+Adding or using a rule parameter is completed directly in the Editing a rule parameter dialogue box. Simply click on 'Valorize the criterion with a global parameter rule' and click on the parameter. The ![Icon](./images/icon-add-element.png "Icon") button allows you to add a new global parameter to the rule.
 
-![Using a parameter rule in a criterion](./advanced-concepts/using-parameters/images/rulecriterionwizard.png "Using a parameter rule in a criterion")  
+![Using a parameter rule in a criterion](./images/rule-parameter-criteria.png "Using a parameter rule in a criterion")  
 
 Please note that it is possible to quite simply ignore the criterion if the parameter is not valorized during the call. This makes it possible to create generic rules whose parameters are optional (for example a search rule with a number of criteria that are all optional). This operation is carried out by checking 'Ignore the criterion if the value is null or empty'.  
 
 Management of the global parameters of the rule is carried out with the help of the 'Properties' tab in the properties editor of the audit rule. It is possible to delete outdated parameters and to assign them default values. Note that the parameters of rules are multi-valued. If the criterion depends on a single-valued value, then only the first value used will be taken into account.  
 
-![Parameters of a rule](./advanced-concepts/using-parameters/images/ruleparmaterconfiguration.png "Parameters of a rule")  
+![Parameters of a rule](./images/rule-parameter-configuration.png "Parameters of a rule")  
 
 For a parameter to be accessible from outside the rule (view, another rule ...) it is essential that its identifier appear in the display name of the rule. The naming rule is to have the identifier appear between {}. When the rule is used, the display name of the parameter will automatically appear in the form of a hyperlink that allows it to be edited.
 
-![Call on a sub-rule](./advanced-concepts/using-parameters/images/ruleparametervisual.png "Call on a sub-rule")  
+![Call on a sub-rule](./images/rule-parameter-sub-rule.png "Call on a sub-rule")  
 
 ### Calculated Rule Parameters
 
@@ -293,11 +293,11 @@ To do this, simply create a new rule attribute (see the previous chapter), and t
 
 The syntax to use is described in the "Guide to collection" in the "Macros and scripts" chapter. The scripts are declared with the help of the `{` `}` symbols.
 
-![Dynamic parameters](./advanced-concepts/calculated-rule/images/1.png "Dynamic parameters")
+![Dynamic parameters](./images/rule-dynamic-parameters.pgn "Dynamic parameters")
 
-!["Parameters rules](./advanced-concepts/calculated-rule/images/2.png "Parameters rules")  
+!["Parameters rules](./images/rule-parmeters-properties.png "Parameters rules")  
 
-![Calculated parameters](./advanced-concepts/calculated-rule/images/3.png "Calculated parameters")  
+![Calculated parameters](./images/rule-calculated-parameters.png "Calculated parameters")  
 
 ### Analyze Dependencies and Rename Rules
 
@@ -308,11 +308,11 @@ The 'Dependencies' and 'Usage' tabs in the rules editor allow you to manage the 
 
 - **Dependencies** : List of project rules on which the audit rule depends:  
 
-![Rule dependencies](./advanced-concepts/analysing-dependencies/images/1.png "Rule dependencies")
+![Rule dependencies](./images/rule-dependencies-tab.png "Rule dependencies")
 
 - **Usage** : List of the rules, views and reports from the project that uses this audit rule:  
 
-![Rule usage](./advanced-concepts/analysing-dependencies/images/2.png "Rule usage")
+![Rule usage](./images/rule-usage-tab.png "Rule usage")
 
 ### Create Extra Rule Criteria
 
@@ -331,15 +331,15 @@ To publish a rule as a criterion, select the entry in the contextual menu 'Packa
   - **Criterion version** : Version of your criterion
   - **Author** : Name of the author of the criterion
 
-![Rule criterion](./advanced-concepts/extra-rule-criteria/images/1.png "Rule criterion")  
+![Rule criterion](./images/rule-criterai-creation.png "Rule criterion")  
 
 Once your criterion has been created, it will appear in the form of a library file that has the extension '.criteria'. This is an autonomous file that you can use in an audit project simply by positioning the file in the 'libraries' directory of your project (it will carry all of the dependencies that may be associated with the rule).
 
-![Special criterion of a library](./advanced-concepts/extra-rule-criteria/images/2.png "Special criterion of a library")  
+![Special criterion of a library](./images/rule-criteria-file.png "Special criterion of a library")  
 
 > [!warning] The libraries are loaded when Brainwave Analytics is loaded. Therefore, you will need to restart Analytics before testing your criterion.|
 
-![Special criterion for a rule](./advanced-concepts/extra-rule-criteria/images/3.png "Special criterion for a rule")  
+![Special criterion for a rule](./images/rule-criteria-usage.png "Special criterion for a rule")  
 
 ### Add Rule Reports
 
@@ -359,7 +359,7 @@ Next, the sub-directories correspond to the main concepts that are handled by th
 
 To create a new report, the easiest approach is to start from an existing report by carrying out a copy/paste of a report file. Please refer to the Guide to the report editor for more information about creating reports in Brainwave Identity GRC.
 
-![Rule reports](./advanced-concepts/adding-rule-reports/images/demo_rules_custom_new_rule.png "Rule reports") 
+![Rule file tree](./images/rule-file-explorer-list.png "Rule file tree")
 
 ## Deal with Time in Rule Editor
 
@@ -388,7 +388,7 @@ This query counts the different distinct organization values. This is completely
 
 Two new buttons are found in the Palette of the rule editor. The first one is the "timeslots" tool and the second one is the "counters" tool.  
 
-![Rule palette](./advanced-concepts/dealing-with-time-rule/images/011-rule_palette.png "Rule palette")  
+![Temporal rule selection in palette](./images/rule-temporal-palette.png "Temporal rule selection in palette")  
 
 Now, let's see how our example with identities and organizations is designed in the editor.
 
@@ -396,17 +396,17 @@ Now, let's see how our example with identities and organizations is designed in 
 
 The following snapshot illustrates the question "Which identities have been in the "Sales Department" in at least 3 timeslots ?".  
 
-![Rule timeslots sales](./advanced-concepts/dealing-with-time-rule/images/011-rule_timeslots_sales.png "Rule timeslots sales")  
+![Temporal rule on sales](./images/rule-temporal-rule-example-1.png "Temporal rule on sales")  
 
 The "timeslots" tool adds a constraint on the identity. The identity is kept in the output result only if some criteria are true in at least 3 timeslots. The criteria can be a combination of any criterion and joins on identities. The important thing to note is that under the 'timeslots" tool (in red on the picture), you define some criteria without the time in mind. Here we want identities working in the Sales Department but the "timeslots" tool checks this constraint on every timeslot in the database.  
 The "timeslots" tool has all the criteria and joins found in the parent entity (identity in our example). Of course you can also attach criteria on the root identity as shown in the following snapshot :  
 
-![Rule timeslots both](./advanced-concepts/dealing-with-time-rule/images/011-rule_timeslots_both.png "Rule timeslots both")  
+![Temporal rule criteria](./images/rule-temporal-rule-example-2.png "Temporal rule criteria")  
 
 The question behind this rule is : `Which identities are now working for the "HR Department" and have been in the "Sales Department" in at least 3 timeslots ?`  
 By default, the "timeslots" tool only search in all the timeslots (excluding the current one) of the database. This is why the words "All database" are written above the "timeslots" tool. By double-clicking on the tool, you can change the scope of the search and the details on the constraints:  
 
-![Rule timeslots properties](./advanced-concepts/dealing-with-time-rule/images/011-rule_timeslots_properties.png "Rule timeslots properties")  
+![Temporal rule properties configuation](./images/rule-temporal-rule-properties.png "Temporal rule properties configuation")  
 
 The first section of the properties box defines the scope the rule engine should search on. You can use different units like the N last timeslots, the N last days or the timeslots since a specified date. Of course the value can be an input parameter of the rule.  
 The second section is the constraint on the timeslot count matching the criteria (identity belonging to "Sales Department").  
@@ -415,11 +415,11 @@ The second section is the constraint on the timeslot count matching the criteria
 
 Now we want to build a rule answering the question: "Which identities have been in 3 different organizations in the past ?"  
 
-![Rule counters](./advanced-concepts/dealing-with-time-rule/images/011-rule_counters_org.png "Rule counters")  
+![Rule counters](./images/rule-counters.png "Rule counters")  
 
 The "counters" tool adds a constraint on attributes (not on timeslots). Here we want to search for 3 different values for the attribute org.code (org is the alias on organization). The default scope of the tool is "All database" but it can be changed by double-clicking on the tool to open a properties box shown below:  
 
-![Rule counters properties](./advanced-concepts/dealing-with-time-rule/images/011-rule_counters_properties.png "Rule counters properties")  
+![Rule counters properties](./images/rule-counters-parameters.png "Rule counters properties")  
 
 In the second section, you define the list of attributes you want to check. On the right part you set the count constraint. If you select 2 attributes and a constraints "at least 3 sets of values", it means that the rule engine checks that there exist at least 3 different value pairs for the selected attributes. When you click on the "Add..." button on the left part to choose an attribute, do not choose an attribute which is a recordUid as this kind of attribute is different in each timeslot. This would have no meaning counting the distinct recordUid among all the timeslots because each recordUid is different in every timeslot.  
 
@@ -433,11 +433,11 @@ The activation step in the execution plan already computes several built-in flag
 `Which identities have worked 2 times in the "Sales Department" ?`  
 The question is about the identities who worked for the Sales Department, then for another department and then in the Sales Department again. We can not just count the number of timeslots where the identity was in the Sales Department. To answer this question, we need to use the "organization changed" flag as shown below :  
 
-![Rule timeslots events](./advanced-concepts/dealing-with-time-rule/images/011-rule_timeslots_events.png "Rule timeslots events")  
+![Temporal rule events](./images/rule-temporal-changes.png "Temporal rule events")  
 
 To understand how it works, the following diagram shows a time-line of an identity changing of organization. The identity was working in HR Department in timeslot t1, then in Sales Department in timeslots t2 and t3, etc. A flag has been displayed above the name of the organization when this is a change from the previous timeslot (meaning that the flag "organisation changed" is true)  
 
-![Rule timeline events](./advanced-concepts/dealing-with-time-rule/images/011-rule_timeline_event.png "Rule timeline events")  
+![Rule timeline events](./images/rule-timline.png "Rule timeline events")  
 
 You can see that there are two timeslots (t2 and t5) where the organization is "Sales" and the flag "organization changed" is true. This identity will appear in the output result of the rule because the constraint set in the tool was "at least 2 timeslots".  
 
@@ -447,7 +447,7 @@ The product has only a few built-in flags. What about if you want to query somet
 The problem is that we do not have a built-in flag to know if someone got a new application compared to the previous timeslot.  
 But the product lets you define your own custom flags so that you can use them in the rule editor.  
 
-Please, read the article [Creating temporal analysis rule criteria](igrc-platform/audit-rules/advanced-concepts/temporal-criteria/temporal-criteria.md) to know how to create custom flags.
+Please, read the article [Creating temporal analysis rule criteria](#create-a-new-temporal-criterion) to know how to create custom flags.
 
 ## Create Temporal Analysis Rule Criteria
 
@@ -471,7 +471,7 @@ The actual definition of the criterion is based on a view that will give the dat
 Example: criteria 'people who have changed applications'  
 To create this criteria, we only need to create the following view whose output are the identities and their respective applications :  
 
-![Application](./advanced-concepts/temporal-criteria/images/012-1-viewexample.png "Application")  
+![Application](./images/view-example.png "Application")  
 
 The computation will automatically compute the difference in output between timeslots, and create the corresponding criteria in the rule palette of the identity element.  
 
@@ -491,15 +491,15 @@ Every criteria defined will automatically include its negation, so that in the r
 
 To define a criterion, choose **Temporal analysis criteria** in **New...** section of the main menu.  
 
-![Temporal analysis criteria](./advanced-concepts/temporal-criteria/images/012-2-menu.png "Temporal analysis criteria")  
+![Temporal analysis criteria](./images/rule-temporal-criteria-creation.png "Temporal analysis criteria")  
 
 You will then be prompted to fill in the information necessary to define the criterion, as shown below :  
 
-![Temporal analysis criteria file](./advanced-concepts/temporal-criteria/images/012-3-wizard.png "Temporal analysis criteria file")  
+![Temporal analysis criteria file](./images/rule-temporal-criteria-wizard.png "Temporal analysis criteria file")  
 
 The wizard will generate a `.temporalcriteria` file in the temporalcriteria sub-folder, that can be further modified in a dedicated editor :  
 
-![Temporal analysis criteria](./advanced-concepts/temporal-criteria/images/012-4-editor.png "Temporal analysis criteria")  
+![Temporal analysis criteria](./images/rule-temporal-criteria-editor.png "Temporal analysis criteria")  
 
 ### Include in Execution Plan
 
@@ -508,17 +508,17 @@ To ensure that the temporal criteria that have been defined are computed and sto
 - ensuring that the option **Include in execution plan** is checked for all the relevant `.temporalcriteria` file (this option is activated by default, so if you haven't forced the exclusion all new criteria should be automatically included)
 - checking the option **Run temporal analysis criteria automatically** in the execution plan tab of the configuration editor.
 
-![Configuration](./advanced-concepts/temporal-criteria/images/012-5-config.png "Configuration")  
+![Configuration](./images/rule-temporal-criteria-config.png "Configuration")  
 
 Is is also possible to launch a manual computation on a given timeslot in the execution plan tab of the project. Note that if the timeslot already contained computed temporal criteria, these will be cleared at the start of new computation, to ensure that the database contains only the results for the latest version of a criterion.
 
-![Execution plan](./advanced-concepts/temporal-criteria/images/012-6-executionplan.png "Execution plan")  
+![Execution plan](./images/rule-temporal-criteria-ep-exec-1.png "Execution plan")  
 
 ### Compute Criteria on Older Timeslots
 
 the criterion added to the project would normally only be available on the timeslots loaded after their creation. To provide analysis on previously archived timeslots, however, it is possible to launch a computation on all database timeslots. This step needs only be performed once in the project, and can be launched from the execution plan tab of the project.  
 
-![Older timeslots](./advanced-concepts/temporal-criteria/images/012-7-oldertimeslots.png "Older timeslots")  
+![Older timeslots](./images/rule-temporal-criteria-ep-exec-2.png "Older timeslots")  
 
 ### Use the Criterion in Rules
 
@@ -526,7 +526,7 @@ The criteria that are defined in `.temporalcriteria` files are available in the 
 There will be two entries for the criteria, one for the positive version (e.g. when the condition is met) and another for the negative version (e.g. when the condition is not met). They can be used as any other rule criteria to filter the entity on which they apply.  
 Please note that the criteria from all projects will be displayed in the rule palette, whether they are currently included in the execution plan or not.  
 
-![Rule palette](./advanced-concepts/temporal-criteria/images/012-8-rulepalette.png "Rule palette")  
+![Rule palette](./images/rule-temporal-criteria-palette.png "Rule palette")  
 
 ## Advice and Best Practices
 
@@ -549,15 +549,15 @@ It is preferable to use rules dynamically in the reports by associating the rule
 
 ## Create a Rule Using Natural Language Questions
 
-During the rule creation wizard, you have the possibility to initialize the new rule by asking a natural language question. 
+During the rule creation wizard, you have the possibility to initialize the new rule by asking a natural language question.  
 
 In the rule creation wizard, there is an input box where you can ask a question in a natural way:  
 
-![Natural language](./natural-language-wizard/images/08-08-natural_1.png "Natural language")  
+![Natural language](./images/rule-natural-language-wizard.png "Natural language")  
 
 The created rule will be initialized with the asked question, for instance in the previous example it will be:  
 
-![Natural language](./natural-language-wizard//images/08-08-natural_2.png "Natural language")  
+![Natural language](./images/rule-natural-language-results.png "Natural language")  
 
 Note that this functionality only applies to the initial creation of the rule. After that it can still be modified in any way applicable to a rule.  
 
