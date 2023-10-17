@@ -17,13 +17,13 @@ The build action will create a facet file with the correct name and version in t
 
 ## Work with Variables
 
-Some facets require user input to function properly (a file or folder path, a repository name, ...). The best way to deal with this is to define [configuration variables](igrc-platform/technical-configuration/technical-configuration.md).  
+Some facets require user input to function properly (a file or folder path, a repository name, ...). The best way to deal with this is to define [configuration variables](../technical-configuration/technical-configuration.md).  
 
 In a `.configvariable` file included in the facet, and to use them where this information is needed (a discovery file, a collector line, etc). This ensures that your facet project is running completely with the values inside you local configuration, and that, during facet installation, the user will be prompted for those values.  
 
 Please note that your configuration variables will be automatically renamed in the user project, to avoid naming conflicts, so that you do not need to choose elaborate naming patterns just for this purpose. In the configuration editor, the variables will be clearly stated as having the facet for origin. Also, the user will be able to change the choices he made initially having to reinstall the facet, by simply overriding those variable values.  
 
-It is possible to have variables labels nationalized, allowing for the correct label to be displayed in the user interface when installing the facet. See our article on [Nationalization of labels included in project files](igrc-platform/pages/features-and-roles/label-localisation.md)
+It is possible to have variables labels nationalized, allowing for the correct label to be displayed in the user interface when installing the facet. See our article on [Nationalization of labels included in project files](../pages/features-and-roles/label-localisation.md)
 
 ## Conditional File Installation
 
@@ -40,9 +40,9 @@ During facet installation, the proper file will be selected based on what format
 A facet, otherwise called an add-on, for data collection should take advantage of the silos concept to be able to iterate over any number of data files.  
 This way, adding a new data file into the project, being a new file system, a new server or a new domain, will be as easy as dropping the new file in an input folder.  
 
-To achieve this, you have to create a silo for your application, and check the option 'Iterate on files within a folder' (please refere to the corresponding documentation for more information).  
+To achieve this, you have to create a silo for your application, and check the option 'Iterate on files within a folder' (please refer to the corresponding documentation for more information).  
 
-The name of the file will have to carry the information you need (for instance the server name). You can also use the filter, with naming conventions, if you have more than one file to include in the collection. See the article on [Silo concept](igrc-platform/silos/silos.md).  
+The name of the file will have to carry the information you need (for instance the server name). You can also use the filter, with naming conventions, if you have more than one file to include in the collection. See the article on [Silo concept](../silos/silos.md).  
 
 ![Silo](../add-ons/images/silo.png "Silo")
 
