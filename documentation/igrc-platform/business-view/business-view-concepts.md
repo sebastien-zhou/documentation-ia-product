@@ -17,7 +17,7 @@ A business view is built on another view, usually a ledger view or a log view. B
 
 The best analogy to understand the business views is a pipe. The business view starts with a source component which sends records into the pipe. The source is usually a ledger view reading some records from the database and spilling them into the pipe. Along the pipe, components can be used to alter the records. The execution order of the components in the pipe starts from the source, at the top of the screen, towards the bottom of the pipe. The records exiting the pipe are then sent to the Pages or the Birt reports.  
 
-![Busness view pipe](./images/bv_pipe.png "Busness view pipe")
+![Business view pipe](./images/bv_pipe.png "Business view pipe")
 
 ## Available Components  
 
@@ -51,13 +51,13 @@ It is possible to filter the attributes outputted from the business views. If fi
 
 ### Add Computed Attributes
 
-New attributes can be added to the outputted results. The computed attribute can be dynamically calculated using macros. The expression must then be written between curly brackets, for example `{dataset.attrbut.get()}`.  
+New attributes can be added to the outputted results. The computed attribute can be dynamically calculated using macros. The expression must then be written between curly brackets, for example `{dataset.attribute.get()}`.  
 
 ### Exclude Attributes  
 
 It is possible to remove columns from the output. These columns will be ignored and will never outputted from the business view.  
 
-> [!note] A script component is also available if the customer need is not covered by the stock components.
+> A script component is also available if the customer need is not covered by the stock components.
 
 ## Aggregate Results of Multiple Business Views  
 

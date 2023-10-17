@@ -7,7 +7,7 @@ Description: Documentation related to the source components of business views
 
 ## Common Operations
 
-For more information on the common operators implemented in all components, please refer the the following documentation: [Common operators](igrc-platform/business-view/common-features/common-features.md)
+For more information on the common operators implemented in all components, please refer the the following documentation: [Common operators](business-view-features)
 
 ## Source Components
 
@@ -20,7 +20,7 @@ The source component provides the initial data to the other filter components. I
 
 #### Objective
 
-The initial data provided to the source component is based on data queried by another view. All typesof views are allowed
+The initial data provided to the source component is based on data queried by another view. All types of views are allowed
 
 - Ledger views
 - Log views
@@ -33,40 +33,40 @@ The initial data provided to the source component is based on data queried by an
 ![Source view configuration](./images/source_view_configuration.png "Source view configuration")
 
 1. It is mandatory to select a view from the view picker, any of type of view is allowed (Ledger view, log view or business view)
-2. If the _`"Reference timeslot"`_ is empty the component will automatically execute the view in the same timeslot as the Business View, it is possible to overload the timeslot by providing a timeslot uid or a relative value according to the timeslot of the Business View , for example if the Business View is executed in the previous timeslot(current - 1), and the _`"Reference timeslot"`_ contain the value _`"``-1``"`_, then the source view component executes the view in the timeslot(current - 2)
+2. If the `Reference timeslot` is empty the component will automatically execute the view in the same timeslot as the Business View, it is possible to overload the timeslot by providing a timeslot uid or a relative value according to the timeslot of the Business View , for example if the Business View is executed in the previous timeslot(current - 1), and the `Reference timeslot` contain the value `-1`, then the source view component executes the view in the timeslot(current - 2)
 3. A prefix can be specified. The prefix will be added to all the attributes of the view  
 4. In this section you can configure parameters that will be given to the view.
 
 #### Examples
 
-In the flowing example we will show a sample business View that contain only a view source component, it will be based on _br\_application_ (standard brainwave view)
+In the flowing example we will show a sample business View that contain only a view source component, it will be based on `br_application` (standard brainwave view)
 
-Here is the definition of the "_br\_application_" ledger view:
+Here is the definition of the `br_application` ledger view:
 
 ![br_application](./images/br_applications_concept.png "br_application")
 
-The image below show the result of "_br\_application"_ executed on the timeslot named _"demo2":_  
+The image below show the result of `br_application` executed on the timeslot named "demo2":  
 
 ![br_application](./images/br_application.png "br_application")
 
-The business viewdefinition contains only one component (view source component)  
+The business view definition contains only one component (view source component)  
 
 ![View source component](./images/source_view__component.png "View source component")
 
 Illustration of the configuration:
 
 - In this example no reference timeslot is provided, it means that the timeslot given to the business view will be used (demo2)
-- A prefix "app\_" is configured to apply on results
-- No parameters given to "_br\_application_"
+- A prefix `app_` is configured to apply on results
+- No parameters given to `br_application`
 - "Computed columns, Filtering and Exclusion" sections are left empty  
 
-![Exemple configuration](./images/example_config.png "Exemple configuration")
+![Example configuration](./images/example_config.png "Example configuration")
 
 Business View execution results :  
 
-![Exemple executed by](./images/example_executed_bv.png "Exemple executed by")
+![Example executed by](./images/example_executed_bv.png "Example executed by")
 
-We can observe that the two results (br\_applications, sample BusinessView) are the same, because no filter if configured, the source view component has executed "br\_application" on "demo2" timeslot, the only difference is the prefix, in the Business View  results we can see that all columns name are prefixed by "app\_".
+We can observe that the two results (`br_applications`, sample BusinessView) are the same, because no filter if configured, the source view component has executed `br_application` on "demo2" timeslot, the only difference is the prefix, in the Business View  results we can see that all columns name are prefixed by `app_`.
 
 ### Script
 
@@ -80,16 +80,16 @@ Through the creation wizard, a JavaScript file is attached to the business view 
 
 | Event                    | Comment                                                                                 |  
 | :----------------------- | :-------------------------------------------------------------------------------------- |
-| init                     | the init event is triggered when the script source should initialize itself. It is called when the business engine is initializing.<br> This event should be used to allocate resources or prepare data before the execution of the business view starts|  
-| read                     | the read event is triggered each time the business engine requests the next record from the source.<br> This event will be called repeatedly until the script returns null meaning "no more record available"|
+| init                     | the init event is triggered when the script source should initialize itself. It is called when the business engine is initializing. This event should be used to allocate resources or prepare data before the execution of the business view starts|  
+| read                     | the read event is triggered each time the business engine requests the next record from the source. This event will be called repeatedly until the script returns null meaning "no more record available"|
 | dispose                  | the dispose event is triggered when the script should free resources allocated during the init or the read events.|
 
 The script component parameters are the name of the function found in the JavaScript file for each event. The following snapshot shows the corresponding Properties tab :  
 
 ![Script source](./images/bv_scriptsource.png "Script source")
 
-Clicking on the link of one of the event name lets you enter a function name. The body of the function is then added at the end of the JavaScript file.
-Clicking on the yellow arrow located at the upper left of the field jumps to the function declaration in the JavaScript file.
+Clicking on the link of one of the event name lets you enter a function name. The body of the function is then added at the end of the JavaScript file.  
+Clicking on the yellow arrow located at the upper left of the field jumps to the function declaration in the JavaScript file.  
 Clicking on the light bulb located at the upper right of the field lets you choose an already declared function in the JavaScript file.  
 
 When using JavaScript it is highly recommended to fill out the Attribute tab. This tab is used to provide information concerning the schema, _i.e._ the attributes generated by JavaScript, to the business view engine (see caption below). When configuring or using a report or a page it is necessary to access the list of attributes returned by the business view. When using JavaScript it is necessary to declare the generated attributes as the product is not capable of automatically generating them:  
@@ -157,5 +157,3 @@ The init function creates a CSV file parser on a file given as an input paramete
 The read function reads the next CSV line and return null if no more record is available in the file. Otherwise, all the values of the line are copied into a DataSet which is returned to the business view engine.
 
 The dispose function closes the file. Note that even if an error occurs in the read function, the dispose function is called to allow freeing resources.  
-
-> More information on the [file parser function](how-to/collectors/parsing-a-file-js.md)

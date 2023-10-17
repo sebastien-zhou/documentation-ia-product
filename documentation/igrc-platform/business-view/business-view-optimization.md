@@ -28,8 +28,7 @@ What is the best practice to follow ?
 
 The best methodology is make the database work as much as possible. The database has some indexes that can speed up the search and is also optimized to perform various sort operations.
 
-
-> [!note] Please remember that it is necessary to refresh or recalculate the indexes after each execution plan, to make the most of their performance benefits. <br> See [Rebuild the database indexes on SQL Server](how-to/database/sqlserver/rebuild-the-database-indexes-on-sql-server.md) or [Rebuild the database indexes on Oracle Server](how-to/database/oracle/orcl-rebuild-indexes.md) for more information on building indexes.
+> Please remember that it is necessary to refresh or recalculate the indexes after each execution plan, to make the most of their performance benefits.
 
 However, if the Ledger view is rich and complex it can generate a complex SQL query. The database is then not able to generate an efficient execution plan resulting in bad response times. In this case, splitting the complex Ledger view into 2 simplified ledger views and joining them in a business view can be a good idea. The sum of the execution times of the three resulting views being smaller than the execution time of the unique complex view.
 
@@ -90,13 +89,19 @@ The columns of the tree split the time into component features. As a result, you
 - Total time (ms) : Indicates the cumulative time of this component and the time needed to read inner view or getting records from the previous component. The formula is : Total time = Time + Inner view time + Previous component total time.  
 Using the example displayed above the total time for the component test is 1294 which is 348 + 945. The difference of one millisecond due to the fact that the time is measured in nanoseconds and then rounded when displayed in the table.  
 
-> [!note] &emsp;- The timings are displayed are for a maximum of 1000 output records. <br><br> The studio never display more than 1000 line in the result table. To get the actual timing information for the execution of a business view in the portal (returning more than 1000 results) you have the possibility to use a debug option `-Dbusinessviewtimings=true` in the `JAVA_OPTS` of parameters of the portal. Adding this option generates a .csv file in the portal logs folder containing all the sizing and performance information. This option should only be used when investigating business view performance issues.<br><br> &emsp;- The background of the lines are colored to highlight the component taking the most time. This is just a hint to help the user to focus on the "heavy" components or inner views.<br><br> By studying the timings you can identify if it is the business view or the underlying Ledger view that takes the most time. If it is the underlying Ledger view that takes 99 percent of the time, there is no need to optimize the business view settings. You should then try to optimize the Ledger view by redesign it, splitting it or adding an index.
+> - The timings are displayed are for a maximum of 1000 output records.
+>  
+> The studio never display more than 1000 line in the result table. To get the actual timing information for the execution of a business view in the portal (returning more than 1000 results) you have the possibility to use a debug option `-Dbusinessviewtimings=true` in the `JAVA_OPTS` of parameters of the portal. Adding this option generates a .csv file in the portal logs folder containing all the sizing and performance information. This option should only be used when investigating business view performance issues.  
+>
+> - The background of the lines are colored to highlight the component taking the most time. This is just a hint to help the user to focus on the "heavy" components or inner views.  
+>
+> By studying the timings you can identify if it is the business view or the underlying Ledger view that takes the most time. If it is the underlying Ledger view that takes 99 percent of the time, there is no need to optimize the business view settings. You should then try to optimize the Ledger view by redesign it, splitting it or adding an index.
 
 ## Script Performance  
 
 If the business view includes a Javascript source or a JavaScript filter, it is highly likely that most of the time will be spent in it. It's hard to give general tips for JavaScript but here are some advice to speed things up.  
 
-> [!note] Some of the following advice given to improve performance may lower the script quality in terms of architecture or maintainability.
+> Some of the following advice given to improve performance may lower the script quality in terms of architecture or maintainability.
 
 - Avoid using stacks in JavaScript. For example, using a loop and, inside it calling a function to perform the requested the job. By "inlining" the code inside the loop, you avoid loosing time pushing or poping records from the JavaScript stack.
 - Use JavaScript global variables to keep intermediate results. The idea is to avoid re-executing multiple times the same processes each time your "read" method is called. It is more efficient to compute them once and store them in global variables so that they are available on the next "read" entry.
