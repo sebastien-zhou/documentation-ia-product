@@ -21,7 +21,7 @@ This opens a new panel where you have to choose the kind of source to use. It ca
 
 It is always necessary to attach a JavaScript file to your business view. A business view that uses a view source may contain a script component which needs a JavaScript file to store the functions called by the component. The best practice is to have the two files, `.businessview` file and it's associated `.javascript` file in the same folder. Of course, in the context of a project, several business views may share the same JavaScript file.  
 
-![Business view wizard](./editor/images/bv_wizard.png "Business view wizard")
+![Business view wizard](./images/bv_wizard.png "Business view wizard")
 
 ## Use the Business View Editor
 
@@ -31,7 +31,7 @@ In the creation wizard, select any ledger view in the view field and click on `F
 
 The business view editor is built the same way as the other graphical editors in the product (see [here](igrc-platform/getting-started/product-description/using-the-editors/using-the-editors.md) for more graphical editor descriptions). The editor contains the graphical part in the middle, the palette containing all the available components on the right and the Properties window at the bottom of the studio (see caption below).  
 
-![Business view editor](./editor/images/bv_editor.png "Business view editor")
+![Business view editor](./images/bv_editor.png "Business view editor")
 
 The business view always contains a source component, located at the top. This is the only component displayed when the view has just been created. The palette on the right is not contextual to the selection in the graphical area. The palette always shows all available components.
 
@@ -42,7 +42,7 @@ To add a component to the pipe, first, select the component just before the inse
 The configuration of a component is done in the Properties tab displayed on the bottom of the graphical editor. Clicking on the background of the graphical area will display the schema of the view in the Properties tab (see caption below). The schema of the view represents the list of attributes available for the report or the page once the view is executed.  
 Additional important information such as the component in which the attribute has been defined or, if the attribute comes from a ledger view, the name of the view and the meaning of the attribute.  
 
-![Business view schema](./editor/images/bv_schema.png "Business view schema")
+![Business view schema](./images/bv_schema.png "Business view schema")
 
 When a component is selected, the Properties tab will displays a set of sub-tabs that depend on the component type. Some of these sub-tabs are common to all components :
 

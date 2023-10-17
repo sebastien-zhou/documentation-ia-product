@@ -15,7 +15,7 @@ The union component performs an union operation between records coming from a pr
 
 #### Specific Configuration
 
-![Union configuration](./components/images/union_config.png "Union configuration")
+![Union configuration](./images/union_config.png "Union configuration")
 
 1. A string value to distinguish records coming from parent component (the pipe).
 2. A string value to distinguish records coming from the configured view in the union component.
@@ -25,7 +25,7 @@ Both discriminators accept expressions so you can build a key composed of severa
 
 It is mandatory to configure a view in the union component to perform the union operation.
 Please refer to the help of view source component for [how to configure the view](igrc-platform/business-view/components/components.md)
-![Union view](./components/images/union_view.png "Union view")
+![Union view](./images/union_view.png "Union view")
 
 #### Examples
 
@@ -45,36 +45,36 @@ The database contain only two timeslots:
 
 - The current timeslot display-name is: "current"
 - The previous timeslot display-name is: "history" (history = current - 1)
-![Exemple configuration 1](./components/images/2017-03-30_15_17_07-Nouveau_Dessin_OpenDocument.odg_-_OpenOffice_Draw.png "Exemple configuration 1")
+![Exemple configuration 1](./images/2017-03-30_15_17_07-Nouveau_Dessin_OpenDocument.odg_-_OpenOffice_Draw.png "Exemple configuration 1")
 
 **<u>Configuration:</u>**
 
 Configuration of the source view component (new\_groups\_component)
 
-![Exemple configuration 1](./components/images/exampl_config1.png "Exemple configuration 1")
+![Exemple configuration 1](./images/exampl_config1.png "Exemple configuration 1")
 
 Configuration of the Union component (removed\_groups\_component)  
 
-![Exemple configuration 2](./components/images/exampl_config2.png "Exemple configuration 2")
+![Exemple configuration 2](./images/exampl_config2.png "Exemple configuration 2")
 
 Configuration of the view in the union component (removed\_groups\_component)
 The deleted\_groups ledger view will be executed in BusinessView\_timeslot - 1.  
 
-![Exemple configuration 3](./components/images/exampl_config3.png "Exemple configuration 3")
+![Exemple configuration 3](./images/exampl_config3.png "Exemple configuration 3")
 
 **<u>Results:</u>**
 
 Results of a separate execution of "new\_groups" ledger view on "current" timeslot:  
 
-![Exemple configuration 1](./components/images/example_result_1.png "Exemple result 1")
+![Exemple configuration 1](./images/example_result_1.png "Exemple result 1")
 
 Result of a separate execution of "deleted\_groups" ledger view on "history" timeslot (mean that groups will be deleted in next timeslot ("current")):  
 
-![Exemple configuration 2](./components/images/example_result_2.png "Exemple result 2")
+![Exemple configuration 2](./images/example_result_2.png "Exemple result 2")
 
 Results of the business view execution on "current" timeslot:
 
-![Exemple configuration 3](./components/images/example_result_3.png "Exemple result 3")
+![Exemple configuration 3](./images/example_result_3.png "Exemple result 3")
 
 ### Join
 
@@ -91,11 +91,11 @@ The join types implemented in the component are (see caption below):
 - Difference
 - Exclusion
 
-![Join type](./components/images/2017-03-30_18_45_46-Photos.png "Join type")
+![Join type](./images/2017-03-30_18_45_46-Photos.png "Join type")
 
 #### Specific Configuration
 
-![Join settings](./components/images/bv_join_config.png "Join settings")
+![Join settings](./images/bv_join_config.png "Join settings")
 
 1. joint type that will be performed. It can be: Left, Right, Inner, Full, Difference or Exclusion.  
 2. An expression that will be calculated for records coming from parent component (pipe) to match with the "Join key of secondary view" expression.
@@ -105,7 +105,7 @@ Both keys accept expressions so you can build a key composed of several columns 
 
 It is mandatory to configure a view in the join component to perform the join operation.
 Please refer to the help of view source component for [how to configure the view](igrc-platform/business-view/components/components.md)
-![Union view](./components/images/union_view.png "Union view")
+![Union view](./images/union_view.png "Union view")
 
 #### Examples
 
@@ -114,9 +114,9 @@ The concept is to list all applications and for each application display the ass
 
 **<u>Definition:</u>**
 
-![Union view](./components/images/union_view.png "Union view")
+![Union view](./images/union_view.png "Union view")
 
-![View](./components/images/2017-03-30_17_40_55-Nouveau_Dessin_OpenDocument.odg_-_OpenOffice_Draw.png "View")
+![View](./images/2017-03-30_17_40_55-Nouveau_Dessin_OpenDocument.odg_-_OpenOffice_Draw.png "View")
 
 **<u>Configuration:</u>**
 
@@ -127,21 +127,21 @@ The join is based on:
 - The attribute `app_code` attribute of `permissions_count` ledger view
 - The attribute `app_code`attribute of `acounts_count` ledger view
 
-![Exemple configuration](./components/images/bv_join_example_config.png "Exemple configuration")
+![Exemple configuration](./images/bv_join_example_config.png "Exemple configuration")
 
 **<u>Result:</u>**
 
 Results of a separate execution of `permissions_count` ledger view on current timeslot.  
 
-![Result1](./components/images/result1.png "Result1")
+![Result1](./images/result1.png "Result1")
 
 Results of a separate execution of `accounts_count` ledger view on current timeslot:    
 
-![Result3](./components/images/result3.png "Result3")
+![Result3](./images/result3.png "Result3")
 
 Results of Business View execution on current timeslot
 
-![Result2](./components/images/result2.png "Result2")
+![Result2](./images/result2.png "Result2")
 
 **<u>Reducing the memory usage:</u>**
 
@@ -158,7 +158,7 @@ The trend filter allows the calculation of trends and/or differences by re-execu
 
 #### Specific Configuration
 
-![Configuration trend setting](./components/images/2017-03-30_19_28_08-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_trend_test.businessvi.png "Configuration trend setting")
+![Configuration trend setting](./images/2017-03-30_19_28_08-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_trend_test.businessvi.png "Configuration trend setting")
 
 1. The timeslot used as a baseline to compare results. Is can either be calculated relatively based on the business view timeslot,or using the uid.  
 2. An expression used to match lines that must be compared.  
@@ -181,25 +181,25 @@ The aim is to list all applications present in the ledger and for each applicati
 
 **<u>BusinessView definition</u>**
 
-![BusinessView definition](./components/images/example_definition.png "BusinessView definition")
+![BusinessView definition](./images/example_definition.png "BusinessView definition")
 
 Configuration:
 
-![Configuration trend setting](./components/images/2017-03-30_19_28_30-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_trend_test.businessvi.png "Configuration trend setting")
+![Configuration trend setting](./images/2017-03-30_19_28_30-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_trend_test.businessvi.png "Configuration trend setting")
 
 **<u>Results:</u>**
 
 Result of `list_application` ledger view execution on current timeslot:  
 
-![List application](./components/images/2017-03-30_19_25_42-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_custom_application.vi.png "List application")
+![List application](./images/2017-03-30_19_25_42-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_custom_application.vi.png "List application")
 
 Result of `list_application` ledger view execution on previous timeslot:
 
-![List application](./components/images/2017-03-30_19_25_13-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_custom_application.vi.png "List application")
+![List application](./images/2017-03-30_19_25_13-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_custom_application.vi.png "List application")
 
 Result of BusinessView execution (trend operation):  
 
-![List application](./components/images/2017-03-30_19_26_50-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_trend_test.businessvi.png "List application")
+![List application](./images/2017-03-30_19_26_50-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_trend_test.businessvi.png "List application")
 
 **<u>Reducing the memory usage</u>**
 
