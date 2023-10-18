@@ -31,7 +31,7 @@ Among the defined controls under the mentioned article: [Control Methods present
   - list of identities without HR code (employee identification)
 - Ensemblist approach: Those are perimeter controls at the application level through the type of control like "Assigning permission". This type of control informs on people who likely have the permission in exhaustive manner. Thus, the management rules of authorizations allocation being implemented within a company can be automated.
 
-_Example:_ Only the people of the department "My Department" have the rights to access to permission "α" of the application "β". Therefore, it is necessary to define a rule that reference identities and fill in the parameter on the department: "My\_department". "α" and "β" parameters can be user-entered information.
+_Example:_ Only the people of the department "My Department" have the rights to access to permission "α" of the application "β". Therefore, it is necessary to define a rule that reference identities and fill in the parameter on the department: "My_department". "α" and "β" parameters can be user-entered information.
 
 In addition of returning the discrepancies, control can also check:
 
