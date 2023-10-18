@@ -47,9 +47,9 @@ The best practice is to declare a different feature for each rule, then grouping
 
 ## Create a View for Dashboards
 
-Views determine how entities retrieved by rules will be displayed in the dashboards.
-<br>The view provides a set of columns to access, the direct attributes of the entity (_e.g._ email or an account), attributes of related entities (_e.g._ job title of an identity) or count entities according to some criteria (_e.g._ number of accounts by organization ).
-<br>Views to be used in dashboards are built as any regular view, using the Studio view editor. All view types can be used: audit view, business View or audit Logs view.
+Views determine how entities retrieved by rules will be displayed in the dashboards.  
+The view provides a set of columns to access, the direct attributes of the entity (_e.g._ email or an account), attributes of related entities (_e.g._ job title of an identity) or count entities according to some criteria (_e.g._ number of accounts by organization ).  
+Views to be used in dashboards are built as any regular view, using the Studio view editor. All view types can be used: audit view, business View or audit Logs view.
 
 For the view to be available to dashboard designers, you must do the following:
 
@@ -57,9 +57,9 @@ For the view to be available to dashboard designers, you must do the following:
 
 ![View for dashboards](./images/mashup_view_studio.png "View for dashboards")
 
-This view will then be available for dashboard components that target its main entity.
-<br>The view's main entity is the top level entity of the view, Identity in the above example.
-<br>It can be changed to target any other entity in the view using **Toggle web portal search anchor** menu item.
+This view will then be available for dashboard components that target its main entity.  
+The view's main entity is the top level entity of the view, Identity in the above example.  
+It can be changed to target any other entity in the view using **Toggle web portal search anchor** menu item.
 
 It's recommended to set labels on each attribute of the view to something readable for the end-user. This also avoids the systematic re-labeling of the attributes by the dashboard designer.For example, when defining an aggregate column, it should be labelled "Count" or something similar. Nationalized labels can be set using the small flag icon.
 
@@ -138,9 +138,9 @@ The import merges the imported dashboard with the existing one as follows:
 
 ## Export Dashboards
 
-The Export menu button allows platform administrators to export either the whole list of dashboards or a selection of dashboards to a file on their local computer.
-<br>This file can then be used for backup purposes, to copy the dashboards from an environment to another (_e.g._ from test to production) or to share specific dashboards between designers.
-<br>Selecting either menu item will open the dashboard export wizard, which consists of 2 pages:
+The Export menu button allows platform administrators to export either the whole list of dashboards or a selection of dashboards to a file on their local computer.  
+This file can then be used for backup purposes, to copy the dashboards from an environment to another (_e.g._ from test to production) or to share specific dashboards between designers.  
+Selecting either menu item will open the dashboard export wizard, which consists of 2 pages:
 
 - **Dashboard selection** : allows to select the dashboards that will be actually included in the export file.
 
@@ -166,8 +166,8 @@ Note that only the first error is displayed and needs to be fixed (_i.e._ add to
 
 - **dashboard selection** : this page displays the list of dashboards contained in the import file, and allows to select which dashboards to import.  
 This list indicates for each dashboard whether it already exists in the current configuration (because it was imported before, not because it has the same title).  
-In which case, you have to either uncheck the dashboard to exclude it from the import or check the "Overwrite existing dashboards" option to force all existing dashboards to be replaced.
-<br>The list also displays the author of each dashboard, as found in the export file. If the author cannot be found in the current configuration, it is replaced by the current user (_i.e._ platform administrator). You will have to manually reassign the dashboard to an alternate valid designer.
+In which case, you have to either uncheck the dashboard to exclude it from the import or check the "Overwrite existing dashboards" option to force all existing dashboards to be replaced.  
+The list also displays the author of each dashboard, as found in the export file. If the author cannot be found in the current configuration, it is replaced by the current user (_i.e._ platform administrator). You will have to manually reassign the dashboard to an alternate valid designer.
 
 ![Dashbord import wizard - selection](./images/import_wiz2.png "Dashbord import wizard - selection")
 

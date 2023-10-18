@@ -96,7 +96,7 @@ The parameter label can also be included component titles.
 > It's recommanded to use dedicated views to provide values for parameter menus, with only the columns that are used for values and labels.
 This is to ensure optimal performance when displaying the dashboard parameter panel with large datasets (_e.g._ listing accounts).  
 Don't use general purpose views with dozens of columns.
-
+>
 > Whenever possible, you should use permanent, timeslot-independant, and environment independant key attributes as value columns for parameters, to ensure maximum portability of the dashboard across timeslots and environments.
 This is especially important for hidden parameters and for parameter default values, because the value is stored with the dashboard and must be valid across timeslots and across environements (UAT, Production).
 
@@ -240,7 +240,7 @@ The following table shows which source types applies to which secondary paramete
 |  **Component View w/ params** |  X |  X | X |  |
 |  **Dashboard Parameter Menu <br> View w/ params** |  X |  | X |  |
 |  **Gauge Link Target w/ params** |  X | X | X |  |
-|  **Table and Chart Link Target  <br> w/ params** |  X | X | X | X |
+|  **Table and Chart Link Target <br> w/ params** |  X | X | X | X |
 
 ### Fixed Value Source
 
@@ -266,7 +266,7 @@ Dashboard parameters values can also be passed to other dashboard or pages throu
 To use a dashboard's parameter as a source type, do the following:
 
 - Select **Dashboard Parameter** as the **Source** in the **Parameters** configuration panel, if the choice is available
-- Select one the dashboard's parameters to use as the source. Each dashboard parameter in the list is displayed both with its label, and the syntax **{param.\<param\_name\>}**  
+- Select one the dashboard's parameters to use as the source. Each dashboard parameter in the list is displayed both with its label, and the syntax **{param.<param_name>}**  
 
 ![Dashboard Parameter Source](./images/params2_02.png "Dashboard Parameter Source")
 
@@ -284,15 +284,15 @@ To use an attribute of the current user as a source type, do the following:
 ![User Attributes Source ](./images/params2_03.png "User Attributes Source ")
 
 - The proposed attributes are the columns of the **user.principal.view**  View which is configured in the project's **Configuration** > **Web Portal** > **Other Properties** section.  
-<br>The main purpose of this view is to validate the login used to connect to brainwave portal. It's also used to provide additional user-related attributes.
-<br>You can design a view of your own to validate the login and provide custom values to use in secondary parameters (restart the server to make them effective).
+The main purpose of this view is to validate the login used to connect to brainwave portal. It's also used to provide additional user-related attributes.  
+You can design a view of your own to validate the login and provide custom values to use in secondary parameters (restart the server to make them effective).
 
 ![Other Properties](./images/params2_04.png "Other Properties ")
 
 #### Simulate Another User
 
-During dashboard design, the actual values for user attributes used in secondary parameters will be those of the designer's account (which is the currently connected user at design time).
-<br>Fortunately, you can simulate another user account while in design mode to test your dashboard. To do so:
+During dashboard design, the actual values for user attributes used in secondary parameters will be those of the designer's account (which is the currently connected user at design time).  
+Fortunately, you can simulate another user account while in design mode to test your dashboard. To do so:
 
 - Select **Dashboad User Simulation...** from the dashboard's menu, to open the **Dashboard user simulation** dialog box  
 
@@ -357,7 +357,6 @@ To define a link on a widget do the following:
   - **External URL :** a page in another web site. Parameters are passed in the url search.
 - For **table** widgets, select from **Display link in column** , the table's column where the link should be displayed.
 Usually it will be the left-most column, but it could be any column of the table. Only one column can be displayed as a link.  
-<br>
 
 - Select from the **Link to** menu the type of the link target , among the four possible types: Detail Page, Another page, Another Dashboard and External URL.
 - Additional link configuration will vary depending on the selected target type (see below).
@@ -567,8 +566,10 @@ For this reason, they are stored in the database on each customer's environment.
 User dashboards must be manually transfered between the different customer environments (_e.g._ dev, test, production) or backed-up using the export/import feature.
 
 **Project dashboards**, on the other hand, are not specific to a customer, they address a common need and are delivered inside a facet or an app, just like pages, views and rules.  
-<br>Project dashboards are stored as `.dashboard` files inside the project in the specific `webportal/dashboards/` folder or a facet sub-folder.  
-<br>Contrary to user dashboards, project dashboards will be shared between customers that use the same app or facet and across different environments - dev , test, production - of the same customer as long as the web portal references the same project.  
+
+Project dashboards are stored as `.dashboard` files inside the project in the specific `webportal/dashboards/` folder or a facet sub-folder.  
+
+Contrary to user dashboards, project dashboards will be shared between customers that use the same app or facet and across different environments - dev , test, production - of the same customer as long as the web portal references the same project.  
 Dashboard project included in the project will automatically appear in the web portal to authorized users, without having to manually import them.  
 
 ### Create a Project Dashboard
@@ -588,7 +589,7 @@ You can specify a different subfolder, for example to include the dashboard in a
 
 Any dashboard developer can edit any project dashboard, even without being its author.
 
-![](./images/dash_proj.png "Creating project dashboard")
+![Dashboard Project](./images/dash_proj.png "Creating project dashboard")
 
 **Note:** The **designer** and **developer** roles, dedicated to dashboards, are provided in the `bw_dashboards` facet, which is included in **Identity Analytics version 1.4** add-on.
 
@@ -598,15 +599,15 @@ Any dashboard developer can edit any project dashboard, even without being its a
 
 All project dashboards in the current project are visible to developers and technical administrators in the dashboard manager, with a special "Project" type.
 
-![](./images/dash_proj_list.png "Dashboard list")
+![Dashboard Project List](./images/dash_proj_list.png "Dashboard list")
 
 Once the project is deployed to the web portal, a technical administrator - or a developer if he has access to the target platform - must share project dashboards to the target audience.
 Each time the project dashboard is modified, it will be automatically updated on the web portal and the sharing configuration will be preserved.
 
-Dashboard designers that don't also have the developer role cannot modify project dashboards.
-<br>This is because project dashboards can be modified in the project and will be automatically updated when the project is redeployed.
-<br>This would cause conflicts if the projects dashboards were otherwise modified by designers on the target platform.
-<br>If a designer would like to modify a project dashboard, he can duplicate the dashboard as a user dashboard, by un-checking the **Save to project** option in the duplicate wizard.  
+Dashboard designers that don't also have the developer role cannot modify project dashboards.  
+This is because project dashboards can be modified in the project and will be automatically updated when the project is redeployed.  
+This would cause conflicts if the projects dashboards were otherwise modified by designers on the target platform.  
+If a designer would like to modify a project dashboard, he can duplicate the dashboard as a user dashboard, by un-checking the **Save to project** option in the duplicate wizard.  
 
 Similarly, a developer can transform an existing user dashboard into a project dashboard, by duplicating the user dashboard and check the **Save to project** option in the duplicate wizard.
 

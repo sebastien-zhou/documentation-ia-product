@@ -9,8 +9,6 @@ Description: Documentation related to dashboard components, configuration
 
 ### Dashboard Components
 
----
-
 The following section details the available components and variations for use in dashboard and how to configure them:
 
 - Tables
@@ -129,7 +127,6 @@ The gauge may also display a trend (comparison with the previous timeslot) and t
   - If **Display value as a percentage**  is checked, you will have to define the maximum value from which the percentage is computed (value / maximum value).
   - **Style:**  to define the color scheme for the main gauge dial, either as a flat or gradient color, from a list of available color schemes.
   - **Size** : the size of a gauge cannot be configured. It always covers one cell of the grid layout (1 column and 1 row)
-  <br>
 
 - **Value**  tab : defines how the displayed value is computed.
 The computation consists of two parts:
@@ -158,7 +155,6 @@ This tab is only available if **Display value as a percentage**  has been checke
   - Select **Fixed Value**  and type in a value, to use a static value as the denominator for the percentage
   - Select **From another search and value**  to have the percentage denominator dynamically computed based on another rule, search and aggregration function.  
 For example to compute the _rate of contractors_ in the company, you would select "_contractors_" as the main search for the gauge, and "_total employees_" as the maximum search.
-<br>
 
 ![Indicator value](./images/indicator-value-cfg.png "Indicator value")
 
@@ -278,8 +274,10 @@ There are two ways of defining chart data:
 The purpose of **Indicator groups**  is to simplify the layout of numerous inline indicators, and provide a more readable output.
 Moreover, a new **text line** layout displays many indicators vertically in a compact manner.
 
-|**Radial Gauge** layout <br> ![Radial Gauge](./images/ind-group_01.png "Radial Gauge")]|
-| **Text Line**  layout <br> ![Text Line](./images/ind-group_02.png "Text Line") |
+**Radial Gauge** layout  
+![Radial Gauge](./images/ind-group_01.png "Radial Gauge")  
+**Text Line** layout  
+![Text Line](./images/ind-group_02.png "Text Line")
 
 Create an indicator group using the ![Icon](./images/indgroup_24.png "Icon")    icon in the mashup edition toolbar.  
 
@@ -328,7 +326,6 @@ If the number of values in the chart exceeds the number of colors defined in the
     - **Stagger serie labels**  ( bar chart) to display bar labels on two lines.
     - **Grouping mode** : how the series bars in each category should be grouped:  **Side by side** , **Stacked** or **Stacked at 100%**
   - **Size** : Sets the chart's display size, expressed in columns and rows. See **Dashboard layout**  section for more information
-  <br>
 
 - **Search**  tab : allows to select a **rule**  that will determine the entities from the Identity Ledger that will be in the scope of the chart. For example "All active entities", or "Orphaned Accounts".
 See **dashboard data access components**  section to understand what rules are displayed and how to add your own ones.
@@ -336,7 +333,6 @@ See **dashboard data access components**  section to understand what rules are d
   - **Rule** : lists and allows to select a rule for the selected entity kind.
   - **Params...**  button allows to defines rule parameters if any.  (See § _Rule parameters_ for details)
   - **Test**  allows to check the result of the rule , using the parameter values if any.
-  <br>
 
 - **Chart data settings** : define a source view for the chart values, categories and series, and optional sorting/limiting data options.  
   - **View** drop down list allows to select the view to produce values and categories/series labels for the chart.
@@ -351,7 +347,6 @@ Sorting by value means the total values of all the series in each category
     - For readability matters, you must limit the number of categories in the chart ( default 5, maximum 50)
     - Check **Include other category with the remainders**  to gather the rest of the values into a single category labelled _Other_.
     ![Multichart configuration](./images/multichart_config_cats.png "Multichart configuration")
-    <br>
 
   - **Series** configuration
     - Select **Serie label**  column from the view to use be used as the chart category label
@@ -392,7 +387,6 @@ If the number of values in the chart exceeds the number of colors defined in the
     - **Show legend** :  allows to display a separate legend above the chart .
     - **Stagger serie labels**  ( bar chart) to display bar labels on two lines.
   - **Size** : Sets the chart's display size, expressed in columns and rows. See **Dashboard layout**  section for more information
-  <br>
 
 - **Search**  tab : allows to select a **rule**  that will determine the entities from the Identity Ledger that will be in the scope of the chart. For example "All active entities", or "Orphaned Accounts".
 See **dashboard data access components**  section to understand what rules are displayed and how to add your own ones.
@@ -400,7 +394,6 @@ See **dashboard data access components**  section to understand what rules are d
   - **Rule** : lists and allows to select a rule for the selected entity kind.
   - **Params...**  button allows to defines rule parameters if any.  (See § _Rule parameters_ for details)
   - **Test**  allows to check the result of the rule , using the parameter values if any.  
-  <br>
 
 - **Chart data settings** : define a source view for the chart value to display, date formatting and optional sorting/limiting data options.  
   - **View** drop down list allows to select the view to produce values for the chart.
@@ -459,8 +452,8 @@ The view must return only one value when executed in the studio.
 History chart display serie values evolution over a number of time periods, either as stacked areas, multi-bar or multi-line chart.
 It could be for example, evolution of #employee per job, #accounts per repository, etc.
 
-![Multi series history chart 1](./images/History charts-3.png "Multi series history chart 1")]
-![Multi series hiqtory chart 2](./images/Histo_multi_charts_.png "Multi series hiqtory chart 2")]
+![Multi series history chart 1](./images/History_charts-03.png "Multi series history chart 1")
+![Multi series hiqtory chart 2](./images/Histo_multi_charts_.png "Multi series hiqtory chart 2")
 
 You create a multi-serie history chart using the ![Icon](./images/histchart_24.png "Icon") icon in the dashboard toolbar.
 
@@ -477,7 +470,6 @@ If the number of values in the chart exceeds the number of colors defined in the
     - **Grouping mode** : how the series bars in each category should be grouped:  **Side by side**  , **Stacked** or **Stacked at 100%.**  
 In line mode, stacked mode display the series as stacked areas, not lines.
   - **Size** : Sets the chart's display size, expressed in columns and rows. See **Dashboard layout**  section for more information
-  <br>
 
 - **Search**  tab : allows to select a **rule**  that will determine the entities from the Identity Ledger that will be in the scope of the chart. For example "All active entities", or "Orphaned Accounts".
 See **dashboard data access components**  section to understand what rules are displayed and how to add your own ones.
@@ -485,7 +477,6 @@ See **dashboard data access components**  section to understand what rules are d
   - **Rule** : lists and allows to select a rule for the selected entity kind.
   - **Params...**  button allows to defines rule parameters if any.  (See § _Rule parameters_ for details)
   - **Test**  allows to check the result of the rule , using the parameter values if any.  
-<br>
 
 - **Chart data settings** : define a source view for the chart values and series to display, date formatting and optional sorting/limiting data options.
   - **View** drop down list allows to select the view to produce values for the chart.
@@ -521,7 +512,7 @@ You can format dates on the y axis using the following localized tokens:
 |%U|Sunday-based week of the year as a decimal number [00,53].|26 for Sunday 2018/07/01|
 |%w|Sunday-based weekday as a decimal number [0,6].|0 for Sunday 2018/07/01|
 |%W|Monday-based week of the year as a decimal number [00,53].|25 for Sunday 2018/07/01|
-|%x|the locale's date, such as %-m/%-d/%Y.\*|07/01/2018|
+|%x|the locale's date, such as %-m/%-d/%Y.*|07/01/2018|
 |%y|year without century as a decimal number [00,99].|18 for 07/01/2018|
 |%Y|year with century as a decimal number.|2018|
 
