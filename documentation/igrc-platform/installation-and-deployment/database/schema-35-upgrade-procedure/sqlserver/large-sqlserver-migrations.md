@@ -32,15 +32,15 @@ The scripts to download are available for download in the corresponding tables b
 
 |                                                        Multilingual - mssql                                                         |
 | :---------------------------------------------------------------------------------------------------------------------------------: |
-|          [STEP1_mssql_BrailleR1_to_schema_33.sql](../sqlscripts/split-scripts/msql/STEP1_mssql_BrailleR1_to_schema_33.sql)          |
-|   [STEP2_mssql_PRINT_int_to_bigint_migration.sql](../sqlscripts/split-scripts/msql/STEP2_mssql_PRINT_int_to_bigint_migration.sql)   |
-|          [STEP4_mssql_schema_33_to_schema_35.sql](../sqlscripts/split-scripts/msql/STEP4_mssql_schema_33_to_schema_35.sql)          |
+|          [STEP1_mssql_BrailleR1_to_schema_33.sql](./sqlscripts/STEP1_mssql_BrailleR1_to_schema_33.sql)          |
+|   [STEP2_mssql_PRINT_int_to_bigint_migration.sql](./sqlscripts/STEP2_mssql_PRINT_int_to_bigint_migration.sql)   |
+|          [STEP4_mssql_schema_33_to_schema_35.sql](./sqlscripts/STEP4_mssql_schema_33_to_schema_35.sql)          |
 
 |                                                           Monolingual - mssql noml                                                            |
 | :-------------------------------------------------------------------------------------------------------------------------------------------: |
-|          [STEP1_mssql_noml_BrailleR1_to_schema_33.sql](../sqlscripts/split-scripts/msql/STEP1_mssql_noml_BrailleR1_to_schema_33.sql)          |
-|   [STEP2_mssql_noml_PRINT_int_to_bigint_migration.sql](../sqlscripts/split-scripts/msql/STEP2_mssql_noml_PRINT_int_to_bigint_migration.sql)   |
-|          [STEP4_mssql_noml_schema_33_to_schema_35.sql](../sqlscripts/split-scripts/msql/STEP4_mssql_noml_schema_33_to_schema_35.sql)          |
+|          [STEP1_mssql_noml_BrailleR1_to_schema_33.sql](./sqlscripts/STEP1_mssql_noml_BrailleR1_to_schema_33.sql)  
+|   [STEP2_mssql_noml_PRINT_int_to_bigint_migration.sql](./sqlscripts/STEP2_mssql_noml_PRINT_int_to_bigint_migration.sql)   |
+|          [STEP4_mssql_noml_schema_33_to_schema_35.sql](./sqlscripts/STEP4_mssql_noml_schema_33_to_schema_35.sql)          |
 
 # Upgrade procedure
 
