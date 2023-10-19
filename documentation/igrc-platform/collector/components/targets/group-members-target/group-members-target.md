@@ -22,7 +22,7 @@ This target allow you to collect group members.
 
 From collect editor select _Group members target_ in _Data set targets._  
 
-![Group members target](images/2016-07-07_16_49_29-iGRC_Properties_-_demo_collectors_demo_080.AD_Groups.collector_-_iGRC_Analytics.png "Group members target")
+![Group members target](images/group-memeber-target.png "Group members target")
 
 # The properties Tab
 
@@ -42,13 +42,13 @@ In this property you can view/edit general parameters of the Group members. The 
 
 Here you can add comments regarding actions done by this component.
 
-![Description](images/2016-07-07_16_58_24-iGRC_Properties_-_demo_collectors_demo_170.Sharepoint_Groups.collector_-_iGRC_An.png "Description")
+![Description](images/groupmemeber-description.png "Description")
 
 ## Repository
 
 In this property, you can select the attribute containing the repository key. This repository holds group that we want to collect its members. Note that repository must exist in database.
 
-![Repository](images/2016-07-07_16_58_41-iGRC_Properties_-_demo_collectors_demo_170.Sharepoint_Groups.collector_-_iGRC_An.png "Repository")
+![Repository](images/groupmemeber-repository.png "Repository")
 
 ## Group
 

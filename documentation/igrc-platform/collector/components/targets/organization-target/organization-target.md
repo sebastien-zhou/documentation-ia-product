@@ -28,7 +28,7 @@ Not applicable
 
 When editing a collect, select _Organization target_ in _Ledger targets_ (previously DataSet targets).  
 
-![Organisation target](igrc-platform/collector/components/targets/organization-target/images/2016-07-07_15_41_07-iGRC_Properties_-_demo_collectors_demo_040.Contractors.collector_-_iGRC_Analytic.png "Organisation target")
+![Organisation target](images/organisation-target.png "Organisation target")
 
 # Properties
 
@@ -40,13 +40,13 @@ In this property you can see/modify general parameters of the component. You wil
 - _the "Display name_" for the _Organization target_   
 - the "_Follow just one link_" option which sets the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation evaluation evaluated to true will be executed.
 
-![Target](igrc-platform/collector/components/targets/organization-target/images/02_target.png "Target")
+![Target](images/02_target.png "Target")
 
 ## Description
 
 Comment regarding actions done by this component.
 
-![Description](igrc-platform/collector/components/targets/organization-target/images/03_description.png "Description")
+![Description](images/03_description.png "Description")
 
 ## Organization
 
@@ -70,7 +70,7 @@ Available fields are :
 - reference type 1 --\> 9
 - reference value 1 --\> 9
 
-![Parameters](igrc-platform/collector/components/targets/organization-target/images/04_parameters.png "Parameters")
+![Parameters](images/04_parameters.png "Parameters")
 
 ## Parent links
 
@@ -81,7 +81,7 @@ With this property you will define elements that enable product to build organiz
 
 Product behaviour can as well be defined "_If the parent link does not exist_" in database. You can choose between "_Do nothing_", "_Trigger an error_" while choosing the event that will be generated or "_Create parent link type in the database_".
 
-![Parent links](igrc-platform/collector/components/targets/organization-target/images/05_parent_links.PNG "Parent links")
+![Parent links](images/05_parent_links.PNG "Parent links")
 
 Note that parent links are effectively resolved during activation, so that no event will be generated in the collect phase if the parent does not exist.  
 
