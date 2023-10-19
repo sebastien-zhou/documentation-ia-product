@@ -36,16 +36,16 @@ Some of the facets that use control tags: bw\_ad\_controls, bw\_ad\_schema, bw\_
 
 Here you will find a non-exhaustive list of the main add-ons or facets that include controls and the tags that are used in their latest versions.
 
-> **bw\_ad\_controls**
+> **bw_ad_controls**
 
-This facet is used mainly by the AD Booster and some other facets like bw\_groupsandaccounts\_analytics. It includes around a dozen of controls designed to find problems in Active Directory. The controls use the following tags:
+This facet is used mainly by the AD Booster and some other facets like bw_groupsandaccounts_analytics. It includes around a dozen of controls designed to find problems in Active Directory. The controls use the following tags:
 
 family:AD
 scope: quality, risk
 type: securitygroup, account, group
 custom1: onallaccounts
 
-> **bw\_ad\_schema**
+> **bw_ad_schema**
 
 This facet is only used by the AD Booster. It extends bw\_ad\_controls by introducing advanced controls on Active Directory. The following tags are used:
 
@@ -53,26 +53,26 @@ family: AD
 scope: privileged, quality, risk, localadmin, gporights
 type: account, securitygroup, group
 
-> **bw\_controlsdashboard**
+> **bw_controlsdashboard**
 
 This facet include some controls and some pages to display the results? The following tags are used:
 
 type: control
 scope: repository, application, perroganisation
 
-> **bw\_mashup\_bastion**
+> **bw_mashup_bastion**
 
 This add-on provides ready-to-use mashup dashboards. It includes some controls that use the following tags:
 
 family: WAB
 
-> **bw\_mashup\_amazonaws**
+> **bw_mashup_amazonaws**
 
 This add-on provides support for Amazon AWS services.The following tags are used:
 
 family: AWS
 
-> **bw\_segregationofduties**
+> **bw_segregationofduties**
 
 Thiss add-ons generates SoD controls based on an SoD matrix received as input. The tags used for the controls are to be defined for each project. However, the most commonly used tags:
 

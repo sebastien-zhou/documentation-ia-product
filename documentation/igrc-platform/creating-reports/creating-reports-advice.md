@@ -21,11 +21,11 @@ Reports are present in the '/reports' subtree of your audit project. Several sub
 - **/reports/scripts/** : Scripts on which all the standard reports rely. Do not modify the content of this directory
 - **/reports/style/** : Stylesheet used by standard reports
 
-You must create your own reports in the '/reports/custom' subdirectory; this will facilitate the reversibility and the migration of your reports to a new version of Brainwave Identity GRC.
-<br>We recommend that you rely on existing reports to help create your own reports. Feel free to copy/paste reports or report elements.
-<br>You can modify existing reports entirely, for example, to add or change detail texts in identity reports, account reports ... We advise you to keep track of the reports you have modified in order to facilitate upgrading the Brainwave Identity GRC software. Brainwave Analytics supports the majority of version control managers. The best way to keep track of changes is fork your audit project in a version control manager such as SVN.
-We recommend that you give your reports simple names that remind you of the concept presented by the report as well as the primary purpose of the report.
-<br>Standard Brainwave Identity GRC reports adopt the following naming convention:
+You must create your own reports in the '/reports/custom' subdirectory; this will facilitate the reversibility and the migration of your reports to a new version of Brainwave Identity GRC.  
+We recommend that you rely on existing reports to help create your own reports. Feel free to copy/paste reports or report elements.  
+You can modify existing reports entirely, for example, to add or change detail texts in identity reports, account reports ... We advise you to keep track of the reports you have modified in order to facilitate upgrading the Brainwave Identity GRC software. Brainwave Analytics supports the majority of version control managers. The best way to keep track of changes is fork your audit project in a version control manager such as SVN.
+We recommend that you give your reports simple names that remind you of the concept presented by the report as well as the primary purpose of the report.  
+Standard Brainwave Identity GRC reports adopt the following naming convention:
 
 - The reports bear the name of their main concept
 - **_[concept name]_search** for search reports
@@ -49,8 +49,8 @@ You can add your own rules reports in these directories to extend the standard B
 
 ## Audit Views
 
-Audit views are able to automatically skip parameters that are not valuated from the Datasets. Many audit views are available, all having several parameters in order to facilitate reuse; we recommend that whenever possible, you use a standard audit view.
-<br>We <u>strongly</u> discourage you from modifying a standard audit view to extend its functionalities in order to meet a specific report's needs. The audit views are used by many reports, editing an audit view would introduce malfunctions in your audit reports. If no audit view meets your needs, we suggest that you duplicate an existing audit view or to create a new audit view.
+Audit views are able to automatically skip parameters that are not valuated from the Datasets. Many audit views are available, all having several parameters in order to facilitate reuse; we recommend that whenever possible, you use a standard audit view.  
+We <u>strongly</u> discourage you from modifying a standard audit view to extend its functionalities in order to meet a specific report's needs. The audit views are used by many reports, editing an audit view would introduce malfunctions in your audit reports. If no audit view meets your needs, we suggest that you duplicate an existing audit view or to create a new audit view.
 
 ## Performances
 
