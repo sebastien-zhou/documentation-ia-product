@@ -634,7 +634,7 @@ Perform the filtering operation by right-clicking on any attribute in the "Attri
 ![Filtering data with an SQL query](./advanced-concepts/data-filtering/images/1.png "Filtering data with an SQL query")   
 **_Filtering data with an SQL query_**     
 
-Next, you need to add information to the WHERE clause by clicking on the ![Light icon](./advanced-concepts/data-filtering/images/2016-06-27_11_23_09-iGRC_Properties_-_toto_collectors_test_test_doc.collector_-_iGRC_Analytics.png "Light icon") icon and selecting the option "dataset.registration\_ID".   
+Next, you need to add information to the WHERE clause by clicking on the ![Light icon](./advanced-concepts/data-filtering/images/icon-light.png "Light icon") icon and selecting the option "dataset.registration\_ID".   
 Finally, manually enter the expression "\<\> NULL".   
 
 ![Filtering data with an SQL query](./advanced-concepts/data-filtering/images/2.png "Filtering data with an SQL query")    

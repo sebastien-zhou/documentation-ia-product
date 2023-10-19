@@ -234,16 +234,16 @@ Most of the fields in the properties view offer data entry help in the form of a
 
 Some fields are text fields in which it is possible to insert a JavaScript expression in the middle of text. This type of field provides two forms of assistance:
 
-- An icon to the right of the field: The light bulb icon ![Icon](./images/2016-06-27_11_23_09-iGRC_Properties_-_toto_collectors_test_test_doc.collector_-_iGRC_Analytics.png "Icon") opens a menu with suggestions as in most other fields.
+- An icon to the right of the field: The light bulb icon ![Icon](./images/icon-light.png "Icon") opens a menu with suggestions as in most other fields.
 - Auto-completion: This assistance is activated by simultaneously pressing the keys Control-Space. A menu appears with suggestions relating to the context. This contextual menu is very different from the menu opened by the icon to the right of the field because suggestions depend on the location of the cursor within the text. The type of help offered is related to the JavaScript language. It either completes a partially entered keyword or gives suggestions on method names or attribute names.
 
 ##### Overview
 
 The overview is a view that displays information about the collector line in three different ways. In the overview toolbar, there are three icons to change the view mode:
 
-- ![Icon](./images/2016-06-27_11_33_41-iGRC_Properties_-_toto_collectors_test_test_doc.collector_-_iGRC_Analytics.png "Icon") : This icon displays the list of components present in the collector line. A click on the component selects it in the editing box.
-- ![Icon](./images/2016-06-27_11_34_00-iGRC_Properties_-_toto_collectors_test_test_doc.collector_-_iGRC_Analytics.png "Icon") : This icon displays the complete diagram of the collector line with a frame indicating the visible part if the editing box is not large enough to display the entire line. By moving this rectangle, the editing area displays the corresponding portion of the collector line.
-- ![Icon](./images/2016-06-27_11_38_09-iGRC_Properties_-_toto_collectors_test_test_doc.collector_-_iGRC_Analytics.png "Icon") : This icon displays the diagram of the collector line. This is the same display as in the properties view, but presented vertically.
+- ![Icon](./images/icon-list.png "Icon") : This icon displays the list of components present in the collector line. A click on the component selects it in the editing box.
+- ![Icon](./images/icon-diagram.png "Icon") : This icon displays the complete diagram of the collector line with a frame indicating the visible part if the editing box is not large enough to display the entire line. By moving this rectangle, the editing area displays the corresponding portion of the collector line.
+- ![Icon](./images/icon-collect-diag.png "Icon") : This icon displays the diagram of the collector line. This is the same display as in the properties view, but presented vertically.
 
 #### Configuration Variables
 
@@ -272,7 +272,7 @@ The above content may be entered directly into the 'CSV File' of the 'Source CSV
 
 ![Example of configuration variable use](./images/worddav4c5692aa0a4ab907909bb2c3d7f10398.png "Example of configuration variable use")
 
-Instead of entering `{config.source\file}` in the 'CSV File' field, it is better to click on the small light bulb ![Icon](./images/2016-06-27_11_23_09-iGRC_Properties_-_toto_collectors_test_test_doc.collector_-_iGRC_Analytics.png "Icon") to the right of the field and select the variable. This fills the field with the correct syntax and without typos. However, you must have already created the variable in the Configuration tab before you can select it with the small light bulb.  
+Instead of entering `{config.source\file}` in the 'CSV File' field, it is better to click on the small light bulb ![Icon](./images/icon-light.png "Icon") to the right of the field and select the variable. This fills the field with the correct syntax and without typos. However, you must have already created the variable in the Configuration tab before you can select it with the small light bulb.  
 In practice, it is rare to enter a configuration variable directly into a field. In the example with the CSV file name, it is more likely that the file was selected through the wizard, which, when it closes, fills in the 'CSV File' field with the path of the selected CSV file. The initial situation is then different because the 'CSV File' field is filled and the `source_file` variable does not exist in the Configuration tab. In this situation, simply click on the small plus icon ![Icon](./images/2016-06-27_11_48_06-iGRC_Properties_-_toto_collectors_test_test_doc.collector_-_iGRC_Analytics.png "Icon") which opens a dialog box like this:
 
 ![Example of defining a configuration variable](./images/worddavc6e24ef933ce88cdab43e0c26b2e6593.png "Example of defining a configuration variable")
@@ -289,7 +289,7 @@ The syntax is the same as for a configuration variable. The expression must be e
 ```
 
 The full syntax is described in the chapter on [macros and scripts](igrc-platform/collector/macros-and-scripts/macros-and-scripts.md).  
-Fields that allow entry of a JavaScript expression also have a small light bulb icon ![Icon](./images/2016-06-27_11_23_09-iGRC_Properties_-_toto_collectors_test_test_doc.collector_-_iGRC_Analytics.png "Icon") to the right of the field. These fields also offer auto-completion to help enter an expression. Pressing the Control-Space keys at the same time opens a pop-up window with suggestions related to the cursor position as shown in the screenshot below:  
+Fields that allow entry of a JavaScript expression also have a small light bulb icon ![Icon](./images/icon-light.png "Icon") to the right of the field. These fields also offer auto-completion to help enter an expression. Pressing the Control-Space keys at the same time opens a pop-up window with suggestions related to the cursor position as shown in the screenshot below:  
 ![Example of attribute auto-completion](./images/worddavc96f9d425678cdd062f547b7015c6524.png "Example of attribute auto-completion")
 
 The syntax is identical between the configuration variables and JavaScript expressions because the configuration variables are referenced in JavaScript. The `{config.source_file}` syntax is a JavaScript expression using the predefined variable config and the `source_file` property of this variable.  
