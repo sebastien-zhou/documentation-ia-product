@@ -4,7 +4,7 @@ title: "Account target"
 parent: "Components :Targets"
 grand_parent: "Components"
 nav_order: 4
-permalink: /docs/igrc-platform/collector/components/targets/account-target/
+permalink: /docs/
 ---
 
 # Table of contents
@@ -22,29 +22,29 @@ This target allows you to create accounts in the ledger
 
 From collect editor select _Account target_ in _Ledger targets._
 
-![Account target](igrc-platform/collector/components/targets/account-target/images/2016-07-07_16_16_29-iGRC_Properties_-_demo_collectors_demo_070.AD_Accounts.collector_-_iGRC_Analytic.png "Account target")
+![Account target](images/account-target.png "Account target")
 
 # The properties Tab
 
 ## Target
 
-In this property you can view/edit general parameters of the component. You will find the _Identifier_ (shown in Debug mode for example), _Display name_ for the _Account target_ and the _Follow just one link_ option.   
+In this property you can view/edit general parameters of the component. You will find the _Identifier_ (shown in Debug mode for example), _Display name_ for the _Account target_ and the _Follow just one link_ option.  
 
 This option sets the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation evaluation assessed to true will be executed.
 
-![Target](igrc-platform/collector/components/targets/account-target/images/account_target_properties.png "Target")
+![Target](images/account_target_properties.png "Target")
 
 ## Description
 
 The description property permits a user to add comment regarding actions done by this component.
 
-![Description](igrc-platform/collector/components/targets/account-target/images/49.png "Description")
+![Description](images/49.png "Description")
 
 ## Data source
 
 In this property, you can select the attribute containing the repository key. This repository will hold collected accounts, repository must exist in database.
 
-![Account data source](igrc-platform/collector/components/targets/account-target/images/account_data_source.png "Account data source")
+![Account data source](images/account_data_source.png "Account data source")
 
 ## Account
 
@@ -53,7 +53,7 @@ With this property, you will define the product behavior when importing account 
 - _"Attribute containing account key"_ which must contain a unique identifier for the account in current used repository, for example _DistinguishedName_ in case of Active Directory accounts.
 - _"Trigger an error if account key is null or empty"_ option to activate an event that will be generated when the attribute containing account key is null or empty (event shown in dedicated logs).
 
-![Account property](igrc-platform/collector/components/targets/account-target/images/acount_property_account.png "Account property")
+![Account property](images/acount_property_account.png "Account property")
 
 
 ## Parameters
@@ -67,7 +67,7 @@ Available fields are login, guid, sid, profile, givenname, surname, username, em
 
 Below is presented an Example based on _ActiveDirectory_ account parameters:
 
-![Account parameters](igrc-platform/collector/components/targets/account-target/images/account_parameters.png "Account parameters")
+![Account parameters](images/account_parameters.png "Account parameters")
 
 From **IGRC 2017 R3** the **notnormalaccount** attribute became **deprecated** and is replaced by the new attribute **privilegedaccount**.   
 For new projects under IGRC 2017R3 and higher It is recommended to use privilegedaccount instead of notnormalaccount attribute.
@@ -80,7 +80,7 @@ Here you can indicate wich attribute contains account manager. If enabled, the f
 - "Copy manager information into the identity owning this account" : if additionnaly checked, the associated account manager will be also the manager of identity that owns the account identifier  
 - _"Trigger an error if the manager account is not found"_ activates an event that will be generated when the attribute containing account manager does not exist in database (event shown in dedicated logs).
 
-![Account manager](igrc-platform/collector/components/targets/account-target/images/account_manager.png "Account manager")
+![Account manager](images/account_manager.png "Account manager")
 
 # Example
 

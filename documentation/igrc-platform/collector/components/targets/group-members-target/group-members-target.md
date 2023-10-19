@@ -22,7 +22,7 @@ This target allow you to collect group members.
 
 From collect editor select _Group members target_ in _Data set targets._  
 
-![Group members target](igrc-platform/collector/components/targets/group-members-target/images/2016-07-07_16_49_29-iGRC_Properties_-_demo_collectors_demo_080.AD_Groups.collector_-_iGRC_Analytics.png "Group members target")
+![Group members target](images/2016-07-07_16_49_29-iGRC_Properties_-_demo_collectors_demo_080.AD_Groups.collector_-_iGRC_Analytics.png "Group members target")
 
 # The properties Tab
 
@@ -36,19 +36,19 @@ In this property you can view/edit general parameters of the Group members. The 
 - the _Display name_ for the _Group target_
 - the _Follow just one link_ option to set the transition mode. If it is checked, only the first transition with an activation condition evaluated to true will be executed. If it is unchecked, all transitions with an activation evaluation evaluated to true will be executed.
 
-![Members target](igrc-platform/collector/components/targets/group-members-target/images/members_pro_target.png "Members target")
+![Members target](images/members_pro_target.png "Members target")
 
 ## Description
 
 Here you can add comments regarding actions done by this component.
 
-![Description](igrc-platform/collector/components/targets/group-members-target/images/2016-07-07_16_58_24-iGRC_Properties_-_demo_collectors_demo_170.Sharepoint_Groups.collector_-_iGRC_An.png "Description")
+![Description](images/2016-07-07_16_58_24-iGRC_Properties_-_demo_collectors_demo_170.Sharepoint_Groups.collector_-_iGRC_An.png "Description")
 
 ## Repository
 
 In this property, you can select the attribute containing the repository key. This repository holds group that we want to collect its members. Note that repository must exist in database.
 
-![Repository](igrc-platform/collector/components/targets/group-members-target/images/2016-07-07_16_58_41-iGRC_Properties_-_demo_collectors_demo_170.Sharepoint_Groups.collector_-_iGRC_An.png "Repository")
+![Repository](images/2016-07-07_16_58_41-iGRC_Properties_-_demo_collectors_demo_170.Sharepoint_Groups.collector_-_iGRC_An.png "Repository")
 
 ## Group
 
@@ -57,7 +57,7 @@ With this property, you will define group identifier and the following two defin
 - _"Attribute containing group key"_ which must contain a unique identifier for the group, for example _DistinguishedName_ in case of Active Directory groups.
 - With _"Trigger an error if groupkey is null or empty"_ option to activate an event that will be generated when the attribute containing group key is null or empty (event shown in dedicated logs).
 
-![Members group](igrc-platform/collector/components/targets/group-members-target/images/members_group.png "Members group")
+![Members group](images/members_group.png "Members group")
 
 ## Content
 
@@ -67,7 +67,7 @@ With this property, you will define group content with the below options:
 - "_Group containing all accounts_": this option is deprecated.
 - "_Trigger an error if one of the children is not found_" is an option you can activate for an event to be generated when a group member is not found in database (event shown in dedicated logs).
 
-![Members content](igrc-platform/collector/components/targets/group-members-target/images/members_content.png "Members content")
+![Members content](images/members_content.png "Members content")
 
 ## Domain
 
@@ -77,7 +77,7 @@ Here you can define how to found accounts and groups who are member of a group b
 - "_Default repository code_" to indicate a repository that will be used to found accounts and groups who are members of collected group.
 - "_Account or group identifier is unique among repositories of identical type_" to determine a repository type reference to expand accounts and groups searching (search on all repositories having specified type). It is mandatory to configure type when collecting _ActiveDirectory_ with multi-domain architecture (AD group contains members from external AD domains, files shared with accounts and groups from external AD domains, ...). You can specify repository type option when creating a repository using repository target.
 
-![Members domain](igrc-platform/collector/components/targets/group-members-target/images/members_domain.png "Members domain")
+![Members domain](images/members_domain.png "Members domain")
 
 # Example
 
