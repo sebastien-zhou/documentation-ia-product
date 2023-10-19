@@ -5,21 +5,18 @@ Description: Documentation related to the generation of a collect line
 
 # Generation of a Collect Line
 
-The data collection wizard provides the user with a dedicated interface to map the original import data to attributs in Brainwave's data cube. The product will then automatically generate the corresponding data collection lines.
+The data collection wizard provides the user with a dedicated interface to map the original import data to attribute in Brainwave's data cube. The product will then automatically generate the corresponding data collection lines.
 
 The generated elements can then be used out of the box to run an execution plan. Further customizations to the generated files can be applied if needed, thanks to the high customization capabilities of Brainwave.
 
 The following paragraphs detail the process from the design of the application model to the launch of generated collect:
 
-* Step 1: Configure the mapping between the import data and the data cube
+- Step 1: Configure the mapping between the import data and the data cube
+- Step 2: Generation of the data collection lines
+- Step 3: Customize and/or adapt the generated data collection lines
+- Step 4: running an execution plan
 
-* Step 2: Generation of the data collection lines
-
-* Step 3: Customize and/or adapt the generated data collection lines
-
-* Step 4: running an execution plan
-
-> [!note] In the following pages the terms **collect** and **application model** are used interchangeably and have the same meaning.
+> In the following pages the terms **collect** and **application model** are used interchangeably and have the same meaning.
 
 ## Create a New Application Model
 
@@ -37,7 +34,7 @@ Once the `bw_appmodeltemplates` add-on installed, you can access the wizard to g
 
 ![Application model new](./images/new_appmodel.png "Application model new")
 
-This menu opens a dialog box to create an application model file with the extention `.appmodel`. This file contains all informtaion relating to the application model.
+This menu opens a dialog box to create an application model file with the extension `.appmodel`. This file contains all information relating to the application model.
 
 The `.appmodel` file must be located in the 'silos' folder.
 
@@ -45,8 +42,8 @@ The `.appmodel` file must be located in the 'silos' folder.
 
 The next dialog allows the configuration of the application model, including:
 
-* The application model identifier
-* The selection of the Application model template
+- The application model identifier
+- The selection of the Application model template
 
 ![Application model start dialog 2](./images/application_model_wizard_2.png "Application model start dialog 2")
 
@@ -56,17 +53,17 @@ The identifier is also used to create all necessary folders in the project (silo
 
 ### Templates
 
-The application model include a series of templates that determine the structure of the generatied data collection lines.
+The application model include a series of templates that determine the structure of the generated data collection lines.
 
 The list of application models will increase as the `bw_appmodeltemplates` Add-On evolves in time. As is stands the add-on includes :
 
-* An HR model to create data collection lines for HR information
-* A Repository model to repositories, accounts, groups and groups members.
-* A Right model template to load accounts, permissions and rights.
+- An HR model to create data collection lines for HR information
+- A Repository model to repositories, accounts, groups and groups members.
+- A Right model template to load accounts, permissions and rights.
 
 For more information on the included data models please refer to the following pages:
 
-[Application model templates](igrc-platform/collect-wizard/templates.md){: .ref}
+[Application model templates](collect-wizard-templates)
 
 ## Build
 
@@ -78,7 +75,7 @@ This editor allows the collect designer to define the collect mappings, the conf
 
 For more information on the configuration of the application model editor please refer to the following page:
 
-[Application model templates](igrc-platform/collect-wizard/editor.md){: .ref}
+[Application model templates](collect-wizard-templates)
 
 Once all configuration completed the Build tab allows the user to generate all data collection lines and the documentation.
 

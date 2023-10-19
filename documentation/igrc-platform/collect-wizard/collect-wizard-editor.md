@@ -35,16 +35,16 @@ Each application model will generate a silo file, called `identifier_master.silo
 In this tab you will find all fields that are in the standard silo editor including :
 
 - The silo parameters: Identifier, Display name, Silo type and dependencies
-- The importfile itteration parameters
+- The importfile iteration parameters
 - The silo constants
 
 ![Application model main silo](./images/appmodel_silo_editor.png "Application model main silo")
 
 ## Associations tab
 
-This is the main tab and allows the user to configure the associations between the application model and the ledger identites loaded.
+This is the main tab and allows the user to configure the associations between the application model and the ledger identities loaded.
 
-The editor is seperated in fields that allow the user to:
+The editor is separated in fields that allow the user to:
 
 - Associate all the pre-configured mappings to the application model
 - Set the application model variables values
@@ -73,7 +73,7 @@ These can be set to static values or a project variables.
 
 ---
 
-> [!warning] When using project variables (__ex:__ `config.fileName`), when exporting your application model after generation, the destination project may not have the same variable. If this is the case then it is recommended to use a facet variable instead of a project variable.
+> [!warning] When using project variables (**ex:** `config.fileName`), when exporting your application model after generation, the destination project may not have the same variable. If this is the case then it is recommended to use a facet variable instead of a project variable.
 
 ---
 
@@ -95,7 +95,7 @@ For each association section you have to:
 
 ## Build Tab
 
-The build tab is to be used once all the configuration of the application model is finalised. This tab allow you to perform the following actions:
+The build tab is to be used once all the configuration of the application model is finalized. This tab allow you to perform the following actions:
 
 - Generate the application model files necessary to launch an execution plan.
 - Generate a facet based on the configured application model
@@ -121,13 +121,13 @@ This section allows the user to generate the files necessary to build a facet ba
 
 Once all files generated please refer to the following pages to build the facet:
 
-[Creating add-ons](igrc-platform/add-ons/creating-add-ons.md){: .ref}
+[Creating add-ons](../add-ons/add-on-creation)
 
 ### Generate documentation
 
-The possibility to automatically generate the documentation of the confifured application model has been added to help the intergrator. This generates an html file that includes the configuration of the mappings implemented through the application model.
+The possibility to automatically generate the documentation of the configured application model has been added to help the integrator. This generates an html file that includes the configuration of the mappings implemented through the application model.
 
-The language in which the documentaiton is generated is dependent on the language of the Studio.
+The language in which the documentation is generated is dependent on the language of the Studio.
 
 ![Application model documentation](./images/appmodel_doc.png "Application model documentation")
 

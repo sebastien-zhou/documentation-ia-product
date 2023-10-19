@@ -7,7 +7,7 @@ Description: Documentation related to the HR model template, the Repository temp
 
 The application model include a series of templates that determine the structure of the generated data collection lines.
 
-# HR Model Templates
+## HR Model Templates
 
 ![HR model](./images/hr_model.png "HR model")
 
@@ -15,47 +15,39 @@ The Human Resource application model template allows the generation of collect l
 
 Please follow the steps below to configure your human resources data model.
 
-## Silo Settings
+### Silo Settings
 
 When creating the application model base on the HR template it is first necessary to configure the required elements in the **Silo** tab:
 
 - The silo type
 - The dependencies if needed
-- The location of the importfiles and the itteration if Files iteration if you want to load several files
+- The location of the importfiles and the iteration if Files iteration if you want to load several files
 - The constants
 
-### Mandators silo settings
+#### Mandators silo settings
 
 In order to correctly configure the following elements are mandatory:
 
 - Repository code
 - Repository name
 
----
+> By default The HR model will create a default repository based on silo repository code and name.
 
-> [!note] By default The HR model will create a default repository based on silo repository code and name.
+### Discovery Mappings
 
----
+When configuring a Human resource type template for an application mode the following attributes are necessary:
 
-## Discovery Mappings
-
-When cofiguring a Human resource type template for an application mode the following attributes are necessary:
-
-- Organization type reference: loads the organization type (__ex:__ Direction, Service...)
-- Organization link type reference: loads the organization link type (__ex:__ Hierarchical...)
-- Organization: loads the organization (__ex:__ DCOM, DSI, DRH...)
-- Title reference: loads the civility (__ex:__ Mr, Mrs...)
-- Job title reference: loads the job title code (__ex:__ RD-Ing, DirCom...)
-- Identity: loads the identities (__ex:__ employees, contractors...)
+- Organization type reference: loads the organization type (**ex:** Direction, Service...)
+- Organization link type reference: loads the organization link type (**ex:** Hierarchical...)
+- Organization: loads the organization (**ex:** DCOM, DSI, DRH...)
+- Title reference: loads the civility (**ex:** Mr, Mrs...)
+- Job title reference: loads the job title code (**ex:** RD-Ing, DirCom...)
+- Identity: loads the identities (**ex:** employees, contractors...)
 - Manager (Organization): loads the organization managers
 
----
+> If a discovery file mapping the desired importfile attributes does not exist it is necessary to create it.
 
-> [!note] If a discovery file mapping the desired importfile attributes does not exist it is necessary to create it.
-
----
-
-### Organization Type Reference
+#### Organization Type Reference
 
 To create an organization type mapping go to the **Mapping** tab and add a mapping of type **Organization type reference**.
 
@@ -66,7 +58,7 @@ The mandatory attributes to map are:
 - Organization type code
 - Organization type displayname
 
-### Organization Link Type
+#### Organization Link Type
 
 To create an organization link type mapping go to the **Mapping** tab and add a mapping of type **Organization link type**.
 
@@ -77,7 +69,7 @@ The mandatory attributes to map are:
 - Organization link type code
 - Organization link type displayname
   
-### Organization
+#### Organization
 
 To create an organization mapping go to the **Mapping** tab and add a mapping of type **Organization**.
 
@@ -89,7 +81,7 @@ The mandatory attributes to map are:
 - Organization displayname
 - Organization type
 
-### Title Reference (Civility)
+#### Title Reference (Civility)
 
 To create a title reference mapping go to the Mapping tab and add a mapping of type **Title reference**.
 
@@ -100,7 +92,7 @@ The mandatory attribute mapping to link are:
 - Title code
 - Title displayname
 
-### Job Title Reference
+#### Job Title Reference
 
 To create a job title reference mapping go to the Mapping tab and add a mapping of type **Job title reference**.
 
@@ -111,7 +103,7 @@ The mandatory attributes to map are:
 - Job title code
 - Job title displayname
 
-### Identity
+#### Identity
 
 To create a job title reference mapping go to the Mapping tab and add a mapping of type **Identity**.
 
@@ -125,7 +117,7 @@ The mandatory attributes to map are:
 - The identity given name
 - The identity internal flag
 
-### Manager (Organization)
+#### Manager (Organization)
 
 To create an organization manager mapping go to the Mapping tab and add a mapping of type **Manager (Organization)**.
 
@@ -145,7 +137,7 @@ In the static mapping tab:
 
 ![Manager mapping: static](./images/manager_2_mapping.png "Manager mapping: static")
 
-## Associations
+### Associations
 
 After creating the needed mappings in the discoveries files the next step is to associate theses mappings with the application model entities.
 
@@ -153,7 +145,7 @@ For each application model entity you have to choose the discovery file that con
 
 ![Application model associations](./images/RH_model_associations.png "Application model associations")
 
-## Generate Files
+### Generate Files
 
 The RH template model will generate the following files
 
@@ -171,7 +163,7 @@ The RH template model will generate the following files
 - `collectors/bw_collecttemplates/new_appmodel/silo_hr.collector`
 - `silos/bw_collecttemplates/new_appmodel/new_appmodel_master.silo`
 
-# Repository Template
+## Repository Template
 
 ![Repository model](./images/hr_model.png "Repository model")
 
@@ -179,34 +171,34 @@ The repository template for the application model allows the generation of the n
 
 Please follow the steps below to configure your repository data model.
 
-## Silo Settings
+### Silo Settings
 
 When creating the application model base on the HR template it is first necessary to configure the required elements in the **Silo** tab:
 
 - The silo type
 - The dependencies if needed
-- The location of the importfiles and the itteration if Files iteration if you want to load several files
+- The location of the importfiles and the iteration if Files iteration if you want to load several files
 - The constants
 
-### Mandatory Silo Settings
+#### Mandatory Silo Settings
 
 In order to correctly configure the following elements are mandatory:
 
 - Repository code
 - Repository name
 
-> [!note] By default The HR model will create a default repository based on silo repository code and name.
+> By default The HR model will create a default repository based on silo repository code and name.
 
-## Discovery Mappings
+### Discovery Mappings
 
 Repository application model require the following entity mappings
 
 - Account : to load repository accounts
 - Group : to load repository groups and groups membership
 
-> [!note] If a discovery file mapping the desired importfile attributes does not exist it is necessary to create it.
+> If a discovery file mapping the desired importfile attributes does not exist it is necessary to create it.
 
-### Account
+#### Account
 
 To create an account mapping go to the **Mapping** tab and add a mapping of type **Account**.
 
@@ -217,7 +209,7 @@ The mandatory attributes to map are:
 - The attribute containing repository code
 - The account identifier
 
-### Group
+#### Group
 
 To create a group mapping go to the **Mapping** tab and add a mapping of type **Group**.
 
@@ -229,7 +221,7 @@ The mandatory attributes to map are:
 - The group code
 - The group member
 
-## Associations
+### Associations
 
 After creating the needed mappings in the discoveries files the next step is to associate theses mappings with the application model entities.
 
@@ -237,15 +229,15 @@ For each application model entity you have to choose the discovery file that con
 
 ![Application model associations](./images/repo_associations.png "Application model associations")
 
-### Variables
+#### Variables
 
 In addition it can be necessary to configure some variables specific to repositories.
 
 - Repository custom type: To be configured when collecting data belong to the same type of application.
 
-__Example:__ collecting active directory domains, this variable should have '**AD**' as value, it is mandatory to resolve multi domains groups membership
+**Example:** collecting active directory domains, this variable should have '**AD**' as value, it is mandatory to resolve multi domains groups membership
 
-## Generate Files
+### Generate Files
 
 The repository template model will generate the following files
 
@@ -257,7 +249,7 @@ The repository template model will generate the following files
 - `collectors/bw_collecttemplates/new_appmodel/silo_repository.collector`
 - `silos/bw_collecttemplates/new_appmodel/new_appmodel_master.silo`
 
-# Rights Template
+## Rights Template
 
 ![Right model](./images/right_model.png "Right model")
 
@@ -265,25 +257,25 @@ Right application model template allows you to generate collect lines and silo t
 
 Please follow the steps below to configure your human resources data model.
 
-## Silo Settings
+### Silo Settings
 
 When creating the application model base on the HR template it is first necessary to configure the required elements in the **Silo** tab:
 
 - The silo type
 - The dependencies if needed
-- The location of the importfiles and the itteration if Files iteration if you want to load several files
+- The location of the importfiles and the iteration if Files iteration if you want to load several files
 - The constants
 
-### Mandators silo settings
+#### Mandators silo settings
 
 In order to correctly configure the following elements are mandatory:
 
 - Repository code
 - Repository name
 
-> [!note] By default The HR model will create a default repository based on silo repository code and name.
+> By default The HR model will create a default repository based on silo repository code and name.
 
-## Discovery mappings
+### Discovery mappings
 
 Right application model requires the following entity mappings:
 
@@ -291,9 +283,9 @@ Right application model requires the following entity mappings:
 - Permissions: to load application permissions
 - Rights: to load rights
 
-> [!note] If a discovery file mapping the desired importfile attributes does not exist it is necessary to create it.
+> If a discovery file mapping the desired importfile attributes does not exist it is necessary to create it.
 
-### Account
+#### Account
 
 To create an account mapping go to the **Mapping** tab and add a mapping of type **Account**.
 
@@ -316,7 +308,7 @@ The mandatory attributes to map are:
 - The permission type
 - The permission key
 
-### Right
+#### Right
 
 To create a right mapping go to the **Mapping** tab and add a mapping of type **Right**.
 
@@ -324,11 +316,11 @@ To create a right mapping go to the **Mapping** tab and add a mapping of type **
 
 The mandatory attributes to map are:
 
-- The attribute containing application cpde
+- The attribute containing application code
 - The attribute containing list of permission identifiers
-- The attrbute containing the account or group identifier
+- The attribute containing the account or group identifier
   
-## Associations
+### Associations
 
 After the creation of the needed discovery mappings in the discoveries files it is time to associate those mappings with the application model entities
 
@@ -336,15 +328,15 @@ For each application model entity you have to choose the discovery file that con
 
 ![Application model associations](./images/right_model_associations.png "Application model associations")
 
-### Variables
+#### Variables
 
 In addition it can be necessary to configure some variables specific to repositories.
 
 - Repository custom type: To be configured when collecting data belong to the same type of application.
 
-__Example:__ collecting active directory domains, this variable should have '**AD**' as value, it is mandatory to resolve multi domains groups membership
+**Example:** collecting active directory domains, this variable should have '**AD**' as value, it is mandatory to resolve multi domains groups membership
 
-## Generate files
+### Generate files
 
 The right application model will generate the following files
 

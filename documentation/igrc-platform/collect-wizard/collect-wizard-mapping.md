@@ -38,7 +38,7 @@ Clicking on a link highlights it and helps identify the source and the destinati
 
 To delete an attribute mapping double-click on the link.
 
-The editor includes the follwing:
+The editor includes the following:
 
 1. Discovery attributes: The list of import, calculated and silo attributes
 2. Ledger attributes: list of attributes existing in the data cube corresponding to the selected entity
@@ -52,7 +52,7 @@ The editor includes the follwing:
 
 An attribute mapping is a link between a discovery attribute and a ledger entity attribute configured in the discovery mapping.
 The list of ledger attributes displayed is dependent on the configuration of the mapping type.
-For example when "Applictaion" is selected then only attributes corresponding an appication in the ledger is displayed:
+For example when "Application" is selected then only attributes corresponding an application in the ledger is displayed:
 
 ![Application model discovery mapping](./images/appmodel_discovery_attributes_mapping.png "Application model discovery mapping")
 
@@ -82,4 +82,4 @@ It is recommended to fill out all attribute mapping descriptions. These descript
 
 ![Edit attribute mapping](./images/appmodel_attribute_mapping-2.png "Edit attribute mapping")
 
-Please see [here](igrc-platform/collect-wizard/editor.md#generate-documentation) for more information.
+Please see [here](collect-wizard-editor.md/#generate-documentation) for more information.
