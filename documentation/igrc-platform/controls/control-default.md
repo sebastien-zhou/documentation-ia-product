@@ -26,66 +26,65 @@ Some of the Brainwave facets deliver their own rules and controls. When these fa
 
 If the value of the tags for the delivered controls is modified, then the views and pages associated may stop working correctly.
 
-Some of the facets that use control tags: bw\_ad\_controls, bw\_ad\_schema, bw\_controlsdashboard, bw\_controls\_browser, bw\_groupsandaccounts\_analytics.
+Some of the facets that use control tags: `bw_ad_controls`, `bw_ad_schema`, `bw_controlsdashboard`, `bw_controls_browser`, `bw_groupsandaccounts_analytics`.
 
-| **Tag Field** | **Values already used** |
-|---------------|-------------------------|
-| **type** <br> **family** <br> **scope** <br> **custom1**| Entities keywords : **account, group, identity, organisation, application, permission, repository, control, right, rights, manager, owner, owners**  <br> AD keywords: **securitygroup, localadmin, gporights, gpo, AD** <br> Categories keywords : **risk, quality, privileged** <br> Other keywords: **onallaccounts, perroganisation, perrepository, perapplication, WAB, AWS, SoD** |
+| Tag Field | Description         | Values already used                                                                                                         |
+| :-------- | :------------------ | :-------------------------------------------------------------------------------------------------------------------------- |
+| type      | Entities keywords   | account, group, identity, organisation, application, permission, repository, control, right, rights, manager, owner, owners |
+| family    | AD keywords         | securitygroup, localadmin, gporights, gpo, AD                                                                               |
+| scope     | Categories keywords | risk, quality, privileged                                                                                                   |
+| custom1   | Other keywords      | onallaccounts, perroganisation, perrepository, perapplication, WAB, AWS, SoD                                                |
 
 ## In which Add-Ons are these tags used?
 
 Here you will find a non-exhaustive list of the main add-ons or facets that include controls and the tags that are used in their latest versions.
 
-> **bw_ad_controls**
+### bw_ad_controls
 
-This facet is used mainly by the AD Booster and some other facets like bw_groupsandaccounts_analytics. It includes around a dozen of controls designed to find problems in Active Directory. The controls use the following tags:
+This facet is used mainly by the AD Booster and some other facets like `bw_groupsandaccounts_analytics`. It includes around a dozen of controls designed to find problems in Active Directory. The controls use the following tags:
 
-family:AD
-scope: quality, risk
-type: securitygroup, account, group
-custom1: onallaccounts
+- family:AD
+- scope: quality, risk
+- type: securitygroup, account, group
+- custom1: onallaccounts
 
-> **bw_ad_schema**
+### bw_ad_schema
 
-This facet is only used by the AD Booster. It extends bw\_ad\_controls by introducing advanced controls on Active Directory. The following tags are used:
+This facet is only used by the AD Booster. It extends `bw_ad_controls` by introducing advanced controls on Active Directory. The following tags are used:
 
-family: AD
-scope: privileged, quality, risk, localadmin, gporights
-type: account, securitygroup, group
+- family: AD
+- scope: privileged, quality, risk, localadmin, gporights
+- type: account, securitygroup, group
 
-> **bw_controlsdashboard**
+### bw_controlsdashboard
 
 This facet include some controls and some pages to display the results? The following tags are used:
 
-type: control
-scope: repository, application, perroganisation
+- type: control
+- scope: repository, application, per organization
 
-> **bw_mashup_bastion**
+### bw_mashup_bastion**
 
 This add-on provides ready-to-use mashup dashboards. It includes some controls that use the following tags:
 
-family: WAB
+- family: WAB
 
-> **bw_mashup_amazonaws**
+### bw_mashup_amazonaws
 
 This add-on provides support for Amazon AWS services.The following tags are used:
 
-family: AWS
+- family: AWS
 
-> **bw_segregationofduties**
+### bw_segregationofduties
 
-Thiss add-ons generates SoD controls based on an SoD matrix received as input. The tags used for the controls are to be defined for each project. However, the most commonly used tags:
+This add-ons generates SoD controls based on an SoD matrix received as input. The tags used for the controls are to be defined for each project. However, the most commonly used tags:
 
-family: SoD
+- family: SoD
 
 ## Best Practices
 
 If you want to tag your controls in order to filter them:
 
 - Avoid using the keywords mentioned above. Creating new controls with those tags might impact the functionalities of some existing facets
-- Think of making your tags unique, for example by adding a prefix like xx\_risk
+- Think of making your tags unique, for example by adding a prefix like `xx_risk`
 - Combine multiple tags. For example family=AD AND scope=risk
-
-## Downloads
-
-[Control Ensembles.pptx](https://download.brainwavegrc.com/index.php/s/AL5cs9oTKWoR3sT)

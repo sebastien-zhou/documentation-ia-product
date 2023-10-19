@@ -11,7 +11,7 @@ This document functionally describes the different types of controls provided wi
 
 Brainwave Identity GRC incorporates the concept of control. Controls are of several types including:
 
-- Segregation of Duties (SoD sontrols). This is the principle of verification of the incompatibility between two tasks or activities.
+- Segregation of Duties (SoD controls). This is the principle of verification of the incompatibility between two tasks or activities.
 - Jurisdictional control based on permission in relation to an organizational unit, or depending on the characteristics of a person. This type of control can be defined as the verification of the implementation of a business rule or a security policy. In other words, a control = a rule +context + a semantic.
 
 A control allows identifying such problems:
@@ -20,7 +20,7 @@ A control allows identifying such problems:
 - the principle of least privilege, typically on the allocation of rights,
 - the separation of tasks also known as Segregation of Duties (SoD) to characterize tasks as being incompatibles between them or carrying a risk if they are performed by the same person.
 
-![Segregation of duties](./images/1.PNG "Segregation of duties")
+![Segregation of duties](./images/segregation-of-duty.png "Segregation of duties")
 
 ## iGRC Analytics Types of Controls
 
@@ -38,7 +38,7 @@ In addition of returning the discrepancies, control can also check:
 - The over-allocations rights: Persons or accounts that are not entitled to have the right on permissions but have them.
 - The sub-allocations rights: Persons or accounts that should have the rights to permission and do not have them.
 
-This control on assigning permissioncan show multiple results as mentioned above. This control is different from the control of thearbitrary setthat references a single type of result.
+This control on assigning permission can show multiple results as mentioned above. This control is different from the control of the arbitrary set that references a single type of result.
 
 ## Segregation of Duties Controls
 
@@ -53,9 +53,9 @@ Brainwave iGRC analytics includes a "SoD target" for creating SoD controls. The 
 
 This can be access request verification via an authorization management system. For example, some rights can be awarded to some users and not to others. Such controls can then compare the actually granted authorizations to those granted through a workflow process for example.
 
-Configuring a theoretical right control involves specifying the perimeter on which this control is applied, both in terms of population (identities) and permissions covered by associated applications. The control will thereby compare on the given perimeter the actually granted permissions to the "theoretical" ones in order to highlight the results lists. The technical documentation on configuring the theoretical rights controls into iGRC Analytics is available [here](docs.md)
+Configuring a theoretical right control involves specifying the perimeter on which this control is applied, both in terms of population (identities) and permissions covered by associated applications. The control will thereby compare on the given perimeter the actually granted permissions to the "theoretical" ones in order to highlight the results lists. The technical documentation on configuring the theoretical rights controls into iGRC Analytics is available [here](../theoretical-rights/theoretical-rights.md)
 
-<u> A theoretical right can be:</u>
+### theoretical rights types
 
 1. An access request workflow with a beneficiary ID, a couple of applications/ permissions.
 
@@ -65,16 +65,16 @@ Configuring a theoretical right control involves specifying the perimeter on whi
   - However, in the access request workflow we do not have the information which permits to verify the sub-allocations of rights.
   - When performing a control, the results are recorded in the iGRC ledger. Within the meaning of the database, controls results are stored in an object called "control result".
 
-- "Root cause (Impacts)"": It identifies for a given permission, the accounts or identities deviation regarding a control.
+- "Root cause (Impacts)": It identifies for a given permission, the accounts or identities deviation regarding a control.
 Example: Is there's orphan accounts that have rights to applications =\> iGRC automatically calculates the impact in terms of permissions attached to an orphan account.
 
-![Activity](./images/2.PNG "Activity")
+![Activity](./images/activity-definition.png "Activity")
 
 Remark: It is not only to characterize the deviation/inconsistency but also the results to be used for reporting purposes. For SoD and theoretical right types of controls, it is necessary to fill-in these attributes (required) in order to use them into a report.
 
 - Control code : Control identifier
 - Control type: Control family on which the work is done: from 1 to 6. "Control result = 6" for SoD and "control result = 5" for the theoretical rights.
-- It provides information on the type of result that is over-allocation (â€œControl result type = 1") or "under/sub-allocation rights (" Control result type = 2 ").
+- It provides information on the type of result that is over-allocation ("Control result type = 1") or "under/sub-allocation rights ("Control result type = 2 ").
 - Control entity takes a value of "string" type that provides information on the family of objects that the control refers: accounts or identities.
 - This type of control can identify people who have legitimate access to a given permission.
 - This type of control allows automating the audit of management rules of granting authorizations being in place within the company.
