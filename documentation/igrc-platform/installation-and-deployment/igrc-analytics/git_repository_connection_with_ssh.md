@@ -56,7 +56,7 @@ Then, you need to generate a couple of private/public keys. Both methods are ava
 
 * Using a command line (you need the **ssh-keygen** utility available)  
     * Open your terminal
-    * Using ssh-keygen command, you can generate your couple of keys (see an exemple of line and the result below)
+    * Using ssh-keygen command, you can generate your couple of keys (see an example of line and the result below)
 
 ![Public key generation with CMD](../images/git_ssh_connection_keys_generation_via_cmd.png)
 
@@ -68,7 +68,7 @@ Then, you need to generate a couple of private/public keys. Both methods are ava
 
 ![Private/Public keys](../images/git_ssh_connection_keys_files.png)
 
-Once your keys are created, you should now declare the public key in your Git account profile. Depending of the Git used, the principle is to copy/paste the public key. See below exemple with BitBucket :
+Once your keys are created, you should now declare the public key in your Git account profile. Depending of the Git used, the principle is to copy/paste the public key. See below example with BitBucket :
 
 ![Git server account profile](../images/git_ssh_connection_public_key_declaration_to_git_profile.png)
 

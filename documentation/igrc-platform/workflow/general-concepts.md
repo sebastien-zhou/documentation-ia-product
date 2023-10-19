@@ -28,7 +28,7 @@ A Workflow within Brainwave's iGRC platform refers to a defined series of action
 
 The workflow engine is implemented as a BPMN 2.0 compliant and uses the Activiti open-source engine ([http://www.activiti.org/](http://www.activiti.org/)). As explained before it requires a separate database to store it's data. Please refer to corresponding documentation on how to configure your database.      
 
-Designing a workflow is done through Brainwave's iGRC platform back-office. It produces workflow definition files which are part of the project (for exemple "Application Review" ). Once the project is published on the Web Portal, users may start instances of these workflow definitions (for example an instance of "Application Review" on "SAP" and another instance on SharePoint ).     
+Designing a workflow is done through Brainwave's iGRC platform back-office. It produces workflow definition files which are part of the project (for example "Application Review" ). Once the project is published on the Web Portal, users may start instances of these workflow definitions (for example an instance of "Application Review" on "SAP" and another instance on SharePoint ).     
 
 There are three kinds of user interface in the portal regarding workflows :     
 
@@ -41,7 +41,7 @@ At design time, you have to build pages for all manual activities in the workflo
 
 # Instance & definition
 
-Workflows include concepts that you might know from object oriented programming. The .workflow file is a workflow definition (for exemple "Application Review" ). It contains the variables and set of tasks, and should cover the workflow's behavior for all possible variable values. This is similar to an object definition (class).   
+Workflows include concepts that you might know from object oriented programming. The .workflow file is a workflow definition (for example "Application Review" ). It contains the variables and set of tasks, and should cover the workflow's behavior for all possible variable values. This is similar to an object definition (class).   
 
 When you launch a workflow in the portal (or in debug mode in the studio), you create an instance of the workflow (for example an instance of "Application Review" on "SAP" and another instance on SharePoint ). Multiple instances can run in parallel: each one having it's own variable values, and might behave differently. This is similar to an object instance (new ()).     
 

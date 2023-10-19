@@ -7,13 +7,13 @@ Description: Documentation related to the filter components of business views
 
 Filters are components that receive records from a parent component (maybe a source) in the pipe, transform them or filter them and then send the resulting records to the next component in the pipe. Building a business view is just a matter of selecting and ordering the operations to apply to records coming from the source.  
 
-### Union
+## Union
 
-#### Objective
+### Objective
 
 The union component performs an union operation between records coming from a principal view those coming from a secondary view. The two views are configured in the union component sub-tab.
 
-#### Specific Configuration
+### Specific Configuration
 
 ![Union configuration](./images/union_config.png "Union configuration")
 
@@ -24,61 +24,62 @@ The union component performs an union operation between records coming from a pr
 Both discriminators accept expressions so you can build a key composed of several columns from the current record.  
 
 It is mandatory to configure a view in the union component to perform the union operation.
-Please refer to the help of view source component for [how to configure the view](igrc-platform/business-view/components/components.md)
+Please refer to the help of view source component for [how to configure the view](./business-view-components)
 ![Union view](./images/union_view.png "Union view")
 
-#### Examples
+### Examples
 
 In this example, we are going to build a table that lists the group movements for a given ActiveDirectory domain: added groups and deleted groups.
 
-- A string value ' **+**' is added at the beginning of the line for each group added
-- A string ' **-**' is added at the beginning of the line for each deleted group
+- A string value '**+**' is added at the beginning of the line for each group added
+- A string '**-**' is added at the beginning of the line for each deleted group
 
-**<u>Definition:</u>**
+#### Definition
 
 The business view will perform union between two ledger views as illustrated in the caption bellow
 
-- The new\_group ledger view lists the new groups (importaction = 'C')
-- The deleted\_groups ledger view lists the deleted groups (deleteaction = '1')
+- The `new_group` ledger view lists the new groups (`importaction = 'C'`)
+- The `deleted_groups` ledger view lists the deleted groups (`deleteaction = '1'`)
 
 The database contain only two timeslots:  
 
 - The current timeslot display-name is: "current"
 - The previous timeslot display-name is: "history" (history = current - 1)
-![Exemple configuration 1](./images/2017-03-30_15_17_07-Nouveau_Dessin_OpenDocument.odg_-_OpenOffice_Draw.png "Exemple configuration 1")
 
-**<u>Configuration:</u>**
+![Example configuration 1](./images/bv-configuration-example.png "Example configuration 1")
 
-Configuration of the source view component (new\_groups\_component)
+#### Configuration
 
-![Exemple configuration 1](./images/exampl_config1.png "Exemple configuration 1")
+Configuration of the source view component (`new_groups_component`)
 
-Configuration of the Union component (removed\_groups\_component)  
+![Example configuration 1](./images/exampl_config1.png "Example configuration 1")
 
-![Exemple configuration 2](./images/exampl_config2.png "Exemple configuration 2")
+Configuration of the Union component (`removed_groups_component`)  
 
-Configuration of the view in the union component (removed\_groups\_component)
-The deleted\_groups ledger view will be executed in BusinessView\_timeslot - 1.  
+![Example configuration 2](./images/exampl_config2.png "Example configuration 2")
 
-![Exemple configuration 3](./images/exampl_config3.png "Exemple configuration 3")
+Configuration of the view in the union component (`removed_groups_component`)
+The `deleted_groups` ledger view will be executed in `BusinessView_timeslot - 1`.  
 
-**<u>Results:</u>**
+![Example configuration 3](./images/exampl_config3.png "Example configuration 3")
 
-Results of a separate execution of "new\_groups" ledger view on "current" timeslot:  
+#### Results
 
-![Exemple configuration 1](./images/example_result_1.png "Exemple result 1")
+Results of a separate execution of `new_groups` ledger view on "current" timeslot:  
 
-Result of a separate execution of "deleted\_groups" ledger view on "history" timeslot (mean that groups will be deleted in next timeslot ("current")):  
+![Example configuration 1](./images/example_result_1.png "Example result 1")
 
-![Exemple configuration 2](./images/example_result_2.png "Exemple result 2")
+Result of a separate execution of "`deleted_groups`" ledger view on "history" timeslot (mean that groups will be deleted in next timeslot ("current")):  
+
+![Example configuration 2](./images/example_result_2.png "Example result 2")
 
 Results of the business view execution on "current" timeslot:
 
-![Exemple configuration 3](./images/example_result_3.png "Exemple result 3")
+![Example configuration 3](./images/example_result_3.png "Example result 3")
 
-### Join
+## Join
 
-#### Objective
+### Objective
 
 The Join filter is used to link records from two different data source, the first data source is the parent component in the business view (pipe) and the second is the view set in join configuration.
 
@@ -91,9 +92,9 @@ The join types implemented in the component are (see caption below):
 - Difference
 - Exclusion
 
-![Join type](./images/2017-03-30_18_45_46-Photos.png "Join type")
+![Join type](./images/diag-join-types.png "Join type")
 
-#### Specific Configuration
+### Specific Configuration
 
 ![Join settings](./images/bv_join_config.png "Join settings")
 
@@ -104,38 +105,38 @@ The join types implemented in the component are (see caption below):
 Both keys accept expressions so you can build a key composed of several columns from the current record.
 
 It is mandatory to configure a view in the join component to perform the join operation.
-Please refer to the help of view source component for [how to configure the view](igrc-platform/business-view/components/components.md)
+Please refer to the help of view source component for [how to configure the view](business-view-components)
 ![Union view](./images/union_view.png "Union view")
 
-#### Examples
+### Examples
 
 This example will illustrate how to perform multi-counts.
 The concept is to list all applications and for each application display the associated number of permissions and accounts.
 
-**<u>Definition:</u>**
+#### Definition
 
 ![Union view](./images/union_view.png "Union view")
 
-![View](./images/2017-03-30_17_40_55-Nouveau_Dessin_OpenDocument.odg_-_OpenOffice_Draw.png "View")
+![View](./images/bv-configuration-example-join.png "View")
 
-**<u>Configuration:</u>**
+#### Configuration
 
-It is necessary to Configure a join between data from the `permissions` component (the _permissions\_count_ ledger view) and the results of `accounts_count` ledger view.
+It is necessary to Configure a join between data from the `permissions` component (the `permissions_count` ledger view) and the results of `accounts_count` ledger view.
 
 The join is based on:
 
 - The attribute `app_code` attribute of `permissions_count` ledger view
 - The attribute `app_code`attribute of `acounts_count` ledger view
 
-![Exemple configuration](./images/bv_join_example_config.png "Exemple configuration")
+![Example configuration](./images/bv_join_example_config.png "Example configuration")
 
-**<u>Result:</u>**
+#### Results
 
 Results of a separate execution of `permissions_count` ledger view on current timeslot.  
 
 ![Result1](./images/result1.png "Result1")
 
-Results of a separate execution of `accounts_count` ledger view on current timeslot:    
+Results of a separate execution of `accounts_count` ledger view on current timeslot:  
 
 ![Result3](./images/result3.png "Result3")
 
@@ -143,27 +144,27 @@ Results of Business View execution on current timeslot
 
 ![Result2](./images/result2.png "Result2")
 
-**<u>Reducing the memory usage:</u>**
+#### Reducing the memory usage
 
 - The join filter (Left, Inner, Full, Difference or Exclusion) stores the data from secondary component in a memory cache, it is highly recommended to perform the necessary filtering in ledger view (_i.e._ performed by the database) before performing the join operation in the business view
 - The join filter (Right) stores the data from the primary component in a memory cache, it is highly recommended to perform necessary filtering in ledger view (_i.e._ performed by the database) before performing the join operation in the business view
 
-> [!warning] It is **not** recommended to use a generic Brainwave view, delivered with the default project when you require a limited number of attributs as input. These views return a large number of attributes that will be stored in a memory cache and greatly increase the memory usage, impacting performance.
+> [!warning] It is **not** recommended to use a generic Brainwave view, delivered with the default project when you require a limited number of attribute as input. These views return a large number of attributes that will be stored in a memory cache and greatly increase the memory usage, impacting performance.
 
-### Trend
+## Trend
 
-#### Objective
+### Objective
 
 The trend filter allows the calculation of trends and/or differences by re-executing the same view in an other timeslot and comparing the results according to a join key and a comparison column.
 
-#### Specific Configuration
+### Specific Configuration
 
-![Configuration trend setting](./images/2017-03-30_19_28_08-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_trend_test.businessvi.png "Configuration trend setting")
+![Configuration trend setting](./images/bv-trend-configuraiton.png "Configuration trend setting")
 
 1. The timeslot used as a baseline to compare results. Is can either be calculated relatively based on the business view timeslot,or using the uid.  
 2. An expression used to match lines that must be compared.  
 3. The column name in the source component of the data used to calculate trend. This parameter is to be set only if the a numerical calculation is needed in the configuration of the trend.
-4. In the case of trend calculation, this parameter provides the name for the output column containing the numerical result of the trend calculation. That is the reference value substracted by the current value.This parameter is to be set only if the a numerical calculation is needed in the configuration of the trend. If the resulting output is non-numeric the returned result is then `null`.
+4. In the case of trend calculation, this parameter provides the name for the output column containing the numerical result of the trend calculation. That is the reference value subtracted by the current value.This parameter is to be set only if the a numerical calculation is needed in the configuration of the trend. If the resulting output is non-numeric the returned result is then `null`.
 5. In the case of trend calculation, this parameter provides the name for the output column containing the reference timeslot (see point 1.) value used for the comparison.
 6. Name for the outputted column containing the trend status, can be (New, Identical, Modified, Removed, Invalid)  
 7. Name for the outputted column containing the timeslot uid from where the data originated. This column is used to identify the origin of result lines.
@@ -171,7 +172,7 @@ The trend filter allows the calculation of trends and/or differences by re-execu
 9. If checked, unchanged or identical entries are excluded from component output.
 10. If checked, removed entries will not appear in component output.
 
-#### Examples
+### Examples
 
 The aim is to list all applications present in the ledger and for each application:
 
@@ -179,41 +180,41 @@ The aim is to list all applications present in the ledger and for each applicati
 - Show number of permissions in current timeslot , previous timeslot, and the difference(current - previous)
 - Show the timeslot of the line result
 
-**<u>BusinessView definition</u>**
+#### BusinessView definition
 
 ![BusinessView definition](./images/example_definition.png "BusinessView definition")
 
 Configuration:
 
-![Configuration trend setting](./images/2017-03-30_19_28_30-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_trend_test.businessvi.png "Configuration trend setting")
+![Configuration trend setting](./images/bv-trend-configuration-settings.png "Configuration trend setting")
 
-**<u>Results:</u>**
+#### Results
 
 Result of `list_application` ledger view execution on current timeslot:  
 
-![List application](./images/2017-03-30_19_25_42-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_custom_application.vi.png "List application")
+![List application](./images/bv-list-current-ts.png "List application")
 
 Result of `list_application` ledger view execution on previous timeslot:
 
-![List application](./images/2017-03-30_19_25_13-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_custom_application.vi.png "List application")
+![List application](./images/bv-list-previous-ts.png "List application")
 
 Result of BusinessView execution (trend operation):  
 
-![List application](./images/2017-03-30_19_26_50-iGRC_Properties_-_test_2017_views_businessViews_demo_trend_trend_test.businessvi.png "List application")
+![List application](./images/bv-list-trend-result-application.png "List application")
 
-**<u>Reducing the memory usage</u>**
+#### Reducing the memory usage
 
 - The trend filter stores all the results of one of the two views a memory cache, it is highly recommended to perform necessary filtering in ledger view before performing the trend operation in the business view
 
-> [!warning] It is **not** recommended to use ageneric Brainwave view, delivered with the default project when you require a limited number of attributs as input. These views return a large number of attributes that will be stored in a memory cache and greatly increase the memory usage, impacting performance.
+> [!warning] It is **not** recommended to use a generic Brainwave view, delivered with the default project when you require a limited number of attributes as input. These views return a large number of attributes that will be stored in a memory cache and greatly increase the memory usage, impacting performance.
 
-### Script
+## Script
 
-#### Objective
+### Objective
 
 When the predefined components offered in the business view are not enough to implement the desired business logic, then it is time to add a script filter. The Script filter will read all records as well as add the possibility to filter them or alter their contents.  
 
-#### Specific Configuration
+### Specific Configuration
 
 The configuration of a Script filter is the same as the script source. The 3 events (init, read and dispose) are mapped to 3 JavaScript functions. Please see the event table in the Script source section for a detailed description of each event.
 The only difference between a source and a filter is that the filter must receive all the records from a source instead of generating them. The difference is in the function read where an API is offered to get the next record from the source.
@@ -301,9 +302,7 @@ function filterDispose() {
 }
 ```
 
-> More information on the [file parser function](how-to/collectors/parsing-a-file-js.md)  
-
-When the business view execution starts, the script is run. It means that all instructions or declarations outside functions are executed. In the above example, the 3 variables are initialised (csvParser, header, recordNumber). This execution is only executed once even if there are several Script components. What is important to know is that the global context of the JavaScript will be shared among all the components. As such, global variables may be used to share data between the different Script components.
+When the business view execution starts, the script is run. It means that all instructions or declarations outside functions are executed. In the above example, the 3 variables are initialized (csvParser, header, recordNumber). This execution is only executed once even if there are several Script components. What is important to know is that the global context of the JavaScript will be shared among all the components. As such, global variables may be used to share data between the different Script components.
 
 Then, the business view engine calls the `init()` function of each component in the reverse order in the graphical editor. The `init()` function of the last component is called first and the `init()` function of the source is called last. If any `init()` function generates an error (an exception), then the execution is stopped, the other `init()` function will not be called but the `dispose()` function will still be called.
 
@@ -312,14 +311,15 @@ When `null` is returned by the last component`, filterRead()` function, the busi
 
 The `businessview` global object contains other methods that can be helpful  
 
-| name | description |
-| executeRule | Execute a rule in the ledger on a specified timeslot |
-| executeView | Execute a view in the ledger on a specified timeslot |
-| getFileParser | Instantiate a new file parser for CSV,LDIF,XML or text with fixed column width|
+| Name          | Description                                                                      |
+| :------------ | :------------------------------------------------------------------------------- |
+| executeRule   | Execute a rule in the ledger on a specified timeslot                             |
+| executeView   | Execute a view in the ledger on a specified timeslot                             |
+| getFileParser | Instantiate a new file parser for CSV, LDIF, XML or text with fixed column width |
 
 As in the Script source, the `dataset` contains the list of input parameters of the business view. The Attributes tab must also be filled with the attributes added by the `read()` function in each record.  
 
-#### Example 1: Aggregate
+### Example 1: Aggregate
 
 This code is an example of how to aggregate results using a key. In this example, the source uses a view returning identities along with their organization codes. If an identity belongs to 2 organizations, the result contains 2 lines for the same identity. The goal of this script is to return only one line per identity but change the `orgcode` attribute to list the organizations separated by a coma.  
 
@@ -408,29 +408,29 @@ This example expects that the Ledger view is sorted using the same criteria as t
 
 The algorithm uses a buffer for the last record seen. The `read()` function repeatedly gets records from the source and if this is the same identity as the previous identity, it stores the `orgcode`. When the identity is different, the previous identity is returned with the list of organizations and the last read identity is stored in the buffer.  
 
-#### Example 2: Enumerate
+### Example 2: Enumerate
 
 The following code enumerates values in a field. It is similar to the Enumerate filter in the collect.
 
 For example, with the following input data:  
 
 | **column1** | **column2** |
-|-------------|-------------|
-|  a          | 1,2,3       |
-|  b          | 4,5         |
+| ----------- | ----------- |
+| a           | 1,2,3       |
+| b           | 4,5         |
 
 the script will produce this result:
 
 | **column1** | **column2** |
-|-------------|-------------|
-|  a          | 1           |
-|  a          | 2           |
-|  a          | 3           |
-|  b          | 4           |
-|  b          | 5           |
+| ----------- | ----------- |
+| a           | 1           |
+| a           | 2           |
+| a           | 3           |
+| b           | 4           |
+| b           | 5           |
 
-To use this code, create a new script filter and link the onScriptRead field to the onEnumRead fonction.
-Then, set the variable "ATTR\_NAME" to specify the attribute name to enumerate, and set the "SEPARATOR" variable to specify the values separator.  
+To use this code, create a new script filter and link the onScriptRead field to the onEnumRead function.
+Then, set the variable `ATTR_NAME` to specify the attribute name to enumerate, and set the `SEPARATOR` variable to specify the values separator.  
 
 ```javascript  
 // name of the attribute to enumerate
@@ -470,14 +470,14 @@ function onEnumRead() {
 }
 ```
 
-#### Example 3:
+#### Example 3
 
 In this example, the script filter gets all values in an attribute for all records and produce one record by unique value.
 
 For example, this input data:
 
 | **column1** |
-|-------------|
+| ----------- |
 | a,b,c       |
 | d,a,e       |
 | c,b,f       |
@@ -486,7 +486,7 @@ For example, this input data:
 will produce this result:
 
 | **column1** |
-|-------------|
+| ----------- |
 | a           |
 | b           |
 | c           |
@@ -494,8 +494,8 @@ will produce this result:
 | e           |
 | f           |
 
-To use this code, create a new script filter and link the onScriptRead field to the onEnumRead fonction.
-Then, set the variable "ATTR\_NAME" to specify the attribute name to enumerate, and set the "SEPARATOR" variable to specify the values separator.  
+To use this code, create a new script filter and link the onScriptRead field to the onEnumRead function.
+Then, set the variable `ATTR_NAME` to specify the attribute name to enumerate, and set the `SEPARATOR` variable to specify the values separator.  
 
 ```javascript  
 // name of the attribute to enumerate

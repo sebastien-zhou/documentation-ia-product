@@ -23,7 +23,7 @@ To differentiate the various types of views we will name the normal views **ledg
 - Ledger views are used to send queries to the database. In these views almost everything is handled by the database itself (joins, filtering, aggregations, sort,...)
 - Business views are used to consolidate data, compute trends,.. in memory. This implementation detail is very important and will be covered in the optimization chapter.
 
-> [!note] A Business view can be based on a Ledger view, a log view or another Business view indifferently.
+> A Business view can be based on a Ledger view, a log view or another Business view indifferently.
 
 Before dealing with the usage and configuration details of business views, let's review the typical use cases where they come in handy.
 
@@ -55,6 +55,6 @@ The only method to handle negative rights is to use application logic along with
 
 Another example is to display a list of accounts with some attributes and show in bold the attribute values that has changed since the previous timeslot. Ledger views cannot automatically add flags for each attribute to know if it has changed. Using business views it is just a comparison of 2 timeslots of the same ledger view associated to computed attributes.
 
-> [!note] All these examples show that business views use the output of the Ledger views to transform data or compute new information.
+> All these examples show that business views use the output of the Ledger views to transform data or compute new information.
 
 A number of features have been integrated in the business views but there is no limit to the number of use cases that can be addressed. When a feature is not available in the business views, you can still expand the business views with Javascript.

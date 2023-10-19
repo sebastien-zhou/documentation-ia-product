@@ -4,6 +4,7 @@ Description: Documentation related to the creation, edition, usage of the busine
 ---
 
 # Business View Editor
+
 ## Create a Business View
 
 To create a business view you can either :
@@ -12,7 +13,7 @@ To create a business view you can either :
 - In the Project explorer right click on the `\view` folder or any sub-folder and select `New > Business view`  
 These actions open a wizard where you must configure the name of the business view before clicking `Next >` .  
 
-> [!note] Once created all business views and associated JavaScript files must be located in the `\views` folder or under any sub-folders.
+> Once created all business views and associated JavaScript files must be located in the `\views` folder or under any sub-folders.
 
 This opens a new panel where you have to choose the kind of source to use. It can be :  
 
@@ -29,7 +30,7 @@ To describe the business view editor, we are going to create a business view bas
 
 In the creation wizard, select any ledger view in the view field and click on `Finish`. In the example below the business view is based on the ledger view `br_application`.  
 
-The business view editor is built the same way as the other graphical editors in the product (see [here](igrc-platform/getting-started/product-description/using-the-editors/using-the-editors.md) for more graphical editor descriptions). The editor contains the graphical part in the middle, the palette containing all the available components on the right and the Properties window at the bottom of the studio (see caption below).  
+The business view editor is built the same way as the other graphical editors in the product (see [here](../getting-started/getting-started#using-the-editors) for more graphical editor descriptions). The editor contains the graphical part in the middle, the palette containing all the available components on the right and the Properties window at the bottom of the studio (see caption below).  
 
 ![Business view editor](./images/bv_editor.png "Business view editor")
 
@@ -37,7 +38,7 @@ The business view always contains a source component, located at the top. This i
 
 To add a component to the pipe, first, select the component just before the insertion point. Then drag & drop a component from the palette. The component will be inserted after the selected component.
 
-> [!note] Cut, Copy & paste operations are available but when you cut a component, all the following components are also cut.
+> Cut, Copy & paste operations are available but when you cut a component, all the following components are also cut.
 
 The configuration of a component is done in the Properties tab displayed on the bottom of the graphical editor. Clicking on the background of the graphical area will display the schema of the view in the Properties tab (see caption below). The schema of the view represents the list of attributes available for the report or the page once the view is executed.  
 Additional important information such as the component in which the attribute has been defined or, if the attribute comes from a ledger view, the name of the view and the meaning of the attribute.  
@@ -54,4 +55,4 @@ All the tabs of the Properties window for each components are reviewed in the ne
 
 When the design is finished, the results of the business view are available in the "Results" Tab. This screen looks like the "Results" tab of a Ledger view. The table displays the columns corresponding to the view schema. You can select another timeslot at the top of the screen.
 
-> [!note] If the layout of the columns in the result table is change; such as the column width and/or order, this layout is preserved until the editor is closed.
+> If the layout of the columns in the result table is change; such as the column width and/or order, this layout is preserved until the editor is closed.

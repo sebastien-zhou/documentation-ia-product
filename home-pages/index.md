@@ -83,6 +83,9 @@ For customers under maintenance/subscription contract as well as official partne
   > [Add-ons](/ia/descartes/igrc-platform/add-ons/add-ons)  
   > This document provides information on the creation, installation, usage and migration of project elements names Add-ons.  
 
+  > [Auditlogs](/ia/descartes/igrc-platform/audit-logs/audit-logs-definition)  
+  > This document provides information on the creation, installation, usage and of Auditlogs, the productions engine to ingest and query application logs.
+
   > [Release Notes](/ia/descartes/downloads/01-downloads)  
   > This document provides information on the different releases of iGRCanalytics, including the supported environments and the release notes for each version.  
 

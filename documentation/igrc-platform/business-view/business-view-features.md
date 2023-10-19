@@ -35,7 +35,7 @@ As an example, let's say that in our Ledger, all application codes are stored in
 
 ### Multivalued parameters
 
-When handling multivalued parameters in a businessview be careful to the way you map them in macro. In the following example we have a simple BV containing a view source component that calls a ledger view listing permissions by application. The ledger view has a global parameter mapped on application code attribute to fillter results.  
+When handling multivalued parameters in a businessview be careful to the way you map them in macro. In the following example we have a simple BV containing a view source component that calls a ledger view listing permissions by application. The ledger view has a global parameter mapped on application code attribute to filter results.  
 
 ![Business view permissions](./images/g2.png "Business view permissions")
 ![Business view parameters](./images/g1.png "Business view parameters")
@@ -43,16 +43,22 @@ When handling multivalued parameters in a businessview be careful to the way you
 
 We will illustrate three cases:
 
-**<u>Case1</u>**: By default if you map the param\_application businessview global parameter on ledger view parameter using {param.param\_application.get()} as bellow, only the first value of the list will be mapped - in that case it will be 'HORIZ'.
+#### Case 1
+
+By default if you map the `param_application` businessview global parameter on ledger view parameter using `{param.param_application.get()}` as bellow, only the first value of the list will be mapped - in that case it will be 'HORIZ'.
 
 ![Business view multivalued parameters](./images/c12.png "Business view multivalued parameters")!["Business view multivalued parameters](./images/c11.png "Business view multivalued parameters")
 
-**<u>Case2</u>**: To map all values to the ledger view parameter you have to use {param.param\_application} without calling .get() method because by default .get() returns the first element if the attribute is a multivalued.
+#### Case 2
+
+To map all values to the ledger view parameter you have to use `{param.param_application}` without calling `.get()` method because by default `.get()` returns the first element if the attribute is a multivalued.
 
 ![Global parameters](./images/c22.png "Global parameters")
 ![Database view](./images/c21.png "Database view ")
 
-**<u>Case3</u>**: To map a specific index value from the list of multivalued parameter you need to specify the index when calling .get() method ex: {param.param\_application.get(2)} in that case it will return the last value 'ELYXO'.
+#### Case 3
+
+To map a specific index value from the list of multivalued parameter you need to specify the index when calling `.get()` method ex: `{param.param_application.get(2)}` in that case it will return the last value 'ELYXO'.
 
 ![Global parameters](./images/c32.png "Global parameters")![Database view](./images/c31.png "Database view ")
 
@@ -62,13 +68,13 @@ In this section, it is possible to configure a sort policy that will apply on yo
 
 ![Result sort](./images/bv_sort.png "Result sort")
 
-<u>Optimizations</u>:
+#### Optimizations
 
 - The sort in business view is handle in memory, unlike the ledger view and log view where the sort is executed by the database.
 - The sort policy will be carried out only after all components have finished data fetching (the entire results will be stored in memory).
 - It it highly recommended to be careful when requiring sorting on huge data.
 
->**Warning** <br> Even if the sort is not activate in the business view, the sort may be requested from the page when the user click on a column header of a table. In this case, the page re-executes the business view with a sort on this column and the sort is executed in memory.
+> [!warning] Even if the sort is not activate in the business view, the sort may be requested from the page when the user click on a column header of a table. In this case, the page re-executes the business view with a sort on this column and the sort is executed in memory.
 
 ## Common Operators
 
@@ -106,7 +112,7 @@ Exclude filter is based on a JavaScript expression, if the expression returns tr
 
 Deduplicate filter is also based on a JavaScript expression: all the datasets that generate the same expression value are ignored except the first one.
 
->**Warning** <br> As the deduplicate filter uses a memory cache containing the values of calculated expression, please beware when using several deduplicate filters. This can result in very high memory usage (RAM).
+> [!warning] As the deduplicate filter uses a memory cache containing the values of calculated expression, please beware when using several deduplicate filters. This can result in very high memory usage (RAM).
 
 Below is an example using several filters (before and after filtering):
 
@@ -129,7 +135,7 @@ The computed columns are then added to the displayed results:
 
 ![Computed columns](./images/computedcolumns.png "Computed columns")
 
-> [!note] It should be noted that the script is executed on each result line in the component to calculate the column value and therefore it is helpful to prepare scripts that take into account possible NULL values for columns by the `dataset.isEmpty('columnname')` expression.
+> It should be noted that the script is executed on each result line in the component to calculate the column value and therefore it is helpful to prepare scripts that take into account possible NULL values for columns by the `dataset.isEmpty('columnname')` expression.
 
 ### Exclude Attributes from Output Schema
 
@@ -139,8 +145,7 @@ The exclude operation filters the schema of each component result by selecting a
 
 Below is an example of business view results before and after Exclusion:  
 
-![Computed columns](./images/computedcolumns.png "Computed columns")
-_Business View result before adding attributes to exclude list_  
+![Business View result before adding attributes to exclude list](./images/computedcolumns.png "Business View result before adding attributes to exclude list")
+__  
 
-![After exclude](./images/after_exclude.png "After exclude")
-<br>_Business View result after adding two attributes (app\_displayname, repo\_code) to exclude list_  
+![Business View result after adding two attributes (app\_displayname, repo\_code) to exclude list](./images/after_exclude.png "Business View result after adding two attributes (app\_displayname, repo\_code) to exclude list")
