@@ -37,12 +37,12 @@ In order to correctly configure the following elements are mandatory:
 
 When configuring a Human resource type template for an application mode the following attributes are necessary:
 
-- Organization type reference: loads the organization type (**ex:** Direction, Service...)
-- Organization link type reference: loads the organization link type (**ex:** Hierarchical...)
-- Organization: loads the organization (**ex:** DCOM, DSI, DRH...)
-- Title reference: loads the civility (**ex:** Mr, Mrs...)
-- Job title reference: loads the job title code (**ex:** RD-Ing, DirCom...)
-- Identity: loads the identities (**ex:** employees, contractors...)
+- Organization type reference: loads the organization type (_ex:_ Direction, Service...)
+- Organization link type reference: loads the organization link type (_ex:_ Hierarchical...)
+- Organization: loads the organization (_ex:_ DCOM, DSI, DRH...)
+- Title reference: loads the civility (_ex:_ Mr, Mrs...)
+- Job title reference: loads the job title code (_ex:_ RD-Ing, DirCom...)
+- Identity: loads the identities (_ex:_ employees, contractors...)
 - Manager (Organization): loads the organization managers
 
 > If a discovery file mapping the desired importfile attributes does not exist it is necessary to create it.
@@ -235,7 +235,7 @@ In addition it can be necessary to configure some variables specific to reposito
 
 - Repository custom type: To be configured when collecting data belong to the same type of application.
 
-**Example:** collecting active directory domains, this variable should have '**AD**' as value, it is mandatory to resolve multi domains groups membership
+_Example:_ collecting active directory domains, this variable should have '**AD**' as value, it is mandatory to resolve multi domains groups membership
 
 ### Generate Files
 
@@ -334,7 +334,7 @@ In addition it can be necessary to configure some variables specific to reposito
 
 - Repository custom type: To be configured when collecting data belong to the same type of application.
 
-**Example:** collecting active directory domains, this variable should have '**AD**' as value, it is mandatory to resolve multi domains groups membership
+_Example:_ collecting active directory domains, this variable should have '**AD**' as value, it is mandatory to resolve multi domains groups membership
 
 ### Generate files
 

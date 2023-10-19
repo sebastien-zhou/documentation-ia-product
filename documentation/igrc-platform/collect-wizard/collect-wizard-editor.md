@@ -73,7 +73,7 @@ These can be set to static values or a project variables.
 
 ---
 
-> [!warning] When using project variables (**ex:** `config.fileName`), when exporting your application model after generation, the destination project may not have the same variable. If this is the case then it is recommended to use a facet variable instead of a project variable.
+> [!warning] When using project variables (_ex:_ `config.fileName`), when exporting your application model after generation, the destination project may not have the same variable. If this is the case then it is recommended to use a facet variable instead of a project variable.
 
 ---
 
