@@ -67,4 +67,4 @@ You can download the test results to verify the extracted files.
 
 For more information on the controller pleaser refer to the dedicated documentation:
 
-[Brainwave Controller](igrc-platform/installation-and-deployment/packaging/containers/controller.md){: .ref}
+[Brainwave Controller](igrc-platform/installation-and-deployment/packaging/containers/controller.md)

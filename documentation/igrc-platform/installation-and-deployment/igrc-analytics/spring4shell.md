@@ -20,6 +20,6 @@ No Brainwave product has or will be affected by the CVE CVE-2022-22965 or CVE-20
 
 Please refer to the following communications for Brainwave's official position.  
 
-[letter spring4shell (EN)](./Brainwave_Letter_Spring4Shell_20220411_EN.pdf){: .ref}  
+[letter spring4shell (EN)](./Brainwave_Letter_Spring4Shell_20220411_EN.pdf)  
 
-[courrier spring4shell (FR)](./Brainwave_Courrier_Spring4Shell_20220411_FR.pdf){: .ref}
+[courrier spring4shell (FR)](./Brainwave_Courrier_Spring4Shell_20220411_FR.pdf)

@@ -26,7 +26,7 @@ Deleting indexes in the database can drastically impact the performance of the e
 
 If you have questions please don't hesitate to create a ticket on "Brainwave Online Support" :
 
-[https://support.brainwavegrc.com](https://support.brainwavegrc.com){: .ref}
+[https://support.brainwavegrc.com](https://support.brainwavegrc.com)
 
 # Procedure
 
@@ -38,9 +38,9 @@ In the latest version of the `DB_check` you will find the list of unused indexes
 
 Please use one of the following links for more information on the usage of the `DB_Check`
 
-- [Microsoft SQLserver](how-to/database/sqlserver/performance-investigation-sql-server.md){: .ref}  
-- [Postgresql](how-to/database/postgresql/psql-performance-issue-investigation.md){: .ref}  
-- [Oracle](how-to/database/oracle/performance-investigation-oracle.md){: .ref}  
+- [Microsoft SQLserver](how-to/database/sqlserver/performance-investigation-sql-server.md)  
+- [Postgresql](how-to/database/postgresql/psql-performance-issue-investigation.md)  
+- [Oracle](how-to/database/oracle/performance-investigation-oracle.md)  
 
 ## Index management
 

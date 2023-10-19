@@ -61,4 +61,4 @@ You will use the value of this token as a password for the docker login and git 
 
 For more information on the use and the configuration of Gitea please refer to the official documentation:
 
-[https://docs.gitea.com/](https://docs.gitea.com/){: .ref}
+[https://docs.gitea.com/](https://docs.gitea.com/)

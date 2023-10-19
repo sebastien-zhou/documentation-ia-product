@@ -16,7 +16,7 @@ nav_order: 2
 
 Before atempting any upgrade of the database please go through all steps detailed in the page below.
 
-[**Release notes**](igrc-platform/installation-and-deployment/database/schema-35-upgrade-procedure.md){: .ref}
+[**Release notes**](igrc-platform/installation-and-deployment/database/schema-35-upgrade-procedure.md)
 
 # Warning
 

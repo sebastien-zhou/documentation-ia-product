@@ -19,7 +19,7 @@ permalink: /docs/igrc-platform/workflow/workflow-configuration/
 <span style="color:red">**Important:**</span>
 
 The in-memory database mode is no longer supported as of Curie R3 version.
-[What's New Curie R3](what-s-new/curie/what-s-new-curie-r3.md#remove-the-in-memory-mode-of-workflow-engine ){: .ref}
+[What's New Curie R3](what-s-new/curie/what-s-new-curie-r3.md#remove-the-in-memory-mode-of-workflow-engine )
 
 ---
 

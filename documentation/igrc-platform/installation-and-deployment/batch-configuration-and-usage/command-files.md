@@ -70,7 +70,7 @@ Another example: igrc_batch demonstration /var/igrc/config default"
 
 Please refer to the following page for more information on how to break reconciliations:
 
-[Delete Reconciliations]( igrc-platform/reconciliation/reconciliation-policies/delete-reconciliations/delete-reconciliations.md ){: .ref}
+[Delete Reconciliations]( igrc-platform/reconciliation/reconciliation-policies/delete-reconciliations/delete-reconciliations.md )
 
 ## Restart
 

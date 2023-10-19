@@ -154,7 +154,7 @@ cp brainwave.local.crt /etc/brainwave/certificates/
 
 Please refer to the following page for more information:
 
-[SSL configuration page](igrc-platform/installation-and-deployment/packaging/configuration/ssl-configuration.md){: .ref}
+[SSL configuration page](igrc-platform/installation-and-deployment/packaging/configuration/ssl-configuration.md)
 
 # Starting the Services
 

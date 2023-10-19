@@ -16,7 +16,7 @@ grand_parent: "Installation and deployment"
 >  
 > For more information on the updated libraries please refer to the following page:  
 >
-> [Updated libraries](downloads/updated-libraries.md){: .ref}  
+> [Updated libraries](downloads/updated-libraries.md)  
 
 # Context
 
@@ -32,9 +32,9 @@ Brainwave has decided to fork the current version of Log4j to correct the follow
 
 Please find bellow the official communication from Brainwave GRC:  
 
-[letter Log4j (EN)](./pdf/letter_Log4J_20220207.pdf){: .ref}  
+[letter Log4j (EN)](./pdf/letter_Log4J_20220207.pdf)  
 
-[courrier Log4j (FR)](./pdf/courrier_Log4J_20220207.pdf){: .ref}
+[courrier Log4j (FR)](./pdf/courrier_Log4J_20220207.pdf)
 
 The following page details the procedure necessary to patch the Log4j.  
 

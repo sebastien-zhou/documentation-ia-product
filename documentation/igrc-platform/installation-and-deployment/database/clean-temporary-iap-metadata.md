@@ -17,7 +17,7 @@ Versions prior to IAP 1.2 included the use of temporary metadata data. These tec
 
 An enhancement in the metadata engine now allows the user to flag these temporary metadata so that they are automatically deleted once the execution plan is finished in order to minimize the size of the metadata tables and save storage space, improving performances.  Please see the following page for more information:
 
-[Delete temporary metadata](what-s-new/curie/what-s-new-curie-r2.md){: .ref}
+[Delete temporary metadata](what-s-new/curie/what-s-new-curie-r2.md)
 
 In order to optimize storage and thus free up the disk space occupied by the pre-existing IAP temporary metadata an SQL script to delete these unused temporary metadata in the database history.
 

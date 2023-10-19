@@ -82,7 +82,7 @@ Find the path of the volume in your local deployment place the files inside the 
 
 Please refer to the following page for more information:
 
-[SSL configuration page](igrc-platform/installation-and-deployment/packaging/configuration/ssl-configuration.md){: .ref}
+[SSL configuration page](igrc-platform/installation-and-deployment/packaging/configuration/ssl-configuration.md)
 
 ## Start the Services
 

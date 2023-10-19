@@ -45,7 +45,7 @@ If you are running a demonstration or sandbox environment, add the hostname you 
 
 Please use the following link for more information on the folders (paths) used by the packaging:  
 
-[Data location](igrc-platform/installation-and-deployment/packaging/before-installation/requirements.md#docker-host-disk){: .ref}
+[Data location](igrc-platform/installation-and-deployment/packaging/before-installation/requirements.md#docker-host-disk)
 
 ### Update / upgrade
 
