@@ -23,4 +23,4 @@ This stage corresponds to the execution of all the reconciliation rules on the r
 - You can create your reconciliation policy with the help of the reconciliation policy creation wizard button ![Icon](../images/worddavbdd922ed7f4eb840c7b30f8c0815fa04.png "Icon")   
 - To manually run you reconciliation policy, in the main menu click on **Open the execution plan**. The ![Icon](../images/3.png "Icon") button allows you to execute your reconciliation policy.   
 
-![Icon](../images/2016-07-11_13_33_26-iGRC_Project_-_demo_demo.audit_-_iGRC_Analytics.png "Icon")
+![Icon](../images/run-recon-policy.png "Icon")
