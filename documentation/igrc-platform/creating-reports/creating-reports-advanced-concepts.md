@@ -9,27 +9,24 @@ Description: Documentation related to advanced concepts of creating reports
 
 When formatting complex reports, it can sometimes be useful to present the information by following a master/detail type logic: For each main element listed (for example, each identity from the ledger), display a set of characteristics of this element (for example, its organizations, groups, ...).  
 If the concept of grouping in the table allows you to handle the simplest cases, it quickly becomes impossible to limit yourself to this functionality because information retrieval requires running multiple queries on the identity ledger (usually n + 1: A query to list the master elements, followed by n queries to retrieve additional information for each of the master elements listed).  
-The report editor allows you to contextualize queries run on the ledger, and thus handle the constraints related to master/detail type displays. Many reports available as standard in Brainwave Identity GRC use this feature. We suggest that after reading this chapter, you edit these reports in order to access examples of implementation (templateanalysis.rptdesign, ...).  
+The report editor allows you to contextualize queries run on the ledger, and thus handle the constraints related to master/detail type displays. Many reports available as standard in Brainwave Identity GRC use this feature. We suggest that after reading this chapter, you edit these reports in order to access examples of implementation (`templateanalysis.rptdesign`, ...).  
 The set-up of subreports is based on the nesting of List and Table type components, as well as the dynamic configuration of Datasets referenced by the sub-components.  
 Let's look at the example of a report that lists the applications for each identity. We will create this report not by relying on a grouping of rows in a table, but by configuring a subreport.  
 To do this, we will insert a Table in our report and associate a Dataset which is based on the audit view 'br_identity' to this Table. This component displays the ordered list of all the identities in the ledger.  
-We then insert a List component into the 'Detail Row' line of our Table component, then we associate a Dataset that relies on the 'br_applicationsbyidentity' Audit View with this List component.
+We then insert a List component into the 'Detail Row' line of our Table component, then we associate a Dataset that relies on the `br_applicationsbyidentity` Audit View with this List component.
 
 ![Nested List](./images/worddav6f7662b259bc76647547283f1708f12f.png "Nested List")  
-**_Table with nested List_**  
 
 At this stage, for each identity, we list all the applications present in the ledger. However, we wish to list only those applications to which each identity has access. To do this, we are going to configure our Dataset at the List component level. This involves selecting the 'Binding' section of the List component properties editor, and clicking on the `Data Set Parameter Binding...` button. A dialog box opens, allowing us to pass parameters to the Dataset dynamically each time the list is displayed.  
 We wish to pass the unique identifier for each identity as a parameter to our `applicationsbyidentity` Dataset, so that the List component displays only the applications available for a given identity. So we develop the `identityrecorduid` parameter of the Dataset with the value retrieved from the Dataset of the parent Table component (the Dataset which lists out the identities). This means configuring the following script: `row["recorduid"]`
 
 ![Master component](./images/worddavf6694d5019e88a33967e10ac0692e937.png "Master component")  
-**_Retrieving the identification number in the master component_**
 
 Our List component is now controlled by a datum of the Table component in which it is contained. We have just created a master/detail type report.
 
 ![Example of subreport](./images/newreport.png "Example of subreport")  
-**_Example of subreport_**  
 
-> [!note] Rely on the naming convention of the Audit Views to select the views consistent with the retrieval of details about a Ledger concept. Audit Views that accept a unique concept identifier from the ledger as a parameter have a name like'detailsbymaster'. For example, if you want to retrieve the list of applications for a given identity, you need to select the 'applicationsbyidentity' view.
+> Rely on the naming convention of the Audit Views to select the views consistent with the retrieval of details about a Ledger concept. Audit Views that accept a unique concept identifier from the ledger as a parameter have a name like `detailsbymaster`. For example, if you want to retrieve the list of applications for a given identity, you need to select the `applicationsbyidentity` view.
 
 Master/detail type queries are particularly resource intensive because at a minimum, it means performing n +1 queries to the Ledger. So do not forget to limit the number of master query results, and it's better to use tables with groupings whenever possible.
 
@@ -142,16 +139,12 @@ Creating a chart always follows the following steps:
 
 1. Select the type of chart
 2. Configure the extraction of useful data for the chart
-
     - From a Dataset
     - From a Table or List type Component
-
 3. Configuring chart layout options
-
     - Colors
     - Display options : axes, legends, ...
     - Chart interactivity
-
 4. Configuration of the chart size in the report
 
 The first three steps of creating a chart are based on the three tabs of the Chart Settings wizard of the editor:
@@ -167,17 +160,15 @@ The contents of the 'Select Data' and 'Format Data' tabs may vary depending on t
 Once you have chosen the type of chart, the second tab of the wizard allows you to select the data to display in your chart. The appearance of this dialog box may change slightly depending on the type of chart used, but the configuration principles are identical.  
 
 ![Dataset data retrieval](./images/worddavd69dd40f426e41a28ccb931aef9bbf36.png "Dataset data retrieval")  
-**_Configuring the Dataset data retrieval_**
 
 The data used for a chart can be located either in a Dataset or in a Component in which the chart is contained (List, Table).
 
-> [!note] when data is retrieved from a List or Table component, the Chart component will be based not on the Dataset referenced by the Component, but on the data Binding performed at the component level. This allows you to use the calculated columns locally at the component level as well as the table groupings, aggregations, ...
+> when data is retrieved from a List or Table component, the Chart component will be based not on the Dataset referenced by the Component, but on the data Binding performed at the component level. This allows you to use the calculated columns locally at the component level as well as the table groupings, aggregations, ...
 
 Once the data source for the chart is selected, simply drag/drop the columns present in the 'Data Preview' wizard in the corresponding boxes of the 'Chart Preview' area of the wizard. Most of the time the 'category (X)' will consist of a string. The values axis ( Value (Y)) can accept a numerical value directly, or accept an arbitrary value on which to perform an aggregation operation in order to deduce a value.  
 It is possible to rely on a Dataset that sends a single list of identities, for example, each with his job, in order to create a chart that represents the number of persons per job. This involves choosing a unique identifier of the identity (for example, the code RH) as a series value (Y), and set on this field an aggregate function like counting elements (Count).
 
 ![Aggregation function](./images/worddav0e6933e6659a68eec936757c6fc4d7d6.png "Aggregation function")  
-**_Configuring the aggregation function_**
 
 The available aggregation functions are:
 
@@ -211,28 +202,25 @@ The available aggregation functions are:
 - **Percent Sum** : Percentage of a total
 - **Running Count** : Number of elements fitting a condition
 
-> [!note] The 'Sum' aggregation function is selected by default in the wizard; this requires that the value to be set be numerical. If you set a Text type value the chart will not display anything. You must change the aggregation function to the 'Count' or 'Distinct Count' function to count the number of elements instead.  
+> The 'Sum' aggregation function is selected by default in the wizard; this requires that the value to be set be numerical. If you set a Text type value the chart will not display anything. You must change the aggregation function to the 'Count' or 'Distinct Count' function to count the number of elements instead.  
 It is also possible to sort the category data (X-axis) according to arbitrary criteria. Do this by clicking the button to the right of the category column setting.
 
 ![Sorting category data](./images/worddav20ec449662e0ced63c61f07d87be83c2.png "Sorting category data")  
-**_Sorting category data_**
 
 It is also possible to pass parameters to the Dataset used by the chart component. This can be achieved in two ways:
 
 - By clicking on the 'Parameters...' button in the chart creation wizard
 - By selecting the 'Chart' component in the chart editor, then selecting the 'Binding' section in the component's editor properties.
 
-This setting is identical to that of the Table and List components. We invite you to refer to the documentation section detailing the use of parameters in the Table and List components for more information on this subject ([Subreports](igrc-platform/creating-reports/advanced-concepts/subreports/subreports.md)
+This setting is identical to that of the Table and List components. We invite you to refer to the documentation section detailing the use of parameters in the Table and List components for more information on this subject ([Subreports](#subreports))
 
 ![Chart Dataset](./images/worddavfa471f8235290577c5a9e3937bbf36d2.png "Chart Dataset")  
-**_Editing parameters of the chart Dataset_**
 
 ### Chart Formating
 
 Charts may be formatted with the help of the third tab of the chart wizard: 'Format Chart'.
 
 ![Formatting parameters](./images/worddav233ae2e15ec593bc85438023f15ab091.png "Formatting parameters")  
-**_Editing chart formatting parameters_**
 
 The available functions depend on the type of chart selected. It is possible to perform the following operations:
 
@@ -257,11 +245,10 @@ The report editor and the pivot table chart component can display multi-dimensio
 The easiest way to create a data cube based on a Dataset is to position a 'Cross Tab' type component in the graphical editor, then drag/drop one of the columns from the Dataset on which we want to create a data cube.
 
 ![Empty Pivot Table component](./images/2016-07-22_11_32_27-iGRC_Reports.png "Empty Pivot Table component")
-**_Empty Pivot Table component_**
 
 This opens the data cube wizard. The wizard allows you to define the dimensions and measurements of your data cube. To do this, in the editor, simply drag/drop columns corresponding to the dimensions in the field '(Drop a field here to create a group), and the columns corresponding to the measurements in the field' (Drop a field here to create a summary field). '
 
-> [!note] It is possible to create sub-dimensions by dragging/dropping columns in already configured dimension fields.
+> It is possible to create sub-dimensions by dragging/dropping columns in already configured dimension fields.
 
 The measurement field can either directly accept a numerical value or perform an aggregation operation on a numerical/text value. To do this, select your measurement field in the editor and click on 'Edit'. You can then select an aggregation operation. Available aggregation operations are:
 
@@ -273,25 +260,21 @@ The measurement field can either directly accept a numerical value or perform an
 - **COUNT** : Count the number of elements
 - **COUNTDISTINCT** : Count the number of unique elements
 
-> [!note] If your dataset presents information in a format that is directly compatible with the analysis you wish to conduct, it is possible to optimize system performance by selecting the 'Check this option if the data in the primary dataset has been grouped and aggregated in a way that matches the cube definition' option in the 'Data Set' tab of the data cube creation wizard.
+> If your dataset presents information in a format that is directly compatible with the analysis you wish to conduct, it is possible to optimize system performance by selecting the 'Check this option if the data in the primary dataset has been grouped and aggregated in a way that matches the cube definition' option in the 'Data Set' tab of the data cube creation wizard.
 
 ![Data cube creation wizard](./images/worddavb1de6176861f5f9991b1bc75837332b2.png "Data cube creation wizard")  
-**_Data cube creation wizard_**
 
 Once your data cube has been configured, it is accessible in the 'Data Explorer' view under the 'Data Cubes' entry.
 
 ![Configured data cube](./images/worddavf4b4d791e640f9c17a650ea6787fc873.png "Configured data cube")  
-**_Configured data cube_**
 
 Simply drag/drop the dimensions into the rows and columns of your pivot table, as well as measurements in the detail field.
 
 ![Configured pivot table](./images/worddavfc83f0e076af72869f8ed4356d0c43cc.png "Configured pivot table")  
-**_Configured pivot table_**
 
 Once formatted, your pivot table will appear as follows in your reports:
 
 ![Example of pivot table](./images/worddav8d87887dccfa6237e205122b5816d02e.png "Example of pivot table")  
-**_Example of pivot table_**
 
 ## Localization
 
@@ -305,14 +288,14 @@ If multiple languages are present, we recommend you create a file for each langu
 
 The naming convention for properties files follows the i18n java language standard: properties files must be suffixed with `_` followed by the language code (standard [ISO 639](http://fr.wikipedia.org/wiki/ISO_639)). A file without a suffix must also be present; this is the language used by default.
 
-> [!note] The default language of the report engine is English. The localization file without a suffix must have content in English.  
+> The default language of the report engine is English. The localization file without a suffix must have content in English.  
 Only the file without a suffix is set in the report, other files are automatically deducted by the report engine by appending the language code to the default file.  
 
 Configure a properties file in a report by selecting the 'Resources' tab in the report properties editor (_tip:_ First click on an area outside the report in the report editor in order to access this properties editor). Then simply add a reference to the files by clicking the 'Add File...' button from the 'Properties files' area.  
 
 ![Properties file in a report](./images/worddav35d83e758c43f1632d27a44732c1d026.png "Properties file in a report")
 
-> [!note] There is a properties file referenced by default in reports created with the Brainwave Identity GRC wizard. This is the 'concepts.properties' file.
+> There is a properties file referenced by default in reports created with the Brainwave Identity GRC wizard. This is the 'concepts.properties' file.
 
 This file has a localized version of all the concepts present in the product, including all the columns for all the Identity Ledger items. The use of these properties is to be preferred in order to ensure the consistency of all reports. This file is located in the '/reports/resources' subdirectory of your audit project. To localize text, select the component in question in the editor and select the 'Localization' tab of the properties editor.
 
@@ -324,7 +307,7 @@ It is then possible to select existing text in the properties file, or create ne
 
 A dedicated localization editor is also present when setting up the association of text to a column value ('Map' function in most of the components).
 
-> [!note] The properties file that will be modified is the one corresponding to the working language of Brainwave Analytics; this language is the default language of the operating system. If the file corresponding to the language does not exist, then the default will be changed.
+> The properties file that will be modified is the one corresponding to the working language of Brainwave Analytics; this language is the default language of the operating system. If the file corresponding to the language does not exist, then the default will be changed.
 
 A dedicated properties editor is available to you in Brainwave Analytics; it allows you to handle the batch translation of a report by creating a new properties file and comparing values â€‹â€‹in pairs with reference values while editing. Simply edit a properties file in the editor. Brainwave Analytics deduces the default file and all the language files present from your file. It allows you to choose the language with which to perform the pairs comparison when editing.  
 We recommend that you only translate your reports once they are finalized using the dedicated localization files editor.
@@ -338,4 +321,4 @@ A detailed presentation of this functionality is beyond the scope of this guide.
 
 ## Assigning a Reliability Index to a Reconciliation Rule
 
-See "Reconciliation Policies"
+See ["Reconciliation Policies"](../reconciliation/reconciliation-policies/reconciliation-policies.md)
