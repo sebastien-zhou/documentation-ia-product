@@ -80,14 +80,38 @@ For customers under maintenance/subscription contract as well as official partne
 
 <section>
 
-  > [Add-ons](/ia/descartes/igrc-platform/add-ons/add-ons)  
+  > [Release Notes](/ia/dev-descartes/downloads/01-downloads)  
+  > This document provides information on the different releases of iGRCanalytics, including the supported environments and the release notes for each version.  
+
+</section>
+
+## Features
+
+<section>
+
+  > [Add-ons](/ia/dev-descartes/igrc-platform/add-ons/add-ons)  
   > This document provides information on the creation, installation, usage and migration of project elements names Add-ons.  
 
-  > [Auditlogs](/ia/descartes/igrc-platform/audit-logs/audit-logs-definition)  
+  > [Auditlogs](/ia/dev-descartes/igrc-platform/audit-logs/audit-logs-definition)  
   > This document provides information on the creation, installation, usage and of Auditlogs, the productions engine to ingest and query application logs.
 
-  > [Release Notes](/ia/descartes/downloads/01-downloads)  
-  > This document provides information on the different releases of iGRCanalytics, including the supported environments and the release notes for each version.  
+  > [Add-ons](/ia/dev-descartes/igrc-platform/audit-rules/audit-rules-introduction)  
+  > This document provides information on the creation, installation, usage and migration of audit rules.  
+
+  > [Add-ons](/ia/dev-descartes/igrc-platform/business-view/business-view-introduction)  
+  > This document provides information on the creation, installation, usage and migration of Business views.  
+
+  > [Add-ons](/ia/dev-descartes/igrc-platform/controls/control-methods)  
+  > This document provides information on the creation, installation, usage of controls.  
+
+</section>
+
+## wizards
+
+<section>
+
+  > [Add-ons](/ia/dev-descartes/igrc-platform/collect-wizard/collect-wizard-generation)  
+  > This is a guide to using the collect wizard, a tool to automatically generate data discovery files and collect lines.  
 
 </section>
 
