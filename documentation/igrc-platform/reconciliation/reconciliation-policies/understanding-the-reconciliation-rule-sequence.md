@@ -26,7 +26,7 @@ You have two possibilities for sequencing rules:
 
 # Sequencing reconciliation rules
 
-![Sequencing reconciliation rules](../images/1.PNG "Sequencing reconciliation rules")   
+![Sequencing reconciliation rules](./images/1.PNG "Sequencing reconciliation rules")   
 
 For each account, the engine searches to find its identity in the Ledger. You have three scenarios in the execution of the first rule:   
 
@@ -44,6 +44,6 @@ For each account, the engine searches to find its identity in the Ledger. You ha
 
 # Sequencing repository reconciliations   
 
-![Example of sequencing rules](../images/2.PNG "Example of sequencing rules")
+![Example of sequencing rules](./images/2.PNG "Example of sequencing rules")
 
 For each account, the reconciliation policy engine executes the following rules if no identity was found in the execution of the first reconciliation rule.   

@@ -13,12 +13,12 @@ For each repository, you can choose a list of rules that will be applied in a pr
 Example:     
 If we know that in the OpenLDAP repository, all training accounts have a login starting with **'FORM'**. So we will create the following rule called `OpenLDAP_formation.rule`  :   
 
-![OpenLDAP formation rule](../images/1-marking.png "OpenLDAP formation rule")   
+![OpenLDAP formation rule](./images/1-marking.png "OpenLDAP formation rule")   
 
 We add this rule to the reconciliation policy in the **Accounts without owner**  tab for the repository in question. A new code 'formation' is created to associate with this rule.   
 
-![Accounts without owner](../images/2016-07-11_14_08_16-iGRC_Project_-_demo_reconciliation_demo_reconciliation_policy.reconpolicy_-_iGRC.png "Accounts without owner")      
+![Accounts without owner](./images/recon-nowoner.png "Accounts without owner")      
 
-In the **Results** tab, the ownerless accounts appear in both the summary statistics and in the details if you click on the ![Icon](../images/worddav654ac553e49f9d7ff560ba4a653c97f5.png "Icon") icon
+In the **Results** tab, the ownerless accounts appear in both the summary statistics and in the details if you click on the ![Icon](./images/worddav654ac553e49f9d7ff560ba4a653c97f5.png "Icon") icon
 
-![Results](../images/2016-07-11_14_47_34-iGRC_Project_-_demo_reconciliation_demo_reconciliation_policy.reconpolicy_-_iGRC.png "Results")
+![Results](./images/recon-noowner-results.png "Results")
