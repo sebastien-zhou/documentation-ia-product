@@ -1,6 +1,6 @@
 ---
-title: Add-on creation
-Description: Documentation related to the creation of Add-ons
+title: Add-ons
+Description: Documentation related to the creation, the installation and the usage of Add-ons
 ---
 
 # Add-on Creation

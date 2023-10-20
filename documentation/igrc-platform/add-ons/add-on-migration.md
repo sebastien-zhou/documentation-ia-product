@@ -1,6 +1,6 @@
 ---
-title: Add-on Migration
-Description: Documentation related to add-on migration
+title: Add-ons
+Description: Documentation related to the creation, the installation and the usage of Add-ons
 ---
 
 # Facet Migration
