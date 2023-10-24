@@ -35,7 +35,7 @@ During facet installation, the proper file will be selected based on what format
 
 ![Condition](../add-ons/images/condition.png "Condition")
 
-> [!warning] This functionality is only.  available as of version **2015 R2**|
+> [!warning] This functionality is only.  available as of version **2015 R2**
 
 A facet, otherwise called an add-on, for data collection should take advantage of the silos concept to be able to iterate over any number of data files.  
 This way, adding a new data file into the project, being a new file system, a new server or a new domain, will be as easy as dropping the new file in an input folder.  

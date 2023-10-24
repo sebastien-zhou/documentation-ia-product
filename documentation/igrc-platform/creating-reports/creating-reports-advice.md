@@ -45,7 +45,7 @@ The `/reports/rules/` subdirectory contains a series of reports used by the rule
 
 You can add your own rules reports in these directories to extend the standard Brainwave Identity GRC functionalities. To do so, copy/paste an existing rules report, and use it as a model or use the following report templates: _Rule results, landscape report, Rule results report._
 
-> Do not forget to read the _/reports/README FIRST.txt_ file before using Brainwave Identity GRC reports.|
+> Do not forget to read the _/reports/README FIRST.txt_ file before using Brainwave Identity GRC reports.
 
 ## Audit Views
 

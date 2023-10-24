@@ -195,7 +195,7 @@ Once your criterion has been created, it will appear in the form of a library fi
 
 ![Special criterion of a library](./images/rule-criteria-file.png "Special criterion of a library")  
 
-> [!warning] The libraries are loaded when Brainwave Analytics is loaded. Therefore, you will need to restart Analytics before testing your criterion.|
+> [!warning] The libraries are loaded when Brainwave Analytics is loaded. Therefore, you will need to restart Analytics before testing your criterion.
 
 ![Special criterion for a rule](./images/rule-criteria-usage.png "Special criterion for a rule")  
 
