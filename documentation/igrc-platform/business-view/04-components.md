@@ -7,7 +7,7 @@ Description: Documentation related to the source components of business views
 
 ## Common Operations
 
-For more information on the common operators implemented in all components, please refer the the following documentation: [Common operators](business-view-features)
+For more information on the common operators implemented in all components, please refer the the following documentation: [Common operators](./03-common-features)
 
 ## Source Components
 

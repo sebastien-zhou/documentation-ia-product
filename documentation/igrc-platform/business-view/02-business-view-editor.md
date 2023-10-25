@@ -30,7 +30,7 @@ To describe the business view editor, we are going to create a business view bas
 
 In the creation wizard, select any ledger view in the view field and click on `Finish`. In the example below the business view is based on the ledger view `br_application`.  
 
-The business view editor is built the same way as the other graphical editors in the product (see [here](../getting-started/getting-started#using-the-editors) for more graphical editor descriptions). The editor contains the graphical part in the middle, the palette containing all the available components on the right and the Properties window at the bottom of the studio (see caption below).  
+The business view editor is built the same way as the other graphical editors in the product (see [here](../getting-started/getting-started-studio#using-the-editors) for more graphical editor descriptions). The editor contains the graphical part in the middle, the palette containing all the available components on the right and the Properties window at the bottom of the studio (see caption below).  
 
 ![Business view editor](./images/bv_editor.png "Business view editor")
 
