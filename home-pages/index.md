@@ -103,6 +103,9 @@ For customers under maintenance/subscription contract as well as official partne
 
   > [Controls](/ia/dev-descartes/igrc-platform/controls)  
   > This document provides information on the creation, installation, usage of controls.  
+  
+  > [Reports](/ia/dev-descartes/igrc-platform/reports)  
+  > This document provides information on the creation, installation, usage of controls.  
 
 </section>
 
