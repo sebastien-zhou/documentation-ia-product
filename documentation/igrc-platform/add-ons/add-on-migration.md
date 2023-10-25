@@ -15,25 +15,25 @@ A dedicated facet management tool has been included in iGRCanalytics. It can be 
 - Manage facets and perform operations such as:  install, repair, upgrade, delete, etc.
 - Upgrade facets using the dedicated migration tool
 
-![Facet management tool](./images//mig-facet-tool.png "Facet management tool")
+![Facet management tool](./images/mig-facet-tool.png "Facet management tool")
 
 ## Prepare the Migration
 
 First check the current version installed.  
 
-![Facet version](./images//mig-facet-version.png "Facet version")
+![Facet version](./images/mig-facet-version.png "Facet version")
 
 Then download the latest version of the facet from Brainwave's Marketplace [here](https://marketplace.brainwavegrc.com/).
 
-![Facet download](./images//mig-download.png "Facet download")
+![Facet download](./images/mig-download.png "Facet download")
 
 Copy the facet file to the following folder of the project `<projectDirectory>\library\facets`
 
-![Facet location](./images//mig-put-in-library.png "Facet location")
+![Facet location](./images/mig-put-in-library.png "Facet location")
 
 Check that the product has detected the new version, it might be necessary to refresh the list of available facets
 
-![Facet upgrade available](./images//mig-upgrade-available.png "Facet upgrade available")
+![Facet upgrade available](./images/mig-upgrade-available.png "Facet upgrade available")
 
 ## Launch the Migration
 
@@ -46,13 +46,13 @@ This step is ignored if the facet has no variables to configured.
 
 This dialog lists the existing variables as read only and if there are new variables configured in the updated version of the facet you will be able to set their values:  
 
-![Facet variables](./images//mig-config-variables.png "Facet variables")
+![Facet variables](./images/mig-config-variables.png "Facet variables")
 
 ### Upgrade Summary
 
 A summary of all actions that will be performed during the upgrade is listed. This details the list of created, updated and/or removed files within the updated facet:  
 
-![Facet upgrade summary](./images//mig-upgrade-summary.png "Facet upgrade summary")
+![Facet upgrade summary](./images/mig-upgrade-summary.png "Facet upgrade summary")
 
 ### Deleted Files
 
@@ -62,19 +62,20 @@ In some cases files can be deleted when upgrading from one version of a facet to
 
 It is recommended to delete these files after checking that they are obsolete. However, If they are referenced in the project, make sure there are no conflicts with the new add-on files by running a consistency check on the project.
 
-![Facet deprecated files](./images//mig-deprecated-files.png "Facet deprecated files")
+![Facet deprecated files](./images/mig-deprecated-files.png "Facet deprecated files")
 
 If project customization have been made you can check the option "Delete all files". The migration tool will then automatically delete the listed files durning the upgrade otherwise.
 
 > [!warning] If you check the option "Do not delete files" then please export the list deleted files before proceeding with the migration wizard. This is done by clicking the export tooltip button.  
-> The export button will generate a csv file containing the deprecated files:  
-> ![Facet export deprecated files](./images//mig-export-deprecated.png "Facet export deprecated files")
+> The export button will generate a csv file containing the deprecated files. See caption below.  
+
+![Facet export deprecated files](./images/mig-export-deprecated.png "Facet export deprecated files")
 
 ## Merge Tool
 
 At the end of each add-on migration (except when no modification is done) a dialog box shows the results of the upgrade. This dialog displays statistics of the impact of the migration add-on files.  
 
-![Facet migration finished](./images//mig-upgrade-finish.png "Facet migration finished")
+![Facet migration finished](./images/mig-upgrade-finish.png "Facet migration finished")
 
 After clicking "OK" you will be redirected to the **add-on migration merge tool** editor. This tool displays information on the migration actions of the add-on. Such as:
 
@@ -87,7 +88,7 @@ A merging tool is provided to help resolve potential conflicts and finalize the 
 
 In the next caption we will explain the information displayed and the possible actions in this editor:  
 
-![Facet migration merge tool](./images//mig-merge-tool.png "Facet migration merge tool")
+![Facet migration merge tool](./images/mig-merge-tool.png "Facet migration merge tool")
 
 1. **Status of the migration:** Displays the general information on the migration and the current state (Migration has conflicts, is waiting for finalization or finished).  
 2. **Conflicting files:** List of files that the product couldn't merge files automatically. The user must complete the operation manually (for example using merge tool see next option).  
@@ -116,7 +117,7 @@ The add-on migration tool will end in one of the following states:
 2. **Migration awainting finalization:** This is an intermediate state where the user has resolved all conflicts but hasn't finalized the migration.
 3. **Migration finished successfully:** No actions needed, the add-on migration merge tool is shown just for read-only purpose.
 
-![Facet migration states](./images//mig-upgrade-states.png "Facet migration states")
+![Facet migration states](./images/mig-upgrade-states.png "Facet migration states")
 
 ## Resolve Conflicts
 
@@ -128,7 +129,7 @@ The add-on migration merge tool provides three technical ways to resolve conflic
 2. Keep current version in the project
 3. Replace with generated version
 
-![Migration merge tool options](./images//mig-conflicts.png "Migration merge tool options")
+![Migration merge tool options](./images/mig-conflicts.png "Migration merge tool options")
 
 ### Resolve Conflicts Using Merge Tool
 
@@ -142,7 +143,7 @@ In the next caption we will highlight the actions available in the merge tool. W
 - Non conflicting changes
 - Preserving user customization
 
-![Migration merge tool](./images//mig-resolve-conflicts.png "Migration merge tool")
+![Migration merge tool](./images/mig-resolve-conflicts.png "Migration merge tool")
 
 1. The conflicting File name
 2. The left pane displays the working tree version. The current version of the file in the project.
@@ -156,7 +157,7 @@ In the next caption we will highlight the actions available in the merge tool. W
 
 To copy the current selected change from right to left you can use the option shown below
 
-![Copy Current Change from Right to Left](./images//mig-copy-right-to-left.png "Copy Current Change from Right to Left")
+![Copy Current Change from Right to Left](./images/mig-copy-right-to-left.png "Copy Current Change from Right to Left")
 
 > When confronted with complicated conflicts, the best solution is to use **Replace with the version from the newest add-on** option and then use the comparison tool on the files merged by the user to only take the changes from current version of the workspace to the migration version. This minimizes the risk of conflicts on this file in the future add-on migration.
 
@@ -178,7 +179,7 @@ The Add-on migration merge tool is still available for read-only purpose, to che
 
 If no longer necessary you can clean up files in the working directory to delete the migration result file and related temporary working directories and files. These files are all stored in the `/logs` directory of the project.  
 
-![Clean temporary working directories](./images//mig-clean.png "Clean temporary working directories")
+![Clean temporary working directories](./images/mig-clean.png "Clean temporary working directories")
 
 The list of deleted files are:  
 
@@ -186,4 +187,4 @@ The list of deleted files are:
 2. Working directories `logs/.ADD-ON-NAME_facet folder`
 3. Temporary git repository
 
-![Elements to be deleted after a clean](./images//mig-clean-working-dir.png "Elements to be deleted after a clean")
+![Elements to be deleted after a clean](./images/mig-clean-working-dir.png "Elements to be deleted after a clean")
