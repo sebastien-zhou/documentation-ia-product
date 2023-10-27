@@ -3,9 +3,11 @@ title: Dashboard Customization
 Description: Documentation related to custom data accesses for dashboards, management page and tips
 ---
 
-# Add Custom Data Accesses for Dashboards
+# Dashboard customization
 
-## Create Specific Dashboard Data Access Components
+## Add Custom Data Accesses
+
+### Create Specific Data Access Components
 
 Dashboards need two data components to access data from the Identity Ledger:
 
@@ -26,7 +28,7 @@ The standard **Mashup Dashboards Support** add-on that you have included in your
 
 These views and rules cover the most common use cases. However, you can also build your own rules and views for more specific needs, using the Studio.
 
-## Create a Rule for Dashboards
+### Create a Rule for Dashboards
 
 To create a rule to be used in your dashboard like any regular rule, using the Studio rule editor.
 Some options are needed to be set for the rule to be available for selection in the dashboards:
@@ -37,7 +39,7 @@ Some options are needed to be set for the rule to be available for selection in 
 
 Dashboard rules can have any number of parameters. It is recommended to place the rules available for use in a dashboard in the folder `rules/webportal/dashboard` sub-directory. This will facilitate maintenance of said rules.  
 
-### Rule Design Feature
+#### Rule Design Feature
 
 By default, a rule will be available to all dashboard designers. However, if you want your rule to be available only to a sub-set of designers, for example because it's costly to compute, or because it's not relevant to others, you can associate a **design feature**  to this rule. The rule will then be visible in the design editor to all designers that are authorized for this feature.
 
@@ -45,7 +47,7 @@ By default, a rule will be available to all dashboard designers. However, if you
 
 The best practice is to declare a different feature for each rule, then grouping them using feature sets that are then associated to specific users.
 
-## Create a View for Dashboards
+### Create a View for Dashboards
 
 Views determine how entities retrieved by rules will be displayed in the dashboards.  
 The view provides a set of columns to access, the direct attributes of the entity (_e.g._ email or an account), attributes of related entities (_e.g._ job title of an identity) or count entities according to some criteria (_e.g._ number of accounts by organization ).  
@@ -63,9 +65,9 @@ It can be changed to target any other entity in the view using **Toggle web port
 
 It's recommended to set labels on each attribute of the view to something readable for the end-user. This also avoids the systematic re-labeling of the attributes by the dashboard designer.For example, when defining an aggregate column, it should be labelled "Count" or something similar. Nationalized labels can be set using the small flag icon.
 
-![Attibute properties](./images/mashup_06.png "Attibute properties")
+![Attribute properties](./images/mashup_06.png "Attribute properties")
 
-### Using Business Views in Dasbhoards
+#### Using Business Views in Dashboards
 
 Business Views can be used to feed dashboard components like any other views.
 
@@ -75,11 +77,11 @@ Business Views can be used to feed dashboard components like any other views.
 
 ![Business Views](./images/businessview_studio.png "Business Views")
 
-### View Design Feature
+#### View Design Feature
 
 By default, a view will be available to all dashboard designers. However, if you want your view to be restricted to some designers, for example because it's costly to compute, or because it's not relevant to others, you can associate a **design feature**  to this view. The view will then be visible in the design editor to all designers that are authorized for this feature.
 
-# Dashboard Management Page
+## Dashboard Management Page
 
 The **Dashboard Management** page allows **dashboard designers** to create, configure and delete dashboards. The **platform administrators** are in addition authorized to export and import dashboards in the same environment or across different environments. This page is not available to regular users of the web portal.
 
@@ -136,7 +138,7 @@ The import merges the imported dashboard with the existing one as follows:
   - If a dashboard already exists in the current configuration (because it was imported before, not because it has the same title), the imported dashboard will replace the existing one.
   - If the dashboard creator cannot be identified, the dashboard will be assigned to the current user (that is, the **platform administrator** )
 
-## Export Dashboards
+### Export Dashboards
 
 The Export menu button allows platform administrators to export either the whole list of dashboards or a selection of dashboards to a file on their local computer.  
 This file can then be used for backup purposes, to copy the dashboards from an environment to another (_e.g._ from test to production) or to share specific dashboards between designers.  
@@ -152,7 +154,7 @@ The export file is named **dashboards_export.data** by default.
 
 ![Export wizard](./images/export_wiz2.png "Export wizard")
 
-## Import dashboards
+### Import dashboards
 
 You can import all or part of exported dashboards through the dashboard import wizard
 
@@ -176,9 +178,9 @@ Click on Finish to perform the actual import, or Cancel to abort and get back to
 
 ![Dashbord import wizard - summary](./images/import_wiz3.png "Dashbord import wizard - summary")
 
-# Dashboard Tips & Tricks
+## Dashboard Tips & Tricks
 
-## Optimize Performances
+### Optimize Performances
 
 If you observe that one of your component takes time to be executed, try to :
 

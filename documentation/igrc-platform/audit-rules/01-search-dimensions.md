@@ -60,7 +60,7 @@ Exporting in report format is performed by clicking on the 'Report' button in th
 
 ![Report model selection](./images/rule-report-selection.png "Report model selection")
 
-Choosing a report will cause it to appear in the Web viewer. Please refer to the [Guide to the report editor](..\creating-reports\creating-reports) for more details about this viewer interface.
+Choosing a report will cause it to appear in the Web viewer. Please refer to the [Guide to the report editor](../reports) for more details about this viewer interface.
 
 ## Add Enumeration Constraints
 

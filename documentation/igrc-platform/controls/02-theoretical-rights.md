@@ -7,7 +7,7 @@ Description: Documentation related to the Theoretical Rights and Segregation of 
 
 ## Context
 
-This document functionally describes the different types of controls provided with iGRC. The technical functionalities are described in the following article available [Control Methods present in Analytics](control-methods.md)
+This document functionally describes the different types of controls provided with iGRC. The technical functionalities are described in the following article available [Control Methods present in Analytics](index.md)
 
 Brainwave Identity GRC incorporates the concept of control. Controls are of several types including:
 
@@ -24,7 +24,7 @@ A control allows identifying such problems:
 
 ## iGRC Analytics Types of Controls
 
-Among the defined controls under the mentioned article: [Control Methods present in Analytics](control-methods.md), and depending on the type of parameter, such results can be obtained:
+Among the defined controls under the mentioned article: [Control Methods present in Analytics](index.md), and depending on the type of parameter, such results can be obtained:
 
 - Arbitrary set: The control result is the result of a rule. It is useful in the case of data quality issues. Examples of concepts of the iGRC ledger that can be titled by a control discrepancy are account, identity, etc.; setting such type of control comes to implement a rule of type:
   - list of the orphan, dormant accounts,

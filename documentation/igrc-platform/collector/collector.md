@@ -566,7 +566,7 @@ The **View Source** component enables the use of view result as a input during t
 One use case is to inject Audit Logs data through a Logs Views source to compute Usage data.  
 Another use case is to retrieve right reviews data (through a View source on Ticket Reviews) to collect theoretical rights.
 
-> The view source should be used with caution on regular Ledger Entities, such as accounts, applications, and identities, as the underlying view retrieves data from the **_previous_** timeslot.|
+> The view source should be used with caution on regular Ledger Entities, such as accounts, applications, and identities, as the underlying view retrieves data from the **_previous_** timeslot.
 
 ![Editor](./images/editor1.png "Editor")
 

@@ -24,7 +24,7 @@ The union component performs an union operation between records coming from a pr
 Both discriminators accept expressions so you can build a key composed of several columns from the current record.  
 
 It is mandatory to configure a view in the union component to perform the union operation.
-Please refer to the help of view source component for [how to configure the view](./business-view-components)
+Please refer to the help of view source component for [how to configure the view](./03-common-features)
 ![Union view](./images/union_view.png "Union view")
 
 ### Examples
@@ -105,7 +105,7 @@ The join types implemented in the component are (see caption below):
 Both keys accept expressions so you can build a key composed of several columns from the current record.
 
 It is mandatory to configure a view in the join component to perform the join operation.
-Please refer to the help of view source component for [how to configure the view](business-view-components)
+Please refer to the help of view source component for [how to configure the view](04-components)
 ![Union view](./images/union_view.png "Union view")
 
 ### Examples

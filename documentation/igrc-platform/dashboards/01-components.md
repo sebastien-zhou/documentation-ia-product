@@ -7,16 +7,14 @@ Description: Documentation related to dashboard components, configuration
 
 ## Introduction
 
-### Dashboard Components
-
 The following section details the available components and variations for use in dashboard and how to configure them:
 
 - Tables
 - Indicators (gauge or numeric)
 - Basic charts ( bars, horizontal bars, pies, and doughnuts)
 - Indicator groups ( gauge, numeric and rows)
-- Multi-serie charts ( bars and horizontal bars, stacked or side by side series)
-- Historical charts (single or mult-serie, bar, line and stacked areas )
+- Multi-series charts ( bars and horizontal bars, stacked or side by side series)
+- Historical charts (single or multi-series, bar, line and stacked areas )
 
  ![Contractor list](./images/mashup_11.png "Contractor list")
  ![Leavers](./images/mashup_13.png "Leavers")
@@ -43,13 +41,13 @@ Both search rules and data views can have parameters (see below for details).
 
 The following pages detail the configuration of each of the components:
 
-[Table Component](igrc-platform/dashboards/dashboard-components/dashboard-table-component.md)
-[Indicator Component](igrc-platform/dashboards/dashboard-components/dashboard-indicator-component.md)
-[Basic Chart Component](igrc-platform/dashboards/dashboard-components/basic-chart-components.md)
-[Indicator Groups](igrc-platform/dashboards/dashboard-components/dashboard-indicator-group-components.md)
-[Multi series charts components](igrc-platform/dashboards/dashboard-components/dashboard-multi-charts-components.md)
-[Single serie history charts](igrc-platform/dashboards/dashboard-components/dashboard-single-serie-history-charts-components.md)
-[Multi-series history chart](igrc-platform/dashboards/dashboard-components/multi-series-history-chart.md)
+[Table Component](#table-component)
+[Indicator Component](#indicator-component)
+[Basic Chart Component](#basic-chart-components)
+[Indicator Groups](#indicator-groups)
+[Multi series charts components](#multi-series-chart-components)
+[Single series history charts](#single-series-history-charts)
+[Multi-series history chart](#multi-series-history-chart)
 
 Don't forget to **Save** the dashboard when you are satisfied with the arrangement of components, or **Discard** changes to revert to the previous layout.
 
@@ -68,7 +66,7 @@ For each rule secondary parameter, you can set the parameter **Source** and **Va
 
 You can also select **None** as the source, to leave the parameter empty, if it's not mandatory.
 
-See [Secondary Parameter Configuration](igrc-platform/dashboards/advanced-configuration.md) for detailed explanations on the different sources.
+See [Secondary Parameter Configuration](./03-advanced-configation) for detailed explanations on the different sources.
 
 ### Data View Parameters
 
@@ -153,7 +151,7 @@ The computation consists of two parts:
 - **Maximum Value**  tab: allows to define a maximum value for computing a percentage value for the gauge.  
 This tab is only available if **Display value as a percentage**  has been checked
   - Select **Fixed Value**  and type in a value, to use a static value as the denominator for the percentage
-  - Select **From another search and value**  to have the percentage denominator dynamically computed based on another rule, search and aggregration function.  
+  - Select **From another search and value**  to have the percentage denominator dynamically computed based on another rule, search and aggregation function.  
 For example to compute the _rate of contractors_ in the company, you would select "_contractors_" as the main search for the gauge, and "_total employees_" as the maximum search.
 
 ![Indicator value](./images/indicator-value-cfg.png "Indicator value")
@@ -224,8 +222,8 @@ This page sets the chart general characteristics
 If the number of values in the chart exceeds the number of colors defined in the scheme, colors are cycled.
 - **Display options:**  for various chart flags depending on the chart's type
   - **Show legend** : (pie and doughnut charts)  allows to display a separate legend above the chart .
-  - **Display serie labels inside bars**  (horizontal bar) **:** displays the value labels inside the bars, to cope with long labels and screen space, or to the left or bars, for short labels.
-  - **Stagger serie labels**  (bar chart) to display bar labels on two lines.
+  - **Display series labels inside bars**  (horizontal bar) **:** displays the value labels inside the bars, to cope with long labels and screen space, or to the left or bars, for short labels.
+  - **Stagger series labels**  (bar chart) to display bar labels on two lines.
 - **Size** : Sets the chart's display size, expressed in columns and rows. See **Dashboard layout**  section for more information
 
 #### Search tab
@@ -252,7 +250,7 @@ There are two ways of defining chart data:
 
 - **Simple mode**: simply select attributes for value and category from a predefined list that covers common cases:
   - **Chart value** select the attribute to use as a value for chart points. The following attributes are available by default for selection:
-    - one **computed from search** agregate attribute computed by counting items matching the search criteria in each category
+    - one **computed from search** aggregate attribute computed by counting items matching the search criteria in each category
     - all **metadata numerical attributes** associated to the chart entity as defined in the project metadata.
   - Select **Category label** from a list of predefined category labels that cover common cases for the chart entity
 
@@ -262,7 +260,7 @@ There are two ways of defining chart data:
   - **View** drop down list allows to select the view to produce values and labels for the chart.
     Only views that target the same entities ( account, people, organization, etc.) as the selected search rule are displayed.  
     The selected view may have parameters which can be set by clicking the **Params...**  button (See § _View parameters_ for details)
-  - **Chart value** :  select an attribute from the view to use as the chart value points.  Numerical and agregate attributes from the view are available for selection.
+  - **Chart value** :  select an attribute from the view to use as the chart value points.  Numerical and aggregate attributes from the view are available for selection.
   - Select **Category label**  column from the view to use be used as the chart category label
 
 - You can optionally **Sort categories**  by count value, label or not sorted (natural order)
@@ -288,7 +286,7 @@ Create an indicator group using the ![Icon](./images/indgroup_24.png "Icon")    
   - **Display as** : selects the type of indicators in the group. All indicators in a group share the same type.  
 There are three different types :
     - **Radial Gauge** : indicators are displayed in a horizontal row of circular gauges
-    - **Numeric** : indicaotrs are displayed in a horizontal row of numeric indicators
+    - **Numeric** : indicators are displayed in a horizontal row of numeric indicators
     - **Text line** : indicators are displayed in a vertical row of lines of text.
   - **Size** : Sets the chart's display size, expressed in columns and rows. See **Dashboard layout**  section for more information
 
@@ -298,15 +296,15 @@ There are three different types :
   - **Delete** : to remove the selected indicator from the group
   - **Up / Down** : to move the selected indicator up and down in the list ( left/right on the display)
 
-For conveniency, it's also possible to add, edit and delete indicators directly using icon buttons (you must use the **Indicators** tab to reorder indicators).
+For convenience, it's also possible to add, edit and delete indicators directly using icon buttons (you must use the **Indicators** tab to reorder indicators).
 Move the mouse over the indicators while editing a dashboard to have the buttons appear.
 
 ![Indicators](./images/ind4.png "Indicators")
 
 ## Multi Series Chart Components
 
-Multi series charts display horizontal or vertical bars charts with more than one serie.
-Serie bars can be side by side, stacked or stacked to 100%.
+Multi series charts display horizontal or vertical bars charts with more than one series.
+series bars can be side by side, stacked or stacked to 100%.
 
 ![Multi series charts display1](./images/Multi_charts_bars.png "Multi series charts display1")
 
@@ -314,7 +312,7 @@ Serie bars can be side by side, stacked or stacked to 100%.
 
 ![Multi series charts display](./images/multicharts_bars_sbs.png "Multi series charts display")
 
-### Multichart Configuration
+### Multi-chart Configuration
 
 - **Basic** tab : sets the chart general characteristics
   - **Title** : Sets the text to be displayed in the chart's title bar
@@ -323,7 +321,7 @@ Serie bars can be side by side, stacked or stacked to 100%.
 If the number of values in the chart exceeds the number of colors defined in the scheme, colors are cycled.
   - **Display options:**  various chart flags depending on the chart's type
     - **Show legend** :  allows to display a separate legend above the chart .
-    - **Stagger serie labels**  ( bar chart) to display bar labels on two lines.
+    - **Stagger series labels**  ( bar chart) to display bar labels on two lines.
     - **Grouping mode** : how the series bars in each category should be grouped:  **Side by side** , **Stacked** or **Stacked at 100%**
   - **Size** : Sets the chart's display size, expressed in columns and rows. See **Dashboard layout**  section for more information
 
@@ -346,27 +344,27 @@ The selected view may have parameters which can be set by clicking the **Params.
 Sorting by value means the total values of all the series in each category
     - For readability matters, you must limit the number of categories in the chart ( default 5, maximum 50)
     - Check **Include other category with the remainders**  to gather the rest of the values into a single category labelled _Other_.
-    ![Multichart configuration](./images/multichart_config_cats.png "Multichart configuration")
+    ![Multi-chart configuration](./images/multichart_config_cats.png "Multi-chart configuration")
 
   - **Series** configuration
-    - Select **Serie label**  column from the view to use be used as the chart category label
+    - Select **series label**  column from the view to use be used as the chart category label
     - You can optionally **Sort series** by value, label or not sorted (natural order).
     - For readability matters, you must limit the number of series in the chart ( default 5, maximum 50)
-    - Check **Include other with the remainders**  to gather the rest of the series into one single serie labelled _Other_.  
-    ![Multichart configuration series](./images/multichart_config_series.png "Multichart configuration series")
+    - Check **Include other with the remainders**  to gather the rest of the series into one single series labelled _Other_.  
+    ![Multi-chart configuration series](./images/multichart_config_series.png "Multi-chart configuration series")
 
-### Notes on Multichart Data
+### Notes on Multi-chart Data
 
-The view for a multiseries chart must provide values for the chart in the following way:
+The view for a multi series chart must provide values for the chart in the following way:
 
-- Each row of the view provide data for one category and serie combination , with at least 3 columns for the category label, the serie label and the value. (see example below)
+- Each row of the view provide data for one category and series combination , with at least 3 columns for the category label, the series label and the value. (see example below)
 - Additional columns may be needed for linking information (such as internal ids)
 
-![Multichart view](./images/multichart_view.png "Multichart view")
+![Multi-chart view](./images/multichart_view.png "Multi-chart view")
 
-![Multichart view result](./images/multichart_view_results.png "Multichart view result")
+![Multi-chart view result](./images/multichart_view_results.png "Multi-chart view result")
 
-## Single Serie History Charts
+## Single series History Charts
 
 History chart display one value evolution over a number of time periods, either as a line or bar chart.
 
@@ -374,9 +372,9 @@ History chart display one value evolution over a number of time periods, either 
 
 ![History chart display](./images/History_charts_-2_.png "History chart display")
 
-You create a single-serie history chart using the ![History chart display](./images/histchart_24.png "History chart display") icon in the dashboard toolbar.
+You create a single-series history chart using the ![History chart display](./images/histchart_24.png "History chart display") icon in the dashboard toolbar.
 
-### Single-Serie History Chart Configuration
+### Single-series History Chart Configuration
 
 - **Basic** tab : sets the chart general characteristics
   - **Title** : Sets the text to be displayed in the chart's title bar
@@ -385,7 +383,7 @@ You create a single-serie history chart using the ![History chart display](./ima
 If the number of values in the chart exceeds the number of colors defined in the scheme, colors are cycled.
   - **Display options:**  various chart flags depending on the chart's type
     - **Show legend** :  allows to display a separate legend above the chart .
-    - **Stagger serie labels**  ( bar chart) to display bar labels on two lines.
+    - **Stagger series labels**  ( bar chart) to display bar labels on two lines.
   - **Size** : Sets the chart's display size, expressed in columns and rows. See **Dashboard layout**  section for more information
 
 - **Search**  tab : allows to select a **rule**  that will determine the entities from the Identity Ledger that will be in the scope of the chart. For example "All active entities", or "Orphaned Accounts".
@@ -406,7 +404,7 @@ The selected view may have parameters which can be set by clicking the **Params.
     - **Max displayed time slots** : limits the number of time slots to display. For example, typing 5 will display the last 5 timeslots, including the current one.
     - **Reference time slots only** : displays only the last _reference_ time slots.
 This is typically useful when the period of data collection is more frequent than the period of analysis (_e.g._ daily vs. weekly or monthly).  
-Time slots can be marked as -Reference- through a post-collect workflow. See [How to define and use Reference Timeslots](how-to/workflow/reference-timeslots.md)
+Time slots can be marked as -Reference- through a post-collect workflow. See [How to define and use Reference Timeslots](../../how-to/workflow/reference-timeslots)
 
 ![History chart configuration](./images/History_charts_config1.png "History chart configuration")
 
@@ -414,20 +412,22 @@ Time slots can be marked as -Reference- through a post-collect workflow. See [Ho
 
 You can format dates on the y axis using the following localized tokens:
 
-|%a|abbreviated weekday name|Mon|
-|%A|full weekday name|Monday|
-|%b|abbreviated month name.|Nov|
-|%B|full month name.|November|
-|%d|zero-padded day of the month as a decimal number [01,31]|01 for 2018/07/01|
-|%e|space-padded day of the month as a decimal number [1,31]|1 for 2017/07/01|
-|%j|day of the year as a decimal number [001,366].||
-|%m|month as a decimal number [01,12].|07 for July|
-|%U|Sunday-based week of the year as a decimal number [00,53].|26 for Sunday 2018/07/01|
-|%w|Sunday-based weekday as a decimal number [0,6].|0 for Sunday 2018/07/01|
-|%W|Monday-based week of the year as a decimal number [00,53].|25 for Sunday 2018/07/01|
-|%x|the locale's date, such as %-m/%-d/%Y.\*|07/01/2018|
-|%y|year without century as a decimal number [00,99].|18 for 07/01/2018|
-|%Y|year with century as a decimal number.|2018|
+| Token | Description                                                 | Example                  |
+| :---- | :---------------------------------------------------------- | :----------------------- |
+| %a    | abbreviated weekday name                                    | Mon                      |
+| %A    | full weekday name                                           | Monday                   |
+| %b    | abbreviated month name.                                     | Nov                      |
+| %B    | full month name.                                            | November                 |
+| %d    | zero-padded day of the month as a decimal number `[01,31]`  | 01 for 2018/07/01        |
+| %e    | space-padded day of the month as a decimal number `[1,31]`  | 1 for 2017/07/01         |
+| %j    | day of the year as a decimal number `[001,366]`             |                          |
+| %m    | month as a decimal number `[01,12]`                         | 07 for July              |
+| %U    | Sunday-based week of the year as a decimal number `[00,53]` | 26 for Sunday 2018/07/01 |
+| %w    | Sunday-based weekday as a decimal number `[0,6]`            | 0 for Sunday 2018/07/01  |
+| %W    | Monday-based week of the year as a decimal number `[00,53]` | 25 for Sunday 2018/07/01 |
+| %x    | the locale's date, such as `%-m/%-d/%Y.*`                   | 07/01/2018               |
+| %y    | year without century as a decimal number `[00,99]`          | 18 for 07/01/2018        |
+| %Y    | year with century as a decimal number.                      | 2018                     |
 
 For example, %b - %Y will format 07/01/2018 as Jul - 2018.
 
@@ -438,9 +438,9 @@ You can also select from predefined formats:
 - Abbreviated month / Year : equivalent to %d-%y
 - Month / day : equivalent to %m/%e
 
-#### Data for Single-Serie History Chart
+#### Data for Single-series History Chart
 
-The view for a single serie history chart must provide only one column with the numerical value to display.
+The view for a single series history chart must provide only one column with the numerical value to display.
 related attributes and any link-related attributes.
 The view must return only one value when executed in the studio.
 
@@ -449,13 +449,13 @@ The view must return only one value when executed in the studio.
 
 ## Multi-Series History Chart
 
-History chart display serie values evolution over a number of time periods, either as stacked areas, multi-bar or multi-line chart.
+History chart display series values evolution over a number of time periods, either as stacked areas, multi-bar or multi-line chart.
 It could be for example, evolution of #employee per job, #accounts per repository, etc.
 
 ![Multi series history chart 1](./images/History_charts-03.png "Multi series history chart 1")
-![Multi series hiqtory chart 2](./images/Histo_multi_charts_.png "Multi series hiqtory chart 2")
+![Multi series hie=story chart 2](./images/Histo_multi_charts_.png "Multi series history chart 2")
 
-You create a multi-serie history chart using the ![Icon](./images/histchart_24.png "Icon") icon in the dashboard toolbar.
+You create a multi-series history chart using the ![Icon](./images/histchart_24.png "Icon") icon in the dashboard toolbar.
 
 ### Multi-series History Chart Configuration
 
@@ -466,7 +466,7 @@ You create a multi-serie history chart using the ![Icon](./images/histchart_24.p
 If the number of values in the chart exceeds the number of colors defined in the scheme, colors are cycled.
   - **Display options:**  various chart flags depending on the chart's type
     - **Show legend** :  allows to display a separate legend above the chart .
-    - **Stagger serie labels**  ( bar chart) to display bar labels on two lines.
+    - **Stagger series labels**  ( bar chart) to display bar labels on two lines.
     - **Grouping mode** : how the series bars in each category should be grouped:  **Side by side**  , **Stacked** or **Stacked at 100%.**  
 In line mode, stacked mode display the series as stacked areas, not lines.
   - **Size** : Sets the chart's display size, expressed in columns and rows. See **Dashboard layout**  section for more information
@@ -492,44 +492,18 @@ The selected view may have parameters which can be set by clicking the **Params.
 ![Time slots](./images/History_charts_config1.png "Time slots")  
 
 - **Series** configuration:
-  - Select **Serie label**  column from the view to be used as the chart serie label
+  - Select **series label**  column from the view to be used as the chart series label
   - You can optionally **Sort series** by value, label or not sorted (natural order).
   - For readability matters, you must limit the number of series in the chart ( default 5, maximum 50)
-  - Check **Include other with the remainders**  to gather the rest of the series into one single serie labelled _Other_.
+  - Check **Include other with the remainders**  to gather the rest of the series into one single series labelled _Other_.
 
-#### Date Formatting
+see [here](#date-formatting) for more information on the date formatting
 
-You can format dates on the y axis using the following localized tokens:
+#### Data for Multi-series History Charts
 
-|%a|abbreviated weekday name|Mon|
-|%A|full weekday name|Monday|
-|%b|abbreviated month name.|Nov|
-|%B|full month name.|November|
-|%d|zero-padded day of the month as a decimal number [01,31]|01 for 2018/07/01|
-|%e|space-padded day of the month as a decimal number [1,31]|1 for 2017/07/01|
-|%j|day of the year as a decimal number [001,366].||
-|%m|month as a decimal number [01,12].|07 for July|
-|%U|Sunday-based week of the year as a decimal number [00,53].|26 for Sunday 2018/07/01|
-|%w|Sunday-based weekday as a decimal number [0,6].|0 for Sunday 2018/07/01|
-|%W|Monday-based week of the year as a decimal number [00,53].|25 for Sunday 2018/07/01|
-|%x|the locale's date, such as %-m/%-d/%Y.*|07/01/2018|
-|%y|year without century as a decimal number [00,99].|18 for 07/01/2018|
-|%Y|year with century as a decimal number.|2018|
-
-For example, %b - %Y will format 07/01/2018 as Jul - 2018.
-
-You can also select from predefined formats:
-
-- Short date : equivalent to %x
-- Month number / Year : equivalent to %m/%y
-- Abbreviated month / Year : equivalent to %d-%y
-- Month / day : equivalent to %m/%e
-
-#### Data for Multi-Serie History Charts
-
-The view for a multi-series history chart must provide one column with the numerical value to display and one or more columns for the serie (serie label, serie unique id, etc..)
+The view for a multi-series history chart must provide one column with the numerical value to display and one or more columns for the series (series label, series unique id, etc..)
 It need not contain timeslot related attributes and any link-related attributes.
-The view must return one row per serie.
+The view must return one row per series.
 
-![Data for multi-serie history chart 1](./images/histo_n_view.png "Data for multi-serie history chart 1")
-![Data for multi-serie history chart 2](./images/histo_n_view_res.png "Data for multi-serie history chart 2")
+![Data for multi-series history chart 1](./images/histo_n_view.png "Data for multi-series history chart 1")
+![Data for multi-series history chart 2](./images/histo_n_view_res.png "Data for multi-series history chart 2")

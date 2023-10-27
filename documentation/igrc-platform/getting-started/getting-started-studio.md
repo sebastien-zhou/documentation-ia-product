@@ -736,7 +736,7 @@ The graphical editor of the report layout consists of a series of tabs (Layout, 
 
 It is possible to preview the reports while clicking the 'View report' button on the Brainwave Identity GRC Analytics toolbar, choosing "In Web Browser".
 
-> If you're using Internet Explorer 11, please follow [those directions](how-to/misc/IE-11-preview-errors.md).|
+> If you're using Internet Explorer 11, please follow [those directions](how-to/misc/IE-11-preview-errors.md).
 
 ![Report preview](./images/worddav949884012063a57b13904053361256fd.png "Report preview")
 

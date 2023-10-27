@@ -1,12 +1,13 @@
 ---
-title: Dashboard Introduction
+title: Dashboard
 Description: Documentation related to dashboards, its installation and its creation
 ---
 
+# Dashboards
 
-# Dashboards: an Introduction
+## Introduction
 
-## Audience
+### Audience
 
 This documentation is intended for the following personas:
 
@@ -14,7 +15,7 @@ This documentation is intended for the following personas:
 - _Technical consultants_ that have access to the iGRC platform to perform technical tasks such as installing components, creating or modifying views and rules, managing roles...
 - _Platform Administrators_: administrators of the iGRC platform or users with the **igrc_administrator** role.
 
-## Brainwave Context
+### Brainwave Context
 
 As of Brainwave iGRC 2017 a new functionality has been implemented that allows functional users to design their own dashboards directly from the web portal and share them with selected users.
 
@@ -33,7 +34,7 @@ Creating dashboards requires 4 steps:
 
 These steps will be detailed in the next pages.
 
-# Installation
+## Installation
 
 To enable the use and creation of dashboards in the webportal it is required to install some components in the studio and to perform a series of configuration operations before deploying the webportal.
 
@@ -53,7 +54,7 @@ You can select more than one resource templates using the button to the right.
 
 > Users do not need any specific role to access dashboards that have been shared with them
 
-# Create a Dashboard
+## Create a Dashboard
 
 The following steps show how a designer can create a dashboard in the web portal:
 
@@ -84,7 +85,7 @@ The following steps show how a designer can create a dashboard in the web portal
 
 Alternatively, you can also select it from the menu bar.
 
-# Add Content
+## Add Content
 
 To modify a dashboard's contents:
 
@@ -117,7 +118,7 @@ This will display the components configuration wizard.
 
 Before adding content to your dashboard, It's recommended to think of the overall design of the dashboard (number and type of components) then to define its layout scheme.
 
-# Configure the Dashboard Layout
+## Layout configuration
 
 Dashboard components are arranged according to a **grid layout** , where the display space is divided in a fixed number of columns and a varying number of rows.  
 Grid layouts are commonly used in web design to ensure clarity and readability of the displayed content whatever the size of the display and because it's easy to put in place (no pixel headaches).  

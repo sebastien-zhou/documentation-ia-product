@@ -10,10 +10,10 @@ Description: Documentation related to advanced configuration of the dashboard
 A dashboard may have one or more parameters to modify its content (data and titles).
 Any parameter will be displayed in the **dashboard parameters panel,** where the end-user can select or type values and click **Apply** to update the dashboard with new parameter values.
 
-The example below displays simple HR statistics dashboard for a given organization within the enterprise ( count of personel in the organizaton, and jobs breakdown).
+The example below displays simple HR statistics dashboard for a given organization within the enterprise (count of personnel in the organization, and jobs breakdown).
 The end-user can then select an organization from a list of known organization to update the dashboard with data about the selected organization.
 
-![Oganization HR statistics](./images/params_01.png "Oganization HR statistics")
+![Organization HR statistics](./images/params_01.png "Organization HR statistics")
 
 A dashboard can have two kinds of parameters
 
@@ -34,14 +34,14 @@ The designer can also define a default text or item to be used when the dashboar
 
 The common purpose of **hidden parameters** is to allow creating separate instances of a **dashboard template** (read more on dashboard templates in the section below).
 These dashboard instances can then be published to different populations.
-For example, consider there are many account respositories (domain forest) managers in your company, which all need a similar dashboard with analytics for the accounts in the repository they manage.
+For example, consider there are many account repositories (domain forest) managers in your company, which all need a similar dashboard with analytics for the accounts in the repository they manage.
 In this case, the designer would create a dashboard template that displays account analytics for a given repository, as a hidden parameter.
 He will then create instances of the dashboard template for each managed repository, and publish them to each repository manager.
 For convenience, the dashboard title could automatically include the repository name, _e.g._ "Access Analytics on EMEA".
 
 Hidden parameters have the same behavior as regular parameters, with the following differences:
 
-- A hidden parameter does not show in the dashboard parameter panel. Its value must be set at design time, usually when instanciating the dashboard from a template.
+- A hidden parameter does not show in the dashboard parameter panel. Its value must be set at design time, usually when instantiating the dashboard from a template.
 - The hidden parameter value can affect dashboard component data and title plus it can also be used in the dashboard's title itself.
 
 ### Create a Dashboard Parameter
