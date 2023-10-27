@@ -107,7 +107,7 @@ Exclude:
 ![Exclude Include](./images/excludex2.png "Exclude Include")
 
 Include case 1:  
-![Include](./images/includex2.png "Include")
+![Include](./images/includex2.png "Include")  
 Include case 2:  
 ![Include](./images/includex2_2.png "Include")
 
