@@ -37,9 +37,7 @@ Source type components mainly contribute to the establishment of the database pa
 Filter type components are used to modify the contents of the current dataset while the target type components provide data to the ledger from the current dataset without modifying anything. In both cases, components accept a dataset as input, process it, and then go to the next component according to the transitions.  
 It is important to note that a target type component is not a terminal element in the collector line, but it may have one or more outgoing transitions to other filter or target type components as shown in the following example:
 
-![Target type](./images/worddav15d9665a2b9b5d2161dab2b26e48729f.png "Target type")  
-
-**_Sequencing several targets_**
+![Sequencing several targets](./images/worddav15d9665a2b9b5d2161dab2b26e48729f.png  "Sequencing several targets")
 
 Only filter type components are involved in the formation of the data pattern. For example, adding an attribute calculated from another one in the modification component automatically declares the new attribute in the collector line pattern. Target type components never modify the dataset and, therefore, have no effect on the pattern.
 
@@ -47,13 +45,11 @@ Only filter type components are involved in the formation of the data pattern. F
 
 The components of a collector line are connected to each other by transitions. If several transitions start from a component, each of them is numbered in order to follow them in ascending order of their numbers.
 
-![Numbered transitions](./images/1.png "Numbered transitions")  
-**_Numbered transitions_**
+![Numbered transitions](./images/1.png  "Numbered transitions")
 
 A transition may carry a condition authorizing or preventing crossing the link to reach the next component. This condition is always expressed in the form of a JavaScript function call. In the graphical editor, text may be displayed expressing the condition clearly for an easier understanding of the collector line.
 
-![Conditioned transitions](./images/2.png "Conditioned transitions")  
-**_Conditioned transitions_**
+![Conditioned transitions](./images/2.png  "Conditioned transitions")
 
 The general principle of operation of the transitions is the following when there is at least one outgoing transition:
 
@@ -68,8 +64,7 @@ The condition associated with a transition is a JavaScript activation expression
 
 It is important to note that the transition conditions are all evaluated before being performed, and not as the following components are running.  
 
-![Activation expression in a transition](./images/3.png "Activation expression in a transition")  
-**_Activation expression in a transition_**  
+![Activation expression in a transition](./images/3.png  "Activation expression in a transition")  
 
 The return value of the activation expression is true if the transition can be performed, false otherwise. If the activation expression returns true, the next component is executed.  
 In most cases, the activation expression tests the dataset contents as in the example above. However, in some cases, the passage of a transition must be made conditional upon the detection of a particular event. Indeed, some components generate events generally corresponding to working errors. For example, the modifying component of an attribute may generate an event if the attribute does not exist. The name of the event may be freely chosen. It becomes possible to pass on a particular transition when the event has been detected. The following code does the opposite as it prevents the transition from passing if the '_unknown attribute'_ event is detected:  
@@ -92,8 +87,7 @@ A single ending point may be defined in a collector line. The ending point does 
 
 The collector engine goes through several states as it is executed. The following diagram shows the sequence of the states:
 
-![Collector engine states](./images/worddavc52dfa2d5eec6185b8f76274371a3329.png "Collector engine states")
-**_Collector engine states_**  
+![Collector engine states](./images/worddavc52dfa2d5eec6185b8f76274371a3329.png  "Collector engine states")  
 
 The explanation of each state and of the transitions is given below:
 
@@ -138,8 +132,7 @@ In a collector line, some components declare attributes. This is particularly th
 When running, a JavaScript function may dynamically declare a new attribute by specifying its name, type and multivalued indicator. The pattern is then completed with this new definition.  
 A dataset is the element that is transmitted from one component to another by following transitions of the collector line. The dataset contains a set of attributes, where each attribute may contain one or more values as declared in the pattern (multivalued indicator). It is important to note that all the attributes declared in the collector line may not be present at all times in the dataset at runtime. Indeed, the source components only add attributes corresponding to a non-empty column in the file to the dataset. The following diagram shows the structure of a data set:
 
-![Diagram dataset](./images/worddavc5cde702087dd35c6ac01c810f783e32.png "Diagram dataset")
-**_Structure of a dataset_**
+![Structure of a dataset](./images/worddavc5cde702087dd35c6ac01c810f783e32.png  "Structure of a dataset")
 
 It is important to understand this structure if you want to manipulate the dataset in a JavaScript function or a macro. There are APIs that allow you to list out each nesting level and alter the dataset or the content of a particular attribute.
 

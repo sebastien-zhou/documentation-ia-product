@@ -17,8 +17,7 @@ Attributes are characterised according to:
 
 The toolbox displays the attributes following the format _identifier-description._ Once an attribute is selected in the editor, the user sees only its identifier in the graphical part; the description of the selected attribute is visible in the 'Outline' view of the editor.      
 
-![Attributes](igrc-platform/views/images/1.png "Attributes")   
-**_Identifier and description of attributes_**   
+![Identifier and description of attributes](igrc-platform/views/images/1.png  "Identifier and description of attributes")   
 
 Several attribute families are available:   
 

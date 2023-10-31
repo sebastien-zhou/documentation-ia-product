@@ -246,8 +246,7 @@ Report layout always follows the same logic:
 
 Display static text in the report. The text is formatted and localized through its properties.
 
-![Label component properties](./images/worddav0bb328d75cfcf5854c12e9583f4a5ad3.png "Label component properties")  
-**_Label component properties_**
+![Label component properties](./images/worddav0bb328d75cfcf5854c12e9583f4a5ad3.png  "Label component properties")
 
 ### Text
 

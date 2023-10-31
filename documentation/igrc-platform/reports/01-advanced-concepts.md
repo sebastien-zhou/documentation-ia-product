@@ -120,8 +120,7 @@ Serial or stacked pyramid histogram... ability to overlay any other type of char
 
 Radar ([Radar chart](http://en.wikipedia.org/wiki/Radar_chart))
 
-![Radar](./images/worddavc3004712105d74706c2e8b5945559f67.png "Radar")
-**_Radar_**
+![Radar](./images/worddavc3004712105d74706c2e8b5945559f67.png  "Radar")
 
 #### Treemap
 
