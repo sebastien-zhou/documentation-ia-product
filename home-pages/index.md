@@ -104,6 +104,9 @@ For customers under maintenance/subscription contract as well as official partne
   > [Reports](/ia/dev-descartes/igrc-platform/reports)  
   > This document provides information on the creation, installation, usage of controls.  
 
+  > [Reports](/ia/dev-descartes/igrc-platform/dashboards)  
+  > This document provides information on the creation, installation, usage of dashboards.  
+
   > [Auditlogs](/ia/dev-descartes/igrc-platform/audit-logs)  
   > This document provides information on the creation, installation, usage and of Auditlogs, the productions engine to ingest and query application logs.
 
