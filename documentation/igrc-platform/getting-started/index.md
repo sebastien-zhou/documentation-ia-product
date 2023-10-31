@@ -3,14 +3,6 @@ title: Brainwave's Data Model
 Description: Documentation related to Brainwave's Data Model
 ---
 
-This section aims at rending Brainwave concepts familiar. Before getting your hands into the product, you can read this section to have a global understanding of the product.
-
-- [Brainwave Data Model: understanding the relations amongst data in the product](igrc-platform/getting-started/brainwave-data-model/brainwave-data-model.md): Explains how data is organized in the data model. This needs to be properly understood in order to efficiently manipulate data, rules, controls, reports, etc.
-
-- [Time Management: The Lifecycle of Timeslots](igrc-platform/getting-started/time-management/time-management.md): Explains how the Brainwave iGRC platform manages data over time
-
-- [Understanding the execution plan](igrc-platform/getting-started/understanding-execution-plan/understanding-execution-plan.md): Explains the necessary steps to load data into the Brainwave iGRC platform
-
 # Brainwave's Data Model
 
 ## General principles
@@ -317,7 +309,9 @@ The assets may be classed by category. The assets are linked to the organization
 With regard to the applications themselves, these make reference to a repository. It is in this same repository that the accounts permitting access to the said application will usually be found.  
 The permissions are associated with the applications. The permissions may follow a hierarchy (tree model), as is the case, for example, for shared directories or SharePoint trees.
 
-> The notion of hierarchy is suited to the modelling of directories. On the other hand, it is not suited to the modelling of profiles/transactions since, in this second case, we then have to make an acyclic oriented **_graph_**  model. The modelling of roles/transactions is carried out with the aid of the notion of "groups" of accounts. The groups enable accounts and permissions to be united in accordance with a graph model (a graph can, in effect, have several "relations"). <br> - Do not forget that in the data model it is all about application, whether this is IT applications, shared directories, SharePoint servers, physical access etc. An attribute of the application concept enables differentiation between the applications by family in order to adapt the analyses and reports as a function of these same families. This attribute is named "applicationtype". It takes, for example, the following values: "Profile" for the IT applications, "Filesystem" for the file systems, 'Physicalaccess" for the physical access systems etc. You can create completely new types of application, as this attribute is free text.
+> The notion of hierarchy is suited to the modelling of directories. On the other hand, it is not suited to the modelling of profiles/transactions since, in this second case, we then have to make an acyclic oriented **_graph_**  model. The modelling of roles/transactions is carried out with the aid of the notion of "groups" of accounts. The groups enable accounts and permissions to be united in accordance with a graph model (a graph can, in effect, have several "relations").  
+>
+> - Do not forget that in the data model it is all about application, whether this is IT applications, shared directories, SharePoint servers, physical access etc. An attribute of the application concept enables differentiation between the applications by family in order to adapt the analyses and reports as a function of these same families. This attribute is named "applicationtype". It takes, for example, the following values: "Profile" for the IT applications, "Filesystem" for the file systems, 'Physicalaccess" for the physical access systems etc. You can create completely new types of application, as this attribute is free text.
 
 Standard available attributes:
 
