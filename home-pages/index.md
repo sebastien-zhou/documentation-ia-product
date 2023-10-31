@@ -89,11 +89,8 @@ For customers under maintenance/subscription contract as well as official partne
 
 <section>
 
-  > [Add-ons](/ia/dev-descartes/igrc-platform/add-ons)  
-  > This document provides information on the creation, installation, usage and migration of project elements names Add-ons.  
-
-  > [Auditlogs](/ia/dev-descartes/igrc-platform/audit-logs)  
-  > This document provides information on the creation, installation, usage and of Auditlogs, the productions engine to ingest and query application logs.
+  > [Data discovery](/ia/dev-descartes/igrc-platform/data-discovery/)  
+  > This document provides information on the creation, installation, usage of the data discovery feature.  
 
   > [Audit rules](/ia/dev-descartes/igrc-platform/audit-rules)  
   > This document provides information on the creation, installation, usage and migration of audit rules.  
@@ -107,13 +104,19 @@ For customers under maintenance/subscription contract as well as official partne
   > [Reports](/ia/dev-descartes/igrc-platform/reports)  
   > This document provides information on the creation, installation, usage of controls.  
 
+  > [Auditlogs](/ia/dev-descartes/igrc-platform/audit-logs)  
+  > This document provides information on the creation, installation, usage and of Auditlogs, the productions engine to ingest and query application logs.
+
 </section>
 
 ## wizards
 
 <section>
 
-  > [Add-ons](/ia/dev-descartes/igrc-platform/collect-wizard)  
+  > [Add-ons](/ia/dev-descartes/igrc-platform/add-ons)  
+  > This document provides information on the creation, installation, usage and migration of project elements names Add-ons.  
+
+  > [Collect wizard](/ia/dev-descartes/igrc-platform/collect-wizard)  
   > This is a guide to using the collect wizard, a tool to automatically generate data discovery files and collect lines.  
 
 </section>
