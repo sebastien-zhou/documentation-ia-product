@@ -362,7 +362,7 @@ With this property you can create generic permission for the import application 
 
 #### Application target Manager  
 
-Here you can indicate which attribute contains application manager. For instance, you can indicate which "-attribute contains manager HR code-", the "-expertise domain-" as well as "-attribute containing comments-" related to application manager. You can as well fill delegation information such as the "_attribute containing the delegation flag_", the "_delegation priority_", the "_start date_", the "_end date_", and the "_reason_". More informations regarding manager property is available under the article: [Manager target](docs/igrc-platform/collector/components/targets/manager-target/manager-target.md)  
+Here you can indicate which attribute contains application manager. For instance, you can indicate which "-attribute contains manager HR code-", the "-expertise domain-" as well as "-attribute containing comments-" related to application manager. You can as well fill delegation information such as the "_attribute containing the delegation flag_", the "_delegation priority_", the "_start date_", the "_end date_", and the "_reason_". More information regarding manager property is available under the article: [Manager target](#manager-target)  
 
 ![Application target](./images/Application_target_image2.png "Application target")
 
@@ -778,7 +778,7 @@ Example of an ActiveDirectory group parameters:
 
 With this property, you will define group content such as:  
 
-- -"Attribute containing group member"- to specify attribute that contain list of accounts and groups identifiers that are members of collected group. For performance reasons, we advise using group member target to collect group members separately from collecting groups, see -[Group Members target](docs/igrc-platform/collector/components/targets/group-members-target/group-members-target.md)_ documentation for more details.
+- -"Attribute containing group member"- to specify attribute that contain list of accounts and groups identifiers that are members of collected group. For performance reasons, we advise using group member target to collect group members separately from collecting groups, see [Group Members target](#group-members-target) documentation for more details.
 - "_Group containing all accounts_" this option is deprecated.
 - _"Trigger an error if one of the children is not found"_ option to activate an event that will be generated when a group member is not found in database (event shown in dedicated logs).
 
@@ -998,7 +998,7 @@ This property allows you to define mapping between attributes from dataset and i
 
 - _"Field_" contains identity attribute available in Ledger
 - _"Attribute"_ contains identity attribute in data set
--  _"Key"_ is used to fetch identity in database if none HR code is available (for example you can use surname and givenname to define a matching key)
+- _"Key"_ is used to fetch identity in database if none HR code is available (for example you can use surname and givenname to define a matching key)
 - _"Override"_ option is used if you want to override the given attribute when several data sets are available for a given identity.  
 
 Available fields are :  
@@ -1083,7 +1083,7 @@ Here you can select the _"Managed entity type"_ between _"Organization", "Reposi
 
 ##### Manager target Organization selection
 
-When selecting -"Organization" as managed entity type- you will have to define the "-Attribute containing organization code".- The latter must be the same identifier than the one given in the -Organization- target (see [Organization target](docs/igrc-platform/collector/components/targets/organization-target/organization-target.md) for detail).  
+When selecting -"Organization" as managed entity type- you will have to define the "-Attribute containing organization code".- The latter must be the same identifier than the one given in the -Organization- target (see [Organization target](#organization-target) for detail).  
 
 You can also "_Trigger an error if organization is not found_" and define a customised event.
 
@@ -1190,7 +1190,7 @@ When editing a collect, select _Organization target_ in _Ledger targets_ (previo
 
 ### Organization target properties tab
 
-## ## Organization target tab
+#### Organization target tab
 
 In this property you can see/modify general parameters of the component. You will find:
 
@@ -1765,7 +1765,7 @@ In this tab, you will specify:
 
 ![Support](./images/2018-04-03_14_16_08-support3.png "Support")
 
-## Support target Error handling
+### Support target Error handling
 
 If one of the key attributes (asset, application or permission) cannot be found in the import tables, the creation of this support object is silently cancelled and a line is written to the log file:  
 
@@ -1835,17 +1835,17 @@ There is no semantic attached to these fields, so no check will be done against 
 
 ![Parameters3](./images/rights_params3.png "Parameters3")
 
-## Theoretical rights target tab Best practices
+### Theoretical rights target tab Best practices
 
 - Always set ruletype for theoretical rights in Entitlement model policy must be applied and to help determine the semantics of the rights, if there are more than one.  
 - If the Theoretical rights source is a manually produced spreadsheet ( that may contain spelling errors on permission or application codes), it's recommended to turn on the _trigger an error if permission or application do not exist_ option so that any errors can easily be tracked.  
 
-## Theoretical rights target tab Error handling
+### Theoretical rights target tab Error handling
 
 As stated above, it's recommanded to turn on the **Trigger error** option.  
 For each missing application or permission, an event will be written to an event file in the logs directory.
 
-## Theoretical rights target tab Examples
+### Theoretical rights target tab Examples
 
 Download theoretical rights examples from Brainwave Marketplace at the following location:
 
@@ -1924,6 +1924,6 @@ Here you can select attributes that will fetch an identity for the import usage 
 
 ![The Resolution Tab](./images/usage7.png "The Resolution Tab")
 
-## Usage target Best practices
+### Usage target Best practices
 
 During the activation phase, if multiple usages are found with the same tuple (account, permission, application, aggregation key), they are merged in a single usage with the same tuple key, the minimum of their first date, the maximum of their last date and the sum of their counter. It is much more efficient to let the activation do this kind of merge than to do this in the collect line (for example using a Group filter).
