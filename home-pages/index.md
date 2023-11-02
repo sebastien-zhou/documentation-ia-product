@@ -92,6 +92,9 @@ For customers under maintenance/subscription contract as well as official partne
   > [Data discovery](/ia/dev-descartes/igrc-platform/data-discovery/)  
   > This document provides information on the creation, installation, usage of the data discovery feature.  
 
+  > [Data collector](/ia/dev-descartes/igrc-platform/collector/)  
+  > This document provides information on the creation, installation, usage of the data collector engine.  
+
   > [Audit rules](/ia/dev-descartes/igrc-platform/audit-rules)  
   > This document provides information on the creation, installation, usage and migration of audit rules.  
 
