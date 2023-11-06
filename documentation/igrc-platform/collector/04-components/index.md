@@ -1,6 +1,8 @@
 ---
 title: Data collector components
 description: Data collector components
+attachments:
+ - "../assets/SODsample.facet"
 ---
 
 # Data collector components
@@ -23,7 +25,7 @@ This document describes how SoD Matrix are collected in Brainwave iGRC. Usually,
 
 The traditional format for such matrix in external Excel sheets usually use pivot table:
 
-![Pivot table](./images/SoD_Pivot_Table.png "Pivot table")  
+![Pivot table](../images/SoD_Pivot_Table.png "Pivot table")  
 
 Brainwave iGRC data model concept integrates the two following SoD concepts:  
 
@@ -36,33 +38,33 @@ The SoD Matrix and permission pair generates standard control discrepancies.
 
 In order to define SoD Matrix, an additional target is available in collector palette:
 
-![Collector palette](./images/SoD_Palet1.png "Collector palette")  
+![Collector palette](../images/SoD_Palet1.png "Collector palette")  
 
 The SOD matrix target creates a new matrix in Brainwave data model:
 
-![SOD matrix target](./images/SoD_Collect1.png "SOD matrix target")  
+![SOD matrix target](../images/SoD_Collect1.png "SOD matrix target")  
 
-![SOD matrix target](./images/SoD_Collect2.png "SOD matrix target")  
+![SOD matrix target](../images/SoD_Collect2.png "SOD matrix target")  
 
 In order to define SoD rules, an additional target is available in collector palette:
 
-![Collector palette](./images/SoD_Palet2.png "Collector palette")  
+![Collector palette](../images/SoD_Palet2.png "Collector palette")  
 
 This target add new SoD rules in an existing SoD matrix:
 
-![SoD matrix](./images/SoD_Collect4.png "SoD matrix")  
+![SoD matrix](../images/SoD_Collect4.png "SoD matrix")  
 
 A rule has to be inserted in an existing SoD Matrix. This rule references first permission incompatible with a second one:
 
-![SoD matrix](./images/SoD_Collect3.png "SoD matrix")  
+![SoD matrix](../images/SoD_Collect3.png "SoD matrix")  
 
 Additional information can be added for each risk:
 
-![Parameters](./images/SoD_Collect5.png "Parameters")  
+![Parameters](../images/SoD_Collect5.png "Parameters")  
 
 Some SoD components can be used in views to list information regarding collected SoD Matrix and SoD rules (permission pairs):
 
-![SoD view](./images/SoD_View1.png "SoD view")  
+![SoD view](../images/SoD_View1.png "SoD view")  
 
 ### Example
 
@@ -77,7 +79,7 @@ The attached SODsample.facet includes an example of SoD rules collect, and SoD m
 
 ### Downloads
 
-[SODsample.facet](./assets/SODsample.facet)
+[SODsample.facet](../assets/SODsample.facet)
 
 ## Depreciated Components
 
@@ -105,7 +107,7 @@ This facet allows the user to iterate on a number of input files in a collector 
 This facet was developed before the addition of silos in the version 2015 that included this functionality by default in the product.  
 As a result, this source remains in the product for compatibility reasons, however if you wish to iterate over input files it is highly recommended to use the iteration capabilities of silos:  
 
-![Silo iteration](./images/silo-iteration.png "Silo iteration")
+![Silo iteration](../images/silo-iteration.png "Silo iteration")
 
 #### SOD control target
 
