@@ -88,7 +88,7 @@ Different options allow to control the layout of buttons inside the button group
 | **spacing**  | nn    | spacing in pixels between each button |
 | **uniform**| True,False | if true all buttons will have the same width, regardless of their content |
 | **margins**| All, Bottom, Left, Right, Top, Horizontal, Vertical + nn | controls the margins around the button bar container |
-{:.nogrid}
+
 
 ## Foldable button group
 Having many buttons in a button bar with both frequent actions and occasional actions does not provide a good user experience. Moreover, it may also cause horizontal scrollbars to be displayed on narrow screens.

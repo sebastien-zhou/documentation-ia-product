@@ -1,20 +1,9 @@
 ---
-layout: page
 title: "Metadata"
-parent: "iGRC Platform"
-permalink: /docs/igrc-platform/metadata/
-nav_order: 140
-has_children: true
+description: "Configuration and usage of Metadata"
 ---
 
-# Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
----
-
-# Overview
+# Metadata
 
 ## Extending Brainwave's data model
 
@@ -26,16 +15,19 @@ HR and entitlement model must match the concepts and the links found in Brainwav
 
 Sometimes, information related to HR or entitlements can not find a place in the data model as it does not match the Brainwave attribute semantics.
 Up until version **2017 R3**, the data model could only be extended in two ways:
+
 1. by using custom attributes to store the desired information in entities.
 2. by using workflow tickets to annotate the relevant objects in the Ledger.
 
 ### Custom attributes
 
 Custom attributes are the usual way to extend the data model:
+
 - Each entity has a number of custom attributes to store information.
 - The meaning of custom attributes is project specific.
 
 However, there are some limitations to using custom attributes:
+
 - There is a limited number of custom attributes depending on entity (usually 19 attributes).
 - Custom attributes are single value only. Storing a list of values is not possible.
 - In the database, the type is string and the maximum size is limited to either 1000 or 2000 depending on the entity.

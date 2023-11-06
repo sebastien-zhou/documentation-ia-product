@@ -1,33 +1,25 @@
 ---
-layout: page
 title: "Reviewing Metadata"
-parent: "Metadata"
-grand_parent: "iGRC Platform"
-nav_order: 9
-permalink: /docs/igrc-platform/metadata/metadata-review/
+description: "How to review Metadata"
 ---
 
-# Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
----
+# Reviewing Metadata
 
 As metadata can be used to document Ledger concepts and add or update information to many concepts in the portal, there is a need to review the modified information.
 Reviewing information in the Brainwave product is done using a workflow which stores the reviewer's decisions in tickets (TicketReviews) in the Ledger.
 
-# Creating metadata tickets
+## Creating metadata tickets
 
 To be able to review metadata, the TicketReview target in the workflow editor has been enhanced to attach a ticket to a metadata
 
-![Metadata ticket](igrc-platform/metadata/images/metadata_workflow_ticketreview.png "Metadata ticket")
+![Metadata ticket](./images/metadata_workflow_ticketreview.png "Metadata ticket")
 
 This target supports multivalued attribute containing several metadata UIDs
 
-# Reading tickets
+## Reading tickets
 
 The view editor allows the user query metadata tickets.
+
 - From the metadata concept (that is a non embedded metadata), a link to the ticket review is available.
 - From the ticket review, a link to the metadata is available.
 
@@ -35,11 +27,11 @@ Both queries automatically filter on the metadata name (in this example: `acme_u
 
 The following screenshot shows the link between a ticket review and a metadata defined in the project.
 
-![Metadata ticket to metadata](igrc-platform/metadata/images/metadata_ticket_to_metadata.png "Metadata ticket to metadata")
+![Metadata ticket to metadata](./images/metadata_ticket_to_metadata.png "Metadata ticket to metadata")
 
 The following screenshot shows the same link reversed.
 
-![Metadata to ticket](igrc-platform/metadata/images/metadata_to_ticket.png "Metadata to ticket")
+![Metadata to ticket](./images/metadata_to_ticket.png "Metadata to ticket")
 
 When using tickets, the best practice is to avoid embedded metadata.
 Tickets on embedded metadata are more difficult to query.

@@ -335,5 +335,3 @@ Your table is now paired with your Dataset, it is therefore now able to display 
 1. On the main menu, click on Run/View report/In Web Browser
 
 ![Previewing the results](./images/worddav685c9f4a6dde7e863300b6675d7b95b8.png  "Previewing the results")
-
-> If you're using Internet Explorer 11, please follow [these directions](how-to/misc/IE-11-preview-errors.md)

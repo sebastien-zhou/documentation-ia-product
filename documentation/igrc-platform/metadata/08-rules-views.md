@@ -1,40 +1,28 @@
 ---
-layout: page
 title: "Using Metadata in rules and views"
-parent: "Metadata"
-grand_parent: "iGRC Platform"
-nav_order: 8
-permalink: /docs/igrc-platform/metadata/metadata-rules-views/
+description: "How to use Metadata in rules and views"
 ---
 
-# Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
----
+# Using Metadata in rules and views
 
 Views and rules offer a way to fetch metadata.
 Metadata are handled as any other concept in both editors.
 They leverage the metadata schema to use the attribute names and the join names.
 
-# Metadata in the rule editor
+## Metadata in the rule editor
 
-## Overview
+### Rule editor overview
 
 In the rule editor, metadata are always accessed through a join.
 
----
+> The option in the metadata schema definition to embed the attributes into an entity is only relevant in the case of view editor.
 
-<span style="color:grey">**Note:**</span> The option in the metadata schema definition to embed the attributes into an entity is only relevant in the case of view editor.
+![Metadata rule joins in palette](./images/metadata_rule_palette_join.png "Metadata rule joins in palette")
 
----
-
-![Metadata rule joins in palette](igrc-platform/metadata/images/metadata_rule_palette_join.png "Metadata rule joins in palette")
-
-## Rule links
+### Rule links
 
 When building a rule from the main entities of the ledger (Identity, Account, Permission...), the palette contains 2 kinds of links:
+
 - The generic links to metadata. In the above screenshot these correspond to the "Link with identity metadata" and "Link with metadata value (metadata value)"
 - The links towards project defined metadata. In the above screenshot these correspond to the "Join with metadata (acme_use_case_1)" and "Join with metadata (acme_use_case_2)"
 
@@ -45,15 +33,17 @@ If using the generic link, then no automatic filtering is performed.
 In the above screenshot, using the generic link would result in fetching all metadata for the identity, regardless of the metadata name.
 
 The difference between 'link with identity metadata' and 'link with metadata value (metadata value)' is the type of link:
+
 - 'link with identity metadata' joins the identity to the metadata through the metadata key. The metadata key can reference an identity
 - 'link with metadata value (metadata value)' joins the identity to the metadata entity value. The metadata entity value can reference an identity.
 
-## Embedded metadata in rule editor
+### Embedded metadata in rule editor
 
 The rule editor always displays embedded metadata as standalone metadata.
 
 The embedded metadata can be multivalued. In the rule editor, filtering entities is achieved using criteria.
 These criteria usually contain all the combinations of verbs. For example:
+
 - HR code is {value}
 - HR code is not {value}
 - HR code is in {value}
@@ -72,6 +62,7 @@ As an example, let's consider the identity certification list but declared as an
 People may have several certifications such as `Health` and `ISO27000`.
 
 In the rule editor, when selecting the Identity concept, the palette could display all the criteria for the certification name.
+
 - Certification name is {value}
 - Certification name is not {value}
 - Certification name is in {value}
@@ -105,7 +96,7 @@ Obviously, the result is false.
 
 Let's revert to a standalone metadata and have a look at this rule:
 
-![Metadata wrong rule with embedded metadata](igrc-platform/metadata/images/metadata_rule_embedded_wrong.png "Metadata wrong rule with embedded metadata")
+![Metadata wrong rule with embedded metadata](./images/metadata_rule_embedded_wrong.png "Metadata wrong rule with embedded metadata")
 
 Again, this rule is false as it would give the exact same result as detailed above.
 
@@ -117,7 +108,7 @@ As a result an identity owning 2 certifications (`Health` and `ISO27000`) will n
 
 The usual way to translate the above question in the rule editor is shown below:
 
-![Metadata good rule with embedded metadata](igrc-platform/metadata/images/metadata_rule_embedded_good.png "Metadata good rule with embedded metadata")
+![Metadata good rule with embedded metadata](./images/metadata_rule_embedded_good.png "Metadata good rule with embedded metadata")
 
 This generates the following HQL query:
 
@@ -135,37 +126,40 @@ where ((x1.value1String<>'Health' or x1.value1String is null) and x1.recordUid i
 Filtering with negative criteria requires the **NOT** group between the Identity and the Metadata.
 Building this type of query would be impossible if the certification criteria was embedded in the Identity concept.
 
-## Rule criteria
+### Rule criteria
 
 When the metadata component is selected in the editor, the palette shows the list of criteria.
-* The drawer named 'Criteria on key' contains the sentences to filter on  the subkey and on metadata creator.
-* The drawer named 'Criteria on values' contains the sentences to filter on all the attributes declared in the metadata definition.
+
+- The drawer named 'Criteria on key' contains the sentences to filter on  the subkey and on metadata creator.
+- The drawer named 'Criteria on values' contains the sentences to filter on all the attributes declared in the metadata definition.
 
 For each attribute, the list of criteria is automatically created as a function of the attribute type as shown in the following screenshot for the attribute 'certification name':
 
-![Metadata rule values in palette](igrc-platform/metadata/images/metadata_rule_palette_criteria.png "Metadata rule values in palette")
+![Metadata rule values in palette](./images/metadata_rule_palette_criteria.png "Metadata rule values in palette")
 
-# Metadata in the view editor
+## Metadata in the view editor
 
-## Overview
+### View editor overview
 
 There are many ways, in the view editor, to leverage metadata.
+
 - Metadata can be used as the root component in the query.
 - Metadata attributes can be embedded in a target entity.
 - Metadata can appear as a separate entity accessed through a join from another entity (or several entities).
 
-## Metadata root component
+### Metadata root component
 
 To add metadata as a root component, you need to delete the current root entity.
 In the palette, you can see all the entities that can be used as a root component.
-The palette contains
+The palette contains:
+
 - A generic metadata component used to enumerate all metadata
 - All project specific metadata.
 
 When you drop a project specific metadata in the editor, a filter is automatically applied on the metadata name to fetch only the selected ones.
 Here is a screenshot where a metadata `acme_use_case_3` has been set as the root component and a first attribute has been added.
 
-![Metadata root in view editor](igrc-platform/metadata/images/metadata_view_metadata_root.png "Metadata root in view editor")
+![Metadata root in view editor](./images/metadata_view_metadata_root.png "Metadata root in view editor")
 
 From there, you can add attributes and apply criteria.
 Joins are also available to jump to other entities either through the declared metadata keys or the metadata entity values.
@@ -173,16 +167,18 @@ Joins are also available to jump to other entities either through the declared m
 As for the other main entities, timeslot attributes are also available on Metadata.
 This is useful to get metadata from any timeslot, allowing to filter using timeslot attributes like UID or dates.
 
-## Embedded metadata
+### Embedded metadata
 
 When the option 'Display metadata attributes in the following concept in the view editor' is checked, all attributes of the metadata are embedded in the target concept.
 For example, if the metadata is attached to the identity, the attributes available in the palette for the identity component will contain:
+
 - The standard identity attributes,
 - The attributes from all the metadata declared in the project.
 
-![Embedded metadata palette in view editor](igrc-platform/metadata/images/metadata_view_embedded_palette.png "Embedded metadata palette in view editor")
+![Embedded metadata palette in view editor](./images/metadata_view_embedded_palette.png "Embedded metadata palette in view editor")
 
 As you can see, all attributes from a metadata have their names automatically composed of 2 parts:
+
 - the metadata name
 - the attribute name
 
@@ -190,9 +186,9 @@ For example the attribute `cert_name` in the metadata `acme_use_case_1` becomes 
 
 If the certification metadata was declared as embedded, the view editor palette would display the following attributes in the identity:
 
-![Embedded metadata in view editor](igrc-platform/metadata/images/metadata_view_embedded.png "Embedded metadata in view editor")
+![Embedded metadata in view editor](./images/metadata_view_embedded.png "Embedded metadata in view editor")
 
-### Result cardinality
+#### Result cardinality
 
 Even when the metadata is embedded in an entity (for example, the certification for an identity), the underlying implementation uses a join on the metadata table.
 A user may have several certifications. For example, the user `Paul Martin` may own 3 certifications.
@@ -202,20 +198,16 @@ The duplicates are the result of the hidden join towards metadata with 3 values 
 This is exactly the same behavior as with allocations. If a user works for several organizations, a view will display several times the user.
 The difference between allocations and embedded metadata is that the join is hidden and grabbing a metadata attribute can generate these duplicates, on the contrary to a standard entity attribute.
 
----
+> [!warning] When a metadata is multivalued for a given key (an identity for example), the best practice is to keep the metadata as a standalone one.  
+> This way there is no bad surprise because the join is now explicit. Embedded metadata is recommended for single valued attributes.
 
-<span style="color:red">**WARNING:**</span> When a metadata is multivalued for a given key (an identity for example), the best practice is to keep the metadata as a standalone one.
-This way there is no bad surprise because the join is now explicit. Embedded metadata is recommended for single valued attributes.
-
----
-
-### Filtering multivalued attributes
+#### Filtering multivalued attributes
 
 With embedded metadata, the implicit joins can be tricky to filter.
 Again, we will use the certification metadata in our example as if it was declared as embedded metadata.
 We want to get the list of identities having a `Health` certification.
 
-![Filtering embedded metadata 1](igrc-platform/metadata/images/metadata_view_embedded_filter_1.png "Filtering embedded metadata 1")
+![Filtering embedded metadata 1](./images/metadata_view_embedded_filter_1.png "Filtering embedded metadata 1")
 
 The above view returns only the identities having a certification called `Heath`.
 Identities having no certification or not the `Health` certification are not returned.
@@ -224,34 +216,35 @@ Internally, the join towards metadata has been converted to an inner join becaus
 Now we want to get the full list of identities and display in a column a boolean if they have the `Health` certification.
 We could change the filter to keep the identity when the `cert_name` is null like this but it does not work !
 
-![Filtering embedded metadata 2](igrc-platform/metadata/images/metadata_view_embedded_filter_2.png "Filtering embedded metadata 2")
+![Filtering embedded metadata 2](./images/metadata_view_embedded_filter_2.png "Filtering embedded metadata 2")
 
 This does not work as the join is an inner join and the condition `cert_name is null` is executed after the inner join has filtered the identities.
 Changing the filter scope as global does not change the result. It is still wrong as the join remains inner and identities without certifications get filtered.
 The correct way to do this is to remove the filter from the attribute so that the join reverts to outer left, there is then no filtering anymore.
 Then add the filter in the 'SQL filtering' with an SQL syntax like this:
 
-![Filtering embedded metadata 3](igrc-platform/metadata/images/metadata_view_embedded_filter_3.png "Filtering embedded metadata 3")
+![Filtering embedded metadata 3](./images/metadata_view_embedded_filter_3.png "Filtering embedded metadata 3")
 
-## Separate metadata
+### Separate metadata
 
 When the option 'Display metadata attributes in the following concept in the view editor' is not checked, the metadata appears as a separate component.
 This design is mandatory if the metadata defines a link between several entities.
 Here is an example with a metadata defining a link between an organization and an application:
 
-![Filtering separate metadata](igrc-platform/metadata/images/metadata_view_separate.png "Filtering separate metadata")
+![Filtering separate metadata](./images/metadata_view_separate.png "Filtering separate metadata")
 
 This view starts from organization and fetches all metadata regarding the managed applications. Left joins are used to get all organizations in the result.
 The metadata appears as a standalone component containing the attributes (the expiration date) and having links towards organizations and applications.
 
-## Recommendations
+### Recommendations
 
-Metadata that include detail type simple values correspond to a blob in the database. The handling of blobs is database specific and as a result issues can arrise when sorting and/or filtering said column type depending on the database management system used.
+Metadata that include detail type simple values correspond to a blob in the database. The handling of blobs is database specific and as a result issues can arise when sorting and/or filtering said column type depending on the database management system used.
 
-When querying a detail type value the recommendation is to create 2 different views to query :
+When querying a detail type value the recommendation is to create 2 different views to query:
+
 1. First a view to query the entire list information included in the desired metadata
-2. Second a dedicated view filtering on the desired metadata and quering ONLY the detail simple value
+2. Second a dedicated view filtering on the desired metadata and querying ONLY the detail simple value
 
 This can be thought as a sort of master/detail presentation.
 
-In addition blobs being large values, the execution of a view filtering on a specific metadataUID can increase the performance.
+In addition blobs being large values, the execution of a view filtering on a specific metadataUID can increase the performance.  
