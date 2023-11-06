@@ -1,8 +1,6 @@
 ---
 title: Data collector components
 description: Data collector components
-attachments:
- - "../assets/SODsample.facet"
 ---
 
 # Data collector components
@@ -79,7 +77,7 @@ The attached SODsample.facet includes an example of SoD rules collect, and SoD m
 
 ### Downloads
 
-[SODsample.facet](../assets/SODsample.facet)
+[SODsample.facet](https://download.brainwavegrc.com/index.php/s/zZkRnaQe4DNQ8ER)
 
 ## Depreciated Components
 
