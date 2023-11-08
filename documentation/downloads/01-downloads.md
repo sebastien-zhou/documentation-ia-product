@@ -30,6 +30,8 @@ This version includes a number of fixes including:
 - Security enhancement: Removal of libraries involved in CVE-2023-44487
 - IAP: Fixes in the KPI counters calculation during the execution plan
 
+Please refer to the full release notes for more information:  
+
 - [**Release notes**](02-release-notes-descartes-r2)
 
 Please navigate to the following link to download the latest version of the product: Descartes:  
