@@ -20,19 +20,21 @@ No database migration is necessary when upgrading from version `Curie R3` or `De
 
 If you are migrating from a version of the product prior to **Curie R3** see [**here**](https://documentation.brainwavegrc.com/Descartes/docs/igrc-platform/installation-and-deployment/database/schema-35-upgrade-procedure/) for the detailed procedure.  
 
-## Version Descartes R2
+## Version Descartes R2 SP1
 
-We are pleased to announce the release of the latest version of the product: **Descartes R2**
+We are pleased to announce the release of the latest version of the product: **Descartes R2 SP1**
 
-This version includes the updated review experience in the portal. To leverage this experience it is required to update IAP to version 2.0.  
+This version includes a number of fixes including:  
 
-This version includes as improvements a new metadata computation phase that occurs before the calculation of temporal criteria. It is also possible alter the truncation policy through properties within batch context. This version also includes a series of bug fixes. Please refer to the release notes for more information.
+- Performance enhancement: Not locating accounts in the history for new repositories
+- Security enhancement: Removal of libraries involved in CVE-2023-44487
+- IAP: Fixes in the KPI counters calculation during the execution plan
 
 - [**Release notes**](02-release-notes-descartes-r2)
 
 Please navigate to the following link to download the latest version of the product: Descartes:  
 
-- [**Download Descartes R2**](https://download.brainwavegrc.com/index.php/s/fsqosCEPHkBaoaP)
+- [**Download Descartes R2 SP1**](https://download.brainwavegrc.com/index.php/s/i3AgFJEd9Ry4bZL)
 
 See [below](#how-to-calculate-the-hash) for more information on how to check the integrity of your download.  
 
