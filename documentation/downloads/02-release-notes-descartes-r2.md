@@ -5,7 +5,25 @@ description: Descartes R2 Release Notes
 
 # Descartes R2
 
-```
+```txt
+Version Descartes R2 SP1
+------------------------
+
+1) New Features
+
+IGRC-4483 "attribute is not set" added in rules : Account and Identity
+IGRC-4739 Enable / disable menu items based on license and conf variables
+
+2) Bug fixes
+
+- IGRC-3834 Avoid the locate in history of any entity during the collect
+- IGRC-4727 Issue with metadata bwf_repositorymetrics_nbappshare in optimized mode
+- IGRC-4738 change portal favicon to Radiant Logic ( 16x16 only)
+- IGRC-4740 Server connection is cut when uploading a large file
+- IGRC-4742 Removal of CVE-2023-44487
+- IGRC-4745 The Business View sort options are ignored if the business view is embedded in another one
+- IGRC-4747 fix rule editor labels and hide from smart search
+
 Version Descartes R2
 --------------------
 
@@ -24,9 +42,9 @@ IGRC-4708 Enable the capability to alter the truncation policy through propertie
 - IGRC-4680 Improving query caching in the collect step
 - IGRC-4682 Issue with portal created metadata if last timeslot is purged
 - IGRC-4688 Change metadata step "after dynamic rules" to "before dynamic rules"
-- IGRC-4689 In rules, the application tag criteria should be availble also on safes
+- IGRC-4689 In rules, the application tag criteria should be available also on safes
 - IGRC-4691 Change Brainwave to Radiant Logic in Descartes R2
-- IGRC-4698 Enable / disable controls and metadata based on licence and conf variables
+- IGRC-4698 Enable / disable controls and metadata based on license and conf variables
 - IGRC-4702 Radiant Logic graphical chart as default theme in portal - configuration default colors,  labels & icons
 - IGRC-4703 Update studio visuals for Radiant Logic
 - IGRC-4704 Be able to disable Studio workspace build in the batch
