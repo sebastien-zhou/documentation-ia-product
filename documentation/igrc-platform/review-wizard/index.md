@@ -1,21 +1,13 @@
 ---
-layout: page
-title: "Review wizard"
-parent: "iGRC Platform"
-nav_order: 160
-has_children: true
-permalink: /docs/igrc-platform/review-wizard/
+title: Review wizard
+description: How to use the review wizard
 ---
 
-# Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
----
+# Review wizard
 
 The notion of compliance is a growing concern in companies and in order to prove to auditors that application rights in IT systems are correctly managed, a methodology called User Access Review (UAR) can be set up.
 However compliance is not the unique motivation. User Access Review is also one of the best ways to mitigate risks among:
+
 - Financial fraud
 - Data theft
 
@@ -38,13 +30,9 @@ This is why the review should be as smart as possible so the reviewers accept th
 
 Hopefully, many of these concerns are addressed by the Campaign wizard generator along with the Campaign manager described in this document.
 
----
+> In the whole document, the terms **campaign** and **review** are used interchangeably and have the same meaning.
 
-<span style="color:grey">**NOTE:**</span> In the whole document, the terms **campaign** and **review** are used interchangeably and have the same meaning.
-
----
-
-# Objectives
+## Objectives
 
 Brainwave expertise in UAR shows that all customers have different needs when setting up a review.
 These difference may comes from:
@@ -70,9 +58,9 @@ There are differences but the all reviews follow the common specifications descr
 The review wizard is the culmination of this expertise.
 It offers a way to focus on the business aspects while the technical details and the common behaviour is already implemented.
 
-# Campaign
+## Campaign
 
-## From the campaign manager perspective
+### From the campaign manager perspective
 
 From the campaign manager perspective, a compliance review is different than a risk based review.
 
@@ -97,7 +85,7 @@ Some of the most important KPIs for the campaign manager in a risk based review 
 - The number of mitigated discrepancies by risk level.
 - The trend of the risk level because the risk mitigation is always a work in progress.
 
-## From the reviewer perspective
+### From the reviewer perspective
 
 From the reviewer perspective, the review must offer these benefits:
 

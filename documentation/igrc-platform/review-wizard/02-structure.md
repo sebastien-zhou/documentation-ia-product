@@ -1,23 +1,14 @@
 ---
-layout: page
 title: "Review wizard structure"
-parent: "Review wizard"
-grand_parent: "iGRC Platform"
-nav_order: 2
-permalink: /docs/igrc-platform/review-wizard/structure/
+description: "Description of the review wizard structure"
 ---
 
-# Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
----
+# Review wizard structure
 
 Before diving into the review editor and the details of each tab, we must understand the architecture of a review and how it is working.
 This will be of great help to understand the impact of each setting in the review editor.
 
-# General workflow architecture
+## General workflow architecture
 
 Whatever the answer to the questions 'Who will review' and 'What will be reviewed' is, the generated workflow has the same architecture.
 There is always a main process called 'master'. This process is the one launched when the campaign owner starts his campaign.
@@ -25,21 +16,21 @@ There is always a main process called 'master'. This process is the one launched
 The master process finds how the reviewed items will be split. For an account review by repository managers, the split is by repository.
 The master process launches as many sub-processes as entities for the split. For example, if we have 3 repositories, we will end up with 3 detail processes.
 
-![Review workflow architecture](igrc-platform/review-wizard/images/review_workflow_architecture.png "Review workflow architecture")
+![Review workflow architecture](./images/review_workflow_architecture.png "Review workflow architecture")
 
 The scope of the campaign defines 3 repositories to review: Active Directory, Elyxo repository and Sage repository.
 The ledger contains also the repository managers. A single person may manage several repositories.
 In this example, Marc Vegas manages both Elyxo and Sage repositories while Paul Martin manages Active Directory.
 
 The role of the master process is to launch one detail sub-process by repository.
-Marc Vegas manages 2 repositories so he will have 2 tasks in his task list and when taking the task for Elyxo, only the accounts related to Exlyxo will be displayed in the review page.
+Marc Vegas manages 2 repositories so he will have 2 tasks in his task list and when taking the task for Elyxo, only the accounts related to Elyxo will be displayed in the review page.
 
 The role of the detail sub-process is to send notifications to the reviewers and provide a task where they can decide what to do on each item.
 
 When both Paul Martin and Marc Vegas have finished their review, the master process can generate a compliance report containing
 all the decisions.
 
-# Scope
+## Scope
 
 When a review is started, the scope represents the list of items to review. The term 'scope' may have two meanings:
 
@@ -57,7 +48,7 @@ For example, a scope result list could be:
 - root in LinFront
 - SageAdmin in Sage
 
-## Filtering by Who and What
+### Filtering by Who and What
 
 A scope definition can also be seen as a matrix to match the 'Who' and the 'What'.
 Let's take the example of a right review by the organization managers.
@@ -66,7 +57,7 @@ And for the 'Who', we want to target the managers of the 'Sales' division. Anoth
 
 The following schema shows how both dimensions (rights and organizations) are handled in the scope.
 
-![Review scope definition](igrc-platform/review-wizard/images/review_scope_definition.png "Review scope definition")
+![Review scope definition](./images/review_scope_definition.png "Review scope definition")
 
 This schema shows that the rights involved in this review are filtered using criteria like the kind of account and the application name.
 The 'What' is reduced to a subset of the rights.
@@ -82,7 +73,7 @@ This is accomplished by the following filter:
 - From the identity, the review finds which organization the identity is working in.
 - The rights are kept only if the organization matches the selected organizations.
 
-## Filtering by rules
+### Filtering by rules
 
 The objective is to offer business filtering when launching a campaign.
 In the campaign start page, a list of filters are available. Any combination of these filters can be selected.
@@ -93,12 +84,12 @@ When selecting multiple filters, the item are kept if they match at least one fi
 The filters are implemented as rules in the Brainwave product which means that complex filtering is available.
 Here are some examples (from basic to sophisticated):
 
-- accounts from the Exyxo repository
+- accounts from the Elyxo repository
 - accounts belonging to ActiveDirectory groups containing the word 'Admin'
 - orphan accounts giving access to SAP
 - active accounts belonging to an identity who has moved (job or organization) less that 3 month ago.
 
-## Scope warning
+### Scope warning
 
 When combining the 'Who' and the 'What', there is a potential issue with the completeness.
 Let's continue with the previous example (right review by organization managers).
@@ -112,7 +103,7 @@ These rights should be reviewed either in a specific review or in a specific cas
 At the end of the day, as there is no organization, there is no manager to review these rights.
 It means that this is a specific case where a reviewer should be assigned the task (it can be the campaign owner himself).
 
-# Review pages
+## Review pages
 
 The user interface for the manager has 2 modes:
 
@@ -121,7 +112,7 @@ The user interface for the manager has 2 modes:
 
 Both working modes are explained below in the next paragraphs.
 
-## List
+### List
 
 The list is the default presentation. Each line is an item to review.
 With the example of a right review by organization managers, the item is a right so the line displays the information representing this right.
@@ -135,7 +126,7 @@ To handle several items by category (for example, all rights of a given identity
 
 The following screenshot shows the review list:
 
-![Review list page](igrc-platform/review-wizard/images/review_list_page.png "Review list page")
+![Review list page](./images/review_list_page.png "Review list page")
 
 Many options in this page can be customized like:
 
@@ -146,7 +137,7 @@ Many options in this page can be customized like:
 - list of detail tabs to display,
 - availability of 'select all' feature.
 
-## Cross table
+### Cross table
 
 The cross table is a table where each cell is an item to review.
 The rows and the columns are dimensions about the item to review.
@@ -157,7 +148,7 @@ For the columns, a first header line may contain applications and a second heade
 
 The following screenshot shows the review crosstab:
 
-![Review crosstab page](igrc-platform/review-wizard/images/review_crosstab_page.png "Review crosstab page")
+![Review crosstab page](./images/review_crosstab_page.png "Review crosstab page")
 
 Each header line or row is called a dimension. In this example we have 4 dimensions (2 dimensions in rows and 2 dimensions in columns).
 All the features in the list mode are available in the cross table mode except the grouping.
@@ -169,7 +160,7 @@ This feature uses IA technology.
 The cross table is not an alternative way of performing the review meaning that the list mode is not opposed to the cross table mode.
 The activation of the cross table mode brings a major change in the review methodology as a whole as explained in the next section.
 
-## Methodology
+### Methodology
 
 When there are many items to review, the methodology becomes important.
 Following a methodology is not mandatory but helps performing the review in a minimum of time.
@@ -189,7 +180,7 @@ When all rights having discrepancies are handled, we can go to the second step w
 
 The second step uses the cross table representation. In this page, the manager should click on the icon to sort the table.
 
-![Review crosstab page sorted](igrc-platform/review-wizard/images/review_crosstab_page_sorted.png "Review crosstab page sorted")
+![Review crosstab page sorted](./images/review_crosstab_page_sorted.png "Review crosstab page sorted")
 
 This operation changes both the columns and the rows to make some rectangles appear. These rectangles represent some people having the same rights.
 Then, the manager looks at the identities and check that they are all from the same team or that they share the same business activities or job titles.
@@ -202,7 +193,7 @@ We can no longer work with similarities so we can come back to the list mode.
 This is the third step where each right must be checked separately.
 In this step, the context is very important to understand why a person is the only one to have a right or a combination of rights.
 
-# Workflow tickets
+## Workflow tickets
 
 The scope of the review and the decisions are stored as tickets in the Ledger. There are several kinds of tickets:
 
@@ -220,7 +211,7 @@ Each sub-process starts by creating one TicketLog and one TicketAction represent
 When the manager has finished his review and validates his task, the TicketAction is updated with the name of the manager and the time of the task validation.
 Then the sub-process creates as many TicketReview as items in the scope. Each TicketReview contains the decision along with the comment.
 
-# Time based events
+## Time based events
 
 There are several time based events occurring in the review:
 
@@ -239,21 +230,21 @@ At this date, the candidates can no longer take the tasks (they are removed from
 The due date is used to compute the reminders backward in time.
 For example send 3 notification reminders with 5 business days between each one.
 
-# Emails
+## Emails
 
 All the task notifications, the reminders and the escalation notifications are sent using emails.
 These emails can be customized (change the title, the body, the attachments...) and nationalized (the identity language is used).
 The following screenshot shows a notification email received by a manager:
 
-![Review notification email](igrc-platform/review-wizard/images/review_notification_email.png "Review notification email")
+![Review notification email](./images/review_notification_email.png "Review notification email")
 
-# Compliance report
+## Compliance report
 
 When a manager finishes his review, a report is generated for his scope.
 When all the managers have finished, the main process generates a compliance report with all scopes consolidated.
 The following screenshot is the first page of the compliance report/
 
-![Review compliance report](igrc-platform/review-wizard/images/review_main_report.png "Review compliance report")
+![Review compliance report](./images/review_main_report.png "Review compliance report")
 
-**NOTE**: the compliance report is always generated even if the due date was reached before all reviewers have finished and
+> The compliance report is always generated even if the due date was reached before all reviewers have finished and
 even if the campaign is killed.
