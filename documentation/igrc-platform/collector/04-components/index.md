@@ -7,15 +7,15 @@ description: Data collector components
 
 ## Filters
 
-Please refer to the following [sub-page](./filters) for the documentation of all data collection filters available in the product.
+Please refer to the following [sub-page](/filters) for the documentation of all data collection filters available in the product.
 
 ## Sources
 
-Please refer to the following [sub-page](./sources) for the documentation of all data collection sources available in the product.
+Please refer to the following [sub-page](/sources) for the documentation of all data collection sources available in the product.
 
 ## Targets
 
-Please refer to the following [sub-page](./target) for the documentation of all data collection targets available in the product.
+Please refer to the following [sub-page](/target) for the documentation of all data collection targets available in the product.
 
 ## Collecting Sod Matrix
 
