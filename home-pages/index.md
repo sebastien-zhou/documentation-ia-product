@@ -89,6 +89,9 @@ For customers under maintenance/subscription contract as well as official partne
 
 <section>
 
+  > [Data discovery](/ia/dev-descartes/igrc-platform/getting-started/)  
+  > The one stop shop to getting started in using Identity Analytics
+
   > [Data discovery](/ia/dev-descartes/igrc-platform/data-discovery/)  
   > This document provides information on the creation, installation, usage of the data discovery feature.  
 
@@ -103,12 +106,21 @@ For customers under maintenance/subscription contract as well as official partne
 
   > [Controls](/ia/dev-descartes/igrc-platform/controls)  
   > This document provides information on the creation, installation, usage of controls.  
-  
+
+  > [Manager Policy](/ia/dev-descartes/igrc-platform/manager-policy)  
+  > This document provides information on the creation, installation, usage of manager policies.  
+
+  > [Metadata](/ia/dev-descartes/igrc-platform/metadata)  
+  > This document provides information on how to extend IA data model using metadata.  
+
   > [Reports](/ia/dev-descartes/igrc-platform/reports)  
   > This document provides information on the creation, installation, usage of controls.  
 
-  > [Reports](/ia/dev-descartes/igrc-platform/dashboards)  
+  > [Dashboards](/ia/dev-descartes/igrc-platform/dashboards)  
   > This document provides information on the creation, installation, usage of dashboards.  
+
+  > [Notification rules](/ia/dev-descartes/igrc-platform/manager-policy)  
+  > This document provides information on the creation, installation, usage of notification rules.  
 
   > [Auditlogs](/ia/dev-descartes/igrc-platform/audit-logs)  
   > This document provides information on the creation, installation, usage and of Auditlogs, the productions engine to ingest and query application logs.
@@ -124,6 +136,9 @@ For customers under maintenance/subscription contract as well as official partne
 
   > [Collect wizard](/ia/dev-descartes/igrc-platform/collect-wizard)  
   > This is a guide to using the collect wizard, a tool to automatically generate data discovery files and collect lines.  
+
+  > [Collect wizard](/ia/dev-descartes/igrc-platform/review-wizard)  
+  > This is a guide to using the review wizard, a tool to automatically generate standard workflows.  
 
 </section>
 
