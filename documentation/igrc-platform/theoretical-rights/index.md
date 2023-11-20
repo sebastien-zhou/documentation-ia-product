@@ -1,26 +1,16 @@
 ---
-layout: page
 title: "Theoretical Rights"
-parent: "iGRC Platform"
-nav_order: 250
-has_children: true
+description: "Configuration of theoretical rights"
 ---
 
-# Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
----
-
-# Purpose
+# Theoretical rights
 
 Theoretical rights allow to load a list of accesses Identities should have in theory, and compare it with real access rights.  
 
-The goal is to run controls, that list overallocations and underallocations:  
+The goal is to run controls, that list over-allocations and under-allocations:  
 
-* Overallocations: rights the Identity has in real applications that are not in the theoretical rights model
-* Underallocations: rights the Identity should have according to the theoretical rights model, but does not have in the real applications
+- Over-allocations: rights the Identity has in real applications that are not in the theoretical rights model
+- Under-allocations: rights the Identity should have according to the theoretical rights model, but does not have in the real applications
 
 ![Theoretical rights model](./images/theoretical_rights_model.png)
 
@@ -28,21 +18,21 @@ To achieve this goal, you have to implement the following steps:
 
 1. Collect of the theoretical rights model, from an IAM application
 2. Define the theoretical rights model policy using the ingested data
-3. Run controls for the theoretical rights to return overallocations and underallocations
+3. Run controls for the theoretical rights to return over-allocations and under-allocations
 
 ## Project & Facets
 
 If possible, don't implement it yourself, but use the facets & what is included in the project already:  
 
-* `bw_iamcollector`:
-    * Allows to load the Theoretical rights of an IAM application into the ledger (Silo & collector lines)
-    * It also contains a model policy: `iam_rolemodel`
-    * *You might need to add a collector line to convert your source data to the format required by this facet*
-* `IAP` / `IAS`, already contains:
-    * Theoretical rights controls: `bwcd_ACC17` and `bwcd_ACC23`
-    * Fragments for theoretical rights:  
-        * `webportal/pages/bw_fragments/iamapplication`: to display the role model of the `IAM` applications
-        * `/webportal/pages/bw_fragments/identity/theoreticalrights`: to show overallocations on Identities
+- `bw_iamcollector`:
+  - Allows to load the Theoretical rights of an IAM application into the ledger (Silo & collector lines)
+  - It also contains a model policy: `iam_rolemodel`
+  - *You might need to add a collector line to convert your source data to the format required by this facet*
+- `IAP` / `IAS`, already contains:
+  - Theoretical rights controls: `bwcd_ACC17` and `bwcd_ACC23`
+  - Fragments for theoretical rights:  
+    - `webportal/pages/bw_fragments/iamapplication`: to display the role model of the `IAM` applications
+    - `/webportal/pages/bw_fragments/identity/theoreticalrights`: to show over-allocations on Identities
 
 ## Collect
 
@@ -93,7 +83,7 @@ The end-result might be the same, even if the model is not build the same way. S
 The data collected using this target in the collector line can be retrieved the `Theoretical right model` in the views:  
 ![Theoretical rights model view](./images/view_theoretical_right_model.png)  
 
-The content of this table will be used by the model policy. 
+The content of this table will be used by the model policy.  
 
 > There is **one** entry for **each** permission.  
 
@@ -101,53 +91,52 @@ The content of this table will be used by the model policy.
 
 ## Entitlement model policy
 
-The entitlement model policy will use the data loaded by the collect in the `Theoretical right model` to determine for each permission the target population (identities). 
+The entitlement model policy will use the data loaded by the collect in the `Theoretical right model` to determine for each permission the target population (identities).  
 
-It is defined in the `model` folder of the project, and the 
-logical is very similar to manager policy.
+It is defined in the `model` folder of the project, and the logical is very similar to manager policy.
 
 ![Model policy project explorer](./images/theoretical_rights_project_explorer.png)  
 
 ![Model policy](./images/theoretical_rights_model_policy.png)  
 
-Each rule defined in the `Theoretical right model` will be called, passing the parameter values set in the collect (see previous point) and returning identities that should have the associated permission. 
+Each rule defined in the `Theoretical right model` will be called, passing the parameter values set in the collect (see previous point) and returning identities that should have the associated permission.  
 
 Based on their Job Title or HR code if we take the examples from earlier, associated model rules should be set as below:
 
-* For Job
+- For Job
 
-![Model rule with Job](./images/theoretical_rights_model_rule_job.png) 
+![Model rule with Job](./images/theoretical_rights_model_rule_job.png)  
 
-* For HR code
+- For HR code
 
-![Model rule with Job](./images/theoretical_rights_model_rule_hrcode.png) 
+![Model rule with Job](./images/theoretical_rights_model_rule_hrcode.png)  
 
 For each rule, all **Identities** returned by it will be linked to the concerned **Permission** by a **Theoretical Right**. Those results of the model computation will be stored in the database, and can be retrieved from a view using the `Theoretical rights` entity:  
 
-![Theoretical rights entity](./images/theoretical_rights_entity_view.png) 
+![Theoretical rights entity](./images/theoretical_rights_entity_view.png)  
 
-> In the IAM collector facet, the computation is done using roles directly. The roles are assigned to identities, and the role content is loaded as the theoretical rights of each identity having the role.   
+> In the IAM collector facet, the computation is done using roles directly. The roles are assigned to identities, and the role content is loaded as the theoretical rights of each identity having the role.  
 
 ## Controls
 
-Now that the model, theoretical rights and real rights are loaded, we can run controls to compute overallocations and underallocations.  
+Now that the model, theoretical rights and real rights are loaded, we can run controls to compute over-allocations and under-allocations.  
 
-Theoretical rights controls are `type 5` controls (`Theoretical entitlements`), with the control result type determining overallocations (=1) or underallocations (=2).  
+Theoretical rights controls are `type 5` controls (`Theoretical entitlements`), with the control result type determining over-allocations (=1) or under-allocations (=2).  
 
 ![Active identities rule](./images/theoretical_rights_control.png)
 
 A theoretical rights control requires two rules that will determine the perimeter of real rights the controls are run on against the theoretical rights model:  
 
- * Identities, for example active identities only
+- Identities, for example active identities only
 
 ![Active identities rule](./images/theoretical_rights_active_identities_rule.png)
 
- * Permissions, often permissions that are used to define the theoretical model
+- Permissions, often permissions that are used to define the theoretical model
 
 ![Active identities rule](./images/theoretical_rights_granted_permissions_rule.png)
 
 For each Identity/Permission couple returned by theses rules:  
 
-* If the **Identity** has a **real right** and a **theoretical right** to the **Permission**, no discrepancy returned, we are in the normal situation
-* If the **Identity** has a **real right** but no **theoretical right** to the **Permission**, a `overallocation` discrepancy is returned
-* If the **Identity** has no **real right** but a **theoretical right** to the **Permission**, an `underallocation` discrepancy is returned
+- If the **Identity** has a **real right** and a **theoretical right** to the **Permission**, no discrepancy returned, we are in the normal situation
+- If the **Identity** has a **real right** but no **theoretical right** to the **Permission**, a `overallocation` discrepancy is returned
+- If the **Identity** has no **real right** but a **theoretical right** to the **Permission**, an `underallocation` discrepancy is returned

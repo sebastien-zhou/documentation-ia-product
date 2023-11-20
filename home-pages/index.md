@@ -125,6 +125,9 @@ For customers under maintenance/subscription contract as well as official partne
   > [Dashboards](/ia/dev-descartes/igrc-platform/dashboards)  
   > This document provides information on the creation, installation, usage of dashboards.  
 
+  > [Theoretical Rights](/ia/dev-descartes/igrc-platform/theoretical-rights)  
+  > This document provides information on the creation, installation, usage of theoretical rights.  
+
   > [Audit logs](/ia/dev-descartes/igrc-platform/audit-logs)  
   > This document provides information on the creation, installation, usage and of Auditlogs, the productions engine to ingest and query application logs.
 
