@@ -154,6 +154,15 @@ For customers under maintenance/subscription contract as well as official partne
 
 </section>
 
+## webportal
+
+<section>
+
+  > [Add-ons](/ia/dev-descartes/igrc-platform/smart-search)  
+  > This document provides information on the creation, installation, usage and migration of the smart search in the portal.  
+
+</section>
+
 ## Legacy documentation
 
 <section>
