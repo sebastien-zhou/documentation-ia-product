@@ -92,6 +92,9 @@ For customers under maintenance/subscription contract as well as official partne
   > [Getting started](/ia/dev-descartes/igrc-platform/getting-started)  
   > The one stop shop to getting started in using Identity Analytics
 
+  > [The technical configuration](/ia/dev-descartes/igrc-platform/technical-configuration)  
+  > The description of the technical configuration usage and best practices
+
   > [Data discovery](/ia/dev-descartes/igrc-platform/data-discovery)  
   > This document provides information on the creation, installation, usage of the data discovery feature.  
 
