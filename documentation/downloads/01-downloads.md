@@ -36,7 +36,7 @@ Please refer to the full release notes for more information:
 
 Please navigate to the following link to download the latest version of the product: Descartes:  
 
-- [**Download Descartes R2 SP1**](https://download.brainwavegrc.com/index.php/s/i3AgFJEd9Ry4bZL)
+- [**Download Descartes R2 SP1**](https://download.brainwavegrc.com/index.php/s/pY7qR9bMxcSjg5X)
 
 See [below](#how-to-calculate-the-hash) for more information on how to check the integrity of your download.  
 
