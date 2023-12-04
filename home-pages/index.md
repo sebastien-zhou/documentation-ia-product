@@ -3,7 +3,7 @@ title: Identity Analytics
 description: Guides to help build, configure and use Identity Analytics
 ---
 
-<<tabs>
+<tabs>
   <tablist>
     <tab>Knowledge</tab>
     <tab>Developer</tab>
