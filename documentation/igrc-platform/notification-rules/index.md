@@ -38,5 +38,5 @@ In this context, notifications are used to notify candidates of manual tasks tha
 
 You can also send emails from:
 
-- The webportal using [events and actions](../pages/events-and-actions.md)
+- The webportal using [events and actions](../pages/20-events-and-actions.md)
 - Workflows using [notifications by mail](../workflow/email-notifications.md)
