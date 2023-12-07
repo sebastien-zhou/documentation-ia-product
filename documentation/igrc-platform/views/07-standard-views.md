@@ -4,15 +4,15 @@ title: "Standard views"
 parent: "Views"
 grand_parents: "iGRC Platform"
 nav_order: 7
-permalink: /docs/igrc-platform/views/standards-views/
+permalink: /docs/./standards-views/
 ---
 ---
 
-Brainwave Identity GRC supplies a selection of Audit Views as standard. These are included in the default project and enable the user to make use of the data contained within the Identity Ledger as soon as the data has been loaded. The default audit Views are located in the 'views' sub-folder of your audit project.   
+Brainwave Identity GRC supplies a selection of Audit Views as standard. These are included in the default project and enable the user to make use of the data contained within the Identity Ledger as soon as the data has been loaded. The default audit Views are located in the 'views' sub-folder of your audit project.  
 
 | **Note**: <br><br>  When creating a custom view, you must create these in the /views/custom folder of your audit project. Sub-folders can be created within this folder for sorting and storage of views.|
 
-Audit views are classified following the main concept that the view processes:   
+Audit views are classified following the main concept that the view processes:  
 
 - **account** : Views based on accounts
 - **application** : Views based on applications
@@ -36,10 +36,10 @@ Audit views are classified following the main concept that the view processes:
   - **sharedfolder** : Views on shared folders
 - **usage** : Views based on usage status
 
-The names of Audit Views are prefixed by the main concept to which the view relates. The key word 'count' is used for views which trigger mathematical operations on data. When joins are created with restrictions, the key word 'by' is used to link the concepts in the name, for example applicationsbyaccount.   
+The names of Audit Views are prefixed by the main concept to which the view relates. The key word 'count' is used for views which trigger mathematical operations on data. When joins are created with restrictions, the key word 'by' is used to link the concepts in the name, for example applicationsbyaccount.  
 
-View identifiers are named by taking the names of the relevant view and adding the prefix 'br\_'. It is recommended that you choose a different prefix if you are generating your own views.   
+View identifiers are named by taking the names of the relevant view and adding the prefix 'br\_'. It is recommended that you choose a different prefix if you are generating your own views.  
 
-All views may contain various optional parameters so that it is possible to use a single view to search for information in the Main Ledger or to retrieve information on a given entry.   
+All views may contain various optional parameters so that it is possible to use a single view to search for information in the Main Ledger or to retrieve information on a given entry.  
 
 | **Important**: <br><br>  Users must not modify views supplied with the product as standard as this could have impacts on the results displayed in pages and/or reports of the default project.<br>If you want to modifiy a view used in a specific page and/or report it is recommended to duplicate the view and modify the view used in either the page or report.|

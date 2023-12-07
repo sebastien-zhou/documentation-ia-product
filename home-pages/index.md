@@ -105,10 +105,13 @@ For customers under maintenance/subscription contract as well as official partne
   > This document provides information on the creation, installation, usage of silos.  
 
   > [Audit rules](/ia/dev-descartes/igrc-platform/audit-rules)  
-  > This document provides information on the creation, installation, usage and migration of audit rules.  
+  > This document provides information on the creation, installation, usage of audit rules.  
+
+  > [Audit views](/ia/dev-descartes/igrc-platform/views)  
+  > This document provides information on the creation, installation, usage of audit views.  
 
   > [Business views](/ia/dev-descartes/igrc-platform/business-view)  
-  > This document provides information on the creation, installation, usage and migration of Business views.  
+  > This document provides information on the creation, installation, usage of Business views.  
 
   > [Controls](/ia/dev-descartes/igrc-platform/controls)  
   > This document provides information on the creation, installation, usage of controls.  
