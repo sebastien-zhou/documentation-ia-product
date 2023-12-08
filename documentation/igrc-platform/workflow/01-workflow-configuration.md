@@ -35,7 +35,7 @@ Finally in this section it is possible to activate the test mode for timers. Thi
 
 ## Calendar
 
-This section allows you to determine the week workdays in order to avoid notification during the weekend for example. Please refer to the page [Reminders, Escalation and task expiration](igrc-platform/workflow/time-management/reminder-escalation-task-expiration.md) for more information.
+This section allows you to determine the week workdays in order to avoid notification during the weekend for example. Please refer to the page [Reminders, Escalation and task expiration](./08-time-management#reminders-escalation-and-task-expiration) for more information.
 
 ## Workflow DataBase renitialisation
 

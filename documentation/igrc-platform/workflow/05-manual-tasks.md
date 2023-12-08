@@ -41,7 +41,7 @@ Reminders: there are two options:
 - N reminders every X (business days \| days \| months) after M (business days \| days \| months)  
 - N reminders every X (business days \| days \| months) before the date of D  
 
-See the [page on reminders](./time-management/reminder-escalation-task-expiration.md) for more information.  
+See the [page on reminders](./08-time-management.md#reminders-escalation-and-task-expiration) for more information.  
 
 ## Escalation
 
@@ -93,7 +93,7 @@ Number of the action associated with the ticket: the unique identifier of the ti
 
 List of updates to be done on workflow variables. You also can call a script.  
 
-See [variable modification functions](./04-variables#understanding-variable-modification-actions) for more details on your options.  
+See [variable modification functions](./04-variables.md#understanding-variable-modification-actions) for more details on your options.  
 
 ## Ticket
 
@@ -101,7 +101,7 @@ See [variable modification functions](./04-variables#understanding-variable-modi
 
 If enabled, a ticket associated to the manual activity will be created in the ledger.  
 
-See [tickets](./tickets.md) for more details on this subject.  
+See [tickets](./10-tickets.md) for more details on this subject.  
 
 ## Iteration
 
@@ -109,4 +109,4 @@ See [tickets](./tickets.md) for more details on this subject.
 
 Allows the manual activity to be iterated.  
 
-See [iteration](./iterations-and-subprocesses.md) to learn more about this.  
+See [iteration](./06-iterations-and-subprocesses.md) to learn more about this.  

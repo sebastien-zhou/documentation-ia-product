@@ -9,9 +9,9 @@ description: How to use tickets in workflows
 
 There are four types of tickets in the Ledger that are linked to workflows, as documented on Expert-Exchange or PS Tools:  
 
-- [TicketLog](./tickets.md#ticketlog)  
-- [TicketAction](./tickets.md#ticketaction)  
-- [TicketReview](./tickets.md#ticketreview)  
+- [TicketLog](./10-tickets.md#ticketlog)  
+- [TicketAction](./10-tickets.md#ticketaction)  
+- [TicketReview](./10-tickets.md#ticketreview)  
 - Remediation Ticket  
 
 > This page intends to give an overview of these ticket types and how they interact  

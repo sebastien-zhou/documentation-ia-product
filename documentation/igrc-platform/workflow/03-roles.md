@@ -62,7 +62,7 @@ You can also use roles in the "Escalation" tab (optional):
 ![Start](./images/escalation.png "Start")  
 
 > If you check the option "Include initial role", once the escalation starts, the people in the initial role can still take the task.
-> See the [Manual Tasks](./manual-tasks.md) section for more information on this subject.  
+> See the [Manual Tasks](./05-manual-tasks) section for more information on this subject.  
 
 ## Notifications
 
@@ -73,4 +73,4 @@ Roles for notifications are configured via a drop-down list:
 > If you select the option "Add the role of the current task (if manual task)", you can dynamically pass the role configured in the manual task (see above) to the notification.  
 
 See the notification section for more information on this subject.  
-[Workflow email notification](./email-notifications.md).
+[Workflow email notification](./07-email-notifications).
