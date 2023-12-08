@@ -140,6 +140,9 @@ For customers under maintenance/subscription contract as well as official partne
   > [Theoretical Rights](/ia/dev-descartes/igrc-platform/theoretical-rights)  
   > This document provides information on the creation, installation, usage of theoretical rights.  
 
+  > [Workflows](/ia/dev-descartes/igrc-platform/workflow)  
+  > This document provides detailed information on the workflow engin. Including guides on the creation, the configuration and run.  
+
   > [Audit logs](/ia/dev-descartes/igrc-platform/audit-logs)  
   > This document provides information on the creation, installation, usage and of Auditlogs, the productions engine to ingest and query application logs.
 
