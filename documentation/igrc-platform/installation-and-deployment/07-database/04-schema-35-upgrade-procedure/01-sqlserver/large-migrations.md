@@ -1,6 +1,6 @@
 ---
 title: "Large SQL server migrations"
-description: : "Large SQL server migrations"
+description: "Large SQL server migrations"
 ---
 
 # Large SQL server migration

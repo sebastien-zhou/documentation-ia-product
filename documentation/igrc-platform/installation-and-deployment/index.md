@@ -11,8 +11,6 @@ This document details the main installation stages and the initial parameter set
 
 ## Brainwave Analytics Client installation
 
-## Prerequisite
-
 Please refer to the document "Brainwave Identity GRC Support Matrix" for a detailed description of the additional components supported by Brainwave.  
 
 Installation of the software requires Administrator rights to the operating system.
@@ -185,7 +183,9 @@ Where:
 - `/S`: Silent installation option  
 - `/D=`: Directory where to install iGRC Analytics  
 
-![Example](./images/silent_install_command.PNG "Example")
+```powershell
+iGRCAnalyticsSetup_win32_x64_Descartes-R3_2023-12-06.exe /S /D=D:\igrcanalytics
+```
 
 ### Scripting recommendation
 

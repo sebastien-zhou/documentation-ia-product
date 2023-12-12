@@ -9,18 +9,18 @@ description: "Batch configuration and usage"
 
 Upon installation of Brainwave GRC a number of batch script files (`.cmd` files for a windows environment and `.sh` files for a linux environment) are included in the the iGRC analytics home folder:  
 
--`igrc_batch.cmd[cmd|sh]`: to execute the entire execution plan  
--`igrc_auditlog.cmd[cmd|sh]`: to execute the data loading of auditlogs  
--`igrc_extract.cmd[cmd|sh]`: to execute the extraction of data
--`igrc_facetbuild.cmd[cmd|sh]`: to build a facet  
--`igrc_notify.cmd[cmd|sh]`: to launch a notification campaign  
--`igrc_purge.cmd[cmd|sh]`: to execute a purge of specified data  
--`igrc_sqlscript.cmd[cmd|sh]`: to export the necessary sql scripts to create or update iGRC database, create or update Activity database and export custom indexes creation script
--`igrc_validate.cmd[cmd|sh]`: to validate an activated timeslot  
--`igrc_workflow.cmd[cmd|sh]`: to launch Ã workflow
--`igrc_portal.cmd[cmd|sh]`: to export web portal
--`igrc_project.cmd[cmd|sh]`: to export project
--`igrc_archive.cmd[cmd|sh]`: to export project archive  
+- `igrc_batch.cmd[cmd|sh]`: to execute the entire execution plan  
+- `igrc_auditlog.cmd[cmd|sh]`: to execute the data loading of auditlogs  
+- `igrc_extract.cmd[cmd|sh]`: to execute the extraction of data  
+- `igrc_facetbuild.cmd[cmd|sh]`: to build a facet  
+- `igrc_notify.cmd[cmd|sh]`: to launch a notification campaign  
+- `igrc_purge.cmd[cmd|sh]`: to execute a purge of specified data  
+- `igrc_sqlscript.cmd[cmd|sh]`: to export the necessary sql scripts to create or update iGRC database, create or update Activity database and export custom indexes creation script  
+- `igrc_validate.cmd[cmd|sh]`: to validate an activated timeslot  
+- `igrc_workflow.cmd[cmd|sh]`: to launch a workflow  
+- `igrc_portal.cmd[cmd|sh]`: to export web portal  
+- `igrc_project.cmd[cmd|sh]`: to export project  
+- `igrc_archive.cmd[cmd|sh]`: to export project archive  
 
 ## Automatic data loading
 
