@@ -92,8 +92,8 @@ For customers under maintenance/subscription contract as well as official partne
   > [Getting started](/ia/dev-descartes/igrc-platform/getting-started)  
   > The one stop shop to getting started in using Identity Analytics
 
-  > [Getting started](/ia/dev-descartes/igrc-platform/Installation-and-deployment)  
-  > The on premise installation guide.
+  > [Installation Guide](/ia/dev-descartes/igrc-platform/installation-and-deployment)  
+  > The on premise installation guide, including configuration recommendations.
 
   > [TimeSlots and Execution Plan](/ia/dev-descartes/igrc-platform/timeslot-and-execution-plan)  
   > All information on how to understand the notion of a timeslots and the execution plan
