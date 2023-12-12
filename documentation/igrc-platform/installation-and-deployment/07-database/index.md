@@ -1,6 +1,6 @@
 ---
 title: "Database configuration information"
-description :"Database configuration information"
+description: "Database configuration information"
 ---
 
 # Database configuration information
