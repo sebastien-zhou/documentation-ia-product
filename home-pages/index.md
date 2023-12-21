@@ -58,7 +58,7 @@ For customers under maintenance/subscription contract as well as official partne
 ## IGRCanalytics
 
 <section>
-  
+
   > [Release Notes](/ia/descartes/downloads/01-downloads)  
   > This document provides information on the different releases of iGRCanalytics, including the supported environments and the release notes for each version.  
 
@@ -74,7 +74,7 @@ For customers under maintenance/subscription contract as well as official partne
   > [Installation Guide](/ia/descartes/igrc-platform/installation-and-deployment)  
   > The on premise installation guide, including configuration recommendations.
 
-  > [TimeSlots and Execution Plan](/ia/descartes/igrc-platform/timeslot-and-execution-plan)  
+  > [Timeslots and Execution Plan](/ia/descartes/igrc-platform/timeslots-and-execution-plan)  
   > All information on how to understand the notion of a timeslots and the execution plan
 
   > [The technical configuration](/ia/descartes/igrc-platform/technical-configuration)  
@@ -133,7 +133,7 @@ For customers under maintenance/subscription contract as well as official partne
 
 </section>
 
-## wizards
+## Wizards
 
 <section>
 
@@ -148,11 +148,11 @@ For customers under maintenance/subscription contract as well as official partne
 
 </section>
 
-## webportal
+## Webportal
 
 <section>
 
-  > [Add-ons](/ia/descartes/igrc-platform/smart-search)  
+  > [Smart search](/ia/descartes/igrc-platform/smart-search)  
   > This document provides information on the creation, installation, usage and migration of the smart search in the portal.  
 
 </section>
@@ -160,7 +160,7 @@ For customers under maintenance/subscription contract as well as official partne
 ## Legacy documentation
 
 <section>
-  
+
   > [Legacy documentation site](https://documentation.brainwavegrc.com/)  
   > This section will redirect you to the legacy documentation of Identity Analytics. This site will continue to host the documentation for Identity Analytics while the documentation sites are being merged.  
 

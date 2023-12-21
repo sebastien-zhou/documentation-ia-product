@@ -5,6 +5,8 @@ Description: "Documentation related to Identity Analytics data visualization tec
 
 # Pages
 
+## Overview
+
 Pages is the Brainwave data visualization technology that leverages the Identity Ledger data through the web portal.  
 Through this technology, you can declare your own dashboards, analytics, forms or workflows GUIs in the web portal.  
 A Page can be as simple as a 1 KPI dashboard or as rich as the Workflow Task Manager.  

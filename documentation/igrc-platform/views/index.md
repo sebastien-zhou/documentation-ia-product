@@ -5,6 +5,8 @@ description: "How to use views in Identity analytics"
 
 # Views
 
+## Overview
+
 Audit views enable the user to extract information from the Identity Ledger without requiring technical expertise in the SQL language, and without knowing the technical data model of the Identity Ledger.  
 
 Audit Views may be used by audit reports to retrieve information to be laid out on a page. They may also be used by third party applications via WebServices interfaces. The Audit View Editor also enables information to be extracted for processing and analysis in a third party tool such as Excel.  

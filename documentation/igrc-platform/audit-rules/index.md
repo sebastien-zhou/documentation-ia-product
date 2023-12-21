@@ -3,7 +3,9 @@ title: Introduction of the Rule Editor
 Description: Documentation related to the Rule Editor
 ---
 
-# Definition
+# Audit rules
+
+## Definition
 
 The audit rule engine allows you to analyze the data contained within the Ledger. The principle of an audit rule is to find the elements in the Ledger that answer a given question. For example:  
 
@@ -26,9 +28,9 @@ The concepts of the Ledger that can be dated back by an audit rule are the follo
 - Assets
 - Usages
 
-# Design
+## Design
 
-## Define Your Search Criteria
+### Define Your Search Criteria
 
 An audit rule is created by configuring search criteria on the concepts that are being handled by the rule. The available criteria will depend on the concept chosen in the rule editor. In order to facilitate the selection of criteria, they are sorted by category.  
 

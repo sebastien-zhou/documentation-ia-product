@@ -3,7 +3,9 @@ title: Control Methods Present in Analytics
 Description: Documentation related to the control methods present in Analytics
 ---
 
-# Control Methods Present in Analytics
+# Controls
+
+## Control Methods Present in Analytics
 
 There are different types of control methods within Brainwave Identity GRC. You will find below a succinct description of each.  
 

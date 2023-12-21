@@ -5,6 +5,8 @@ description: "Reconciliation rules"
 
 # Reconciliation Rules
 
+## Overview
+
 The reconciliation rule engine is based on the data contained in the Ledger. The principle of a reconciliation rule is to find items in the Ledger that make it possible to make a link between an account and its user. For example:  
 
 - Which identity does the account whose login is the same as the login of a user belong to?

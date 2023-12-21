@@ -5,6 +5,8 @@ description: "Configuration and usage guide for the manager policy functionality
 
 # Manager Policy
 
+## Introduction
+
 In some cases, you can't directly link a manager to the concept he's managing, because that requires information about the Identity managing the concept:  
 
 The Manager target requires you to provide the HRCode of the manager:  

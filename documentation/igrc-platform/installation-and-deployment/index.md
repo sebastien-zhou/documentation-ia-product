@@ -5,6 +5,8 @@ Description: "Guides on how to install and configure Identity Analytics"
 
 # Installation and deployment
 
+## Installation
+
 By choosing Brainwave Identity GRC, you are equipping yourself with a unique solution for streamlining IT controls and enforcing compliance rules.
 
 This document details the main installation stages and the initial parameter setting that will enable you to start using Brainwave Identity GRC.

@@ -3,7 +3,9 @@ title: Introduction to Business Views
 Description: Documentation related to Business Views
 ---
 
-# Introduction to Business Views
+# Business Views
+
+## Introduction
 
 Business views are a new concept introduced in the product as of version 2017.
 

@@ -3,7 +3,9 @@ title: Notification rules overview
 description: Notification rules overview
 ---
 
-# Notification rules overview
+# Notification rules
+
+## overview
 
 iGRC Analytics offers a functionality to send Emails by using a notification rule. The notification rule contains the content of the email and and includes attachments as well as the list of recipients.    Notification rules rely on concepts already existing in the product, as selecting recipients is done via a view, and attachments rely on Birt reports.  
 The main characteristics of Email notifications are as follows:  

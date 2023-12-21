@@ -3,11 +3,11 @@ title: Add-ons
 Description: Documentation related to the creation, the installation and the usage of Add-ons
 ---
 
-# Add-ons / Facets
-
-A dedicated framework allowing to create your own add-ons, also known as facets, is included in iGRCanalytics. It can be used to help structure your project, so even if your goal is not to make a publishable facet, we advise you to check it out.  
+# Add-ons
 
 ## What is a facet?
+
+A dedicated framework allowing to create your own add-ons, also known as facets, is included in iGRCanalytics. It can be used to help structure your project, so even if your goal is not to make a publishable facet, we advise you to check it out.  
 
 A facet is basically a part of a project that can be installed and uninstalled at will, allowing to add / remove functionalities in a seamless way. Those can be collectors for specific applications, workflow processes, reports, examples or documentation, etc. The advantage of delivering project content in a facet over simply dropping a bunch of files are mainly:  
 

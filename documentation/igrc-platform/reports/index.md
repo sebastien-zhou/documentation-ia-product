@@ -1,9 +1,11 @@
 ---
-title: General Concepts
+title: Reports
 Description: Documentation related to general concepts of creating reports
 ---
 
-# General Concepts
+# Reports
+
+## Introduction
 
 The Brainwave Identity GRC report editor relies on the Open Source BIRT solution maintained by the Eclipse community. Many books about this solution are available; we invite you to refer to the first chapter of this guide for a list of these books.  
 

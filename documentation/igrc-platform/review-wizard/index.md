@@ -5,6 +5,8 @@ description: How to use the review wizard
 
 # Review wizard
 
+## Overview
+
 The notion of compliance is a growing concern in companies and in order to prove to auditors that application rights in IT systems are correctly managed, a methodology called User Access Review (UAR) can be set up.
 However compliance is not the unique motivation. User Access Review is also one of the best ways to mitigate risks among:
 

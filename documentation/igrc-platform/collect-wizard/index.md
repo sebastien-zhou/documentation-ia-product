@@ -1,9 +1,11 @@
 ---
-title: Generation of a Collect Line
+title: Collect line wizard
 Description: Documentation related to the generation of a collect line
 ---
 
-# Generation of a Collect Line
+# Collect line wizard
+
+## Introduction
 
 The data collection wizard provides the user with a dedicated interface to map the original import data to attribute in Brainwave's data cube. The product will then automatically generate the corresponding data collection lines.
 
