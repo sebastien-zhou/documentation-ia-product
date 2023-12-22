@@ -5,7 +5,7 @@ description: "Index management"
 
 # Index Management
 
-## Warning
+## Important notice
 
 > [!warning] Please note that **ALL** information provided in this page has to be done **ONLY** with the approval of Brainwave experts.  
 >
@@ -23,9 +23,9 @@ In the latest version of the `DB_check` you will find the list of unused indexes
 
 Please use one of the following links for more information on the usage of the `DB_Check`
 
-- [Microsoft SQLserver](how-to/database/sqlserver/performance-investigation-sql-server.md)  
-- [Postgresql](how-to/database/postgresql/psql-performance-issue-investigation.md)  
-- [Oracle](how-to/database/oracle/performance-investigation-oracle.md)  
+- [Microsoft SQLserver](../../../how-to/database/sqlserver/performance-investigation-sql-server)  
+- [Postgresql](../../../how-to/database/postgresql/psql-performance-issue-investigation)  
+- [Oracle](../../../how-to/database/oracle/performance-investigation-oracle)  
 
 Once the elements provided the support service will have provided you with:
 
