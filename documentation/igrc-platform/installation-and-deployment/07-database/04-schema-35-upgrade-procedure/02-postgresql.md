@@ -55,12 +55,12 @@ SET search_path = '<schema>' ;
 
 Depending on the version of the script displayed after the previous SQL request please download the correct script from the following list:  
 
-|                                       Script                                        |
-|:-----------------------------------------------------------------------------------:|
-|    [postgresql_2017R2_to_Curie.sql](./sqlscripts/postgresql_2017R2_to_Curie.sql)    |
-|    [postgresql_2017R3_to_Curie.sql](./sqlscripts/postgresql_2017R3_to_Curie.sql)    |
-|    [postgresql_AderR1_to_Curie.sql](./sqlscripts/postgresql_AderR1_to_Curie.sql)    |
-| [postgresql_BrailleR1_to_Curie.sql](./sqlscripts/postgresql_BrailleR1_to_Curie.sql) |
+|                                        Script                                         |
+| :-----------------------------------------------------------------------------------: |
+|   [postgresql\_2017R2\_to\_Curie.sql](./sqlscripts/postgresql_2017R2_to_Curie.sql)    |
+|   [postgresql\_2017R3\_to\_Curie.sql](./sqlscripts/postgresql_2017R3_to_Curie.sql)    |
+|   [postgresql\_AderR1\_to\_Curie.sql](./sqlscripts/postgresql_AderR1_to_Curie.sql)    |
+| [postgresql\_BrailleR1\_to_Curie.sql](./sqlscripts/postgresql_BrailleR1_to_Curie.sql) |
 
 ### Execute the script
 

@@ -28,17 +28,17 @@ END
 
 The scripts to download are available for download only for Braille and SQL server in the corresponding tables below:
 
-|                         Multilingual - mssql                         |
-| :------------------------------------------------------------------: |
-|    [STEP1_mssql_BrailleR1_to_schema_33.sql](./scripts/STEP1.sql)     |
-| [STEP2_mssql_PRINT_int_to_bigint_migration.sql](./scripts/STEP2.sql) |
-|    [STEP4_mssql_schema_33_to_schema_35.sql](./scripts/STEP4.sql)     |
+|       Multilingual - mssql       |
+| :------------------------------: |
+| [STEP1.sql](./scripts/STEP1.sql) |
+| [STEP2.sql](./scripts/STEP2.sql) |
+| [STEP4.sql](./scripts/STEP4.sql) |
 
-|                            Monolingual - mssql noml                            |
-| :----------------------------------------------------------------------------: |
-|    [STEP1_mssql_noml_BrailleR1_to_schema_33.sql](./scripts/STEP1_noml.sql)     |
-| [STEP2_mssql_noml_PRINT_int_to_bigint_migration.sql](./scripts/STEP2_noml.sql) |
-|    [STEP4_mssql_noml_schema_33_to_schema_35.sql](./scripts/STEP4_noml.sql)     |
+|          Monolingual - mssql noml           |
+| :-----------------------------------------: |
+| [STEP1\_noml.sql](./scripts/STEP1_noml.sql) |
+| [STEP2\_noml.sql](./scripts/STEP2_noml.sql) |
+| [STEP4\_noml.sql](./scripts/STEP4_noml.sql) |
 
 ## Upgrade procedure
 
