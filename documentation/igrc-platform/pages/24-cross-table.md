@@ -253,6 +253,7 @@ The schema below explains the relationship between the edition variables (to the
 **EditCrossTable** defines an editable crosstable component.  
 
 | _attribute_ | _type_ | _purpose_ |
+| :- | :- | :- |
 | **data\*** |  DataSet |  references a Dataset that will provide data for the cross table. <br> - Each row in the dataset represents an editable cell in the crosstable.<br>- The dataset must provide one or more attribute for displaying the cell content (see edit-value)<br>- the dataset must provide attributes to determine the cell column and row.|
 | **columns\*** | Dim list (comma- separated) | list of dimensions to be displayed as columns of the cross table, from top to bottom. if there is more than one dimension, the column headers will be grouped. <br>see definition of **Dim** below |
 | **rows\***  | Dim list (comma- separated) | list of dimensions to be displayed as rows of the cross table, from left to right. <br>if there is more than one dimension, the row headers will be grouped. <br>see definition of **Dim** below |
@@ -264,6 +265,7 @@ The schema below explains the relationship between the edition variables (to the
 **Dim** describes a row or column dimension of the editable cross table.  
 
 | _attribute_ | _type_ | _purpose_ |
+| :- | :- | :- |
 | **value** \* | multi-valued variable | References a multi-valued variable that holds the key for the column/row of each cell.<br>It's a good practice to use compact values (such as recorduid or code) as the value , to ensure good performance of the cross table. |
 | **label** | multi-valued variable | references a multi-valued variable that will provide a label for the column/row. <br>if not defined, the value variable will be used also to display the label.  |
 | **header**   |  string | display name for the dimension, to be displayed in the top left corner of the cross table. <br>his could be a localized string. <br>If not provided, the label of dimension will be the name of the value variable. |
@@ -271,6 +273,7 @@ The schema below explains the relationship between the edition variables (to the
 **EditValue** defines how a cell of the cross table can be edited.  
 
 | _attribute_ | _type_ | _purpose_ |
+| :- | :- | :- |
 | **header** | string | optional label for the edited value |
 | **value\*** | multi-valued variable | References a multi-valued variables that will hold the current values of the edited cells. <br>At startup this variable must contain the original values. <br>In checkbox mode, the variable must contain boolean values |
 | **text** | multi-valued variable | References a multi-valued variables that will hold the current displayed labels of the edited cells.<br>At startup this variable must contain the original displayed labels. <br>If not provided, the labels will be retrieved from the labels of the choices combo (in Combo mode).<br>This latter capability is useful for static list of choices for which the display labels are defined as NLS strings in Pages.<br>It's not recommended to use it for dynamic list of choice with possibly very large datasets. In this case, it's better to have the labels computed in the values dataset. |
@@ -280,6 +283,7 @@ The schema below explains the relationship between the edition variables (to the
 **Combo** defines the content of the selection list from which values can be selected.  
 
 | _attribute_ | _type_ | _purpose_ |
+| :- | :- | :- |
 | **data\*** | Dataset |  References a Dataset that will provide data for the suggestion list. <br>This could be either static or dynamic data depending on the dataset. |
 | **value\*** | dataset column | References a column in the dataset that will provide the internal values for the choices in the list. When an item is selected from the list, its **value** will be written at the appropriate index into the **value** variable of the EditValue tag |
 | **text\***| multi-valued variable | References a column in the dataset that will provide the display labels for the choices in the list. When an item is selected from the list, <br> its **text** will be written at the appropriate index into the <br>**text** variable of the EditValue tag (if provided) |
@@ -287,6 +291,7 @@ The schema below explains the relationship between the edition variables (to the
 **Layout** defines the sizing of the crosstable within its container and the layout inside the cross table itself.  
 
 | _attribute_ | _type_ | _purpose_ |
+| :- | :- | :- |
 | **cell-width** | nnn px | defines the uniform width of cells in pixels. Content exceeding the width will be truncated, <br>and a tooltip text will display the full content. <br>Default width is 40px  |
 | **cell-height** | nnn px | defines the uniform height of cells in pixels. <br>Default height is 25px |
 | **col-headers-max-height** | nnn px \| nnn% | maximum height that the columns headers can take, in absolute pixels <br>or in % or the cross table height. <br>Default value is 30% of the table height |
@@ -470,6 +475,7 @@ editCrosstabDynamicList = Page {
 **DynamicCrossTable** defines a dynamic crosstable component  
 
 |  _attribute_ | _type_ | _purpose_ |
+| :- | :- | :- |
 |  **data\*** |  DataSet |  references a Dataset that will provide data for the cross table for all the possible dimensions and measures <br> - Each row in the dataset represents a cell in the crosstable.<br>- The dataset must provide one attribute for displaying the cell content,<br>- the dataset must provide attributes to determine the cell column and row.|
 | **dimensions\*** | Dim list (comma- separated) |  list of all available dimensions , that can be interactively dropped to rows and columns <br>see definition of **Dim** below |
 | **measures\***  | Measure list (comma- separated) |  list of measures that can be selected to display in cell content.<br>See definition of **Measure** below |
@@ -479,6 +485,7 @@ editCrosstabDynamicList = Page {
 **Dim** describes a possible dimension for the dynamic cross table  
 
 | _attribute_ | _type_ | _purpose_ |
+| :- | :- | :- |
 | **value** \* | dataset column | references a column in the dataset that will provide a key for the column/row.<br>It's a good practice to use an attribute with compact values (such as recorduid or code) as the value , to ensure good performance of the cross table. |
 | **label** |  dataset column | references an attribute in the dataset that will provide a label for the column/row. <br>if not defined, the value attribute will be used also to display the label. |
 | **header** |  string | display name for the dimension, to be displayed in the top left corner of the cross table and in the dimension interactive areas. <br>This could be a localized string.<br>If not provided, the label of dimension will be the name of the value attribute. |
@@ -486,12 +493,14 @@ editCrosstabDynamicList = Page {
 **Measure** describes a possible measure for the dynamic crosstable
 
 | _attribute_ | _type_ | _purpose_ |
+| :- | :- | :- |
 | **value** \* | dataset column | references a column in the dataset that will provide a value for the cell.<br>This is usually a numeric value  |
 | **header**   |  string | display name for the measure <br>This could be a localized string. <br>If not provided, the label of the measure will be the name of the dataset column. |
 
 **Layout** defines the sizing of the crosstable within its container and the layout inside the cross table itself  
 
 | _attribute_ | _type_ | _purpose_ |
+| :- | :- | :- |
 | **cell-width** | nnn px | defines the uniform width of cells in pixels. Content exceeding the width will be truncated, and a tooltip text will display the full content.<br>Default width is 40px  |
 | **cell-height** | nnn px | defines the uniform height of cells in pixels. <br>Default height is 25px |
 | **col-headers-max-height** | nnn px \| nnn% | maximum height that the columns headers can take,<br> in absolute pixels or in % or the cross table height.<br>Default value is 30% of the table height |
