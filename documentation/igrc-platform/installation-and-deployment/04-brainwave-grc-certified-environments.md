@@ -36,7 +36,7 @@ Please see footnotes (links available in the above mentioned table) for more inf
 Java Runtimes are Third Party Software not provided with Brainwave Identity GRC.  
 Please see the following table for more information on the support version of JAVA :  
 
-|                         | **Windows**[^2] |  **Linux  RHEL 9**  |  **Linux  Debian**  |
+|                         | **Windows[^2]** |  **Linux  RHEL 9**  |  **Linux  Debian**  |
 | :---------------------: | :-------------: | :-----------------: | :-----------------: |
 |   **Java SE JDK 17**    |      **X**      |                     |                     |
 |   **Java SE JRE 17**    |      **X**      |                     |                     |
@@ -121,8 +121,6 @@ Please refer to the Microsoft's official documentation for more information :
 [https://learn.microsoft.com/en-US/deployedge/microsoft-edge-support-lifecycle](https://learn.microsoft.com/en-US/deployedge/microsoft-edge-support-lifecycle)
 
 > **Note:** Internet explorer is no longer recommended see : [https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732)
-
----
 
 [^1]: Please note that as of version Braille, Oracle is only supported in the case of existing and deployed projects. In the case of a new project only Microsoft SQL server and PostgreSQL are supported.
 
