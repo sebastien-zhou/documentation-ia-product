@@ -107,6 +107,55 @@ As you can see, we added a new column for the identity uid along with the select
 
 This is used for instance for [master/detail](./04-data-binding.md) pages where you want to present dynamic content.  
 
+### New attributes  
+
+- initial-selection-index: (reference to a parameter): references an integral mono-valued parameter which will contain the table's starting index
+- selection-index: (reference to a variable): references an integral mono-valued variable which will contain the table's current index  
+
+As for the SetNavigator widget, initial-selection-index:is ignored if initial-selection: is not provided.  
+
+#### MultivaluedIterate action
+
+This action allows to iterate over the values of one or more multi-valued expressions and execute a given list of actions for each iterated element.  
+
+For example, if `var_elems` is a multi-valued integral variable and `var_sum` is a mono-valued integral variable, the actions  
+
+```page
+Set 0 to var_sum, MultivaluedIterate var_elems as elem [ Set Sum(var_sum, Current elem) to var_sum ]
+```
+
+will set `var_sum` to the sum of the elements of `var_elems`.  
+
+As another example, if `prm_path` contains the path to a file, for example "/a/b/c/d.txt", the action  
+
+```page
+MultivaluedIterate Split prm_path using "/" as part index-as idx [
+    IntCase(Current idx) {
+      when = 1 then []
+      otherwise [
+        IntCase(Difference(SizeOf Split prm_path using "/", Current idx)) {
+          when > 0 then [
+            StringCase(var_directory) {
+              when IsEmpty then [ Set Current part to var_directory ]
+              otherwise [ Set Concat(var_directory, "/", Current part) to var_directory ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+```
+
+will set the parent directory of the file to the variable `var_directory` ("a/b/c" in the example).  
+
+## Total process progress in TaskInfo and ProcessInfo
+
+The process total progress is accessible in TaskInfo(task, ProcessProgressTotal) and ProcessInfo(process, ProgressTotal).  
+
+## Timeslot UID in TaskInfo and ProcessInfo
+
+The timeslot UID used to launch a process is accessible in TaskInfo(task, TimeslotUID) and ProcessInfo(process, TimeslotUID).
+
 ### Preserving table selection on change
 
 By default, a table's selection is cleared when the table's data changes.  
