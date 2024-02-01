@@ -34,17 +34,11 @@ description: iGRCanalytics product lifecycle
 | Curie R2            |  15/02/2022  |                    |                    | :white_check_mark: |   13/09/2024   |
 | Curie R1            |  13/09/2021  |                    | :white_check_mark: |                    |   13/09/2024   |
 
-### Braille
-
-| Version               | Release date |       Active       |      Passive       | Limited | End of support |
-| :-------------------- | :----------: | :----------------: | :----------------: | :-----: | :------------: |
-| Braille R1 SP4        |  09/06/2023  | :white_check_mark: |                    |         |   09/11/2023   |
-| Braille R1 (0 to SP3) |      --      |                    | :white_check_mark: |         |   09/11/2023   |
-
 ### Unsupported versions
 
 | Version | End of support |
 | :------ | :------------: |
+| Braille |   09/11/2023   |
 | Ader    |   12/12/2022   |
 | 2017    |   28/06/2021   |
 | 2016    |   08/02/2019   |
