@@ -65,8 +65,6 @@ The database support matrix, per operating systems, is as follows:
 | Microsoft SQL server | 2016        |               |         **X**          |          **X**          |                         |              |              |
 | Microsoft SQL server | 2017        |               |                        |          **X**          |                         |              |              |
 | Microsoft SQL server | 2019        |               |                        |                         |          **X**          |              |              |
-| PostgreSQL           | 10          |               |                        |                         |                         |    **X**     |    **X**     |
-| PostgreSQL           | 11          |               |                        |                         |                         |    **X**     |    **X**     |
 | PostgreSQL           | 12          |               |                        |                         |                         |    **X**     |    **X**     |
 | PostgreSQL           | 13          |               |                        |                         |                         |    **X**     |    **X**     |
 | PostgreSQL           | 14          |               |                        |                         |                         |    **X**     |    **X**     |

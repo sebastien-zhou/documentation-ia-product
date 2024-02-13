@@ -20,9 +20,9 @@ No database migration is necessary when upgrading from version `Curie R3` or `De
 
 If you are migrating from a version of the product prior to **Curie R3** see [**here**](https://documentation.brainwavegrc.com/Descartes/docs/igrc-platform/installation-and-deployment/database/schema-35-upgrade-procedure/) for the detailed procedure.  
 
-## Version Descartes R2 SP1
+## Version Descartes R2 SP2
 
-We are pleased to announce the release of the latest version of the product: **Descartes R2 SP1**
+We are pleased to announce the release of the latest version of the product: **Descartes R2 SP2**
 
 This version includes a number of fixes including:  
 
@@ -36,7 +36,7 @@ Please refer to the full release notes for more information:
 
 Please navigate to the following link to download the latest version of the product: Descartes:  
 
-- [**Download Descartes R2 SP1**](https://download.brainwavegrc.com/index.php/s/pY7qR9bMxcSjg5X)
+- [**Download Descartes R2 SP2**](https://download.brainwavegrc.com/index.php/s/HnGpWeLwJFb9LRX)
 
 See [below](#how-to-calculate-the-hash) for more information on how to check the integrity of your download.  
 
@@ -47,7 +47,7 @@ Looking for an older version? have a look at the [archived versions repository](
 
 Please use the following link for the full list of the certified environments:  
 
-[Certified Operating Environment for iGRCanalytics](https://documentation.brainwavegrc.com/Descartes/docs/igrc-platform/installation-and-deployment/brainwave-grc-certified-environments/)  
+[Certified Operating Environment for iGRCanalytics](../igrc-platform/installation-and-deployment/04-brainwave-grc-certified-environments.md)  
 
 Please see [**here**](04-product-lifecycle) for more information on the product versions lifecycle, including the end of support dates.
 
