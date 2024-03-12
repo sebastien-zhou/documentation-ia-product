@@ -9,11 +9,11 @@ description: iGRCanalytics archived versions
 
 Please navigate to one of the following links to download the desired version of the product:  
 
-- [**Download Descartes**](https://download.brainwavegrc.com/index.php/s/BdFyD8J3NdyGHjn)
-- [**Download Curie**](https://download.brainwavegrc.com/index.php/s/xqDFebL8So8YaTp)
-- [**Download Braille**](https://download.brainwavegrc.com/index.php/s/7Pc99yzJYsb4mG5)
-- [**Download an Ader version**](https://download.brainwavegrc.com/index.php/s/YYTZmqgLASLWrmx)
-- [**Download a 2017 version**](https://download.brainwavegrc.com/index.php/s/jSQXHHXpHdaL2Sw)
+- [**Download Descartes**](https://download.brainwavegrc.com/index.php/s/CdyRJnNd6P9cTCb)
+- [**Download Curie**](https://download.brainwavegrc.com/index.php/s/N6bNyBfNaMekzFK)
+- [**Download Braille**](https://download.brainwavegrc.com/index.php/s/9EkikkG8mcFrKJq)
+- [**Download an Ader version**](https://download.brainwavegrc.com/index.php/s/xfrYgqZZL8M7CYm)
+- [**Download a 2017 version**](https://download.brainwavegrc.com/index.php/s/HKaQGfdsMtkcQgw)
 
 ## Third party driver installation
 

@@ -9,9 +9,7 @@ description: Download all iGRCanalytics information
 
 ### Dependencies
 
-Descartes by default **requires** IAP version **1.8**!  
-
-> [!warning] If upgrading from a previous version of the product with an IAP version of 1.7 and bellow, it is **necessary** to add the option `-Doptimizediapcounters=false` to the `JAVA_OPTS` of the execution plan.  
+> [!warning] Descartes by default **requires** the use of IAP version **1.8**!  
 > If you have questions on the compatibility of your version of IAP please contact the support services.
 
 ### Database migration
@@ -36,7 +34,7 @@ Please refer to the full release notes for more information:
 
 Please navigate to the following link to download the latest version of the product: Descartes:  
 
-- [**Download Descartes R2 SP2**](https://download.brainwavegrc.com/index.php/s/HnGpWeLwJFb9LRX)
+- [**Download Descartes R2 SP2**](https://download.brainwavegrc.com/index.php/s/KoiakJg6nddWcdM)
 
 See [below](#how-to-calculate-the-hash) for more information on how to check the integrity of your download.  
 
