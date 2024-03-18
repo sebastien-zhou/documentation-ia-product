@@ -1,9 +1,6 @@
 ---
-layout: page
 title: "Best practice for installation and deployment"
-parent: "Best Practice"
-has_children: true
-nav_order: 1
+description: "Best practice for installation and deployment"
 ---
 
 # Best practice for installation and deployment

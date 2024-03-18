@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Best practice for views"
 description: "Best practice for views"
 ---

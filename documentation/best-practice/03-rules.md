@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Best practice for rules"
 description: Best practice for rules
 ---
