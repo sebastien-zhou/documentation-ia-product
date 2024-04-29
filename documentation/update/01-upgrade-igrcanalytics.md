@@ -30,14 +30,14 @@ The version (`Ader`, `Braille`, `Curie`, etc.) AND the Release number (`R1`, `R2
 
 Navigate to the [Download](../downloads/01-downloads.md) page of this site and download the Upgrade zip file:
 
-![Download Upgrade ](./images/download_upgrade_ader.png "Download Upgrade")
+![Download Upgrade ](./images/download-upgrade-ader.png "Download Upgrade")
 
 #### Backup the plugins directory
 
 In the home installation directory of the product, in the folder where iGRC Analytics is installed (usually `C:\igrcanalytics`), backup the `plugins` directory.  
 To do, the simplest method is to create an archive of the plugins folder, in the following example the application 7zip is used to do so:  
 
-![Backup Plugins](./images/backup_plugins.png "Backup Plugins")
+![Backup Plugins](./images/backup-plugins.png "Backup Plugins")
 
 > [!warning] The studio should be closed before performing the upgrade and all automatic tasks (batch executions among others) should also be paused.
 
@@ -45,7 +45,7 @@ To do, the simplest method is to create an archive of the plugins folder, in the
 
 Select the content of the previously downloaded upgrade folder and paste it into the plugins directory of your installation (usually `C:\igrcanalytics\plugins\`):  
 
-![Upgrade Directory](./images/upgrade_directory.png "Upgrade Directory")
+![Upgrade Directory](./images/upgrade-directory.png "Upgrade Directory")
 
 It is necessary to replace the existing files of the plugins folder.  
 
