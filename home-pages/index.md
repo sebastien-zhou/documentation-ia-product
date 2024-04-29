@@ -200,6 +200,15 @@ For customers under maintenance/subscription contract as well as official partne
 
 <section>
 
+  > [Updating the product](/ia/descartes/update/01-upgrade-igrcanalytics)  
+  > This document provides information on how to update or upgrade the project.  
+
+  > [Updating the project](/ia/descartes/update/02-project-migration)  
+  > This document provides information on how to update and import an existing project into an installation.
+
+  > [Update the selfmanaged solution](/ia/version-1.5/run-ops/upgrading)  
+  > This document provides information on how to update your installation of the selfmanaged solution.
+
   > [Release Notes](/ia/descartes/downloads/01-downloads)  
   > This document provides information on the different releases of iGRCanalytics, including the supported environments and the release notes for each version.  
 
