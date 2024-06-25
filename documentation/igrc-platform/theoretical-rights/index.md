@@ -14,6 +14,10 @@ The goal is to run controls, that list over-allocations and under-allocations:
 
 ![Theoretical rights model](./images/theoretical_rights_model.png)
 
+There are two ways to collect theoretical rights :
+- [Permissions are provided with accounts](#collect-iam-rights)
+- [The criteria for obtaining permission are known using model policy](#collect-using-model-policy)
+
 To achieve this goal, you have to implement the following steps:  
 
 1. Collect of the theoretical rights model, from an IAM application
@@ -34,7 +38,39 @@ If possible, don't implement it yourself, but use the facets & what is included 
     - `webportal/pages/bw_fragments/iamapplication`: to display the role model of the `IAM` applications
     - `/webportal/pages/bw_fragments/identity/theoreticalrights`: to show over-allocations on Identities
 
-## Collect
+## Collect IAM Rights
+
+In IAM Rights collect, it is possible to directly provide accounts in import files.
+
+There is a dedicated target in collect, for IAM rights:  
+![IAM rights target](./images/iam_rights_target.png)
+
+It requires to point on the target permission and account (which means to point to the couple application/permission and repository/account):  
+![IAM rights target permission and account](./images/iam_rights_target_permission_account.png)
+
+Role and comment are optional parameters for more information, they don't affect the theoretical rights:  
+![IAM rights target model params](./images/iam_rights_target_optionnal.png)  
+
+Here is some sample data to illustrate:
+
+| Application code | Permission code | Repository code | Account id  | Role            |
+|------------------|-----------------|-----------------|-------------|-----------------|
+| Elyxo            | User            | EKYXO           | VIOLET9     | DFIN_Agents     |
+| RACKSTATION      | FIN_Share       | ACME            | JHORTON19   | DFIN_Agents     |
+| Elyxo            | Admin           | ELYXO           | ROMAIN11    | DFIN_Admins     |
+| RACKSTATION      | FIN_Share       | ACME            | OLIVA8      | DFIN_Admins     |
+
+> The `DFIN_Agents` grants the `Elyxo/User` and `RACKSTATION/FIN_Share` permissions for the accounts `VIOLET9` from the `ELYXO` repository and `JHORTON19` from the `ACME` repository.  
+> The `DFIN_Admins` grants the `Elyxo/Admin` and `RACKSTATION/FIN_Share` permissions for the accounts `ROMAIN11` from the `ELYXO` repository and `OLIVA8` from the `ACME` repository.  
+> After this step made during the collect, **theoretical rights** between **Accounts**, **Identities** and **Permissions** are not yet created. They will be created during the `theoretical right model policy` step, just after the manager policy step.
+
+## Theoretical rights loading
+
+During the `theoretical right model policy` step, the accounts provided in the collect are converted to the reconciled identities.
+
+After these steps, refer to [the control section](#controls).
+
+## Collect using model policy
 
 There is a dedicated target in the collect, for theoretical rights:  
 ![Theoretical rights target](./images/theoretical_rights_target.png)  
@@ -140,3 +176,4 @@ For each Identity/Permission couple returned by theses rules:
 - If the **Identity** has a **real right** and a **theoretical right** to the **Permission**, no discrepancy returned, we are in the normal situation
 - If the **Identity** has a **real right** but no **theoretical right** to the **Permission**, a `overallocation` discrepancy is returned
 - If the **Identity** has no **real right** but a **theoretical right** to the **Permission**, an `underallocation` discrepancy is returned
+
