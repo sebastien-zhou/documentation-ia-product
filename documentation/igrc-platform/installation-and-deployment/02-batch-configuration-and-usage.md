@@ -155,6 +155,15 @@ As of version 2016 R3 it is possible to run the different independent silos in p
 Command line example: igrc_batch demonstration /var/igrc/config default SIMULATE"
 Another example: igrc_batch demonstration /var/igrc/config default"
 ```
+#### Monitoring
+
+In the X version, there are monitoring logs showing information about the resources used in the file `monitoring_<timeslot>.txt`. These logs are written regularly and the interval of time can be set with the following parameter, `-Dmonitoringinvertal=XXX`.The value must be set in milliseconds. The default value is every 10 seconds (10000ms).  
+
+#### JStack
+With the parameter `-Djstackenabled=true`, JStack thread dump can be written in logs with the following format, `jstack_N_<timeslot>.txt`. The last file written is named `jstack_<timeslot>.txt`.  
+The parameter `-Djstackinterval=<time>`, can be used to set the jstack frequency.   
+The value must be set in milliseconds. The default value is every hour (3600000ms).  
+The parameter `-Djstackmaxfile=<number of file>` can be used to set the maximum number of file created. Only the most recent files are kept. The default value is 0, which means that every file created will be kept.  
 
 #### Break Reconciliation
 
